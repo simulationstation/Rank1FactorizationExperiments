@@ -1,0 +1,61 @@
+{
+  "channel_4mu": {
+    "r": 0.4018671645846514,
+    "phi_deg": -82.64007629554412,
+    "nll": -1484.7460614923689,
+    "chi2": 27.87138484190362,
+    "chi2_dof": 1.393569242095181,
+    "deviance": 26.867253188417102,
+    "deviance_dof": 1.3433626594208552,
+    "gate_pass": true,
+    "n_bins": 31,
+    "dof": 20
+  },
+  "channel_4mu2pi": {
+    "r": 0.3026339717066595,
+    "phi_deg": -96.77145656652704,
+    "nll": -2501.5562194959116,
+    "chi2": 214.329242309645,
+    "chi2_dof": 9.742238286802046,
+    "deviance": 197.09211112822192,
+    "deviance_dof": 8.958732324010088,
+    "gate_pass": false,
+    "n_bins": 33,
+    "dof": 22
+  },
+  "shared": {
+    "r": 0.3261051743541355,
+    "phi_deg": -95.13793497187852
+  },
+  "contour_check": {
+    "shared_in_4mu_68": true,
+    "shared_in_4mu_95": true,
+    "shared_in_4mu2pi_68": true,
+    "shared_in_4mu2pi_95": true,
+    "shared_in_both_95": true
+  },
+  "likelihood_ratio": {
+    "Lambda": 1.5369999204121996,
+    "nll_unconstrained": -3986.3022809882805,
+    "nll_constrained": -3985.5337810280744,
+    "optimizer_stable": true
+  },
+  "optimizer_stability": {
+    "n_starts": 30,
+    "4mu_nll_range": [
+      -1484.7460614923689,
+      1704.3879727989731
+    ],
+    "4mu2pi_nll_range": [
+      -2501.5562194959116,
+      -1475.9958419773557
+    ],
+    "joint_nll_range": [
+      -3985.5337810280744,
+      -2112.0929238970552
+    ]
+  },
+  "gates_pass": false,
+  "verdict": "MODEL MISMATCH",
+  "reason": "chi2/dof or D/dof > 3 in at least one channel"
+}

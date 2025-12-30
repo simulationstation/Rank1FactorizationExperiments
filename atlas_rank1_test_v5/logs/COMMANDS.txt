@@ -1,0 +1,17 @@
+# ATLAS Rank-1 Test v5 Command Log
+# Started: Sun Dec 29 2025
+
+# Workspace setup
+mkdir -p atlas_rank1_test_v5/{src,data/derived,data/arxiv,out/profile_tables,logs}
+cp atlas_rank1_test_v4/data/derived/*.csv atlas_rank1_test_v5/data/derived/
+cp atlas_rank1_test/data/arxiv/*.pdf atlas_rank1_test_v5/data/arxiv/
+
+# Data sources:
+# - 4mu_bins.csv: Vector extraction from ATLAS fig_01b.pdf (BPHY-2023-01)
+# - 4mu+2pi_bins.csv: Vector extraction from ATLAS fig_01c.pdf (BPHY-2023-01)
+# - atlas_2509.13101.pdf: ATLAS J/psi+psi(2S) analysis
+# - atlas_2304.08962.pdf: ATLAS di-J/psi analysis (PRL 131 151902)
+
+# Run analysis
+cd atlas_rank1_test_v5 && nohup python3 -u src/fit_atlas_v5.py > logs/fit_v5.log 2>&1 &
+

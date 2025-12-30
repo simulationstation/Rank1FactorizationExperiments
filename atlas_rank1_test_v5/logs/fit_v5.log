@@ -1,0 +1,78 @@
+======================================================================
+ATLAS Rank-1 Test v5 - Publication-grade Analysis
+======================================================================
+
+4mu: 31 bins, 703 total counts, dof=20
+4mu+2pi: 33 bins, 1058 total counts, dof=22
+
+======================================================================
+Unconstrained Fits (Multi-start, Multi-optimizer)
+======================================================================
+
+4mu channel:
+  r = 0.4019
+  phi = -82.6 deg
+  NLL = -1484.75
+  chi2/dof = 27.9/20 = 1.39
+  Deviance/dof = 26.9/20 = 1.34
+  Optimizer starts: 61, NLL range: [-1484.7, 1704.4]
+
+4mu+2pi channel:
+  r = 0.3026
+  phi = -96.8 deg
+  NLL = -2501.56
+  chi2/dof = 214.3/22 = 9.74
+  Deviance/dof = 197.1/22 = 8.96
+  Optimizer starts: 61, NLL range: [-2501.6, -1476.0]
+
+======================================================================
+Fit Health Gates
+======================================================================
+4mu:     chi2/dof = 1.39 PASS, D/dof = 1.34 PASS
+4mu+2pi: chi2/dof = 9.74 FAIL, D/dof = 8.96 FAIL
+Overall gates: FAIL
+
+======================================================================
+Joint Constrained Fit (shared r, phi)
+======================================================================
+
+Shared parameters:
+  r_shared = 0.3261
+  phi_shared = -95.1 deg
+  Total NLL = -3985.53
+  Joint optimizer starts: 31, NLL range: [-3985.5, -2112.1]
+
+======================================================================
+Likelihood Ratio Test
+======================================================================
+NLL unconstrained: -3986.30
+NLL constrained: -3985.53
+Lambda = 2 * delta(NLL) = 1.537
+
+======================================================================
+Computing Profile Likelihood Contours...
+======================================================================
+  Computing 4mu contour...
+  Computing 4mu+2pi contour...
+
+Shared point (r=0.326, phi=-95.1 deg):
+  In 4mu 68% contour: True
+  In 4mu 95% contour: True
+  In 4mu+2pi 68% contour: True
+  In 4mu+2pi 95% contour: True
+  In BOTH 95% contours: True
+
+======================================================================
+Bootstrap SKIPPED (gates did not pass or optimizer unstable)
+======================================================================
+
+======================================================================
+VERDICT
+======================================================================
+
+MODEL MISMATCH
+Reason: chi2/dof or D/dof > 3 in at least one channel
+
+======================================================================
+Output files saved to atlas_rank1_test_v5/out/
+======================================================================
