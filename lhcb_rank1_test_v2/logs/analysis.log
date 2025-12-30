@@ -1,0 +1,254 @@
+======================================================================
+LHCb Pentaquark Rank-1 Bottleneck Test v2
+======================================================================
+
+Loading data...
+Table 1 (full): 546 bins
+Table 2 (mKp cut): 521 bins
+Table 3 (weighted): 546 bins
+
+======================================================================
+PAIR 1: Table 1 (full) vs Table 2 (mKp > 1.9 GeV cut)
+Both channels: Poisson NLL
+======================================================================
+
+============================================================
+PAIR: Pair1_T1vsT2
+Window: 4270-4520 MeV, Background: linear
+============================================================
+Channel A: 125 bins, 86265 total counts
+Channel B: 125 bins, 22456 total counts
+
+Fitting Channel A...
+Fitting Channel B...
+Fitting Joint (constrained)...
+
+--- Results ---
+Channel A: R = 0.1926 * exp(i * -50.4°)
+Channel B: R = 0.2589 * exp(i * -24.4°)
+Shared:    R = 0.2202 * exp(i * -37.0°)
+
+--- Fit Quality ---
+Channel A: χ²/dof = 3.740, deviance/dof = 3.730
+Channel B: χ²/dof = 2.501, deviance/dof = 2.510
+Gates pass: A=False, B=True
+
+--- Likelihood Ratio ---
+NLL unconstrained: 1325.06
+NLL constrained:   1332.38
+Λ = -2ΔlnL = -14.646
+
+Running 300 bootstrap replicates...
+Valid replicates: 300/300
+Λ_boot median: -17.431
+Λ_boot 95th: -7.913
+p-value: 0.3467
+
+>>> VERDICT: MODEL MISMATCH <<<
+Reason: Fit-health gates failed
+Saved: /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v2/out/fit_plots_pair1.png
+
+--- Robustness: Tight window ---
+
+============================================================
+PAIR: Pair1_T1vsT2_tight
+Window: 4320-4490 MeV, Background: linear
+============================================================
+Channel A: 85 bins, 62284 total counts
+Channel B: 85 bins, 16226 total counts
+
+Fitting Channel A...
+Fitting Channel B...
+Fitting Joint (constrained)...
+
+--- Results ---
+Channel A: R = 0.1976 * exp(i * -71.1°)
+Channel B: R = 0.2637 * exp(i * -39.6°)
+Shared:    R = 0.2225 * exp(i * -55.7°)
+
+--- Fit Quality ---
+Channel A: χ²/dof = 3.388, deviance/dof = 3.402
+Channel B: χ²/dof = 2.013, deviance/dof = 2.018
+Gates pass: A=False, B=True
+
+--- Likelihood Ratio ---
+NLL unconstrained: 867.20
+NLL constrained:   872.34
+Λ = -2ΔlnL = -10.281
+
+Running 100 bootstrap replicates...
+Valid replicates: 100/100
+Λ_boot median: -11.740
+Λ_boot 95th: -4.361
+p-value: 0.4100
+
+>>> VERDICT: MODEL MISMATCH <<<
+Reason: Fit-health gates failed
+
+--- Robustness: Quadratic background ---
+
+============================================================
+PAIR: Pair1_T1vsT2_quad
+Window: 4270-4520 MeV, Background: quadratic
+============================================================
+Channel A: 125 bins, 86265 total counts
+Channel B: 125 bins, 22456 total counts
+
+Fitting Channel A...
+Fitting Channel B...
+Fitting Joint (constrained)...
+
+--- Results ---
+Channel A: R = 0.2116 * exp(i * -64.0°)
+Channel B: R = 0.2781 * exp(i * -34.9°)
+Shared:    R = 0.2381 * exp(i * -49.2°)
+
+--- Fit Quality ---
+Channel A: χ²/dof = 1.699, deviance/dof = 1.702
+Channel B: χ²/dof = 1.143, deviance/dof = 1.148
+Gates pass: A=True, B=True
+
+--- Likelihood Ratio ---
+NLL unconstrained: 1125.29
+NLL constrained:   1133.12
+Λ = -2ΔlnL = -15.660
+
+Running 100 bootstrap replicates...
+Valid replicates: 100/100
+Λ_boot median: -17.604
+Λ_boot 95th: -8.849
+p-value: 0.4000
+
+>>> VERDICT: SUPPORTED <<<
+Reason: Rank-1 constraint not rejected (p = 0.4000)
+
+======================================================================
+PAIR 2: Table 1 (full) vs Table 3 (cos θ weighted)
+Channel A: Poisson NLL, Channel B: Gaussian NLL
+======================================================================
+
+============================================================
+PAIR: Pair2_T1vsT3
+Window: 4270-4520 MeV, Background: linear
+============================================================
+Channel A: 125 bins, 86265 total counts
+Channel B: 125 bins, 91077 total counts
+
+Fitting Channel A...
+Fitting Channel B...
+Fitting Joint (constrained)...
+
+--- Results ---
+Channel A: R = 0.1926 * exp(i * -50.4°)
+Channel B: R = 0.4168 * exp(i * 124.6°)
+Shared:    R = 0.2105 * exp(i * -40.8°)
+
+--- Fit Quality ---
+Channel A: χ²/dof = 3.740, deviance/dof = 3.730
+Channel B: χ²/dof = 3.458 (Gaussian)
+Gates pass: A=False, B=False
+
+--- Likelihood Ratio ---
+NLL unconstrained: 1518.55
+NLL constrained:   1522.01
+Λ = -2ΔlnL = -6.912
+
+Running 300 bootstrap replicates...
+Valid replicates: 300/300
+Λ_boot median: -9.724
+Λ_boot 95th: -2.182
+p-value: 0.2833
+
+>>> VERDICT: MODEL MISMATCH <<<
+Reason: Fit-health gates failed
+Saved: /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v2/out/fit_plots_pair2.png
+
+--- Robustness: Tight window ---
+
+============================================================
+PAIR: Pair2_T1vsT3_tight
+Window: 4320-4490 MeV, Background: linear
+============================================================
+Channel A: 85 bins, 62284 total counts
+Channel B: 85 bins, 66560 total counts
+
+Fitting Channel A...
+Fitting Channel B...
+Fitting Joint (constrained)...
+
+--- Results ---
+Channel A: R = 0.1976 * exp(i * -71.1°)
+Channel B: R = 0.2290 * exp(i * -52.5°)
+Shared:    R = 0.2134 * exp(i * -60.6°)
+
+--- Fit Quality ---
+Channel A: χ²/dof = 3.388, deviance/dof = 3.402
+Channel B: χ²/dof = 2.721 (Gaussian)
+Gates pass: A=False, B=True
+
+--- Likelihood Ratio ---
+NLL unconstrained: 988.68
+NLL constrained:   990.44
+Λ = -2ΔlnL = -3.533
+
+Running 100 bootstrap replicates...
+Valid replicates: 100/100
+Λ_boot median: -6.052
+Λ_boot 95th: -1.272
+p-value: 0.2400
+
+>>> VERDICT: MODEL MISMATCH <<<
+Reason: Fit-health gates failed
+
+--- Robustness: Quadratic background ---
+
+============================================================
+PAIR: Pair2_T1vsT3_quad
+Window: 4270-4520 MeV, Background: quadratic
+============================================================
+Channel A: 125 bins, 86265 total counts
+Channel B: 125 bins, 91077 total counts
+
+Fitting Channel A...
+Fitting Channel B...
+Fitting Joint (constrained)...
+
+--- Results ---
+Channel A: R = 0.2116 * exp(i * -64.0°)
+Channel B: R = 0.2411 * exp(i * -48.0°)
+Shared:    R = 0.2268 * exp(i * -55.0°)
+
+--- Fit Quality ---
+Channel A: χ²/dof = 1.699, deviance/dof = 1.702
+Channel B: χ²/dof = 1.391 (Gaussian)
+Gates pass: A=True, B=True
+
+--- Likelihood Ratio ---
+NLL unconstrained: 1277.42
+NLL constrained:   1280.39
+Λ = -2ΔlnL = -5.936
+
+Running 100 bootstrap replicates...
+Valid replicates: 100/100
+Λ_boot median: -8.091
+Λ_boot 95th: -1.691
+p-value: 0.3200
+
+>>> VERDICT: SUPPORTED <<<
+Reason: Rank-1 constraint not rejected (p = 0.3200)
+
+======================================================================
+SUMMARY
+======================================================================
+
+Pair 1 (T1 vs T2 - both Poisson):
+  Main: MODEL MISMATCH (p=0.3467)
+  Tight window: MODEL MISMATCH (p=0.4100)
+  Quadratic bg: SUPPORTED (p=0.4000)
+
+Pair 2 (T1 vs T3 - Poisson/Gaussian):
+  Main: MODEL MISMATCH (p=0.2833)
+  Tight window: MODEL MISMATCH (p=0.2400)
+  Quadratic bg: SUPPORTED (p=0.3200)
+
+Outputs saved to /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v2/out/

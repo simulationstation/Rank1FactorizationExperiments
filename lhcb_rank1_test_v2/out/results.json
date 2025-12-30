@@ -1,0 +1,254 @@
+{
+  "pair1_main": {
+    "pair_name": "Pair1_T1vsT2",
+    "window": [
+      4270,
+      4520
+    ],
+    "bg_type": "linear",
+    "ratio_A": {
+      "r": 0.19258380533344582,
+      "phi": -0.8791886096007002,
+      "phi_deg": -50.37379672609513
+    },
+    "ratio_B": {
+      "r": 0.25888209136134854,
+      "phi": -0.4251143634323479,
+      "phi_deg": -24.35725883506415
+    },
+    "ratio_shared": {
+      "r": 0.2202487398471619,
+      "phi": -0.6451600101173143,
+      "phi_deg": -36.9649456903396
+    },
+    "lambda_obs": -14.645955929745014,
+    "p_value": 0.3466666666666667,
+    "n_bootstrap": 300,
+    "gates_pass": false,
+    "quality_A": {
+      "deviance": 436.4527170418952,
+      "deviance_dof": 3.7303651029221814,
+      "chi2": 437.56996166834773,
+      "chi2_dof": 3.7399142022935705,
+      "n_dof": 117
+    },
+    "quality_B": {
+      "deviance": 293.6735963303231,
+      "deviance_dof": 2.5100307378660096,
+      "chi2": 292.5994438182992,
+      "chi2_dof": 2.5008499471649506,
+      "n_dof": 117
+    },
+    "verdict": "MODEL MISMATCH",
+    "reason": "Fit-health gates failed"
+  },
+  "pair1_tight": {
+    "pair_name": "Pair1_T1vsT2_tight",
+    "window": [
+      4320,
+      4490
+    ],
+    "bg_type": "linear",
+    "ratio_A": {
+      "r": 0.19764224535080996,
+      "phi": -1.2401383854449586,
+      "phi_deg": -71.05469549816425
+    },
+    "ratio_B": {
+      "r": 0.26374625798284257,
+      "phi": -0.690748210067246,
+      "phi_deg": -39.576957143069194
+    },
+    "ratio_shared": {
+      "r": 0.22246239293569414,
+      "phi": -0.972491064214684,
+      "phi_deg": -55.71963359368732
+    },
+    "lambda_obs": -10.280568642506523,
+    "p_value": 0.41,
+    "n_bootstrap": 100,
+    "gates_pass": false,
+    "quality_A": {
+      "deviance": 261.95464489897563,
+      "deviance_dof": 3.4020083753113717,
+      "chi2": 260.8459814444583,
+      "chi2_dof": 3.3876101486293284,
+      "n_dof": 77
+    },
+    "quality_B": {
+      "deviance": 155.39088981153068,
+      "deviance_dof": 2.018063504045853,
+      "chi2": 155.01072729275253,
+      "chi2_dof": 2.0131263284773055,
+      "n_dof": 77
+    },
+    "verdict": "MODEL MISMATCH",
+    "reason": "Fit-health gates failed"
+  },
+  "pair1_quad": {
+    "pair_name": "Pair1_T1vsT2_quad",
+    "window": [
+      4270,
+      4520
+    ],
+    "bg_type": "quadratic",
+    "ratio_A": {
+      "r": 0.211639258246069,
+      "phi": -1.116482897208246,
+      "phi_deg": -63.96975790857101
+    },
+    "ratio_B": {
+      "r": 0.27814352488329663,
+      "phi": -0.609793706998089,
+      "phi_deg": -34.93860578462763
+    },
+    "ratio_shared": {
+      "r": 0.2381238948711981,
+      "phi": -0.8580459087311594,
+      "phi_deg": -49.162409198762866
+    },
+    "lambda_obs": -15.660395232758674,
+    "p_value": 0.4,
+    "n_bootstrap": 100,
+    "gates_pass": true,
+    "quality_A": {
+      "deviance": 197.42914172409536,
+      "deviance_dof": 1.7019753596904772,
+      "chi2": 197.0712425788282,
+      "chi2_dof": 1.6988900222312775,
+      "n_dof": 116
+    },
+    "quality_B": {
+      "deviance": 133.1567689655119,
+      "deviance_dof": 1.1479031807371716,
+      "chi2": 132.57640902918976,
+      "chi2_dof": 1.1429000778378429,
+      "n_dof": 116
+    },
+    "verdict": "SUPPORTED",
+    "reason": "Rank-1 constraint not rejected (p = 0.4000)"
+  },
+  "pair2_main": {
+    "pair_name": "Pair2_T1vsT3",
+    "window": [
+      4270,
+      4520
+    ],
+    "bg_type": "linear",
+    "ratio_A": {
+      "r": 0.19258380533344582,
+      "phi": -0.8791886096007002,
+      "phi_deg": -50.37379672609513
+    },
+    "ratio_B": {
+      "r": 0.4168094594927162,
+      "phi": 2.1746142653281897,
+      "phi_deg": 124.59621947224745
+    },
+    "ratio_shared": {
+      "r": 0.21045306635903874,
+      "phi": -0.7127590394385183,
+      "phi_deg": -40.83808476962569
+    },
+    "lambda_obs": -6.911600484455903,
+    "p_value": 0.2833333333333333,
+    "n_bootstrap": 300,
+    "gates_pass": false,
+    "quality_A": {
+      "deviance": 436.4527170418952,
+      "deviance_dof": 3.7303651029221814,
+      "chi2": 437.56996166834773,
+      "chi2_dof": 3.7399142022935705,
+      "n_dof": 117
+    },
+    "quality_B": {
+      "chi2": 404.57445849918696,
+      "chi2_dof": 3.4579013546939055,
+      "n_dof": 117
+    },
+    "verdict": "MODEL MISMATCH",
+    "reason": "Fit-health gates failed"
+  },
+  "pair2_tight": {
+    "pair_name": "Pair2_T1vsT3_tight",
+    "window": [
+      4320,
+      4490
+    ],
+    "bg_type": "linear",
+    "ratio_A": {
+      "r": 0.19764224535080996,
+      "phi": -1.2401383854449586,
+      "phi_deg": -71.05469549816425
+    },
+    "ratio_B": {
+      "r": 0.22900312823471897,
+      "phi": -0.916993037066695,
+      "phi_deg": -52.53983086680508
+    },
+    "ratio_shared": {
+      "r": 0.21340691490595368,
+      "phi": -1.0582641419709797,
+      "phi_deg": -60.6340689449705
+    },
+    "lambda_obs": -3.532724041653637,
+    "p_value": 0.24,
+    "n_bootstrap": 100,
+    "gates_pass": false,
+    "quality_A": {
+      "deviance": 261.95464489897563,
+      "deviance_dof": 3.4020083753113717,
+      "chi2": 260.8459814444583,
+      "chi2_dof": 3.3876101486293284,
+      "n_dof": 77
+    },
+    "quality_B": {
+      "chi2": 209.47982600299696,
+      "chi2_dof": 2.7205172208181425,
+      "n_dof": 77
+    },
+    "verdict": "MODEL MISMATCH",
+    "reason": "Fit-health gates failed"
+  },
+  "pair2_quad": {
+    "pair_name": "Pair2_T1vsT3_quad",
+    "window": [
+      4270,
+      4520
+    ],
+    "bg_type": "quadratic",
+    "ratio_A": {
+      "r": 0.211639258246069,
+      "phi": -1.116482897208246,
+      "phi_deg": -63.96975790857101
+    },
+    "ratio_B": {
+      "r": 0.2410885633833787,
+      "phi": -0.8381759190176536,
+      "phi_deg": -48.023942649210625
+    },
+    "ratio_shared": {
+      "r": 0.22676405526721533,
+      "phi": -0.96020154680567,
+      "phi_deg": -55.015496113898266
+    },
+    "lambda_obs": -5.936433902511453,
+    "p_value": 0.32,
+    "n_bootstrap": 100,
+    "gates_pass": true,
+    "quality_A": {
+      "deviance": 197.42914172409536,
+      "deviance_dof": 1.7019753596904772,
+      "chi2": 197.0712425788282,
+      "chi2_dof": 1.6988900222312775,
+      "n_dof": 116
+    },
+    "quality_B": {
+      "chi2": 161.33545581154036,
+      "chi2_dof": 1.390822894927072,
+      "n_dof": 116
+    },
+    "verdict": "SUPPORTED",
+    "reason": "Rank-1 constraint not rejected (p = 0.3200)"
+  }
+}

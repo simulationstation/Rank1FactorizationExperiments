@@ -1,0 +1,10 @@
+# Commands for LHCb Pentaquark Rank-1 Test v2
+
+# 1. Copy data
+cp lhcb_rank1_test/data/hepdata/89271_t*.csv lhcb_rank1_test_v2/data/hepdata/
+
+# 2. Run analysis
+nohup python3 -u src/pentaquark_rank1_v2.py > logs/analysis.log 2>&1 &
+
+# 3. Monitor
+tail -f logs/analysis.log
