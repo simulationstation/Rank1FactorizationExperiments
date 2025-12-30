@@ -1,0 +1,22 @@
+{
+  "channel_A": {
+    "r": 0.6331340873292702,
+    "phi_deg": -55.78394766245267,
+    "chi2_dof": 1.016286225275991
+  },
+  "channel_B": {
+    "r": 0.9231195970982796,
+    "phi_deg": -98.41779082419725,
+    "chi2_dof": 2.486865269540029
+  },
+  "shared": {
+    "r": 0.5963744496285257,
+    "phi_deg": -49.86489141266856
+  },
+  "likelihood_ratio": {
+    "Lambda": 1.8247718147333671,
+    "bootstrap_p_value": 0.4033333333333333,
+    "n_bootstrap": 300
+  },
+  "verdict": "RANK-1 CONSTRAINT SUPPORTED"
+}
