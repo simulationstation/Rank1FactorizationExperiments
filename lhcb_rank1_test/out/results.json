@@ -1,0 +1,50 @@
+{
+  "data_source": {
+    "hepdata_record": 89271,
+    "inspire_id": 1728691,
+    "doi": "10.1103/PhysRevLett.122.222001",
+    "url": "https://www.hepdata.net/record/ins1728691",
+    "channel_A": "Table 1 - Full m(J/psi p) spectrum (unweighted)",
+    "channel_B": "Table 3 - cos theta_Pc weighted m(J/psi p) spectrum"
+  },
+  "fit_window": [4250, 4550],
+  "pentaquark_params": {
+    "Pc4312": {"mass": 4311.9, "width": 9.8},
+    "Pc4440": {"mass": 4440.3, "width": 20.6},
+    "Pc4457": {"mass": 4457.3, "width": 6.4}
+  },
+  "unconstrained": {
+    "channel_A": {
+      "chi2_dof": 3.647,
+      "deviance_dof": 3.650,
+      "ratio_4457_4440": {"mag": 0.2353, "phase_deg": 95.0}
+    },
+    "channel_B": {
+      "chi2_dof": 6.042,
+      "deviance_dof": 6.072,
+      "ratio_4457_4440": {"mag": 0.2538, "phase_deg": 38.4}
+    },
+    "nll_total": -2554216.38
+  },
+  "constrained": {
+    "nll": -2554229.70,
+    "ratio_shared": {"mag": 0.2382}
+  },
+  "likelihood_ratio_test": {
+    "lambda_obs": 26.653,
+    "n_bootstrap": 300,
+    "lambda_boot_median": 46.554,
+    "lambda_boot_95": 155.170,
+    "p_value": 0.73
+  },
+  "fit_health": {
+    "A_chi2_dof": 3.647,
+    "A_deviance_dof": 3.650,
+    "B_chi2_dof": 6.042,
+    "B_deviance_dof": 6.072,
+    "gates_pass": false,
+    "gate_threshold": 3.0
+  },
+  "verdict": "MODEL MISMATCH",
+  "verdict_reason": "Fit-health gates failed (chi2/dof or deviance/dof > 3)"
+}

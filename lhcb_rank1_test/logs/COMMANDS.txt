@@ -1,0 +1,25 @@
+# Commands executed for LHCb Pentaquark Rank-1 Bottleneck Test
+# Date: 2025-12-29
+
+# 1. Create workspace
+mkdir -p lhcb_rank1_test/{data/{hepdata,supplement},src,out,logs}
+
+# 2. Search HEPData
+# Found record 89271 (INSPIRE 1728691) for DOI 10.1103/PhysRevLett.122.222001
+# Tables available:
+#   - Table 1: Full m(J/psi p) spectrum (unweighted)
+#   - Table 2: m(J/psi p) spectrum with m(Kp) > 1.9 GeV cut
+#   - Table 3: cos theta_Pc weighted m(J/psi p) spectrum
+#   - Table 4: Weight function spline
+
+# 3. Download HEPData tables
+curl -sL "https://www.hepdata.net/download/table/ins1728691/Table%201/csv" -o data/hepdata/89271_t1_spectrum_full.csv
+curl -sL "https://www.hepdata.net/download/table/ins1728691/Table%202/csv" -o data/hepdata/89271_t2_spectrum_mKp_cut.csv
+curl -sL "https://www.hepdata.net/download/table/ins1728691/Table%203/csv" -o data/hepdata/89271_t3_spectrum_weighted.csv
+curl -sL "https://www.hepdata.net/download/table/ins1728691/Table%204/csv" -o data/hepdata/89271_t4_weight_function.csv
+
+# 4. Run analysis (with nohup for long-running bootstrap)
+nohup python3 -u src/pentaquark_rank1_test.py > logs/analysis.log 2>&1 &
+
+# Monitor progress
+tail -f logs/analysis.log

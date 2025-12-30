@@ -1,0 +1,81 @@
+============================================================
+LHCb Pentaquark Rank-1 Bottleneck Test
+============================================================
+
+Loading data...
+Channel A (unweighted): 546 bins, 501562 total events
+Channel B (weighted):   546 bins, 501562 total events
+
+Fit window: 4250-4550 MeV
+Channel A: 150 bins in window
+Channel B: 150 bins in window
+
+========================================
+STEP 1: Unconstrained Fits
+========================================
+
+Fitting Channel A (unweighted)...
+
+Fitting Channel B (weighted)...
+
+--- Fit Quality Check ---
+Channel A: χ²/dof = 3.647, deviance/dof = 3.650
+Channel B: χ²/dof = 6.042, deviance/dof = 6.072
+WARNING: Channel A fails fit-health gate!
+WARNING: Channel B fails fit-health gate!
+
+--- Amplitude Ratios R = c(4457)/c(4440) ---
+Channel A: |R| = 0.2353, arg(R) = 95.0°
+Channel B: |R| = 0.2538, arg(R) = 38.4°
+Saved plot: /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test/out/fit_A.png
+Saved plot: /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test/out/fit_B.png
+
+========================================
+STEP 2: Constrained Fit (Rank-1 Test)
+========================================
+
+Fitting with R_A = R_B constraint...
+
+NLL unconstrained (A+B): -2554216.38
+NLL constrained:         -2554229.70
+Λ = -2ΔlnL:              26.653
+Shared ratio |R|: 0.2382
+
+========================================
+STEP 3: Bootstrap p-value
+========================================
+Running 300 bootstrap replicates with 31 workers...
+
+Bootstrap results:
+  Valid replicates: 300/300
+  Λ_obs = 26.653
+  Λ_boot median = 46.554
+  Λ_boot 95th = 155.170
+  p-value = 0.7300 (219/300)
+
+========================================
+VERDICT
+========================================
+
+>>> MODEL MISMATCH <<<
+Reason: Fit-health gates failed (χ²/dof or deviance/dof > 3)
+Traceback (most recent call last):
+  File "/home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test/src/pentaquark_rank1_test.py", line 876, in <module>
+    results = main()
+              ^^^^^^
+  File "/home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test/src/pentaquark_rank1_test.py", line 740, in main
+    json.dump(results, f, indent=2)
+  File "/usr/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool_ is not JSON serializable
