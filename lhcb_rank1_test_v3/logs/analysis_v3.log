@@ -1,0 +1,186 @@
+======================================================================
+LHCb Pentaquark Rank-1 Bottleneck Test v3
+Rigorous implementation with Λ >= 0 guarantee
+======================================================================
+
+Loading data...
+Table 1 (full): 546 bins
+Table 2 (mKp cut): 521 bins
+
+######################################################################
+# Configuration: wide_linear
+######################################################################
+
+============================================================
+Window: 4270-4520 MeV, Background: linear
+============================================================
+Channel A: 125 bins, 86265 counts
+Channel B: 125 bins, 22456 counts
+
+Fitting Channel A (80 restarts)...
+Fitting Channel B (80 restarts)...
+Fitting Joint constrained (80 restarts)...
+
+--- Results ---
+R_A = 0.1926 * exp(i * -50.4°)
+R_B = 0.2589 * exp(i * -24.4°)
+R_shared = 0.4154 * exp(i * 125.5°)
+
+--- Fit Quality ---
+A: χ²/dof = 3.740, deviance/dof = 3.730
+B: χ²/dof = 2.501, deviance/dof = 2.510
+
+--- Likelihood Ratio ---
+NLL_unc (A+B) = 1325.0606
+NLL_con = 1331.0015
+Λ = 2*(NLL_con - NLL_unc) = 11.8819
+
+Running 500 bootstrap replicates...
+Valid replicates: 500/500
+Λ_boot median: 0.753
+Λ_boot 95th: 3.939
+p-value: 0.0000
+Saved: /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v3/out/fit_wide_linear.png
+
+######################################################################
+# Configuration: wide_quadratic
+######################################################################
+
+============================================================
+Window: 4270-4520 MeV, Background: quadratic
+============================================================
+Channel A: 125 bins, 86265 counts
+Channel B: 125 bins, 22456 counts
+
+Fitting Channel A (80 restarts)...
+Fitting Channel B (80 restarts)...
+Fitting Joint constrained (80 restarts)...
+
+--- Results ---
+R_A = 0.2116 * exp(i * -64.0°)
+R_B = 0.2781 * exp(i * -34.9°)
+R_shared = 0.2388 * exp(i * -49.4°)
+
+--- Fit Quality ---
+A: χ²/dof = 1.699, deviance/dof = 1.702
+B: χ²/dof = 1.143, deviance/dof = 1.148
+
+--- Likelihood Ratio ---
+NLL_unc (A+B) = 1125.2904
+NLL_con = 1130.1603
+Λ = 2*(NLL_con - NLL_unc) = 9.7399
+
+Running 500 bootstrap replicates...
+Valid replicates: 500/500
+Λ_boot median: 0.712
+Λ_boot 95th: 4.453
+p-value: 0.0020
+Saved: /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v3/out/fit_wide_quadratic.png
+
+######################################################################
+# Configuration: tight_linear
+######################################################################
+
+============================================================
+Window: 4320-4490 MeV, Background: linear
+============================================================
+Channel A: 85 bins, 62284 counts
+Channel B: 85 bins, 16226 counts
+
+Fitting Channel A (80 restarts)...
+Fitting Channel B (80 restarts)...
+Fitting Joint constrained (80 restarts)...
+
+--- Results ---
+R_A = 0.1976 * exp(i * -71.1°)
+R_B = 0.2637 * exp(i * -39.6°)
+R_shared = 0.2221 * exp(i * -55.8°)
+
+--- Fit Quality ---
+A: χ²/dof = 3.388, deviance/dof = 3.402
+B: χ²/dof = 2.013, deviance/dof = 2.018
+
+--- Likelihood Ratio ---
+NLL_unc (A+B) = 867.1976
+NLL_con = 872.1416
+Λ = 2*(NLL_con - NLL_unc) = 9.8881
+
+Running 500 bootstrap replicates...
+Valid replicates: 500/500
+Λ_boot median: 0.568
+Λ_boot 95th: 3.303
+p-value: 0.0000
+Saved: /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v3/out/fit_tight_linear.png
+
+######################################################################
+# Configuration: tight_quadratic
+######################################################################
+
+============================================================
+Window: 4320-4490 MeV, Background: quadratic
+============================================================
+Channel A: 85 bins, 62284 counts
+Channel B: 85 bins, 16226 counts
+
+Fitting Channel A (80 restarts)...
+Fitting Channel B (80 restarts)...
+Fitting Joint constrained (80 restarts)...
+
+--- Results ---
+R_A = 0.2734 * exp(i * 289.3°)
+R_B = 0.2978 * exp(i * -42.2°)
+R_shared = 0.2876 * exp(i * -57.5°)
+
+--- Fit Quality ---
+A: χ²/dof = 1.074, deviance/dof = 1.069
+B: χ²/dof = 1.152, deviance/dof = 1.151
+
+--- Likelihood Ratio ---
+NLL_unc (A+B) = 742.9088
+NLL_con = 744.6996
+Λ = 2*(NLL_con - NLL_unc) = 3.5817
+
+Running 500 bootstrap replicates...
+Valid replicates: 500/500
+Λ_boot median: 0.616
+Λ_boot 95th: 3.762
+p-value: 0.0560
+Saved: /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v3/out/fit_tight_quadratic.png
+
+======================================================================
+BACKGROUND SELECTION (AIC/BIC)
+======================================================================
+
+WIDE window:
+  Linear:    AIC = 2682.12, BIC = 2727.37
+  Quadratic: AIC = 2286.58, BIC = 2337.49
+  ΔAIC (quad - lin) = -395.54
+  → Selected: QUADRATIC (ΔAIC < -2)
+
+TIGHT window:
+  Linear:    AIC = 1766.40, BIC = 1805.48
+  Quadratic: AIC = 1521.82, BIC = 1565.79
+  ΔAIC (quad - lin) = -244.58
+  → Selected: QUADRATIC (ΔAIC < -2)
+
+Generating contour plots...
+Saved: /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v3/out/contours_wide.png
+Saved: /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v3/out/contours_tight.png
+
+======================================================================
+VERDICTS
+======================================================================
+
+WIDE window (using quadratic bg):
+  Λ = 9.7399, p = 0.0020
+  → UNSTABLE: R varies 0.177 between backgrounds
+
+TIGHT window (using quadratic bg):
+  Λ = 3.5817, p = 0.0560
+  → SUPPORTED: p = 0.0560, gates pass, stable
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================
+
+Outputs saved to /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v3/out/
