@@ -1,0 +1,42 @@
+{
+  "channel_4mu": {
+    "r": 0.4148146651943384,
+    "phi_deg": -87.68810465218061,
+    "nll": -1474.7516439549788,
+    "chi2_dof": 2.413051181623595,
+    "nuisances": {
+      "s_x": 1.0162707273316471,
+      "b_x_MeV": 11.354418006501694,
+      "s_y": 1.006401031586386
+    }
+  },
+  "channel_4mu2pi": {
+    "r": 0.21583764436571543,
+    "phi_deg": -15.703536084716351,
+    "nll": -2520.42843211233,
+    "chi2_dof": 7.631540828557225,
+    "nuisances": {
+      "s_x": 1.0232027223916247,
+      "b_x_MeV": 9.302947673331149,
+      "s_y": 1.0240872074710319
+    }
+  },
+  "shared": {
+    "r": 0.21417282282134095,
+    "phi_deg": -14.592348255411602
+  },
+  "contour_check": {
+    "shared_in_4mu_68": true,
+    "shared_in_4mu_95": true,
+    "shared_in_4mu2pi_68": true,
+    "shared_in_4mu2pi_95": true
+  },
+  "likelihood_ratio": {
+    "Lambda": -0.13283351172867697,
+    "nll_unconstrained": -3995.1800760673086,
+    "nll_constrained": -3995.246492823173,
+    "bootstrap_p_value": 0.8933333333333333,
+    "n_bootstrap": 300
+  },
+  "verdict": "RANK-1 CONSTRAINT SUPPORTED"
+}
