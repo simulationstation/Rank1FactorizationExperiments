@@ -1,0 +1,10 @@
+# Data files (downloaded/derived)
+data/
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Large debug images
+out/debug_*.png

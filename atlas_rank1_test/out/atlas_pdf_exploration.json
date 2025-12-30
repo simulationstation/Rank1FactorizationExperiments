@@ -1,0 +1,17 @@
+{
+  "fig_01a.pdf": {
+    "n_rects": 73,
+    "n_curves": 72,
+    "n_numbers": 17
+  },
+  "fig_01b.pdf": {
+    "n_rects": 35,
+    "n_curves": 34,
+    "n_numbers": 14
+  },
+  "fig_01c.pdf": {
+    "n_rects": 38,
+    "n_curves": 37,
+    "n_numbers": 17
+  }
+}
