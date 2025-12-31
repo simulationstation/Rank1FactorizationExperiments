@@ -1,0 +1,77 @@
+Subject: Request for Zc(3900) Numeric Data Tables (π J/ψ and D D* mass spectra)
+
+Dear BESIII Collaboration Publications Committee,
+
+I am conducting a systematic study of amplitude factorization in exotic hadron
+decays, specifically testing whether the complex production amplitude ratios
+are shared across different decay channels (a "rank-1 bottleneck" test).
+
+The Zc(3900) charged exotic state is an ideal candidate for this test, as it
+was observed in two distinct final states:
+
+1. π± J/ψ - as reported in PRL 110, 252001 (2013)
+2. D D̄* - as reported in PRL 112, 022001 (2014)
+
+I was able to find the π± J/ψ invariant mass spectrum data on HEPData
+(record ins2922807, from the 2025 PWA paper). However, I could not find
+the corresponding D D̄* invariant mass spectrum data.
+
+REQUEST:
+========
+
+I am writing to request numeric tables for the following:
+
+1. M(D D̄*) or M(DD*) invariant mass distribution from e⁺e⁻ → π± (D D̄*)∓
+   at √s = 4.26 GeV (from PRL 112, 022001 or subsequent analyses)
+
+   Specifically needed:
+   - Binned M(D D̄*) mass spectrum
+   - Efficiency-corrected event counts or cross section
+   - Statistical and systematic uncertainties per bin
+   - Background estimates if available
+
+2. If possible, the same data at multiple center-of-mass energies
+   (as available in the π J/ψ PWA analysis)
+
+FORMAT:
+=======
+
+Any standard format would be acceptable:
+- CSV/TSV with mass bins and counts
+- HEPData YAML format
+- ROOT histogram (TH1)
+- ASCII table
+
+PURPOSE:
+========
+
+The analysis tests whether the Zc(3900) production amplitude follows a
+rank-1 factorization structure, where the relative phase and magnitude
+of interfering resonance contributions should be identical across
+π J/ψ and D D̄* channels if the production mechanism is universal.
+
+This would provide important information about the nature of the Zc(3900)
+(compact tetraquark vs. molecular state vs. kinematic effect).
+
+PUBLICATION:
+============
+
+If data is provided, full acknowledgment of the BESIII collaboration and
+proper citation of the original publications will be included in any
+resulting analysis.
+
+Thank you for considering this request. I understand data sharing policies
+may require collaboration approval, and I am happy to provide additional
+details about the planned analysis if needed.
+
+Best regards,
+
+[Your Name]
+[Your Institution]
+[Your Email]
+
+---
+Date: 2025-12-30
+HEPData search conducted: Yes
+π J/ψ data found: HEPData record ins2922807
+D D̄* data found: Not on HEPData
