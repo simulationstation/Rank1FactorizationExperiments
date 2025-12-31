@@ -1,0 +1,5 @@
+# Extracted from arXiv:1308.2760
+# BESIII Zc(4025) observation in e+e- -> D*D*bar pi at sqrt(s)=4.26 GeV
+# Only one energy point available
+sqrt_s_GeV,mass_MeV,mass_stat,mass_syst,width_MeV,width_stat,width_syst,N_signal,N_stat,sigma_total_pb,sigma_stat,sigma_syst,ratio_R,R_stat,R_syst
+4.260,4026.3,2.6,3.7,24.8,5.6,7.7,400.9,47.3,137,9,15,0.65,0.09,0.06

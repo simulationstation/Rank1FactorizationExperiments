@@ -1,0 +1,6 @@
+Tue Dec 30 20:09:47 HST 2025: Created zc_rank1_test_v2 folder structure
+Tue Dec 30 20:12:34 HST 2025: Downloaded and extracted arXiv sources 1309.1896, 1308.2760, 1310.1163
+Tue Dec 30 20:15:56 HST 2025: Extracted LaTeX tables to CSV files
+Tue Dec 30 20:15:56 HST 2025: Stop condition met - no binned mass spectra in D*D* or DD* channels
+Tue Dec 30 20:15:56 HST 2025: Generated NO_DATA.md, EMAIL_REQUEST.txt, REPORT.md
+Tue Dec 30 20:15:56 HST 2025: Final verdict: NO DATA

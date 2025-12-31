@@ -1,0 +1,839 @@
+%%\RequirePackage{lineno}
+\documentclass[aps,preprint,tightenlines,superscriptaddress,showpacs]{revtex4}
+%%\documentclass[aps,preprint,superscriptaddress,showpacs]{revtex4}
+%%\documentclass[prl,showpacs,superscriptaddress,twocolumn]{revtex4}
+%%\documentclass[aps,prl,preprint,superscriptaddress,showpacs,byrevtex]{revtex4}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{color}
+%%\usepackage{lineno}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\BR}{{\cal B}}
+\newcommand{\pp}{\pi^+\pi^-}
+\newcommand{\pip}{\pi^+}
+\newcommand{\pim}{\pi^-}
+\newcommand{\pipm}{\pi^\pm}
+\newcommand{\pimp}{\pi^\mp}
+\newcommand{\ks}{K_S^0}
+\newcommand{\piz}{\pi^0}
+\newcommand{\jpc}{J^{PC}}
+\newcommand{\kk}{K^+K^-}
+\newcommand{\LL}{\ell^+\ell^-}
+\newcommand{\EE}{e^+e^-}
+\newcommand{\MM}{\mu^+\mu^-}
+\newcommand{\GG}{\gamma\gamma}
+\newcommand{\psip}{\psi(3686)}
+\newcommand{\psipp}{\psi(3770)}
+\newcommand{\etac}{\eta_c}
+\newcommand{\jpsi}{J/\psi}
+\newcommand{\pcpcjpsi}{\pi^+\pi^-J/\psi}
+\newcommand{\pzpzjpsi}{\pi^0\pi^0J/\psi}
+\newcommand{\ppjpsi}{\pcpcjpsi}
+%%\newcommand{\hc}{h_c(^1P_1)}
+\newcommand{\hc}{h_c}
+\newcommand{\pphc}{\pi^+\pi^-\hc}
+\newcommand{\y}{Y(4260)}
+\newcommand{\yone}{Y(4360)}
+\newcommand{\ytwo}{Y(4660)}
+\newcommand{\zc}{Z_c(3900)}
+\newcommand{\zcp}{Z_c(4020)}
+\newcommand{\psithr}{\psi(4040)}
+\newcommand{\psifou}{\psi(4160)}
+\newcommand{\psifiv}{\psi(4415)}
+\newcommand{\ddb}{D\bar{D}}
+\newcommand{\ddstarb}{D^*\bar{D}+c.c.}
+\newcommand{\bbb}{B\bar{B}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\mkred#1{{\color{red}#1}}
+%\def\mkgreen#1{{\color{green}#1}}
+%\def\mkblue#1{{\color{blue}#1}}
+\def\eref#1{(\ref{#1})}
+\def\Journal#1#2#3#4{{#1} {\bf #2}, #3 (#4)}
+\def\IJMP{Int. J. Mod. Phys. A}
+\def\NCA{Nuovo Cimento}
+\def\NIM{Nucl. Instrum. Methods}
+\def\NIMA{Nucl. Instrum. Methods A}
+\def\NPB{Nucl. Phys. B}
+\def\PLB{Phys. Lett. B}
+\def\PRL{Phys. Rev. Lett.}
+\def\PRD{Phys. Rev. D}
+\def\PRP{Phys. Rep.}
+\def\ZPC{Z. Phys. C}
+\def\EPJC{Eur. Phys. J. C}
+\def\HEPNP{HEP \& NP}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\parskip=5pt plus 1pt minus 1pt
+
+\begin{document}
+%%\linenumbers
+%%\peprint{ \vbox{ \hbox{   }
+%%          \hbox{Intended for {\it Phys. Rev. Lett.}}
+%%          \hbox{Authors: Y. P. Guo, C. Z. Yuan, C. X. Yu}
+%%        }}
+
+\title{%%\quad\\[1.0cm]
+\boldmath
+Observation of a charged charmoniumlike structure $\zcp$ and
+search for the $\zc$ in $\EE\to \pp\hc$}
+
+\author{
+%%\begin{small}
+%%\begin{center}
+ {%%\small
+M.~Ablikim$^{1}$, M.~N.~Achasov$^{8,a}$, O.~Albayrak$^{4}$,
+D.~J.~Ambrose$^{41}$, F.~F.~An$^{1}$, Q.~An$^{42}$,
+J.~Z.~Bai$^{1}$, R.~Baldini Ferroli$^{19A}$, Y.~Ban$^{28}$,
+J.~Becker$^{3}$, J.~V.~Bennett$^{18}$, M.~Bertani$^{19A}$,
+J.~M.~Bian$^{40}$, E.~Boger$^{21,b}$, O.~Bondarenko$^{22}$,
+I.~Boyko$^{21}$, S.~Braun$^{37}$, R.~A.~Briere$^{4}$,
+V.~Bytev$^{21}$, H.~Cai$^{46}$, X.~Cai$^{1}$, O. ~Cakir$^{36A}$,
+A.~Calcaterra$^{19A}$, G.~F.~Cao$^{1}$, S.~A.~Cetin$^{36B}$,
+J.~F.~Chang$^{1}$, G.~Chelkov$^{21,b}$, G.~Chen$^{1}$,
+H.~S.~Chen$^{1}$, J.~C.~Chen$^{1}$, M.~L.~Chen$^{1}$,
+S.~J.~Chen$^{26}$, X.~R.~Chen$^{23}$, Y.~B.~Chen$^{1}$,
+H.~P.~Cheng$^{16}$, X.~K.~Chu$^{28}$, Y.~P.~Chu$^{1}$,
+D.~Cronin-Hennessy$^{40}$, H.~L.~Dai$^{1}$, J.~P.~Dai$^{1}$,
+D.~Dedovich$^{21}$, Z.~Y.~Deng$^{1}$, A.~Denig$^{20}$,
+I.~Denysenko$^{21}$, M.~Destefanis$^{45A,45C}$, W.~M.~Ding$^{30}$,
+Y.~Ding$^{24}$, L.~Y.~Dong$^{1}$, M.~Y.~Dong$^{1}$,
+S.~X.~Du$^{48}$, J.~Fang$^{1}$, S.~S.~Fang$^{1}$,
+L.~Fava$^{45B,45C}$, C.~Q.~Feng$^{42}$, P.~Friedel$^{3}$,
+C.~D.~Fu$^{1}$, J.~L.~Fu$^{26}$, O.~Fuks$^{21,b}$, Y.~Gao$^{35}$,
+C.~Geng$^{42}$, K.~Goetzen$^{9}$, W.~X.~Gong$^{1}$,
+W.~Gradl$^{20}$, M.~Greco$^{45A,45C}$, M.~H.~Gu$^{1}$,
+Y.~T.~Gu$^{11}$, Y.~H.~Guan$^{38}$, A.~Q.~Guo$^{27}$,
+L.~B.~Guo$^{25}$, T.~Guo$^{25}$, Y.~P.~Guo$^{27,20}$,
+Y.~L.~Han$^{1}$, F.~A.~Harris$^{39}$, K.~L.~He$^{1}$, M.~He$^{1}$,
+Z.~Y.~He$^{27}$, T.~Held$^{3}$, Y.~K.~Heng$^{1}$, Z.~L.~Hou$^{1}$,
+C.~Hu$^{25}$, H.~M.~Hu$^{1}$, J.~F.~Hu$^{37}$, T.~Hu$^{1}$,
+G.~M.~Huang$^{5}$, G.~S.~Huang$^{42}$, J.~S.~Huang$^{14}$,
+L.~Huang$^{1}$, X.~T.~Huang$^{30}$, Y.~Huang$^{26}$,
+T.~Hussain$^{44}$, C.~S.~Ji$^{42}$, Q.~Ji$^{1}$, Q.~P.~Ji$^{27}$,
+X.~B.~Ji$^{1}$, X.~L.~Ji$^{1}$, L.~L.~Jiang$^{1}$,
+X.~S.~Jiang$^{1}$, J.~B.~Jiao$^{30}$, Z.~Jiao$^{16}$,
+D.~P.~Jin$^{1}$, S.~Jin$^{1}$, F.~F.~Jing$^{35}$,
+N.~Kalantar-Nayestanaki$^{22}$, M.~Kavatsyuk$^{22}$,
+B.~Kloss$^{20}$, B.~Kopf$^{3}$, M.~Kornicer$^{39}$,
+W.~Kuehn$^{37}$, W.~Lai$^{1}$, J.~S.~Lange$^{37}$, M.~Lara$^{18}$,
+P. ~Larin$^{13}$, M.~Leyhe$^{3}$, C.~H.~Li$^{1}$, Cheng~Li$^{42}$,
+Cui~Li$^{42}$, D.~L~Li$^{17}$, D.~M.~Li$^{48}$, F.~Li$^{1}$,
+G.~Li$^{1}$, H.~B.~Li$^{1}$, J.~C.~Li$^{1}$, K.~Li$^{12}$,
+Lei~Li$^{1}$, N.~Li$^{11}$, P.~R.~Li$^{38}$, Q.~J.~Li$^{1}$,
+W.~D.~Li$^{1}$, W.~G.~Li$^{1}$, X.~L.~Li$^{30}$, X.~N.~Li$^{1}$,
+X.~Q.~Li$^{27}$, X.~R.~Li$^{29}$, Z.~B.~Li$^{34}$,
+H.~Liang$^{42}$, Y.~F.~Liang$^{32}$, Y.~T.~Liang$^{37}$,
+G.~R.~Liao$^{35}$, D.~X.~Lin$^{13}$, B.~J.~Liu$^{1}$,
+C.~L.~Liu$^{4}$, C.~X.~Liu$^{1}$, F.~H.~Liu$^{31}$,
+Fang~Liu$^{1}$, Feng~Liu$^{5}$, H.~B.~Liu$^{11}$,
+H.~H.~Liu$^{15}$, H.~M.~Liu$^{1}$, J.~P.~Liu$^{46}$,
+K.~Liu$^{35}$, K.~Y.~Liu$^{24}$, P.~L.~Liu$^{30}$, Q.~Liu$^{38}$,
+S.~B.~Liu$^{42}$, X.~Liu$^{23}$, Y.~B.~Liu$^{27}$,
+Z.~A.~Liu$^{1}$, Zhiqiang~Liu$^{1}$, Zhiqing~Liu$^{1}$,
+H.~Loehner$^{22}$, X.~C.~Lou$^{1,c}$, G.~R.~Lu$^{14}$,
+H.~J.~Lu$^{16}$, J.~G.~Lu$^{1}$, X.~R.~Lu$^{38}$, Y.~P.~Lu$^{1}$,
+C.~L.~Luo$^{25}$, M.~X.~Luo$^{47}$, T.~Luo$^{39}$,
+X.~L.~Luo$^{1}$, M.~Lv$^{1}$, F.~C.~Ma$^{24}$, H.~L.~Ma$^{1}$,
+Q.~M.~Ma$^{1}$, S.~Ma$^{1}$, T.~Ma$^{1}$, X.~Y.~Ma$^{1}$,
+F.~E.~Maas$^{13}$, M.~Maggiora$^{45A,45C}$, Q.~A.~Malik$^{44}$,
+Y.~J.~Mao$^{28}$, Z.~P.~Mao$^{1}$, J.~G.~Messchendorp$^{22}$,
+J.~Min$^{1}$, T.~J.~Min$^{1}$, R.~E.~Mitchell$^{18}$,
+X.~H.~Mo$^{1}$, H.~Moeini$^{22}$, C.~Morales Morales$^{13}$,
+K.~~Moriya$^{18}$, N.~Yu.~Muchnoi$^{8,a}$, H.~Muramatsu$^{41}$,
+Y.~Nefedov$^{21}$, I.~B.~Nikolaev$^{8,a}$, Z.~Ning$^{1}$,
+S.~Nisar$^{7}$, S.~L.~Olsen$^{29}$, Q.~Ouyang$^{1}$,
+S.~Pacetti$^{19B}$, J.~W.~Park$^{39}$, M.~Pelizaeus$^{3}$,
+H.~P.~Peng$^{42}$, K.~Peters$^{9}$, J.~L.~Ping$^{25}$,
+R.~G.~Ping$^{1}$, R.~Poling$^{40}$, E.~Prencipe$^{20}$,
+M.~Qi$^{26}$, S.~Qian$^{1}$, C.~F.~Qiao$^{38}$, L.~Q.~Qin$^{30}$,
+X.~S.~Qin$^{1}$, Y.~Qin$^{28}$, Z.~H.~Qin$^{1}$, J.~F.~Qiu$^{1}$,
+K.~H.~Rashid$^{44}$, C.~F.~Redmer$^{20}$, M.~Ripka$^{20}$,
+G.~Rong$^{1}$, X.~D.~Ruan$^{11}$, A.~Sarantsev$^{21,d}$,
+S.~Schumann$^{20}$, W.~Shan$^{28}$, M.~Shao$^{42}$,
+C.~P.~Shen$^{2}$, X.~Y.~Shen$^{1}$, H.~Y.~Sheng$^{1}$,
+M.~R.~Shepherd$^{18}$, W.~M.~Song$^{1}$, X.~Y.~Song$^{1}$,
+S.~Spataro$^{45A,45C}$, B.~Spruck$^{37}$, G.~X.~Sun$^{1}$,
+J.~F.~Sun$^{14}$, S.~S.~Sun$^{1}$, Y.~J.~Sun$^{42}$,
+Y.~Z.~Sun$^{1}$, Z.~J.~Sun$^{1}$, Z.~T.~Sun$^{42}$,
+C.~J.~Tang$^{32}$, X.~Tang$^{1}$, I.~Tapan$^{36C}$,
+E.~H.~Thorndike$^{41}$, D.~Toth$^{40}$, M.~Ullrich$^{37}$,
+I.~Uman$^{36B}$, G.~S.~Varner$^{39}$, B.~Wang$^{1}$,
+D.~Wang$^{28}$, D.~Y.~Wang$^{28}$, K.~Wang$^{1}$,
+L.~L.~Wang$^{1}$, L.~S.~Wang$^{1}$, M.~Wang$^{30}$, P.~Wang$^{1}$,
+P.~L.~Wang$^{1}$, Q.~J.~Wang$^{1}$, S.~G.~Wang$^{28}$, X.~F.
+~Wang$^{35}$, X.~L.~Wang$^{42}$, Y.~D.~Wang$^{19A}$,
+Y.~F.~Wang$^{1}$, Y.~Q.~Wang$^{20}$, Z.~Wang$^{1}$,
+Z.~G.~Wang$^{1}$, Z.~H.~Wang$^{42}$, Z.~Y.~Wang$^{1}$,
+D.~H.~Wei$^{10}$, J.~B.~Wei$^{28}$, P.~Weidenkaff$^{20}$,
+Q.~G.~Wen$^{42}$, S.~P.~Wen$^{1}$, M.~Werner$^{37}$,
+U.~Wiedner$^{3}$, L.~H.~Wu$^{1}$, N.~Wu$^{1}$, S.~X.~Wu$^{42}$,
+W.~Wu$^{27}$, Z.~Wu$^{1}$, L.~G.~Xia$^{35}$, Y.~X~Xia$^{17}$,
+Z.~J.~Xiao$^{25}$, Y.~G.~Xie$^{1}$, Q.~L.~Xiu$^{1}$,
+G.~F.~Xu$^{1}$, Q.~J.~Xu$^{12}$, Q.~N.~Xu$^{38}$, X.~P.~Xu$^{33}$,
+Z.~R.~Xu$^{42}$, Z.~Xue$^{1}$, L.~Yan$^{42}$, W.~B.~Yan$^{42}$,
+W.~C~Yan$^{42}$, Y.~H.~Yan$^{17}$, H.~X.~Yang$^{1}$,
+Y.~Yang$^{5}$, Y.~X.~Yang$^{10}$, Y.~Z.~Yang$^{11}$, H.~Ye$^{1}$,
+M.~Ye$^{1}$, M.~H.~Ye$^{6}$, B.~X.~Yu$^{1}$, C.~X.~Yu$^{27}$,
+H.~W.~Yu$^{28}$, J.~S.~Yu$^{23}$, S.~P.~Yu$^{30}$,
+C.~Z.~Yuan$^{1}$, W.~L.~Yuan$^{26}$, Y.~Yuan$^{1}$,
+A.~A.~Zafar$^{44}$, A.~Zallo$^{19A}$, S.~L.~Zang$^{26}$,
+Y.~Zeng$^{17}$, B.~X.~Zhang$^{1}$, B.~Y.~Zhang$^{1}$,
+C.~Zhang$^{26}$, C.~B~Zhang$^{17}$, C.~C.~Zhang$^{1}$,
+D.~H.~Zhang$^{1}$, H.~H.~Zhang$^{34}$, H.~Y.~Zhang$^{1}$,
+J.~Q.~Zhang$^{1}$, J.~W.~Zhang$^{1}$, J.~Y.~Zhang$^{1}$,
+J.~Z.~Zhang$^{1}$, LiLi~Zhang$^{17}$, S.~H.~Zhang$^{1}$,
+X.~J.~Zhang$^{1}$, X.~Y.~Zhang$^{30}$, Y.~Zhang$^{1}$,
+Y.~H.~Zhang$^{1}$, Z.~P.~Zhang$^{42}$, Z.~Y.~Zhang$^{46}$,
+Zhenghao~Zhang$^{5}$, G.~Zhao$^{1}$, J.~W.~Zhao$^{1}$,
+Lei~Zhao$^{42}$, Ling~Zhao$^{1}$, M.~G.~Zhao$^{27}$,
+Q.~Zhao$^{1}$, S.~J.~Zhao$^{48}$, T.~C.~Zhao$^{1}$,
+X.~H.~Zhao$^{26}$, Y.~B.~Zhao$^{1}$, Z.~G.~Zhao$^{42}$,
+A.~Zhemchugov$^{21,b}$, B.~Zheng$^{43}$, J.~P.~Zheng$^{1}$,
+Y.~H.~Zheng$^{38}$, B.~Zhong$^{25}$, L.~Zhou$^{1}$,
+X.~Zhou$^{46}$, X.~K.~Zhou$^{38}$, X.~R.~Zhou$^{42}$,
+K.~Zhu$^{1}$, K.~J.~Zhu$^{1}$, X.~L.~Zhu$^{35}$, Y.~C.~Zhu$^{42}$,
+Y.~S.~Zhu$^{1}$, Z.~A.~Zhu$^{1}$, J.~Zhuang$^{1}$,
+B.~S.~Zou$^{1}$, J.~H.~Zou$^{1}$
+\\
+\vspace{0.2cm}
+(BESIII Collaboration)\\
+\vspace{0.2cm}
+{\it
+$^{1}$ Institute of High Energy Physics, Beijing 100049, People's Republic of China\\
+$^{2}$ Beihang University, Beijing 100191, People's Republic of China\\
+$^{3}$ Bochum Ruhr-University, D-44780 Bochum, Germany\\
+$^{4}$ Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA\\
+$^{5}$ Central China Normal University, Wuhan 430079, People's Republic of China\\
+$^{6}$ China Center of Advanced Science and Technology, Beijing 100190, People's Republic of China\\
+$^{7}$ COMSATS Institute of Information Technology, Lahore, Defence Road, Off Raiwind Road, 54000 Lahore\\
+$^{8}$ G.I. Budker Institute of Nuclear Physics SB RAS (BINP), Novosibirsk 630090, Russia\\
+$^{9}$ GSI Helmholtzcentre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany\\
+$^{10}$ Guangxi Normal University, Guilin 541004, People's Republic of China\\
+$^{11}$ GuangXi University, Nanning 530004, People's Republic of China\\
+$^{12}$ Hangzhou Normal University, Hangzhou 310036, People's Republic of China\\
+$^{13}$ Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany\\
+$^{14}$ Henan Normal University, Xinxiang 453007, People's Republic of China\\
+$^{15}$ Henan University of Science and Technology, Luoyang 471003, People's Republic of China\\
+$^{16}$ Huangshan College, Huangshan 245000, People's Republic of China\\
+$^{17}$ Hunan University, Changsha 410082, People's Republic of China\\
+$^{18}$ Indiana University, Bloomington, Indiana 47405, USA\\
+$^{19}$ (A)INFN Laboratori Nazionali di Frascati, I-00044, Frascati, Italy; (B)INFN and University of Perugia, I-06100, Perugia, Italy\\
+$^{20}$ Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany\\
+$^{21}$ Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia\\
+$^{22}$ KVI, University of Groningen, NL-9747 AA Groningen, The Netherlands\\
+$^{23}$ Lanzhou University, Lanzhou 730000, People's Republic of China\\
+$^{24}$ Liaoning University, Shenyang 110036, People's Republic of China\\
+$^{25}$ Nanjing Normal University, Nanjing 210023, People's Republic of China\\
+$^{26}$ Nanjing University, Nanjing 210093, People's Republic of China\\
+$^{27}$ Nankai university, Tianjin 300071, People's Republic of China\\
+$^{28}$ Peking University, Beijing 100871, People's Republic of China\\
+$^{29}$ Seoul National University, Seoul, 151-747 Korea\\
+$^{30}$ Shandong University, Jinan 250100, People's Republic of China\\
+$^{31}$ Shanxi University, Taiyuan 030006, People's Republic of China\\
+$^{32}$ Sichuan University, Chengdu 610064, People's Republic of China\\
+$^{33}$ Soochow University, Suzhou 215006, People's Republic of China\\
+$^{34}$ Sun Yat-Sen University, Guangzhou 510275, People's Republic of China\\
+$^{35}$ Tsinghua University, Beijing 100084, People's Republic of China\\
+$^{36}$ (A)Ankara University, Dogol Caddesi, 06100 Tandogan, Ankara, Turkey; (B)Dogus University, 34722 Istanbul, Turkey; (C)Uludag University, 16059 Bursa, Turkey\\
+$^{37}$ Universitaet Giessen, D-35392 Giessen, Germany\\
+$^{38}$ University of Chinese Academy of Sciences, Beijing 100049, People's Republic of China\\
+$^{39}$ University of Hawaii, Honolulu, Hawaii 96822, USA\\
+$^{40}$ University of Minnesota, Minneapolis, Minnesota 55455, USA\\
+$^{41}$ University of Rochester, Rochester, New York 14627, USA\\
+$^{42}$ University of Science and Technology of China, Hefei 230026, People's Republic of China\\
+$^{43}$ University of South China, Hengyang 421001, People's Republic of China\\
+$^{44}$ University of the Punjab, Lahore-54590, Pakistan\\
+$^{45}$ (A)University of Turin, I-10125, Turin, Italy; (B)University of Eastern Piedmont, I-15121, Alessandria, Italy; (C)INFN, I-10125, Turin, Italy\\
+$^{46}$ Wuhan University, Wuhan 430072, People's Republic of China\\
+$^{47}$ Zhejiang University, Hangzhou 310027, People's Republic of China\\
+$^{48}$ Zhengzhou University, Zhengzhou 450001, People's Republic of China\\
+\vspace{0.2cm}
+$^{a}$ Also at the Novosibirsk State University, Novosibirsk, 630090, Russia\\
+$^{b}$ Also at the Moscow Institute of Physics and Technology, Moscow 141700, Russia\\
+$^{c}$ Also at University of Texas at Dallas, Richardson, Texas 75083, USA\\
+$^{d}$ Also at the PNPI, Gatchina 188300, Russia\\}
+%%\end{center}
+\vspace{0.5cm}
+%%\end{small}
+}}
+
+\vspace{0.5cm}
+\date{\today}
+
+\begin{abstract}
+
+We study $\EE\to \pphc$ at center-of-mass energies from 3.90~GeV
+to 4.42~GeV using data samples collected with the BESIII detector
+operating at the Beijing Electron Positron Collider. The Born
+cross sections are measured at 13 energies, and are found to be of
+the same order of magnitude as those of $\EE\to \pcpcjpsi$ but
+with a different line shape. In the $\pi^\pm \hc$ mass spectrum, a
+distinct structure, referred to as $\zcp$, is observed at
+4.02~GeV/$c^2$. The $\zcp$ carries an electric charge and couples
+to charmonium. A fit to the $\pi^\pm\hc$ invariant mass spectrum,
+neglecting possible interferences, results in a mass of
+$(4022.9\pm 0.8\pm 2.7)~{\rm MeV}/c^2$ and a width of $(7.9\pm
+2.7\pm 2.6)$~MeV for the $\zcp$, where the first errors are
+statistical and the second systematic. The difference between the parameters
+of this structure and the $Z_c(4025)$ observed in $D^{*}\bar{D}^{*}$ final
+state is within $1.5 \sigma$, but whether they are the
+same state needs further investigation. No significant $\zc$ signal
+is observed, and upper limits on the $\zc$ production cross
+sections in $\pi^\pm\hc$ at center-of-mass energies of 4.23 and
+4.26~GeV are set.
+
+\end{abstract}
+
+\pacs{14.40.Rt, 14.40.Pq, 13.66.Bc}
+
+\maketitle
+\newpage
+
+In the study of the $\EE\to \pcpcjpsi$ at center-of-mass (CM)
+energies around 4.26~GeV, the BESIII~\cite{bes3_zc} and
+Belle~\cite{belle_zc} experiments observed a charged
+charmoniumlike state, the $\zc$, which was confirmed shortly after
+with CLEO data at a CM energy of 4.17~GeV~\cite{seth_zc}. As there
+are at least four quarks within the $\zc$, it is interpreted
+either as a tetraquark state, $D\bar{D^*}$ molecule,
+hadro-quarkonium, or other configuration~\cite{models}. More
+recently, BESIII has observed another charged $Z_{c}(4025)$ state
+in $\EE\to \pi^\pm(D^*\bar{D}^*)^\mp$~\cite{zc4025}. These states
+together with similar states observed in the bottomonium
+system~\cite{zb} would seem to indicate that a new class of
+hadrons has been observed.
+
+Such a particle may couple to $\pi^\pm\hc$~\cite{models} and thus
+can be searched for in $\EE\to \pphc$. This final state has been
+studied by CLEO~\cite{cleo_pphc},
+%at CM energies from 4.000 to 4.260~GeV
+and a hint of a rising cross section at 4.26~GeV has
+been observed. An improved measurement may shed light on
+understanding the nature of the $Y(4260)$ as
+well~\cite{belle_y,babar_y}.
+
+In this Letter, we present a study of $\EE\to \pphc$ at 13 CM
+energies from 3.900 to 4.420~GeV. The data samples were collected
+with the BESIII detector~\cite{bepc2}, and are listed in
+Table~\ref{scan-data}. The CM energies ($\sqrt{s}$) are measured
+with a beam energy measurement system~\cite{BEMS} with an
+uncertainty of $\pm 1.0$~MeV. A charged structure is observed in
+the $\pi^\pm\hc$ invariant mass spectrum at 4.02~GeV/$c^2$
+(referred to as the $\zcp$ hereafter). We also report on the
+search for $\zc$ decays into the same final state. No significant
+signal is observed, and an upper limit on the production rate is
+determined. In the studies presented here, the $\hc$ is
+reconstructed via its electric-dipole (E1) transition $\hc\to
+\gamma\etac$ with $\etac\to X_i$, where $X_i$ signifies 16
+exclusive hadronic final states: $p \bar{p}$, $2(\pi^+ \pi^-)$,
+$2(K^+ K^-)$, $K^+ K^- \pi^+ \pi^-$, $p \bar{p} \pi^+ \pi^-$,
+$3(\pi^+ \pi^-)$, $K^+ K^- 2(\pi^+ \pi^-)$, $\ks K^\pm \pi^\mp$,
+$\ks K^\pm \pi^\mp \pi^\pm \pi^\mp$, $K^+ K^- \pi^0$, $p
+\bar{p}\pi^0$, $\pi^+ \pi^- \eta$, $K^+ K^- \eta$, $2(\pi^+ \pi^-)
+\eta$, $\pi^+ \pi^- \pi^0 \pi^0$, and $2(\pi^+ \pi^-) \pi^0
+\pi^0$. 
+%Here $K_S^0$ is reconstructed from its $\pi^+\pi^-$
+%decays, and the $\piz$ and $\eta$ from their $\gamma \gamma$ final
+%states.
+
+\begin{table}[htbp]
+\caption{$\EE\to \pphc$ cross sections (or upper limits at the
+90\% confidence level). The third errors are from the uncertainty
+in $\BR(\hc\to \gamma\etac)$~\cite{bes3-hc-inclusive}.}
+\label{scan-data}
+\begin{tabular}{crcccc}
+  \hline\hline
+  $\sqrt{s}$~(GeV) & ${\cal L}$ (pb$^{-1}$)
+  & $n^{\rm obs}_{\hc}$ & $\sigma(\EE\to \pphc)$~(pb) \\
+  \hline
+  3.900  &  52.8~~ & $<2.3$  & $<8.3 $ \\
+  4.009  & 482.0~~ & $<13$  & $<5.0$ \\
+  4.090  &  51.0~~ & $<6.0$  & $<13$ \\
+  4.190  &  43.0~~ & $8.8\pm 4.9$  & $17.7\pm  9.8\pm  1.6\pm 2.8$ \\
+  4.210  &  54.7~~ & $21.7\pm 5.9$ & $34.8\pm  9.5\pm  3.2\pm 5.5$ \\
+  4.220  &  54.6~~ & $26.6\pm 6.8$ & $41.9\pm 10.7\pm  3.8\pm 6.6$ \\
+  4.230  &1090.0~~ & $646\pm 33$   & $50.2\pm  2.7\pm  4.6\pm 7.9$ \\
+  4.245  &  56.0~~ & $22.6\pm 7.1$ & $32.7\pm 10.3\pm  3.0\pm 5.1$ \\
+  4.260  & 826.8~~ & $416\pm 28$   & $41.0\pm  2.8\pm  3.7\pm 6.4$ \\
+  4.310  &  44.9~~ & $34.6\pm 7.2$ & $61.9\pm 12.9\pm  5.6\pm 9.7$ \\
+  4.360  & 544.5~~ & $357\pm 25$   & $52.3\pm  3.7\pm  4.8\pm 8.2$ \\
+  4.390  &  55.1~~ & $30.0\pm 7.8$ & $41.8\pm 10.8\pm  3.8\pm 6.6$ \\
+  4.420  &  44.7~~ & $29.1\pm 7.3$ & $49.4\pm 12.4\pm  4.5\pm 7.6$ \\
+  \hline\hline
+\end{tabular}
+\end{table}
+
+We select charged tracks, photons, and $K^0_S\to \pi^+\pi^-$
+candidates as described in Ref.~\cite{bes3-hc-exclusive}. A
+candidate $\pi^0$~($\eta$) is reconstructed from pairs of photons
+with an invariant mass in the range $|M_{\gamma\gamma}-m_{\pi^0}|
+< 15~\hbox{\rm MeV}/c^2$ ($|M_{\gamma\gamma}-m_{\eta}| <
+15~\hbox{\rm MeV}/c^2$), where $m_{\pi^0}$ ($m_{\eta}$) is the
+nominal $\pi^0$~($\eta$) mass~\cite{PDG}.
+
+In selecting $\EE\to \pphc$, $\hc\to \gamma\etac$ candidates, all
+charged tracks are assumed to be pions, and events with at least
+one combination satisfying $M_{\pp}^{\rm recoil}\in
+[3.45,~3.65]$~GeV/$c^2$ and $M_{\gamma\pp}^{\rm recoil}\in
+[2.8,~3.2]$~GeV/$c^2$ are kept for a further analysis. Here
+$M_{\pp}^{\rm recoil}$ ($M_{\gamma\pp}^{\rm recoil}$) 
+is the mass recoiling from the $\pp$ ($\gamma\pp$) pair,
+which should be in the mass range of  the $\hc$ ($\etac$). 
+
+To determine the species of final state particles and to select
+the best photon when additional photons (and $\piz$ or $\eta$
+candidates) are found in an event, the combination with the
+minimum value of $\chi^{2}=\chi^{2}_{\rm 4C} +
+\sum_{i=1}^{N}\chi^{2}_{\rm PID}(i)+\chi^{2}_{\rm 1C}$ is selected
+for a further analysis, where $\chi^{2}_{\rm 4C}$ is the $\chi^2$
+from the initial-final four-momentum conservation (4C) kinematic
+fit, $\chi^{2}_{\rm PID}(i)
+%=(\frac{dE/dx_{\rm measured}-dE/dx_{\rm expected}} 
+%{\sigma_{dE/dx}})^2+(\frac{\mathrm{TOF}_{\rm
+%measured}-\mathrm{TOF}_{\rm expected}}{\sigma_{\rm TOF}})^2
+$ is the $\chi^{2}$ from particle identification using the energy loss
+in the MDC and the time measured with the Time-of-Flight system.
+$N$ is the number of the charged tracks in the final states, and
+$\chi^{2}_{\rm 1C}$ is the sum of the 1C (mass constraint of the
+two daughter photons) $\chi^{2}$ of the $\piz$ and $\eta$ in each
+final state. There is also a $\chi^{2}_{\rm 4C}$ requirement,
+which is optimized using the figure-of-merit, $S/\sqrt{S+B}$,
+where $S$ and $B$ are the numbers of MC simulated signal and
+background events, respectively, and $\chi^{2}_{\rm 4C}<35$
+(efficiency is about 80\% from MC simulation) is required for
+final states with only charged or $\ks$ particles, while
+$\chi^{2}_{\rm 4C}<20$ (efficiency is about 70\% from MC
+simulation) is required for those with $\piz$ or $\eta$~\cite{4C}.
+A similar optimization procedure determines the $\etac$ candidate
+mass window around the nominal $\etac$~\cite{PDG} mass to be $\pm
+50$~MeV/$c^2$ with efficiency about 85\% from MC simulation ($\pm
+45$~MeV/$c^2$ with efficiency about 80\% from MC simulation) for
+final states with only charged or $\ks$ particles (those with
+$\piz$ or $\eta$).
+
+Figure~\ref{scatter} shows as an example the scatter plot of the
+mass of the $\etac$ candidate versus that of the $\hc$ candidate
+at the CM energy of 4.26~GeV, as well as the projection of the
+invariant mass distribution of $\gamma\etac$ in the $\etac$ signal
+region, where a clear $\hc\to \gamma\etac$ signal is observed. To
+extract the number of $\pphc$ signal events, the $\gamma\etac$
+mass spectrum is fitted using the MC simulated signal shape
+convolved with a Gaussian function to reflect the mass resolution
+difference (around 10\%) between data and MC simulation, together
+with a linear background. The fit to the 4.26~GeV data is shown in
+%the right panel of 
+Fig.~\ref{scatter}. The tail in the high
+mass side is due to the events with initial state radiation (ISR)
+which is simulated well in MC, and its fraction is fixed in the
+fit. At the energy points with large statistics (4.23, 4.26, and
+4.36~GeV), the fit is applied to the 16 $\etac$ decay modes
+simultaneously, while at the other energy points, we fit the mass
+spectrum summed over all the $\etac$ decay modes. The number of
+signal events ($n^{\rm obs}_{\hc}$) and the measured Born cross
+section at each energy are listed in Table~\ref{scan-data}. The
+$\pphc$ cross section appears to be constant above 4.2~GeV with a
+possible local maximum at around 4.23~GeV. This is in contrast to
+the observed energy dependence in the $\EE\to \ppjpsi$ channel
+which revealed a decrease of cross sections at higher
+energies~\cite{belle_zc,babarnew}.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.68\textwidth]{4260.eps}
+\caption{
+The $M_{\gamma\etac}$ distribution after the $\etac$ signal
+selection of 4.26~GeV data, dots with error bars are data and the
+curves are the best fit described in the text. 
+The inset is the scatter plot of the mass of the 
+$\etac$ candidate versus that of the $\hc$ candidate.} \label{scatter}
+\end{center}
+\end{figure}
+
+Systematic errors in the cross section measurement mainly come
+from the luminosity measurement, the branching fraction of $\hc\to
+\gamma\etac$, the branching fraction of $\etac\to X_i$, the
+detection efficiency, the ISR correction factor, and the fit. The
+integrated luminosity at each energy point is measured using large
+angle Bhabha events, and it has an estimated uncertainty of 1.2\%.
+The branching fractions of $\hc\to \gamma\etac$ and $\etac\to
+X_{i}$ are taken from
+Refs.~\cite{bes3-hc-exclusive,bes3-hc-inclusive}. The
+uncertainties in the detection efficiency are estimated in the
+same way as described in Refs.~\cite{bes3-hc-exclusive,guoyp}, and
+the error in the ISR correction is estimated as described in
+Ref.~\cite{bes3_zc}. Uncertainties due to the choice of the signal
+shape, the background shape, the mass resolution, and fit range
+are estimated by varying the $\hc$ and $\etac$ resonant parameters
+and line shapes in MC simulation, varying the background function
+from linear to a second-order polynomial, varying the mass
+resolution difference between data and MC simulation by one
+standard deviation, and by extending the fit range. Assuming all
+of the sources are independent, the total systematic error in the
+$\pphc$ cross section measurement is determined to be between 7\%
+and 9\% depending on the energy, and to be conservative we take
+9\% for all the energy points. The uncertainty in
+$\BR(\hc\to\gamma\etac)$ is 15.7\%~\cite{PDG}, common to all
+energy points, and quoted separately in the cross section
+measurement. Altogether, about 95\% of the total systematic errors
+are common to all the energy points.
+
+Intermediate states are studied by examining the Dalitz plot of
+the selected $\pphc$ candidate events. The $\hc$ signal is
+selected using $3.518 < M_{\gamma \etac} < 3.538$~GeV/$c^2$ and
+the sideband using $3.490 < M_{\gamma \etac} < 3.510$~GeV/$c^2$ or
+$3.560 < M_{\gamma \etac} < 3.580$~GeV/$c^2$, which is twice as
+wide as the signal region. 
+%$\pphc$ samples of 859 events at
+%4.23~GeV, 586 events at 4.26~GeV, and 469 events at 4.36~GeV are
+%obtained with purities of ~65\%. 
+Figure~\ref{dalitz} shows the
+Dalitz plot of the $\pphc$ candidate events summed over all
+energies. While there are no clear structures in the $\pp$ system,
+there is clear evidence for an exotic charmoniumlike structure in
+the $\pi^\pm\hc$ system. Figure~\ref{proj} shows the projection of
+the $M_{\pi^\pm\hc}$ (two entries per event) distribution for the
+signal events, as well as the background events estimated from
+normalized $\hc$ mass sidebands. There is a significant peak at
+around 4.02~GeV/$c^2$ (the $\zcp$), and the wider peak at low
+masses is the reflection of the $\zcp$. There are also some events
+at around 3.9~GeV/$c^2$, which could be the $\zc$.  The individual
+data sets at 4.23~GeV, 4.26~GeV and 4.36~GeV show similar
+structures.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.68\textwidth]{dalitz_alldata.eps}
+\caption{Dalitz plot ($M^2_{\pi^+\hc}$ vs. $M^2_{\pp}$) for
+selected $\EE\to \pphc$ events, summed over all energy points.}
+\label{dalitz}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.68\textwidth]{mpihc_alldata.eps}
+\caption{$M_{\pi^\pm\hc}$ distribution of $\EE\to \pphc$ candidate
+events in the $\hc$ signal region (dots with error bars) and the
+normalized $\hc$ sideband region (shaded histogram), summed over
+data at all energy points.} \label{proj}
+\end{center}
+\end{figure}
+
+An unbinned maximum likelihood fit is applied to the
+$M_{\pi^\pm\hc}$ distribution summed over the 16 $\etac$ decay
+modes. The data at 4.23~GeV, 4.26~GeV, and 4.36~GeV are fitted
+simultaneously with the same signal function with common mass and
+width. The signal shape is parameterized as a constant width
+relativistic Breit-Wigner~(BW) function convolved with a Gaussian
+with a mass resolution determined from data directly. Assuming the
+spin-parity of the $\zcp$ $J^P=1^+$, a phase space factor $pq^3$
+is considered in the partial width, where $p$ is the $\zcp$
+momentum in the $\EE$ CM frame and $q$ is the $\hc$ momentum in
+the $\zcp$ CM frame. The background shape is parameterized as an
+ARGUS function~\cite{ARGUS}. The efficiency curve is considered in
+the fit, but possible interferences between the signal and
+background are neglected. Figure~\ref{1Dfit} shows the fit
+results; the fit yields a mass of $(4022.9\pm 0.8)~{\rm MeV}/c^2$,
+and a width of $(7.9\pm 2.7)$~MeV. The goodness-of-fit is found to
+be $\chi^{2}/ndf=27.3/32=0.85$
+ by projecting the events into a histogram with 46 bins.
+The statistical significance of the $\zcp$ signal is calculated by
+comparing the fit likelihoods with and without the signal. Besides
+the nominal fit, the fit is also performed by changing the fit
+range, the signal shape, or the background shape. In all cases,
+the significance is found to be greater than $8.9\sigma$.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.68\textwidth]{fit_zcp.eps}
+\caption{Sum of the simultaneous fits to the $M_{\pi^\pm\hc}$
+distributions at 4.23~GeV, 4.26~GeV, and 4.36~GeV as described in
+the text; the inset shows the sum of the simultaneous fit to the
+$M_{\pi^+\hc}$ distributions at 4.23~GeV and 4.26~GeV with $\zc$
+and $\zcp$. Dots with error bars are data; shaded histograms are
+normalized sideband background; the solid curves show the total
+fit, and the dotted curves the backgrounds from the fit.}
+\label{1Dfit}
+\end{center}
+\end{figure}
+
+The numbers of $\zcp$ events are determined to be $N(\zcp^\pm) =
+114\pm 25$, $72\pm 17$, and $67\pm 15$ at 4.23~GeV, 4.26~GeV, and
+4.36~GeV, respectively. The cross sections are calculated to be
+$\sigma(\EE\to \pi^\pm \zcp^\mp\to \pphc) = (8.7\pm 1.9\pm 2.8\pm
+1.4)$~pb at 4.23~GeV, $(7.4\pm 1.7\pm 2.1\pm 1.2)$~pb at 4.26~GeV,
+and $(10.3\pm 2.3\pm 3.1\pm 1.6)$~pb at 4.36~GeV, where the first
+errors are statistical, the second ones systematic (described in
+detail below), and the third ones from the uncertainty in
+$\BR(\hc\to \gamma\etac)$~\cite{PDG}. The $\zcp$ production rate
+is uniform at these three energy points.
+
+Adding a $\zc$ with mass and width fixed to the BESIII
+measurement~\cite{bes3_zc} in the fit, results in a statistical
+significance of 2.1$\sigma$ (see the inset of Fig.~\ref{1Dfit}).
+We set upper limits on the production cross sections as
+$\sigma(\EE\to \pi^\pm \zc^\mp\to \pphc) <13$~pb at 4.23~GeV and
+$<11$~pb at 4.26~GeV, at the 90\% confidence level (C.L.). The
+probability density function from the fit is smeared by a Gaussian
+function with standard deviation of $\sigma_{\rm sys}$ to include
+the systematic error effect, where $\sigma_{\rm sys}$ is the
+relative systematic error in the cross section measurement
+described below. We do not fit the 4.36~GeV data as the $\zc$
+signal overlaps with the reflection of the $\zcp$ signal.
+
+The systematic errors for the resonance parameters of the $\zcp$
+come from the mass calibration, parametrization of the signal and
+background shapes, possible existence of the $\zc$ and
+interference with it, fitting range, efficiency curve, and the
+mass resolution. The uncertainty from the mass calibration is
+estimated using the difference between the measured and known
+$\hc$ masses and $D^0$ masses (reconstructed from $K^-\pip$). The
+differences are $(2.1\pm 0.4)$~MeV/$c^2$ and $-(0.7\pm
+0.2)$~MeV/$c^2$, respectively. Since our signal topology has one
+low momentum pion and many tracks from the $\hc$ decay, we assume
+these differences added in quadrature, 2.6~MeV/$c^2$, is the
+systematic error 
+%of the $\zcp$ mass measurement 
+due to the mass
+calibration. Spin-parity conservation forbids a zero spin for the
+$\zcp$, and assuming that contributions from D-wave or higher are
+negligible, the only alternative is $J^P=1^-$ for the $\zcp$. 
+%In this case, the angular momentum is P-wave between the $\zcp$ and
+%the $\pi$, and S-wave between the $\hc$ and $\pi$ in the $\zcp$
+%system; and 
+A fit under this scenario yields a mass difference of
+0.2~MeV/$c^2$ and a width difference of 0.8~MeV. The uncertainty
+due to the background shape is determined by changing to a
+second-order polynomial and by varying the fit range. A difference
+of 0.1~MeV/$c^2$ for the mass is found from the former, and
+differences of 0.2~MeV/$c^2$ for mass and 1.1~MeV for width are
+found from the latter. Uncertainties due to the mass resolution
+are estimated by varying the resolution difference between data
+and MC simulation by one standard deviation of the measured
+uncertainty in the mass resolution of the $\hc$ signal; the
+difference is 0.5~MeV in the width, which is taken as the
+systematic error. The uncertainty in the efficiency curve results
+in 0.1~MeV/$c^2$ for mass and 0.1~MeV for width. Uncertainties due
+to the possible existence of the $\zc$ and the interference with
+it are estimated by adding a $\zc$ amplitude incoherently or
+coherently in the fit. The uncertainties due to $\zc$ is
+0.2~MeV/$c^{2}$ for mass and 2.1~MeV for width, while the
+uncertainties due to interference is 0.5~MeV/$c^{2}$ for the mass
+and 0.4~MeV for the width. Assuming all the sources of systematic
+uncertainty are independent, the total systematic error is
+2.7~MeV/$c^2$ for the mass, and 2.6~MeV for the width.
+
+The systematic errors in $\sigma(\EE\to \pi^\pm \zcp^\mp\to
+\pphc)$ are estimated in the same way as for $\sigma(\EE\to
+\pphc)$. The systematic errors due to the inclusion of the $\zc$
+signal, the possible interference between $\zcp$ and $\zc$, the
+fitting range, the signal and background parameterizations,
+the $\hc$ signal window selection, the mass resolution, and
+the efficiency curve, in addition to those in the
+$\sigma(\EE\to \pphc)$ measurement, are considered and summarized
+in Table~\ref{sys}. The systematic errors in $\sigma(\EE\to
+\pi^\pm \zc^\mp\to \pphc)$ are determined similarly.
+
+\begin{table*}[htbp]
+\caption{The percentage systematic errors in $\sigma(\EE\to
+\pi^\pm \zcp^\mp\to \pphc)$, in addition to those in
+$\sigma(\EE\to \pphc)$ measurement.} \label{sys}
+ {\scriptsize
+\begin{tabular}{c|c|c|c|c|c|c|c|c}
+  \hline\hline
+  $\sqrt{s}$~(GeV) & $\zc$ signal  & interference & fitting range
+        & signal shape & background shape & $\hc$ signal window
+        & mass resolution  &  efficiency curve\\
+\hline
+ 4.230   &18.3   & 20.0  & 13.2    & 4.5     & 3.5    & 1.7 & 1.8  & 0.9\\
+ 4.260   &16.2   & 20.0  & 8.3     & 4.2     & 2.8    & 1.7  & 1.8   & 0.0\\
+ 4.360   &18.3   & 20.0  & 4.5     & 6.0     & 6.0    & 1.4  & 1.5   & 0.0 \\
+ \hline\hline
+\end{tabular}
+ }
+\end{table*}
+
+In summary, we measure $\EE\to \pphc$ cross sections at CM
+energies between 3.90 and 4.42~GeV for the first time. These cross
+sections are of the same order of magnitude as those of the
+$\EE\to \pcpcjpsi$ measured by BESIII~\cite{bes3_zc} and other
+experiments~\cite{belle_zc,babarnew}, but with a different line
+shape. There is a broad structure at high energy with a possible
+local maximum at around 4.23~GeV. A narrow structure very close to
+the $(D^\ast\bar{D}^\ast)^\pm$ threshold with a mass of
+$(4022.9\pm 0.8\pm 2.7)~{\rm MeV}/c^2$ and a width of $(7.9\pm
+2.7\pm 2.6)$~MeV is observed in the $\pi^\pm \hc$ mass spectrum.
+This structure couples to charmonium and has an electric charge,
+which is suggestive of a state containing more quarks than just a
+charm and an anti-charm quark, as the $\zc$ observed in the
+$\pi^\pm\jpsi$ system~\cite{bes3_zc,belle_zc,seth_zc}. We do not
+find a significant signal for  $\zc\to\pi^\pm\hc$ and the
+production cross section is found to be smaller than 11~pb at the
+90\% C.L. at 4.26~GeV, which is lower than that of $\zc\to
+\pi^\pm\jpsi$~\cite{bes3_zc}. The $\zcp$ parameters agree within
+1.5$\sigma$ of those of the $Z_c(4025)$, observed in $\EE\to
+\pi^\pm (D^*\bar{D}^*)^\mp$ at CM energy 4.26~GeV ~\cite{zc4025}.
+Results for the latter at 4.23 and 4.36~GeV may help us to
+understand whether they are the same state.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Acknowledge add later %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The BESIII collaboration thanks the staff of BEPCII and the
+computing center for their strong support. This work is supported
+in part by the Ministry of Science and Technology of China under
+Contract No. 2009CB825200; National Natural Science Foundation of
+China (NSFC) under Contracts Nos. 10625524, 10821063, 10825524,
+10835001, 10935007, 11125525, 11235011; Joint Funds of the
+National Natural Science Foundation of China under Contracts Nos.
+11079008, 11079023, 11179007, U1332201; the Chinese Academy of Sciences (CAS)
+Large-Scale Scientific Facility Program; CAS under Contracts Nos.
+KJCX2-YW-N29, KJCX2-YW-N45; 100 Talents Program of CAS; German
+Research Foundation DFG under Contract No. Collaborative Research
+Center CRC-1044; Istituto Nazionale di Fisica Nucleare, Italy;
+Ministry of Development of Turkey under Contract No.
+DPT2006K-120470; U. S. Department of Energy under Contracts Nos.
+DE-FG02-04ER41291, DE-FG02-05ER41374, DE-FG02-94ER40823; U.S.
+National Science Foundation; University of Groningen (RuG) and the
+Helmholtzzentrum fuer Schwerionenforschung GmbH (GSI), Darmstadt;
+WCU Program of National Research Foundation of Korea under
+Contract No. R32-2008-000-10155-0.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{**}
+
+% Zc(3900)
+
+\bibitem{bes3_zc} M.~Ablikim {\it et al.}  [BESIII Collaboration],
+%``Observation of a charged charmoniumlike structure in e+e- to pi+pi-J/psi at \sqrt{s}=4.26 GeV,''
+\Journal\PRL{110}{252001}{2013}.
+%%  arXiv:1303.5949 [hep-ex].
+
+\bibitem{belle_zc} Z.~Q.~Liu {\it et al.}  [Belle Collaboration],
+%``Study of $e^+ e^- \to \pi^+ \pi^- J/\psi$ and Observation of a Charged Charmonium-like State at Belle,''
+\Journal\PRL{110}{252002}{2013}.
+%%  arXiv:1304.0121 [hep-ex].
+
+\bibitem{seth_zc} T.~Xiao, S.~Dobbs, A.~Tomaradze and K.~K.~Seth,
+  %``Observation of the Charged Hadron Zc(3900) at sqrt(s)=4170 MeV,''
+  arXiv:1304.3036 [hep-ex].
+
+% Zc references
+
+\bibitem{models}
+Q.~Wang, C.~Hanhart and Q.~Zhao, arXiv:1303.6355 [hep-ph];
+%%CITATION = ARXIV:1303.6355;%%
+F.-K. Guo, C.~Hidalgo-Duque, J.~Nieves and M.~P. Valderrama,
+arXiv:1303.6608 [hep-ph];
+%%CITATION = ARXIV:1303.6608;%%
+G.~Li, arXiv:1304.4458 [hep-ph];
+%%CITATION = ARXIV:1304.4458;%%
+C.-Y. Cui, Y.-L. Liu, W.-B. Chen and M.-Q. Huang, arXiv:1304.1850
+[hep-ph];
+%%CITATION = ARXIV:1304.1850;%%
+J.-R. Zhang, Phys. Rev. D {\bf 87}, 116004 (2013);
+%%[arXiv:1304.5748 [hep-ph]];
+%%CITATION = ARXIV:1304.5748;%%
+J.~M.~Dias, F.~S.~Navarra, M.~Nielsen and C.~M.~Zanetti,
+  %``$Z_c^+(3900)$ decay width in QCD sum rules,''
+Phys.\ Rev.\ D {\bf 88}, 016004 (2013);
+%%CITATION = ARXIV:1304.6433;%%
+M.~B. Voloshin, Phys. Rev. D {\bf 87}, 091501 (2013);
+%%
+E.~Braaten, arXiv:1305.6905 [hep-ph];
+%%CITATION = ARXIV:1305.6905;%%
+E.~Wilbring, H.~W. Hammer and U.~G. Mei{\ss}ner, arXiv:1304.2882
+[hep-ph];
+%%CITATION = ARXIV:1304.2882;%%
+D.-Y. Chen, X.~Liu and T.~Matsuki, arXiv:1304.5845 [hep-ph];
+%%CITATION = ARXIV:1304.5845;%%
+K.~Terasaki, arXiv:1304.7080 [hep-ph];
+%%CITATION = ARXIV:1304.7080;%%
+Y.-R. Liu, arXiv:1304.7467 [hep-ph];
+%%CITATION = ARXIV:1304.7467;%%
+Q.~Wang, C.~Hanhart and Q.~Zhao, arXiv:1305.1997 [hep-ph];
+%%CITATION = ARXIV:1305.1997;%%
+Y.~Dong, A.~Faessler, T.~Gutsche and V.~E. Lyubovitskij, Phys.
+Rev. D {\bf 88}, 014030 (2013);
+%% [arXiv:1306.0824 [hep-ph]];
+%%CITATION = ARXIV:1306.0824;%%
+X.~-H.~Liu and G.~Li,
+%``Exploring the threshold behavior and implications on the nature of Y(4260) and $Z_c(3900)$,''
+Phys.\ Rev.\ D {\bf 88}, 014013 (2013);
+%%CITATION = ARXIV:1306.1384;%%
+S.~Prelovsek and L.~Leskovec,
+%``Search for Z_c^+(3900) in the 1^+- channel on the lattice,''
+arXiv:1308.2097 [hep-lat].
+%%CITATION = ARXIV:1308.2097;%%
+
+\bibitem{zc4025}
+M.~Ablikim {\it et al.}  [BESIII Collaboration],
+%``Observation of a charged charmoniumlike structure in $e^+e^- \to (D^{*} \bar{D}^{*})^{\pm} \pi^\mp$ at $\sqrt{s}=4.26$\,GeV,''
+arXiv:1308.2760 [hep-ex].
+%%CITATION = ARXIV:1308.2760;%%
+
+\bibitem{zb} A.~Bondar {\em et al.} [Belle Collaboration],
+\Journal\PRL{108}{122001}{2012}.
+
+\bibitem{cleo_pphc} T.~K.~Pedlar{\em et al.} [CLEO Collaboration],
+ Phys.\ Rev.\ Lett.\ {\bf 107}, 041803 (2011).
+
+\bibitem{belle_y} C.~Z.~Yuan {\em et al.} [Belle Collaboration],
+\Journal\PRL{99}{182004}{2007}.
+
+\bibitem{babar_y} B.~Aubert {\em et al.} [BaBar Collaboration],
+\Journal\PRL{95}{142001}{2005}.
+
+% BEPC paper
+
+\bibitem{bepc2} M. Ablikim {\em et al.} [BESIII Collaboration],
+Nucl.\ Instrum.\ Meth.\ A {\bf 614}, 345 (2010).
+
+\bibitem{BEMS} E.~V.~Abakumova, M.~N.~Achasov, V.~E.~Blinov,
+X.~Cai, H.~Y.~Dong, C.~D.~Fu, F.~A.~Harris and V.~V.~Kaminsky {\it
+et al.}, Nucl.\ Instrum.\ Meth.\ A {\bf 659}, 21 (2011).
+
+\bibitem{bes3-hc-inclusive} M.~Ablikim {\it et al.} [BESIII
+Collobarotion], Phys.\ Rev.\ Lett.\ {\bf 104}, 132002 (2010).
+
+\bibitem{bes3-hc-exclusive} M.~Ablikim {\it et al.} [BESIII
+Collobarotion], Phys.\ Rev.\ D {\bf 86}, 092009 (2012).
+
+\bibitem{PDG} J. Beringer {\it et al.} [Particle Data Group],
+\Journal\PRD{86}{010001}{2012}.
+
+\bibitem{4C}
+A track parameter correction procedure~\cite{guoyp} is
+applied to the MC simulated charged tracks to improve the
+agreement between data and MC simulation of the $\chi^2_{\rm 4C}$
+distribution of the kinematic fit. The correction factors are
+obtained from a high purity control sample $\jpsi\to \phi
+f_{0}(980)$, with $\phi\to \kk$ and $f_{0}(980)\to \pip\pim$.
+Reasonable agreement between data and MC simulation is observed
+for the channels analyzed in this work. The systematic error of
+the $\chi^{2}_{\rm 4C}$ requirement is taken as half of the
+correction in the efficiency, which is much larger than the effect
+due to the uncertainties in the correction factors to cover
+possible unknown effects in the procedure. 
+
+\bibitem{guoyp}
+M.~Ablikim {\it et al.}  [BESIII Collaboration], Phys.\ Rev.\ D
+{\bf 87}, 012002 (2013).
+
+\bibitem{babarnew} J.~P.~Lees {\em et al.} [BaBar Collaboration],
+\Journal\PRD{86}{051102(R)}{2012}.
+
+\bibitem{ARGUS}
+  H.~Albrecht {\it et al.}  [ARGUS Collaboration],
+  %``SEARCH FOR HADRONIC b ---> u DECAYS,''
+  Phys.\ Lett.\ B {\bf 241}, 278 (1990).
+
+\end{thebibliography}
+
+\end{document}

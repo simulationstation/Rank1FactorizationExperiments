@@ -1,0 +1,10 @@
+# Extracted from arXiv:1310.1163 Table 1
+# BESIII Zc(3885) observation in e+e- -> pi D Dbar* at sqrt(s)=4.26 GeV
+# Pole masses and widths from two tag samples
+tag_mode,M_pole_MeV,M_stat,Gamma_pole_MeV,Gamma_stat,N_signal,N_stat,chi2_ndf
+pi+D0,3882.3,1.5,24.6,3.3,502,41,54/54
+pi-D+,3885.5,1.5,24.9,3.2,710,54,60/54
+# Average results (from paper text):
+# M_pole = 3883.9 +/- 1.5 +/- 4.2 MeV/c2
+# Gamma_pole = 24.8 +/- 3.3 +/- 11.0 MeV
+# sigma x B = 83.5 +/- 6.6 +/- 22.0 pb

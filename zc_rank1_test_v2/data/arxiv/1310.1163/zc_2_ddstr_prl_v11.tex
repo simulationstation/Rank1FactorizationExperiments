@@ -1,0 +1,735 @@
+%
+%    BESIII PRL draft on Y(4260)-->\pi^{+} Z^-_c;  Z^-_c --> D D*bar
+%
+% version 6.3 started Sept 5, 2013
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.0
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+%%% Use this for e-print submission
+%%% You also need to do the following:
+%%%   * Comment out widetext, use eqnarray and \nonumber
+%%%     (for the first line) for eq:likelihood
+%%%   * Change the figure size to 0.6
+%%%   * Put preprint numbers and the Belle logo
+%\documentclass[aps,prl,preprint,tightenlines,superscriptaddress,showpacs,byrevtex]{revtex4}
+%
+%%% Use this for PRL submission
+%%% You also need to do the following:
+%%%   * Comment out widetext, use eqnarray and \nonumber
+%%%     (for the first line) for eq:likelihood
+%%%   * Change the figure size to 0.6
+%%%   * Comment out preprint numbers and the Belle logo
+%\documentclass[aps,prl,preprint,superscriptaddress,showpacs,byrevtex]{revtex4}
+%
+%%% Double-column style
+%%% You also need to do the following:
+%%%   * Use widetext for eq:likelihood, comment out \nonumber
+%%%   * Change the figure size appropriately (should be less than 0.5)
+%%%   * Comment out preprint numbers and the Belle logo
+\documentclass[aps,prl,twocolumn,superscriptaddress,showpacs,preprintnumbers,amsmath,amssymb]{revtex4-1}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=blue]{hyperref}
+%\usepackage{lineno}
+%\linenumbers
+%\usepackage[english]
+
+% Some other (several out of many) possibilities
+%\documentclass[preprint,aps]{revtex4}
+%\documentclass[preprint,aps,draft]{revtex4}
+
+\usepackage{graphicx} % Include figure files
+\usepackage{dcolumn}  % Align table columns on decimal point
+\usepackage{color}
+
+\graphicspath{{ps}}
+
+\renewcommand{\arraystretch}{1.1}
+
+\newcommand{\ee}{e^{+}e^{-}}
+\newcommand{\leplep}{\ell^{+}\ell^{-}}
+\newcommand{\jp}{J/\psi}
+\newcommand{\ec}{\eta_{c}}
+\newcommand{\ecp}{\eta_{c}(2S)}
+\newcommand{\psip}{\psi^{\prime}}
+\newcommand{\onedtwo}{\eta_{c2}}
+\newcommand{\threedtwo}{\psi_{2}(1{\rm D})}
+\newcommand{\mumu}{\mu^{+}\mu^{-}}
+\newcommand{\pipi}{\pi^{+}\pi^{-}}
+\newcommand{\kk}{K^{+}K^{-}}
+\newcommand{\pim}{\pi^{-}}
+\newcommand{\pip}{\pi^{+}}
+\newcommand{\pipm}{\pi^{\pm}}
+\newcommand{\piz}{\pi^{0}}
+\newcommand{\bbar}{B\bar{B}}
+\newcommand{\qqbar}{q\bar{q}}
+\newcommand{\kpi}{K^-\pi^{+}}
+\newcommand{\ks}{K_{s}}
+\newcommand{\kstr}{K^{*0}}
+\newcommand{\B}{B^{0}}
+\newcommand{\Bpl}{B^{+}}
+\newcommand{\kpl}{K^{+}}
+\newcommand{\kmi}{K^{-}}
+\newcommand{\fb}{f b^{-1}}
+\newcommand{\Mbc}{M_{\rm bc}}
+\newcommand{\DE}{\Delta E}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\rt}{\rightarrow}
+\newcommand{\ETAL}{\em et al.}
+\newcommand{\etal}{\em et al.}
+\newcommand{\jpsi}{J/\psi}
+\newcommand{\ximm}{\Xi^{--}}
+\newcommand{\xic}{\Xi^0_c(2470)}
+\newcommand{\xim}{\Xi^{-}}
+\newcommand{\ximmbar}{\bar{\Xi}^{++}}
+\newcommand{\ximbar}{\bar{\Xi}^{+}}
+\newcommand{\xistr}{\Xi^{*0}(1530)}
+\newcommand{\xistrbar}{\bar{\Xi}^{*}(1530)}
+\newcommand{\lam}{\Lambda^{0}}
+\newcommand{\lm}{\Lambda}
+\newcommand{\lambar}{\bar{\Lambda}^{0}}
+\newcommand{\lmbar}{\bar{\Lambda}}
+\newcommand{\lmb}{\bar{\Lambda}}
+\newcommand{\ups}{\Upsilon(1S)}
+\newcommand{\upstwos}{\Upsilon(2S)}
+\newcommand{\upss}{\Upsilon(1,2S)}
+\newcommand{\lmppi}{\Lambda p \pi^-}
+\newcommand{\lmbpbpi}{\bar{\Lambda} \bar{p} \pi^+}
+\newcommand{\yones}{\Upsilon(1S)}
+\newcommand{\ytwos}{\Upsilon(2S)}
+\newcommand{\yonetwos}{\Upsilon(1,2S)}
+\newcommand{\yns}{\Upsilon(nS)}
+\newcommand{\zc}{Z_c}
+\newcommand{\mrec}{M^{\rm rec}}
+\newcommand{\dstr}{D^{*}}
+\newcommand{\dstrz}{D^{*0}}
+\newcommand{\dstrm}{D^{*-}}
+\newcommand{\dstrp}{D^{*+}}
+\newcommand{\dstrbar}{\bar{D}^{*}}
+\newcommand{\dstrzbar}{\bar{D}^{*0}}
+\newcommand{\dz}{D^{0}}
+\newcommand{\dzb}{\bar{D}^{0}}
+\newcommand{\dminus}{D^{-}}
+\newcommand{\dplus}{D^{+}}
+\newcommand{\dzbar}{\bar{D^{0}}}
+\newcommand{\donez}{D_1^{0}}
+\newcommand{\done}{D_1}
+\newcommand{\donezbar}{\bar{D_1^{0}}}
+\newcommand{\donebar}{\bar{D}_1}
+
+\begin{document}
+
+%\vspace*{-3\baselineskip}
+%\resizebox{!}{3cm}{\includegraphics{belle.eps}}
+
+
+%\preprint{\vbox{ \hbox{ BESIII Draft v6}}}
+%%                 \hbox{BELLE-CONF-0541}
+%                   \hbox{\today}
+%%                 \hbox{hep-ex nnnn, if available}
+%}}
+
+\title{ \quad\\[0.5cm] \boldmath Observation of a charged $(D\dstrbar)^{\pm}$ mass peak in
+ $\ee\rt\pi D\dstrbar$ at $\sqrt{s}=4.26$~GeV}
+
+%%%% >>>>> insert the authorlist here. BEFORE the abstract !!!!! <<<<<
+%\input author-conf2005
+
+%\affiliation{Seoul National University, Seoul 151-747, Korea}
+%\affiliation{Soochow University, Suzhou 215006, P.R. China}
+\author{
+\small
+\begin{center}
+M.~Ablikim$^{1}$, M.~N.~Achasov$^{8,a}$, O.~Albayrak$^{4}$, D.~J.~Ambrose$^{41}$, F.~F.~An$^{1}$, Q.~An$^{42}$, J.~Z.~Bai$^{1}$, R.~Baldini Ferroli$^{19A}$, Y.~Ban$^{28}$, J.~Becker$^{3}$, J.~V.~Bennett$^{18}$, M.~Bertani$^{19A}$, J.~M.~Bian$^{40}$, E.~Boger$^{21,b}$, O.~Bondarenko$^{22}$, I.~Boyko$^{21}$, S.~Braun$^{37}$, R.~A.~Briere$^{4}$, V.~Bytev$^{21}$, H.~Cai$^{46}$, X.~Cai$^{1}$, O. ~Cakir$^{36A}$, A.~Calcaterra$^{19A}$, G.~F.~Cao$^{1}$, S.~A.~Cetin$^{36B}$, J.~F.~Chang$^{1}$, G.~Chelkov$^{21,b}$, G.~Chen$^{1}$, H.~S.~Chen$^{1}$, J.~C.~Chen$^{1}$, M.~L.~Chen$^{1}$, S.~J.~Chen$^{26}$, X.~R.~Chen$^{23}$, Y.~B.~Chen$^{1}$, H.~P.~Cheng$^{16}$, X.~K.~Chu$^{28}$, Y.~P.~Chu$^{1}$, D.~Cronin-Hennessy$^{40}$, H.~L.~Dai$^{1}$, J.~P.~Dai$^{1}$, D.~Dedovich$^{21}$, Z.~Y.~Deng$^{1}$, A.~Denig$^{20}$, I.~Denysenko$^{21}$, M.~Destefanis$^{45A,45C}$, W.~M.~Ding$^{30}$, Y.~Ding$^{24}$, L.~Y.~Dong$^{1}$, M.~Y.~Dong$^{1}$, S.~X.~Du$^{48}$, J.~Fang$^{1}$, S.~S.~Fang$^{1}$, L.~Fava$^{45B,45C}$, C.~Q.~Feng$^{42}$, P.~Friedel$^{3}$, C.~D.~Fu$^{1}$, J.~L.~Fu$^{26}$, O.~Fuks$^{21,b}$, Y.~Gao$^{35}$, C.~Geng$^{42}$, K.~Goetzen$^{9}$, W.~X.~Gong$^{1}$, W.~Gradl$^{20}$, M.~Greco$^{45A,45C}$, M.~H.~Gu$^{1}$, Y.~T.~Gu$^{11}$, Y.~H.~Guan$^{38}$, A.~Q.~Guo$^{27}$, L.~B.~Guo$^{25}$, T.~Guo$^{25}$, Y.~P.~Guo$^{27}$, Y.~L.~Han$^{1}$, F.~A.~Harris$^{39}$, K.~L.~He$^{1}$, M.~He$^{1}$, Z.~Y.~He$^{27}$, T.~Held$^{3}$, Y.~K.~Heng$^{1}$, Z.~L.~Hou$^{1}$, C.~Hu$^{25}$, H.~M.~Hu$^{1}$, J.~F.~Hu$^{37}$, T.~Hu$^{1}$, G.~M.~Huang$^{5}$, G.~S.~Huang$^{42}$, J.~S.~Huang$^{14}$, L.~Huang$^{1}$, X.~T.~Huang$^{30}$, Y.~Huang$^{26}$, T.~Hussain$^{44}$, C.~S.~Ji$^{42}$, Q.~Ji$^{1}$, Q.~P.~Ji$^{27}$, X.~B.~Ji$^{1}$, X.~L.~Ji$^{1}$, L.~L.~Jiang$^{1}$, X.~S.~Jiang$^{1}$, J.~B.~Jiao$^{30}$, Z.~Jiao$^{16}$, D.~P.~Jin$^{1}$, S.~Jin$^{1}$, F.~F.~Jing$^{35}$, N.~Kalantar-Nayestanaki$^{22}$, M.~Kavatsyuk$^{22}$, B.~Kloss$^{20}$, B.~Kopf$^{3}$, M.~Kornicer$^{39}$, W.~Kuehn$^{37}$, W.~Lai$^{1}$, J.~S.~Lange$^{37}$, M.~Lara$^{18}$, P. ~Larin$^{13}$, M.~Leyhe$^{3}$, C.~H.~Li$^{1}$, Cheng~Li$^{42}$, Cui~Li$^{42}$, D.~L~Li$^{17}$, D.~M.~Li$^{48}$, F.~Li$^{1}$, G.~Li$^{1}$, H.~B.~Li$^{1}$, J.~C.~Li$^{1}$, K.~Li$^{12}$, Lei~Li$^{1}$, N.~Li$^{11}$, P.~R.~Li$^{38}$, Q.~J.~Li$^{1}$, W.~D.~Li$^{1}$, W.~G.~Li$^{1}$, X.~L.~Li$^{30}$, X.~N.~Li$^{1}$, X.~Q.~Li$^{27}$, X.~R.~Li$^{29}$, Z.~B.~Li$^{34}$, H.~Liang$^{42}$, Y.~F.~Liang$^{32}$, Y.~T.~Liang$^{37}$, G.~R.~Liao$^{35}$, D.~X.~Lin$^{13}$, B.~J.~Liu$^{1}$, C.~L.~Liu$^{4}$, C.~X.~Liu$^{1}$, F.~H.~Liu$^{31}$, Fang~Liu$^{1}$, Feng~Liu$^{5}$, H.~B.~Liu$^{11}$, H.~H.~Liu$^{15}$, H.~M.~Liu$^{1}$, J.~P.~Liu$^{46}$, K.~Liu$^{35}$, K.~Y.~Liu$^{24}$, P.~L.~Liu$^{30}$, Q.~Liu$^{38}$, S.~B.~Liu$^{42}$, X.~Liu$^{23}$, Y.~B.~Liu$^{27}$, Z.~A.~Liu$^{1}$, Zhiqiang~Liu$^{1}$, Zhiqing~Liu$^{1}$, H.~Loehner$^{22}$, X.~C.~Lou$^{1,c}$, G.~R.~Lu$^{14}$, H.~J.~Lu$^{16}$, J.~G.~Lu$^{1}$, X.~R.~Lu$^{38}$, Y.~P.~Lu$^{1}$, C.~L.~Luo$^{25}$, M.~X.~Luo$^{47}$, T.~Luo$^{39}$, X.~L.~Luo$^{1}$, M.~Lv$^{1}$, F.~C.~Ma$^{24}$, H.~L.~Ma$^{1}$, Q.~M.~Ma$^{1}$, S.~Ma$^{1}$, T.~Ma$^{1}$, X.~Y.~Ma$^{1}$, F.~E.~Maas$^{13}$, M.~Maggiora$^{45A,45C}$, Q.~A.~Malik$^{44}$, Y.~J.~Mao$^{28}$, Z.~P.~Mao$^{1}$, J.~G.~Messchendorp$^{22}$, J.~Min$^{1}$, T.~J.~Min$^{1}$, R.~E.~Mitchell$^{18}$, X.~H.~Mo$^{1}$, H.~Moeini$^{22}$, C.~Morales Morales$^{13}$, K.~~Moriya$^{18}$, N.~Yu.~Muchnoi$^{8,a}$, H.~Muramatsu$^{41}$, Y.~Nefedov$^{21}$, I.~B.~Nikolaev$^{8,a}$, Z.~Ning$^{1}$, S.~Nisar$^{7}$, S.~L.~Olsen$^{29}$, Q.~Ouyang$^{1}$, S.~Pacetti$^{19B}$, J.~W.~Park$^{39}$, M.~Pelizaeus$^{3}$, H.~P.~Peng$^{42}$, K.~Peters$^{9}$, J.~L.~Ping$^{25}$, R.~G.~Ping$^{1}$, R.~Poling$^{40}$, E.~Prencipe$^{20}$, M.~Qi$^{26}$, S.~Qian$^{1}$, C.~F.~Qiao$^{38}$, L.~Q.~Qin$^{30}$, X.~S.~Qin$^{1}$, Y.~Qin$^{28}$, Z.~H.~Qin$^{1}$, J.~F.~Qiu$^{1}$, K.~H.~Rashid$^{44}$, C.~F.~Redmer$^{20}$, M.~Ripka$^{20}$, G.~Rong$^{1}$, X.~D.~Ruan$^{11}$, A.~Sarantsev$^{21,d}$, S.~Schumann$^{20}$, W.~Shan$^{28}$, M.~Shao$^{42}$, C.~P.~Shen$^{2}$, X.~Y.~Shen$^{1}$, H.~Y.~Sheng$^{1}$, M.~R.~Shepherd$^{18}$, W.~M.~Song$^{1}$, X.~Y.~Song$^{1}$, S.~Spataro$^{45A,45C}$, B.~Spruck$^{37}$, G.~X.~Sun$^{1}$, J.~F.~Sun$^{14}$, S.~S.~Sun$^{1}$, Y.~J.~Sun$^{42}$, Y.~Z.~Sun$^{1}$, Z.~J.~Sun$^{1}$, Z.~T.~Sun$^{42}$, C.~J.~Tang$^{32}$, X.~Tang$^{1}$, I.~Tapan$^{36C}$, E.~H.~Thorndike$^{41}$, D.~Toth$^{40}$, M.~Ullrich$^{37}$, I.~Uman$^{36B}$, G.~S.~Varner$^{39}$, B.~Wang$^{1}$, D.~Wang$^{28}$, D.~Y.~Wang$^{28}$, K.~Wang$^{1}$, L.~L.~Wang$^{1}$, L.~S.~Wang$^{1}$, M.~Wang$^{30}$, P.~Wang$^{1}$, P.~L.~Wang$^{1}$, Q.~J.~Wang$^{1}$, S.~G.~Wang$^{28}$, X.~F. ~Wang$^{35}$, X.~L.~Wang$^{42}$, Y.~D.~Wang$^{19A}$, Y.~F.~Wang$^{1}$, Y.~Q.~Wang$^{20}$, Z.~Wang$^{1}$, Z.~G.~Wang$^{1}$, Z.~H.~Wang$^{42}$, Z.~Y.~Wang$^{1}$, D.~H.~Wei$^{10}$, J.~B.~Wei$^{28}$, P.~Weidenkaff$^{20}$, Q.~G.~Wen$^{42}$, S.~P.~Wen$^{1}$, M.~Werner$^{37}$, U.~Wiedner$^{3}$, L.~H.~Wu$^{1}$, N.~Wu$^{1}$, S.~X.~Wu$^{42}$, W.~Wu$^{27}$, Z.~Wu$^{1}$, L.~G.~Xia$^{35}$, Y.~X~Xia$^{17}$, Z.~J.~Xiao$^{25}$, Y.~G.~Xie$^{1}$, Q.~L.~Xiu$^{1}$, G.~F.~Xu$^{1}$, Q.~J.~Xu$^{12}$, Q.~N.~Xu$^{38}$, X.~P.~Xu$^{29,33}$, Z.~Xue$^{1}$, L.~Yan$^{42}$, W.~B.~Yan$^{42}$, W.~C~Yan$^{42}$, Y.~H.~Yan$^{17}$, H.~X.~Yang$^{1}$, Y.~Yang$^{5}$, Y.~X.~Yang$^{10}$, Y.~Z.~Yang$^{11}$, H.~Ye$^{1}$, M.~Ye$^{1}$, M.~H.~Ye$^{6}$, B.~X.~Yu$^{1}$, C.~X.~Yu$^{27}$, H.~W.~Yu$^{28}$, J.~S.~Yu$^{23}$, S.~P.~Yu$^{30}$, C.~Z.~Yuan$^{1}$, W.~L.~Yuan$^{26}$, Y.~Yuan$^{1}$, A.~A.~Zafar$^{44}$, A.~Zallo$^{19A}$, S.~L.~Zang$^{26}$, Y.~Zeng$^{17}$, B.~X.~Zhang$^{1}$, B.~Y.~Zhang$^{1}$, C.~Zhang$^{26}$, C.~B~Zhang$^{17}$, C.~C.~Zhang$^{1}$, D.~H.~Zhang$^{1}$, H.~H.~Zhang$^{34}$, H.~Y.~Zhang$^{1}$, J.~L.~Zhang$^{1}$,  J.~Q.~Zhang$^{1}$, J.~W.~Zhang$^{1}$, J.~Y.~Zhang$^{1}$, J.~Z.~Zhang$^{1}$, LiLi~Zhang$^{17}$, S.~H.~Zhang$^{1}$, X.~J.~Zhang$^{1}$, X.~Y.~Zhang$^{30}$, Y.~Zhang$^{1}$, Y.~H.~Zhang$^{1}$, Z.~P.~Zhang$^{42}$, Z.~Y.~Zhang$^{46}$, Zhenghao~Zhang$^{5}$, G.~Zhao$^{1}$, J.~W.~Zhao$^{1}$, Lei~Zhao$^{42}$, Ling~Zhao$^{1}$, M.~G.~Zhao$^{27}$, Q.~Zhao$^{1}$, S.~J.~Zhao$^{48}$, T.~C.~Zhao$^{1}$, X.~H.~Zhao$^{26}$, Y.~B.~Zhao$^{1}$, Z.~G.~Zhao$^{42}$, A.~Zhemchugov$^{21,b}$, B.~Zheng$^{43}$, J.~P.~Zheng$^{1}$, Y.~H.~Zheng$^{38}$, B.~Zhong$^{25}$, L.~Zhou$^{1}$, X.~Zhou$^{46}$, X.~K.~Zhou$^{38}$, X.~R.~Zhou$^{42}$, K.~Zhu$^{1}$, K.~J.~Zhu$^{1}$, X.~L.~Zhu$^{35}$, Y.~C.~Zhu$^{42}$, Y.~S.~Zhu$^{1}$, Z.~A.~Zhu$^{1}$, J.~Zhuang$^{1}$, B.~S.~Zou$^{1}$, J.~H.~Zou$^{1}$
+\\
+\vspace{0.2cm}
+(BESIII Collaboration)\\
+\vspace{0.2cm} {\it
+$^{1}$ Institute of High Energy Physics, Beijing 100049, People's Republic of China\\
+$^{2}$ Beihang University, Beijing 100191, People's Republic of China\\
+$^{3}$ Bochum Ruhr-University, D-44780 Bochum, Germany\\
+$^{4}$ Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA\\
+$^{5}$ Central China Normal University, Wuhan 430079, People's Republic of China\\
+$^{6}$ China Center of Advanced Science and Technology, Beijing 100190, People's Republic of China\\
+$^{7}$ COMSATS Institute of Information Technology, Lahore, Defence Road, Off Raiwind Road, 54000 Lahore\\
+$^{8}$ G.I. Budker Institute of Nuclear Physics SB RAS (BINP), Novosibirsk 630090, Russia\\
+$^{9}$ GSI Helmholtzcentre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany\\
+$^{10}$ Guangxi Normal University, Guilin 541004, People's Republic of China\\
+$^{11}$ GuangXi University, Nanning 530004, People's Republic of China\\
+$^{12}$ Hangzhou Normal University, Hangzhou 310036, People's Republic of China\\
+$^{13}$ Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany\\
+$^{14}$ Henan Normal University, Xinxiang 453007, People's Republic of China\\
+$^{15}$ Henan University of Science and Technology, Luoyang 471003, People's Republic of China\\
+$^{16}$ Huangshan College, Huangshan 245000, People's Republic of China\\
+$^{17}$ Hunan University, Changsha 410082, People's Republic of China\\
+$^{18}$ Indiana University, Bloomington, Indiana 47405, USA\\
+$^{19}$ (A)INFN Laboratori Nazionali di Frascati, I-00044, Frascati, Italy; (B)INFN and University of Perugia, I-06100, Perugia, Italy\\
+$^{20}$ Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany\\
+$^{21}$ Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia\\
+$^{22}$ KVI, University of Groningen, NL-9747 AA Groningen, The Netherlands\\
+$^{23}$ Lanzhou University, Lanzhou 730000, People's Republic of China\\
+$^{24}$ Liaoning University, Shenyang 110036, People's Republic of China\\
+$^{25}$ Nanjing Normal University, Nanjing 210023, People's Republic of China\\
+$^{26}$ Nanjing University, Nanjing 210093, People's Republic of China\\
+$^{27}$ Nankai university, Tianjin 300071, People's Republic of China\\
+$^{28}$ Peking University, Beijing 100871, People's Republic of China\\
+$^{29}$ Seoul National University, Seoul, 151-747 Korea\\
+$^{30}$ Shandong University, Jinan 250100, People's Republic of China\\
+$^{31}$ Shanxi University, Taiyuan 030006, People's Republic of China\\
+$^{32}$ Sichuan University, Chengdu 610064, People's Republic of China\\
+$^{33}$ Soochow University, Suzhou 215006, People's Republic of China\\
+$^{34}$ Sun Yat-Sen University, Guangzhou 510275, People's Republic of China\\
+$^{35}$ Tsinghua University, Beijing 100084, People's Republic of China\\
+$^{36}$ (A)Ankara University, Dogol Caddesi, 06100 Tandogan, Ankara, Turkey; (B)Dogus University, 34722 Istanbul, Turkey; (C)Uludag University, 16059 Bursa, Turkey\\
+$^{37}$ Universitaet Giessen, D-35392 Giessen, Germany\\
+$^{38}$ University of Chinese Academy of Sciences, Beijing 100049, People's Republic of China\\
+$^{39}$ University of Hawaii, Honolulu, Hawaii 96822, USA\\
+$^{40}$ University of Minnesota, Minneapolis, Minnesota 55455, USA\\
+$^{41}$ University of Rochester, Rochester, New York 14627, USA\\
+$^{42}$ University of Science and Technology of China, Hefei 230026, People's Republic of China\\
+$^{43}$ University of South China, Hengyang 421001, People's Republic of China\\
+$^{44}$ University of the Punjab, Lahore-54590, Pakistan\\
+$^{45}$ (A)University of Turin, I-10125, Turin, Italy; (B)University of Eastern Piedmont, I-15121, Alessandria, Italy; (C)INFN, I-10125, Turin, Italy\\
+$^{46}$ Wuhan University, Wuhan 430072, People's Republic of China\\
+$^{47}$ Zhejiang University, Hangzhou 310027, People's Republic of China\\
+$^{48}$ Zhengzhou University, Zhengzhou 450001, People's Republic of China\\
+ \vspace{0.2cm}
+ $^{a}$ Also at the Novosibirsk State University, Novosibirsk, 630090, Russia\\
+$^{b}$ Also at the Moscow Institute of Physics and Technology, Moscow 141700, Russia\\
+%$^{c}$ Hunan University\\
+$^{c}$ Also at University of Texas at Dallas, Richardson, Texas 75083, USA\\
+$^{d}$ Also at the PNPI, Gatchina 188300, Russia\\
+}\end{center}
+\vspace{0.4cm}
+}
+
+\begin{abstract}
+We report on a study of the process $\ee\rt\pipm(D\dstrbar)^{\mp}$ at $\sqrt{s}=4.26$~GeV
+using a 525 pb$^{-1}$ data sample collected with the BESIII detector at the BEPCII storage ring.
+A distinct charged structure is observed in the $(D \dstrbar)^{\mp}$ invariant mass distribution.
+When fitted to a mass-dependent-width Breit-Wigner lineshape, the pole mass and width are determined to be
+$M_{\rm pole}=(3883.9 \pm 1.5 \pm 4.2)$~MeV/$c^2$ and $\Gamma_{\rm pole}=(24.8\pm 3.3 \pm 11.0)$~MeV.
+The mass and width of the structure, which we refer to as $\zc(3885)$,
+are $2\sigma$ and $1\sigma$, respectively, below those of the $Z_c(3900)\rt \pi^{\pm}\jp$ peak
+observed by BESIII and Belle in $\pip\pim\jp$ final states produced at the
+same center-of-mass energy. The angular distribution of the $\pi\zc(3885)$
+system favors a $J^{P}=1^{+}$ quantum number assignment for the structure and disfavors $1^-$ or $0^-$.
+The Born cross section times the $D\dstrbar$ branching fraction of the $\zc(3885)$ is measured
+to be $\sigma(\ee \rt \pi^{\pm}\zc(3885)^{\mp})\times{\cal B}(\zc(3885)^{\mp}\rt(D\dstrbar)^{\mp})
+=(83.5\pm6.6~\pm 22.0)$~pb. Assuming the $\zc(3885)\rt D\dstrbar$
+signal reported here and the $Z_c(3900)\rt\pi\jp$ signal are from the same source,
+the partial width ratio
+$\frac{\Gamma(\zc(3885)\rt D\dstrbar)}{\Gamma(Z_c(3900)\rt\pi\jp)}=6.2\pm1.1~\pm2.7$
+is determined.
+\end{abstract}
+
+\pacs{14.40.Rt, 13.25.Gv, 14.40.Pq}
+
+\maketitle
+
+%%%% >>>> keep the final version single-spaced
+%\tightenlines
+
+{\renewcommand{\thefootnote}{\fnsymbol{footnote}}}
+\setcounter{footnote}{0}
+
+%\section{Introduction}
+%\noindent
+The $Y(4260)$ resonance
+was first seen by BaBar as a peak in
+the $\ee\rt \pipi\jp$ cross section as a function of $e^+ e^-$ center-of-mass (CM) energy~\cite{babar_y4260}.
+It was subsequently confirmed by CLEO~\cite{cleo_y4260}
+and Belle~\cite{belle_y4260}. Its production via the $e^+ e^-$ annihilation process
+requires the quantum numbers of the $Y(4260)$ to be $J^{PC}=1^{--}$.
+A peculiar feature is the absence
+of any apparent corresponding structure in the
+cross sections for $\ee\rt D^{(*)}\bar{D}^{(*)}(\pi)$ in the
+$\sqrt{s}=4260$~MeV energy region~\cite{galina}. This implies
+a lower-limit partial width of $\Gamma(Y(4260)\rt\pipi\jp)>1$~MeV~\cite{mo}
+that is one order-of-magnitude larger than measured values for
+conventional charmonium meson transitions~\cite{pdg}, and
+indicates that the $Y(4260)$ is probably not a conventional
+quarkonium state.
+
+A similar pattern is seen in the $b$-quark sector, where
+anomalously large cross sections for $\ee\rt\pipi\yns$
+($n=1,2,3$) at energies around $\sqrt{s}=10.86$~GeV
+reported by Belle~\cite{belle_pipiyns} were subsequently found to be associated
+with the production of charged bottomonium-like resonances, the $Z_b(10610)^+$
+and $Z_b(10650)^+$, both with strong decays to $\pi^+\Upsilon(nS)$ and
+$\pi^+ h_b(mP)$ ($m=1,2$)~\cite{belle_z_b}.
+The $Z_b(10610)^+$ mass is just above the $m_{B}+m_{B^*}$
+threshold and it decays copiously to $B\bar{B}^*$,
+while the $Z_b(10650)^+$ mass is just above the $2m_{B^*}$
+threshold and it decays copiously to
+$B^* \bar{B}^*$~\cite{belle_zb_bbstr}. Their proximity
+to the $B\bar{B}^*$ and $B^*\bar{B}^*$ thresholds as well as
+their decay patterns suggest that
+these states may be molecule-like meson-meson virtual
+states~\cite{voloshin}; a subject of considerable interest~\cite{molecule}.
+
+Recently BESIII reported the observation of
+a prominent resonance-like charged structure
+in the $\pi\jp$ invariant mass distribution
+for $\ee\rt\pipi\jp$ events collected at $\sqrt{s}=4.26$~GeV,
+dubbed the $Z_c(3900)$.  A fit to a Breit-Wigner (BW) resonance lineshape
+yields $M = (3899.0 \pm 3.6 \pm 4.9)$~MeV/$c^2$ and $\Gamma = (46 \pm 10 \pm 20)$~MeV~\cite{bes3_z3900}.
+(Here, and elsewhere in this report, the first errors are
+statistical and the second systematic.) This
+observation was subsequently confirmed by
+Belle~\cite{belle_z3900}. The $Z_c(3900)$ mass is $\sim$20~MeV/$c^2$ above the
+$D\bar{D}^*$ mass threshold, which is suggestive of a virtual $D\bar{D}^*$
+molecule-like structure~\cite{zhao,mahajan}; {\it i.e.}, a charmed-sector
+analog of the $Z_b(1610)$.  (BESIII also reported resonance-like
+structures in charged $D^*\bar{D}^*$ and $\pi h_c$ systems at $M\simeq 4025$~MeV, which
+may be a charmed-sector analog of the $Z_b(10650$~\cite{bes3_z4025}.)
+Another possibility is a diquark-diantiquark state~\cite{faccini}. It is important
+to measure the rate for $Z_c(3900)$ decays to $D\bar{D}^*$ and
+compare it to that of the $\pi\jp$.
+
+Here we report the observation of a peak in the $(D\dstrbar)^-$ invariant-mass
+distribution in $\ee\rt\pip (D\dstrbar)^{-}$ annihilation events
+at $\sqrt{s}=4.26$~GeV with a 525~pb$^{-1}$ data sample detected by
+the BESIII detector at the BEPCII electron-positron collider. In the following,
+this structure is referred to as the $\zc(3885)$.
+The $\pi^{+} (D\dstrbar)^{-}$ final states are selected by means of a
+partial reconstruction technique in which only the bachelor
+$\pi^{+}$ and one final-state $D$ meson are detected, and the presence of the
+$\dstrbar$ is inferred from energy-momentum conservation.
+(In this report,
+the inclusion of charge conjugate states is always implied.)
+We perform parallel analyses of both isospin channels
+($\pip \dz {D}^{*-}$ and $\pim \dplus \dstrzbar)$ as a consistency check.
+The $D$ mesons are reconstructed in the
+$\dz\rt K^-\pi^+$ and $\dplus\rt K^-\pip\pip$ decay channels.
+
+%\section{Detector description}
+%\noindent
+The BESIII detector is a large-solid-angle magnetic
+spectrometer consisting of
+a 50-layer Helium-gas-based main cylindrical drift chamber (MDC),
+a barrel-like arrangement of time-of-flight  scintillation
+counters (TOF), and an electromagnetic calorimeter
+comprised of CsI(Tl) crystals  located inside
+a superconducting solenoid coil that provides a 1~T
+magnetic field.  An iron flux-return located outside of
+the coil is instrumented with resistive plate chambers to
+identify muons. The charged particle momentum resolution
+for 1~GeV/$c$ charged tracks is
+0.5\% and the energy resolution for 1~GeV photons is 2.5\%.
+Measurements of $dE/dx$ in the MDC and flight times in the TOF
+are combined to determine pion, kaon and proton identification (ID)
+probabilities. The hypothesis with the highest ID probability
+is assigned to each particle. The detector is described in detail
+in Ref.~\cite{BESIII}.
+
+To study the detector response and identify potential backgrounds,
+we use samples of Monte Carlo (MC) simulated events that are produced
+by the EVTGEN generator~\cite{evtgen} in conjunction with
+KKMC~\cite{kkmc}, which generates ISR photons,
+and simulated using a GEANT4-based~\cite{geant4} software package~\cite{boost}.
+In addition to signal channels and various
+potential background processes, we simulated generic events using Born cross sections for
+charmonium processes that have been measured, Lundcharm to generate production of
+other, non-measured charmonium states~\cite{lund}
+and PYTHIA for unmeasured hadronic final states~\cite{pythia}.
+
+%\section{Event selection}
+For the $\pip\dz$-tag analysis, we select events with three
+or more well reconstructed charged tracks in the polar angle region $|\cos\theta|< 0.93$,
+with points of closest approach to the $\ee$ interaction point that are
+less than $10$~cm in the beam direction
+and 1~cm in the plane perpendicular to the beam direction.
+At least one of the tracks is required to be negatively charged and
+identified as a kaon. In addition, we require at least two positively charged tracks
+that are identified as $\pip$ mesons.
+We designate $K^-\pip$ combinations with invariant mass within $15$~MeV/$c^2$
+of $m_{\dz}$ as $\dz$ candidates. For events with two or more $K^-\pip$ combinations,
+we retain the one with invariant mass closest to $m_{\dz}$. For the $\pim\dplus$-tag
+analysis, the selection is the same except for the requirement of an additional $\pim$
+track that is identified as the bachelor pion and the mass requirement
+$|M(K^-\pip\pip)-m_{\dplus}|<15$~MeV/$c^2$ to select the $\dplus$ candidates.
+
+The left panel of Fig.~\ref{dst} shows the distribution of masses recoiling
+against the detected $\pip D^0$ system~\cite{recoil}, where a prominent peak at
+$m_{D^{*-}}$ is evident.  The solid-line histogram shows the same distribution
+for  MC-simulated $e^+e^-\rt \pip D^0 D^{*-}$,  $D^0\rt K^-\pip$ three-body phase-space
+events.  Because of the limited phase space, some events from the isospin partner
+decay $\pip\zc(3885)^-$, $\zc(3885)^-\rt \dminus\dstrz$, where  the detected $\dz$ is a decay product
+of the $\dstrz$, also peak near $m_{D^{*-}}$, as shown by the dashed histogram that
+is for MC-simulated $e^+e^-\rt \pip \zc(3885)^- $, $\zc(3885)^-\rt D^- D^{*0}$, $D^{*0}\rt \gamma$~or~$\pi^0 D^0$
+decays.  Here the mass and width of the $\zc(3885)$ are set to our final measured values.
+Since the $D\dstrbar$ invariant mass distribution is equivalent to the bachelor
+pion recoil mass spectrum, the shape of the $\zc(3885)\rt D\bar{D}^*$ signal peak is
+not sensitive to the parentage of the $D$ meson that is used for the event tagging.
+The right panel of Fig.~\ref{dst} shows the corresponding plots for the $\pim D^+$ tagged events,
+where the solid histogram shows the contribution from MC-simulated
+$e^+e^-\rt \pim D^+ \bar{D}^{*0}$ three-body phase-space events.  Here, also,
+the $\pim\dplus$-tagged event sample that is used to study $\pim\dplus\dstrzbar$ includes
+some cross feed from  the $\pim\zc(3885)^+$, $\zc(3885)^+\rt\bar{D}^0\dstrp$ signal channel, where the
+$\dplus$ used for tagging is a decay product of the $\dstrp$.  The dashed histogram is from
+MC-simulated $e^+e^-\rt \pim \zc(3885)^+$, $ \zc(3885)^+\rt \bar{D}^0 D^{*+}$, $D^{*+}\rt \pi^0 D^+$ events.
+\begin{figure}[htb]
+%Figure 1 with 1 horizontal panel  pi+pi-rec-m_2c
+\begin{minipage}[t]{42mm}
+  \includegraphics[height=0.8\textwidth,width=1.04\textwidth]{prl-dst1.eps}
+\end{minipage}
+\begin{minipage}[t]{42mm}
+  \includegraphics[height=0.8\textwidth,width=1.04\textwidth]{prl-dst2.eps}
+\end{minipage}
+\caption{\footnotesize The $\pi D$ recoil mass distribution for the
+$\pip D^0$-  {\it (left)} and  $\pim D^+$-tagged {\it (right)} events. Points with errors
+are data, the hatched histogram shows the events from the $D$ mass sidebands.
+The solid and dashed histograms are described in the text.
+}
+\label{dst}
+\end{figure}
+
+%\section{Two-constraint kinematical fit analysis}
+We apply a two-constraint kinematic fit to the selected events, where
+we constrain the invariant mass of the $\dz$ ($\dplus$) candidate tracks
+to be equal to $m_{\dz}$ ($m_{\dplus}$) and the mass recoiling from the $\pip\dz$
+($\pim\dplus$) to be equal to $m_{\dstrm}$ ($m_{\dstrzbar}$). If there is more than
+one bachelor pion candidate in an event, we retain the one with the smallest
+$\chi^2$ from the kinematic fit. Events with $\chi^2<30$ are selected for further analysis.
+For the $\pip\dz$-tag analysis, we require $M(\pip\dz)> 2.02$~GeV to reject the events of the type
+$\ee\rt\dstrp\dstrm$, $\dstrp\rt\pip \dz$.
+The left (right) panel of Fig.~\ref{fig:mddstr_2c} shows the distribution of $\dz\dstrm$ 
+($D^+\dstrzbar$) invariant masses recoiling from the bachelor pion
+for the $\pip\dz$ ($\pim\dplus$) tagged events.
+%(Because of the kinematicconstraints, the pion recoil mass and $D\bar{D}^*$ invariant mass are equivalent.)
+The two distributions are similar and both have a distinct peak near the
+$m_{D}+m_{\dstrbar}$ mass threshold.
+{\color{black} For cross-feed events, the reconstructed $D$ meson is not in fact recoiling
+from a $\dstrbar$ and the efficiency for satisfying these selection requirements decreases
+with increasing $D\dstrbar$ mass. Studies with phase-space MC event samples show
+that this acceptance variation is not sufficient to produce a peaking structure.}
+
+
+
+%\section{Fits to the $M(\dz\dstrm)$ mass distribution}
+
+To characterize the observed enhancement
+and determine the signal yield,
+we fit the histograms in the left and right panels of
+Fig.~\ref{fig:mddstr_2c} using a mass-dependent-width Breit-Wigner (BW) lineshape
+to model the signal and smooth threshold functions to
+represent the non-peaking background. For the signal, we use
+$dN/dm_{D\dstrbar} \propto (k^*)^{2\ell+1}|BW_{\zc}(m_{D\dstrbar})|^2$,
+where $k^*$ is the $\zc$ momentum in the $\ee$ rest frame, $\ell$ is the
+$\pi$-$\zc$ relative orbital angular momentum and
+$BW_{\zc}(m_{D\dstrbar}) \propto \frac{\sqrt{m_{D\dstrbar}\Gamma_{\zc}}}
+{m^2_{\zc} - m^2_{D\dstrbar}-im_{\zc}\Gamma_{\zc}}$. Here $\Gamma_{\zc}=\Gamma_{0}(q^*/q_{0})^{2L+1}(m_{\zc}/m_{D\dstrbar})$,
+where $q^*(m_{D\dstrbar})$ is the $D$ momentum in the $\zc(3885)$ rest frame,
+$q_0=q^*(m_{\zc})$ and $L$ is the $D$-$\dstrbar$ orbital angular momentum.
+In the default fits, we set $\ell=0$, $L=0$ and leave $m_{\zc}$ and $\Gamma_{0}$ as free parameters.
+We multiply the BW by a polynomial determined from a fit to the
+MC-determined mass-dependent efficiency to form the signal
+probability density function (PDF). Mass resolution effects are less than 1~MeV/$c^2$
+and, thus, ignored. For the non-peaking background for the $M(D \dstrbar)$ distribution,
+we use: $f_{\rm bkg}(m_{D\dstrbar})\propto (m_{D\dstrbar}-M_{\rm min})^c(M_{\rm max}-m_{D\dstrbar})^d$,
+where $M_{\rm min}$ and $M_{\rm max}$ are the minimum and maximum kinematically allowed masses,
+respectively. The exponents $c$ and $d$ are free parameters determined from the fits to the data.
+
+\begin{figure}[htb]
+\begin{minipage}[t]{42mm}
+  \includegraphics[height=0.8\textwidth,width=1.04\textwidth]{prl-mass1.eps}
+\end{minipage}
+\begin{minipage}[t]{42mm}
+  \includegraphics[height=0.8\textwidth,width=1.04\textwidth]{prl-mass2.eps}
+\end{minipage}
+\caption{\footnotesize The $M(\dz\dstrm)$ {\it (left)} and $M(\dplus\dstrzbar)$ {\it (right)}
+distributions for selected events.  The curves are described in the text.
+}
+\label{fig:mddstr_2c}
+\end{figure}
+
+The results of the fits are shown as solid curves in Fig.~\ref{fig:mddstr_2c}.
+The dashed curves show the fitted non-resonant background. The fitted BW masses and widths from the $\pip D^0$
+($\pim D^+$) tagged sample are $3889.2 \pm 1.8$~MeV/$c^2$ and $ 28.1 \pm 4.1 $~MeV
+($3891.8 \pm 1.8$~MeV/$c^2$ and $ 27.8 \pm 3.9 $~MeV), where the errors are statistical only.
+Since the mass and width of a mass-dependent-width BW are model dependent and may differ
+from the actual resonance properties~\cite{pole},
+we solve for $P=M_{\rm pole}-i\Gamma_{\rm pole}/2$,
+the position in the complex $(M,\Gamma)$ plane where the BW denominator is zero,
+and use $M_{\rm pole}$ and $\Gamma_{\rm pole}$  to characterize the mass and width of the $\zc(3885)$ peak.
+Table~\ref{tbl:fits} lists the pole masses and widths for the $\pip D^0$ and $\pim D^+$ tagged samples.
+
+\begin{table}[htb]
+\begin{center}
+\caption{\label{tbl:fits}
+The pole mass $M_{\rm pole}$ and width $\Gamma_{\rm pole}$, signal yields and fit quality ($\chi^2 $/ndf)
+for the two tag samples.}
+\begin{tabular}{l c c c c}
+\hline  %-------------------------------------------------------------------------------------
+\hline  %-------------------------------------------------------------------------------------
+ Tag         & {\footnotesize $M_{\rm pole}$(MeV/$c^2$)}~&~{\footnotesize $\Gamma_{\rm pole}$(MeV)}~&~{\footnotesize $\zc$ signal~(evts)}~&~$\chi^2$/ndf \\
+\hline  %-------------------------------------------------------------------------------------
+$\pip D^0$       &  $3882.3 \pm 1.5$  & $ 24.6 \pm 3.3 $     & $ 502\pm 41$         &  54/54      \\
+$\pim D^+$       &  $3885.5 \pm 1.5$  & $ 24.9 \pm 3.2 $     & $ 710\pm 54$         &  60/54      \\
+\hline  %-------------------------------------------------------------------------------------
+\hline  %-------------------------------------------------------------------------------------
+\end{tabular}
+\end{center}
+\end{table}
+
+
+Monte Carlo studies of possible sources of peaking backgrounds
+in the $D\dstrbar$ mass distribution show that
+processes of the type $\ee\rt D \bar{D}_{X}$, $\bar{D}_X\rt \dstrbar\pi$,
+would produce a near-threshold reflection peak in the
+$D \dstrbar$ mass distribution, where $D_X$ denotes a
+$D^*\pi$ resonance with mass near the upper kinematic boundary.
+This boundary, $\sqrt{s}-m_{D}$, is $30$~MeV/$c^2$ below the mass
+of the lightest established $D^*\pi$ resonance,
+the $\done(2420)$, with $M_{\done}=2421.3\pm0.6$~MeV/$c^2$ and
+$\Gamma_{\done} =27.1\pm 2.7$~MeV~\cite{pdg}, which suggests that
+contributions from $D \donebar(2420)$ final states, either from
+$Y(4260)\rt D \donebar$ decays or non-resonant
+$\ee\rt D \donebar$ production, are beyond the kinematic
+reach at $\sqrt{s} = 4260$~MeV and, therefore, are small.
+However, some models for the $Y(4260)$ attribute it to
+a bound $D \donebar$ molecular state~\cite{zhao}, where
+sub-threshold $\donebar\rt \dstrbar\pi$ decays
+might be important and, possibly, produce a reflection peak
+in the $D\dstrbar$ mass distribution that mimics a $\zc(3885)$ signal.
+
+To study this possibility, we separated the events into two samples
+according to $|\cos\theta_{\pi D}|>0.5$ and $|\cos\theta_{\pi D}|<0.5$,
+where $\theta_{\pi D}$ is the angle between the bachelor pion and the
+$D$ meson directions in the $\zc(3885)$ rest frame. The $D\donebar$ MC events
+predominantly have $|\cos\theta_{\pi D}|>0.5$ while, in contrast,
+$\ee\rt\pi\zc$ signal-MC sample has similar numbers of events
+with $|\cos\theta_{\pi D}|>0.5$ and $|\cos\theta_{\pi D}|<0.5$.
+We define an asymmetry parameter ${\mathcal A}=(n_{>0.5}-n_{<0.5})/(n_{>0.5}+n_{<0.5})$,
+where $n_{>0.5}$ ($n_{<0.5}$) is the fitted number of $\zc(3885)$ signal events for
+$|\cos\theta_{\pi D}|>0.5$ ($<0.5$).  For the data, ${\mathcal A}_{\rm data}=0.12\pm 0.06$,
+close to the MC value for $e^+e^-\rt\pi\zc(3885)$: ${\mathcal A}^{\pi\zc}_{\rm MC}=0.02\pm 0.02$,
+and far from the MC result for the $e^+e^-\rt D\donebar$ hypothesis:
+${\mathcal A}^{D\donebar}_{\rm MC}=0.43\pm 0.04$. We conclude that the
+$D\donebar$ contribution to our observed $\zc(3885)\rt D\dstrbar$ signal
+is small.
+
+\begin{figure}[htb]
+%Figure 12  yield xs |cos\theta|
+\begin{minipage}[t]{75mm}
+  \includegraphics[height=0.6\textwidth,width=0.8\textwidth]{prl-angle.eps}
+\end{minipage}
+\caption{\footnotesize $(1/N_{tot})dN/d|\cos\theta_{\pi}|~versus~|\cos\theta_{\pi}|$ for $\zc(3885)$
+events in data.  The solid, dashed and dotted curves show expectations for $J^P = 1^+$, $0^-$
+and $1^-$, respectively.
+}
+\label{fig:dndcos-pi}
+\end{figure}
+
+If the $J^P$ quantum numbers of the $\zc(3885)$ are $1^+$, the relative $\pi$-$\zc$ orbital
+in the decay $Y(4260)\rt\pi\zc$ can be $S$- and/or $D$-waves. Since the
+decay is near threshold, the $D$-wave contribution should be small,
+in which case the $dN/d|\cos\theta_{\pi}|$ distribution would
+be flat, where $\theta_{\pi}$ is the bachelor pion's polar angle relative to the beam
+direction in the CM. If $J^P = 0^-$, the decay can only proceed via a
+$P$-wave and is polarized with $J_z=\pm 1$; in this case
+$dN/d\cos\theta_{\pi} \propto \sin^2\theta_{\pi}$.  Similarly,  $J^P=1^-$ also implies a
+$P$-wave with an expected distribution that goes as $1 + \cos^2\theta$.
+Parity conservation excludes $J^P=0^+$.
+
+We sliced the data into four $|\cos\theta_{\pi}|$ bins and repeated the fits described
+above for each bin. The $|\cos\theta_{\pi}|$-dependence of the efficiency is determined
+from signal MC event samples.
+Figure~\ref{fig:dndcos-pi} shows the efficiency-corrected fractional signal yield
+{\it vs.} $|\cos\theta_{\pi}|$. The solid (dashed) curve shows the result of a fit to
+a flat ($\sin^2\theta_{\pi}$) distribution. The data agree well with the flat
+expectation for $J^P=1^+$, with $\chi^2 /{\rm ndf} = 0.44/3$ and disagree with those
+for $J^P=0^-$, for which $\chi^2/{\rm ndf}=32/3$, and $1^-$, where $\chi^2/{\rm ndf}=16/3$.
+
+%\section{Cross section results}
+We use the fitted numbers of signal events for the $\pip\dz$-tagged sample,
+$N_{\pip}(\zc^{-}\rt (D\dstrbar)^{-})$, and for the $\pim\dplus$-tagged sample,
+$N_{\pim}(\zc^{+}\rt (D\dstrbar)^{+})$ to make two independent measurements of
+the product of the cross section and branching fraction
+$\sigma(\ee\rt\pi \zc)\times {\mathcal B}(\zc \rt D\dstrbar)$.
+We assume isospin symmetry and, for
+the $\pip\dz$-tagged channel, use the relation
+\begin{eqnarray}
+&& \sigma(\ee\rt\pip \zc(3885)^{-})\times {\mathcal B}(\zc^{-}\rt (D\dstrbar)^-)\\
+\nonumber
+&=& \frac {N_{\pip}^{-}(\zc^-\rt (D\dstrbar)^{-})}
+{{\mathcal L}(1+\delta){\mathcal B}_{\dz\rt K^-\pip}(\epsilon^{0}_1+\epsilon^{0}_2)/2},
+\end{eqnarray}
+where ${\mathcal L}=525\pm 5$~pb$^{-1}$ is the integrated luminosity, $(1+\delta)=0.87\pm 0.04$
+is the radiative correction factor~\cite{factor}, $\epsilon^{0}_1=0.46$ is the efficiency for
+$\pip\zc^-$, $\zc^-\rt\dz\dstrm$ MC events
+and $\epsilon^{0}_2=0.21$ is the efficiency for
+$\pip\zc^-$, $\zc^-\rt \dminus\dstrz$, $\dstrz\rt \gamma/\piz\dz$ MC events. The resulting value is
+$\sigma(\ee\rt\pip \zc^{-})\times {\mathcal B}(\zc(3885)^{-}\rt (D\dstrbar)^-)=84.6\pm 6.9$~pb,
+where the error is statistical only.
+
+For the $\pim\dplus$-tagged channel, we use
+\begin{eqnarray}
+&&\sigma(\ee\rt\pim \zc(3885)^{+})\times {\mathcal B}(\zc^{+}\rt (D\dstrbar)^+) \\
+\nonumber
+&=& \frac {N_{\pim}(\zc^{+}\rt (D\dstrbar)^{+})}
+{{\mathcal L}(1+\delta){\mathcal B}_{\dplus\rt K^-\pip\pip}(\epsilon^{+}_1+
+\epsilon^{+}_2{\mathcal B}_{\dstrp\rt\piz\dplus})/2},
+\end{eqnarray}
+where $\epsilon^{+}_1=0.34$ is the efficiency for $\pim\zc^+, \zc^+\rt \dplus\dstrzbar$ MC events
+and $\epsilon^{+}_2=0.24$ is the efficiency for
+$\pim\zc^+$, $\zc^+\rt \bar{D}^0 \dstrp$, $\dstrp\rt \pi^0\dplus$ MC events.
+The result is
+$\sigma(\ee\rt\pim \zc(3885)^{+})\times {\mathcal B}(\zc^{+}\rt (D\dstrbar)^+)=82.3\pm 6.3$~pb
+(statistical error only) and in good agreement with that for the $\pip\dz$-tag sample, which
+justifies our assumption of isospin invariance.
+
+%\section{Systematic errors}
+\begin{table}[htb]
+\begin{center}
+\caption{\label{tbl:syst}
+Contributions to systematic errors on the pole mass, pole width and signal yield.
+When two values are listed, the first is for $\pip\dz$ tags and the second for $\pim\dplus$ tags.}
+\begin{tabular}{l c c c}
+\hline %---------------------------------------------------------------------------------------------------
+\hline %---------------------------------------------------------------------------------------------------
+Source                        &~{\footnotesize $M_{\rm pole}$(MeV/$c^2$)}~&~{\footnotesize $\Gamma_{\rm pole}$(MeV)}~&~$\sigma\times {\mathcal B}$~(\%) \\
+\hline %---------------------------------------------------------------------------------------------------
+Tracking \& PID             &              &                &      $\pm 4/6$        \\
+$D$ mass req.                &              &                &      $\pm 1$          \\
+$\dz/\dplus$ Bfs.            &              &                &      $\pm 1$         \\
+Kinematic fit                 &              &                &      $\pm 4$          \\
+Signal BW shape               & $\pm 1/2$    &   $\pm  3$     &      $\pm 5$      \\
+Bkgd shape                    & $\pm 4.0/3.8$& $\pm 10.4/10.7$&      $\pm 24$        \\
+MC efficiency                 &              &                &      $\pm 6/3$        \\
+$Y(4260)$ lineshape           &              &                &      $\pm 0.6$        \\
+Luminosity                    &              &                &      $\pm 1$         \\
+Rad. corr.                    &              &                &      $\pm 5$         \\
+\hline %---------------------------------------------------------------------------------------------------
+Sum in quadrature             &$\pm 4.1/4.3$ &$\pm 10.8/11.1$ &      $\pm 26.4/26.3$   \\
+\hline %---------------------------------------------------------------------------------------------------
+\hline %---------------------------------------------------------------------------------------------------
+\end{tabular}
+\end{center}
+\end{table}
+Systematic errors include uncertainties from tracking, particle ID, $D$ mass and decay branching fraction,
+kinematic fit, signal and background shapes, MC efficiency, $Y(4260)$ lineshape, the
+radiative correction factor and the luminosity.  The uncertainties from tracking and particle
+ID are both 1\% per track. The uncertainties from $D$ selection and the kinematic fit are determined from
+a $e^+e^- \rt D^{*+}D^{*-}$ control sample that has the same final state as the $\pi^+D^0D^{*-}$ signal events.
+The variation of the efficiency over the $\zc(3885)$ mass uncertainty range is included as a
+systematic error.  The systematic errors for the luminosity and $Y(4260)$ resonance parameters
+are taken from Ref.~\cite{bes3_z3900}.
+For the signal shape error
+we use the difference between the the pole mass \& width and signal yield
+from the fits that use a mass-dependent width (default) and
+the mass, width and yield from fits with mass-independent-width BW lineshapes.
+The most significant contributions to the systematic errors are
+related to the choice of background shape.  For this, we compare results from
+the default fit with those that use a symmetric exponential threshold function
+and the distribution of wrong-sign $\pi D$ events extracted from the data.
+
+In all the fits used in this analysis, it is assumed that the $\pi \zc(3885)$
+system is produced in an $S$-wave and the $D\dstrbar$ system produced in
+the decay of the $\zc(3885)$ is also in an $S$-wave. Attempts to fit the peak
+using $P$-wave line shapes all failed to converge. This compatibility with $S$-wave
+is consistent with the observed $\cos\theta_{\pi}$ distribution.
+
+The contributions from each source are summarized in Table~\ref{tbl:syst}.
+%For cases where the systematic errors for the $\pip\dz$ and $\pim\dplus$ tag samples
+%are different, both results are listed.
+We assume that the errors from the different sources are uncorrelated and
+use the sums in quadrature as the total systematic errors.
+
+%\section{Final results and comparison of results for the $\pip\jp$ and $D\dstrbar$ channels}
+For the final mass, width and cross section values, we use weighted averages of the results
+from the two tag modes, with the near-complete correlations between the systematic errors taken
+into account.  The results are listed in Table~\ref{tbl:compare}, where
+we also include results for the $Z_c(3900)\rt \pi\jp$
+taken from Ref.~\cite{bes3_z3900} for comparison.
+When statistical and systematic errors are added in quadrature, the $\zc(3885)$ mass is
+about $2\sigma$ lower than that for the $Z_c(3900)$ and the width is $1\sigma$ lower.
+\begin{table}[htb]
+\begin{center}
+\caption{\label{tbl:compare}
+Parameters for the $\zc (3885)\rt D\dstrbar$ reported here and those for the $Z_c (3900)\rt\pi\jp$
+taken from Ref.~\cite{bes3_z3900}.}
+\begin{tabular}{l c c}
+\hline %---------------------------------------------------------------------------------------------------
+\hline %---------------------------------------------------------------------------------------------------
+                                    &~~ $\zc (3885)\rt D\dstrbar$~~&~~$Z_c(3900)\rt \pi\jp$  \\
+\hline %---------------------------------------------------------------------------------------------------
+Mass~(MeV/$c^2$)                          &~~ $3883.9 \pm 1.5 \pm 4.2$~~&  $3899\pm 3.6 \pm 4.9$    \\
+$\Gamma$~(MeV)                      & $24.8 \pm 3.3 \pm 11.0$       &  $46 \pm 10 \pm 20$        \\
+$\sigma\times {\mathcal B}$~(pb) ~~& $83.5 \pm 6.6 \pm 22.0 $      &  $13.5 \pm 2.1 \pm 4.8$    \\
+\hline %---------------------------------------------------------------------------------------------------
+\hline %---------------------------------------------------------------------------------------------------
+\end{tabular}
+\end{center}
+\end{table}
+%\section{Summary}
+
+In summary, we report observation of a strong, near-threshold enhancement, $\zc (3885)$, in the
+$D\dstrbar$ invariant mass distribution in the process $\ee\rt \pi^{\pm} (D\dstrbar)^{\mp}$
+at $\sqrt{s}=4.26$~GeV. Attempts to fit the $\zc (3885)$ peak with a $P$-wave BW lineshape failed
+to converge, and the $|\cos\theta_{\pi}|$ distribution agrees well with $S$-wave expectations; both
+results favor a $J^P=1^{+}$ quantum number assignment.  Other $J\leqslant 1$ assigments are eliminated.
+
+An important question is whether or not the source of the $\zc(3885)\rt D\bar{D}^*$
+structure is the same as that for the $Z_c(3900)\rt \pi \jp$.
+The fitted $\zc(3885)$ mass is about $2\sigma$ below that of the $Z_c(3900)$~\cite{bes3_z3900,belle_z3900}.
+However neither fit considers the possibility of interference with a coherent non-resonant background
+that could shift the results.  A $J^P$ quantum number determination of the
+$Z_c(3900)^{\pm}$ would provide an additional test of this possibility.
+
+Assuming the $\zc (3885)$ structure reported here is due
+to the $Z_c(3900)$, the ratio of partial decay widths is determined to be
+$\frac{\Gamma(\zc(3885)\rt D\bar{D}^*)}{\Gamma(Z_c(3900)\rt\pi\jp)}=6.2 \pm 1.1 \pm2.7$
+(here the main systematic errors are almost entirely uncorrelated).
+This ratio is much smaller than typical values for decays of conventional charmonium states
+above the open charm threshold. For example:
+$\Gamma (\psi(3770)\rt D\bar{D})/\Gamma(\psi(3770)\rt \pipi\jp)=482\pm 84$~\cite{pdg}
+and $\Gamma (\psi(4040)\rt D^{(*)}\bar{D}^{(*)})/\Gamma(\psi(4040)\rt \eta\jp)=192\pm 27$~\cite{psi4040_2_etajpsi}.
+This suggests the influence of very different dynamics in the $Y(4260)$-$Z_c(3900)$ system.
+
+The BESIII collaboration thanks the staff of BEPCII and the computing center for their strong support.
+ This work is supported in part by the Ministry of Science and Technology of China Contract No. 2009CB825200;
+National Natural Science Foundation of China (NSFC) Contract Nos. 10821063, 10825524, 10835001, 10935007, 11125525, 11235011; Joint Funds of the National Natural Science Foundation of China under Contract Nos. 11079008, 11179007, 11079027; Chinese Academy of Sciences (CAS) Large-Scale
+Scientific Facility Program; CAS Contract Nos. KJCX2-YW-N29, KJCX2-YW-N45; 100 Talents Program of CAS;
+German Research Foundation (DFG) Contract No. Collaborative Research Center CRC-1044;
+Istituto Nazionale di Fisica Nucleare, Italy; Ministry of Development of Turkey Contract No. DPT2006K-120470;
+U. S. Department of Energy Contract Nos. DE-FG02-04ER41291, DE-FG02-05ER41374, DE-FG02-94ER40823;
+U.S. National Science Foundation; University of Groningen (RuG); Helmholtzzentrum f\"{u}r
+Schwerionenforschung GmbH (GSI) Darmstadt; Korean National Research Foundation (NRF) Grant No. 20110029457.
+%\section{Acknowledgments}
+
+\input{zc_2_ddstr_prl_biblio}
+
+%
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

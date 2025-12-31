@@ -1,0 +1,7 @@
+# Extracted from arXiv:1309.1896
+# BESIII Zc(4020) signal yields and cross sections in pi hc
+# sigma(e+e- -> pi+- Zc(4020)-+ -> pi+pi- h_c)
+sqrt_s_GeV,N_Zc4020,N_stat,sigma_pb,sigma_stat,sigma_syst,sigma_br
+4.230,114,25,8.7,1.9,2.8,1.4
+4.260,72,17,7.4,1.7,2.1,1.2
+4.360,67,15,10.3,2.3,3.1,1.6

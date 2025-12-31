@@ -1,0 +1,102 @@
+Subject: Request for Binned Mass Spectrum Data for Zc States (D*D* and D D* channels)
+
+Dear BESIII Collaboration Publications Committee,
+
+I am conducting a systematic study of amplitude factorization in exotic hadron
+production, testing whether complex production amplitudes are shared across
+different decay channels (a "rank-1 bottleneck" test).
+
+The Zc(4020)/Zc(4025) and Zc(3900)/Zc(3885) charged exotic states are ideal
+candidates for this test, as they were observed in both hidden-charm (π hc, π J/ψ)
+and open-charm (D*D*, D D*) final states.
+
+I have obtained the following data from HEPData and arXiv sources:
+
+FOUND:
+1. M(π± J/ψ) binned mass spectra from HEPData record 166173 (PWA paper 2025)
+2. σ(e⁺e⁻ → π⁺π⁻ h_c) cross sections from arXiv:1309.1896 (13 energy points)
+3. Zc(4020) yields from arXiv:1309.1896 (3 energy points)
+
+NOT FOUND (crucial for rank-1 test):
+1. Binned M(D*D̄*) or M(D*⁺D̄*⁰) invariant mass spectrum
+2. Binned M(D D̄*) or M(D⁰D̄*⁻) invariant mass spectrum
+
+REQUEST:
+========
+
+I am writing to request numeric tables for the following:
+
+1. M(D*D̄*) invariant mass distribution from e⁺e⁻ → π± (D*D̄*)∓
+   at √s = 4.26 GeV (from PRL 112, 132001 or subsequent analyses)
+
+   Specifically needed:
+   - Binned M(D*D̄*) mass spectrum (from Fig. 4 of arXiv:1308.2760)
+   - Efficiency-corrected event counts or cross section per bin
+   - Statistical uncertainties per bin
+   - Background model or sideband estimates if available
+
+2. M(D D̄*) invariant mass distribution from e⁺e⁻ → π± (D D̄*)∓
+   at √s = 4.26 GeV (from PRL 112, 022001 or subsequent analyses)
+
+   Specifically needed:
+   - Binned M(D D̄*) mass spectrum (from Fig. 2 of arXiv:1310.1163)
+   - For both π⁺D⁰ and π⁻D⁺ tag samples if available
+
+3. If possible, the same spectra at additional center-of-mass energies
+   (4.23, 4.36 GeV as in the π hc analysis)
+
+FORMAT:
+=======
+
+Any standard format would be acceptable:
+- CSV/TSV with mass bins and counts
+- HEPData YAML format
+- ROOT histogram (TH1)
+- ASCII table
+
+PURPOSE:
+========
+
+The analysis tests whether the Zc production amplitude follows a rank-1
+factorization structure. The model is:
+
+   I_α(m) = |BW₁(m) + R_α BW₂(m)|² + B_α(m)
+
+We test whether the complex ratio R is shared across channels:
+- M₀ (null): R_πhc = R_D*D* (universal production)
+- M₁ (alt): R_πhc ≠ R_D*D* (channel-dependent)
+
+This would provide important constraints on the nature of the Zc states
+(compact tetraquark vs. molecular state vs. kinematic effect).
+
+ALTERNATIVE:
+============
+
+If binned mass spectra cannot be provided, multi-energy yield data would
+allow a weaker "shared-coupling" test:
+- Zc(4025) → D*D* yields at √s = 4.23, 4.26, 4.36 GeV
+- Zc(3885) → D D* yields at multiple energies
+
+PUBLICATION:
+============
+
+If data is provided, full acknowledgment of the BESIII collaboration and
+proper citation of the original publications will be included in any
+resulting analysis.
+
+Thank you for considering this request. I understand data sharing policies
+may require collaboration approval, and I am happy to provide additional
+details about the planned analysis.
+
+Best regards,
+
+[Your Name]
+[Your Institution]
+[Your Email]
+
+---
+Date: 2025-12-30
+HEPData searches: Extensive (see NO_DATA.md for details)
+arXiv sources parsed: 1309.1896, 1308.2760, 1310.1163
+Result: Only fitted parameters and yields available, not binned spectra
+
