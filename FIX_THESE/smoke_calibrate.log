@@ -1,0 +1,41 @@
+
+============================================================
+SMOKE CALIBRATION: Di-charmonium
+Trials=25, Bootstrap=50, Starts=80
+============================================================
+
+  Trial  0: Lambda=0.0897, p_boot=0.960, gates=PASS
+  Trial  1: Lambda=3.2921, p_boot=0.160, gates=PASS
+  Trial  2: Lambda=4.7618, p_boot=0.080, gates=PASS
+  Trial  3: Lambda=1.9767, p_boot=0.300, gates=PASS
+  Trial  4: Lambda=4.8307, p_boot=0.100, gates=PASS
+
+--- Checkpoint: 5 trials, 5 PASS (100.0%) ---
+
+  Trial  5: Lambda=0.0474, p_boot=1.000, gates=PASS
+  Trial  6: Lambda=0.4258, p_boot=0.800, gates=PASS
+  Trial  7: Lambda=0.9354, p_boot=0.580, gates=PASS
+  Trial  8: Lambda=3.5774, p_boot=0.100, gates=PASS
+  Trial  9: Lambda=1.7099, p_boot=0.520, gates=PASS
+
+--- Checkpoint: 10 trials, 10 PASS (100.0%) ---
+
+  Trial 10: Lambda=2.8257, p_boot=0.220, gates=PASS
+  Trial 11: Lambda=0.9493, p_boot=0.680, gates=PASS
+  Trial 12: Lambda=0.0118, p_boot=0.980, gates=PASS
+  Trial 13: Lambda=2.8125, p_boot=0.180, gates=PASS
+  Trial 14: Lambda=5.8272, p_boot=0.040, gates=PASS
+
+--- Checkpoint: 15 trials, 15 PASS (100.0%) ---
+  Type-I: 1/15 = 6.7% (Wilson CI: [1.2%, 29.8%])
+
+  Trial 15: Lambda=0.7178, p_boot=0.700, gates=PASS
+  Trial 16: Lambda=1.8860, p_boot=0.440, gates=PASS
+  Trial 17: Lambda=2.2965, p_boot=0.280, gates=PASS
+  Trial 18: Lambda=1.9291, p_boot=0.380, gates=PASS
+  Trial 19: Lambda=0.5093, p_boot=0.800, gates=PASS
+
+--- Checkpoint: 20 trials, 20 PASS (100.0%) ---
+  Type-I: 1/20 = 5.0% (Wilson CI: [0.9%, 23.6%])
+  KS test: stat=0.1500, p=0.7045
+

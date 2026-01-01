@@ -1,0 +1,11 @@
+=== OPTIMIZATION CHECK: Di-charmonium Trial 0 (outlier) ===
+
+Testing if Lambda decreases with more optimizer starts...
+
+Starts= 80: NLL_unc=-13039.4192, NLL_con=-13035.2964, Lambda=8.2455
+Starts=150: NLL_unc=-13039.4192, NLL_con=-13035.2956, Lambda=8.2472
+Starts=300: NLL_unc=-13039.4192, NLL_con=-13035.2964, Lambda=8.2455
+Starts=500: NLL_unc=-13039.4192, NLL_con=-13035.2964, Lambda=8.2455
+
+If Lambda drops significantly => CONSTRAINED FIT UNDER-OPTIMIZED
+If Lambda stays high => Real issue with data/model
