@@ -39,3 +39,96 @@ Trials=25, Bootstrap=50, Starts=80
   Type-I: 1/20 = 5.0% (Wilson CI: [0.9%, 23.6%])
   KS test: stat=0.1500, p=0.7045
 
+  Trial 20: Lambda=1.9937, p_boot=0.340, gates=PASS
+  Trial 21: Lambda=3.2610, p_boot=0.140, gates=PASS
+  Trial 22: Lambda=1.0073, p_boot=0.600, gates=PASS
+  Trial 23: Lambda=1.6168, p_boot=0.500, gates=PASS
+  Trial 24: Lambda=0.1324, p_boot=0.940, gates=PASS
+
+--- Checkpoint: 25 trials, 25 PASS (100.0%) ---
+  Type-I: 1/25 = 4.0% (Wilson CI: [0.7%, 19.5%])
+  KS test: stat=0.1000, p=0.9427
+
+
+============================================================
+FINAL SUMMARY: Di-charmonium
+============================================================
+Total trials: 25
+Pass rate: 25/25 = 100.0%
+Type-I: 1/25 = 4.0% (CI: [0.7%, 19.5%])
+KS test: stat=0.1000, p=0.9427
+Lambda_obs mean: 1.9769
+Lambda_obs max: 5.8272
+Top 3 Lambda outliers: ['5.83', '4.83', '4.76']
+
+*** SMOKE PASS ***
+
+============================================================
+SMOKE CALIBRATION: Zc-like (control)
+Trials=25, Bootstrap=50, Starts=80
+============================================================
+
+  Trial  0: Lambda=0.3366, p_boot=0.800, gates=PASS
+  Trial  1: Lambda=0.2212, p_boot=0.840, gates=PASS
+  Trial  2: Lambda=2.2752, p_boot=0.220, gates=PASS
+  Trial  3: Lambda=0.2432, p_boot=0.780, gates=PASS
+  Trial  4: Lambda=1.0326, p_boot=0.540, gates=PASS
+
+--- Checkpoint: 5 trials, 5 PASS (100.0%) ---
+
+  Trial  5: Lambda=1.2134, p_boot=0.460, gates=PASS
+  Trial  6: Lambda=2.5709, p_boot=0.200, gates=PASS
+  Trial  7: Lambda=1.8894, p_boot=0.280, gates=PASS
+  Trial  8: Lambda=1.6237, p_boot=0.320, gates=PASS
+  Trial  9: Lambda=0.5042, p_boot=0.620, gates=PASS
+
+--- Checkpoint: 10 trials, 10 PASS (100.0%) ---
+
+  Trial 10: Lambda=1.3047, p_boot=0.480, gates=PASS
+  Trial 11: Lambda=1.8786, p_boot=0.280, gates=PASS
+  Trial 12: Lambda=1.6965, p_boot=0.400, gates=PASS
+  Trial 13: Lambda=0.5921, p_boot=0.660, gates=PASS
+  Trial 14: Lambda=3.1961, p_boot=0.200, gates=PASS
+
+--- Checkpoint: 15 trials, 15 PASS (100.0%) ---
+  Type-I: 0/15 = 0.0% (Wilson CI: [0.0%, 20.4%])
+
+  Trial 15: Lambda=2.0156, p_boot=0.340, gates=PASS
+  Trial 16: Lambda=0.1666, p_boot=0.920, gates=PASS
+  Trial 17: Lambda=0.7137, p_boot=0.620, gates=PASS
+  Trial 18: Lambda=3.1471, p_boot=0.160, gates=PASS
+  Trial 19: Lambda=0.1056, p_boot=0.960, gates=PASS
+
+--- Checkpoint: 20 trials, 20 PASS (100.0%) ---
+  Type-I: 0/20 = 0.0% (Wilson CI: [0.0%, 16.1%])
+  KS test: stat=0.1600, p=0.6285
+
+  Trial 20: Lambda=0.6631, p_boot=0.620, gates=PASS
+  Trial 21: Lambda=0.4706, p_boot=0.700, gates=PASS
+  Trial 22: Lambda=0.9835, p_boot=0.540, gates=PASS
+  Trial 23: Lambda=1.8193, p_boot=0.380, gates=PASS
+  Trial 24: Lambda=0.9237, p_boot=0.540, gates=PASS
+
+--- Checkpoint: 25 trials, 25 PASS (100.0%) ---
+  Type-I: 0/25 = 0.0% (Wilson CI: [0.0%, 13.3%])
+  KS test: stat=0.1600, p=0.4945
+
+
+============================================================
+FINAL SUMMARY: Zc-like (control)
+============================================================
+Total trials: 25
+Pass rate: 25/25 = 100.0%
+Type-I: 0/25 = 0.0% (CI: [0.0%, 13.3%])
+KS test: stat=0.1600, p=0.4945
+Lambda_obs mean: 1.2635
+Lambda_obs max: 3.1961
+Top 3 Lambda outliers: ['3.20', '3.15', '2.57']
+
+*** SMOKE PASS ***
+
+============================================================
+OVERALL RESULTS
+============================================================
+Di-charmonium: PASS
+Zc-like: PASS
