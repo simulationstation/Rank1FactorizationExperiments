@@ -1,0 +1,161 @@
+======================================================================
+RANK-1 BOTTLENECK TEST MODEL SWEEP
+======================================================================
+
+Running 4 models...
+
+======================================================================
+RANK-1 BOTTLENECK TEST: BaBar phi-f0(980) vs phi-pi+pi-
+======================================================================
+
+Step 1: Data Acquisition (HEPData)
+--------------------------------------------------
+  ERROR: Insufficient data points (A: 0, B: 0)
+======================================================================
+RANK-1 BOTTLENECK TEST: BaBar K*(892)K I=0 vs I=1
+======================================================================
+
+Step 1: Data Acquisition (HEPData)
+--------------------------------------------------
+  Channel A: 38 points, E=[1.41, 2.38] GeV
+  Channel B: 39 points, E=[1.41, 2.38] GeV
+
+Resonances: phi(1680) (1.680 GeV) / phi(2170) (2.162 GeV)
+Likelihood: gaussian
+Background: order 0
+
+Step 2: Unconstrained Fits
+--------------------------------------------------
+  Fitting Channel A...
+    r_A = 0.1354, φ_A = 89.5°
+    χ²/dof = 2.242 (71.8/32) -> PASS
+  Fitting Channel B...
+    r_B = 0.3356, φ_B = 59.1°
+    χ²/dof = 2.531 (83.5/33) -> PASS
+
+Step 3: Fit Health Gates
+--------------------------------------------------
+  Channel A: PASS
+  Channel B: PASS
+  Overall: PASS
+
+Step 4: Optimizer Stability Audit
+--------------------------------------------------
+  Phase identifiable: False
+  r stable: False
+
+Step 5: Joint Constrained Fit
+--------------------------------------------------
+  Shared: r = 0.1434, φ = 82.4°
+  NLL_unconstrained = 77.64
+  NLL_constrained = 82.11
+  Λ = 8.9510
+
+Step 6: Profile Likelihood Contours
+--------------------------------------------------
+  Shared in A 95%: True
+  Shared in B 95%: False
+
+Step 7: Bootstrap P-value
+--------------------------------------------------
+  Running 800 bootstrap replicates with 31 workers...
+  Valid bootstrap samples: 800/800
+  Bootstrap p-value = 0.0375
+
+Step 8: VERDICT
+==================================================
+  INCONCLUSIVE
+  Neither phase nor magnitude identifiable
+
+Generating outputs...
+  Saved to: /home/primary/DarkBItParticleColiderPredictions/model_sweep/runs/babar_kstar_k_isospin
+
+======================================================================
+RANK-1 BOTTLENECK TEST: BaBar omega(1420)/omega(1650)
+======================================================================
+
+Step 1: Data Acquisition (HEPData)
+--------------------------------------------------
+  ERROR: Insufficient data points (A: 0, B: 0)
+======================================================================
+RANK-1 BOTTLENECK TEST: BaBar phi-eta vs K+K-eta
+======================================================================
+
+Step 1: Data Acquisition (HEPData)
+--------------------------------------------------
+  Channel A: 50 points, E=[1.61, 2.78] GeV
+  Channel B: 13 points, E=[1.69, 2.78] GeV
+
+Resonances: phi(1680) (1.680 GeV) / phi(2170) (2.162 GeV)
+Likelihood: gaussian
+Background: order 0
+
+Step 2: Unconstrained Fits
+--------------------------------------------------
+  Fitting Channel A...
+    r_A = 0.1834, φ_A = 163.1°
+    χ²/dof = 0.812 (35.7/44) -> PASS
+  Fitting Channel B...
+    r_B = 0.1874, φ_B = 145.7°
+    χ²/dof = 1.000 (7.0/7) -> PASS
+
+Step 3: Fit Health Gates
+--------------------------------------------------
+  Channel A: PASS
+  Channel B: PASS
+  Overall: PASS
+
+Step 4: Optimizer Stability Audit
+--------------------------------------------------
+  Phase identifiable: False
+  r stable: False
+
+Step 5: Joint Constrained Fit
+--------------------------------------------------
+  Shared: r = 0.1814, φ = 162.1°
+  NLL_unconstrained = 21.36
+  NLL_constrained = 21.40
+  Λ = 0.0744
+
+Step 6: Profile Likelihood Contours
+--------------------------------------------------
+  Shared in A 95%: True
+  Shared in B 95%: True
+
+Step 7: Bootstrap P-value
+--------------------------------------------------
+  Running 800 bootstrap replicates with 31 workers...
+  Valid bootstrap samples: 800/800
+  Bootstrap p-value = 0.9475
+
+Step 8: VERDICT
+==================================================
+  INCONCLUSIVE
+  Neither phase nor magnitude identifiable
+
+Generating outputs...
+  Saved to: /home/primary/DarkBItParticleColiderPredictions/model_sweep/runs/babar_phi_eta_vs_kketa
+
+
+======================================================================
+GENERATING SUMMARY
+======================================================================
+  Saved CSV: /home/primary/DarkBItParticleColiderPredictions/model_sweep/out/MASTER_SUMMARY.csv
+  Saved MD: /home/primary/DarkBItParticleColiderPredictions/model_sweep/out/MASTER_SUMMARY.md
+  Saved JSON: /home/primary/DarkBItParticleColiderPredictions/model_sweep/out/all_results.json
+
+======================================================================
+SWEEP COMPLETE
+======================================================================
+
+Verdicts:
+  INCONCLUSIVE: 2
+  NO DATA: 2
+
+Testable models:
+  babar_kstar_k_isospin: INCONCLUSIVE
+  babar_phi_eta_vs_kketa: INCONCLUSIVE
+
+Models requiring data requests:
+  babar_phi_f0_vs_phi_pipi
+  babar_omega_1420_1650

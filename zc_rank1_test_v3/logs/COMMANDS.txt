@@ -1,0 +1,3 @@
+Tue Dec 30 20:37:52 HST 2025: Created zc_rank1_test_v3 workspace for extraction-based rank-1 tests
+Tue Dec 30 20:43:57 HST 2025: Running rank-1 extraction analysis
+Tue Dec 30 21:00:34 HST 2025: Analysis completed with parallelized bootstrap (31 workers)

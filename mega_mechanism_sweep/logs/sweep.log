@@ -1,0 +1,182 @@
+======================================================================
+MEGA MECHANISM SWEEP
+======================================================================
+Running 10 tests...
+Mechanisms: M0, M1, M2, M3, M4
+
+======================================================================
+MECHANISM SWEEP: CMS X(6900)/X(7100) Di-J/psi
+Experiment: CMS
+======================================================================
+
+Found prior results for cms_x6900_x7100_v3
+  Prior M0 verdict: RANK-1 CONSTRAINT SUPPORTED
+  Prior Lambda: None
+  Prior p-value: None
+
+==================================================
+MECHANISM VERDICT: INCONCLUSIVE
+Best mechanism: INCONCLUSIVE
+Reason: Insufficient evidence for mechanism determination
+==================================================
+
+======================================================================
+MECHANISM SWEEP: ATLAS X(6900)/X(7200) Di-Charmonium
+Experiment: ATLAS
+======================================================================
+
+Found prior results for atlas_x6900_x7200_v5
+  Prior M0 verdict: MODEL MISMATCH
+  Prior Lambda: None
+  Prior p-value: None
+
+==================================================
+MECHANISM VERDICT: MODEL MISMATCH
+Best mechanism: UNDETERMINED
+Reason: 4mu+2pi chi2/dof=9.74 >> 3.0
+==================================================
+
+======================================================================
+MECHANISM SWEEP: LHCb Pentaquark Pair1 T1vsT2 (quad bg)
+Experiment: LHCb
+======================================================================
+
+Found prior results for lhcb_pentaquark_pair1_quad
+  Prior M0 verdict: SUPPORTED
+  Prior Lambda: None
+  Prior p-value: None
+
+==================================================
+MECHANISM VERDICT: M0_SUPPORTED
+Best mechanism: M0
+Reason: Rank-1 constraint supported
+==================================================
+
+======================================================================
+MECHANISM SWEEP: LHCb Pentaquark Pair2 T1vsT3 (quad bg)
+Experiment: LHCb
+======================================================================
+
+Found prior results for lhcb_pentaquark_pair2_quad
+  Prior M0 verdict: SUPPORTED
+  Prior Lambda: None
+  Prior p-value: None
+
+==================================================
+MECHANISM VERDICT: M0_SUPPORTED
+Best mechanism: M0
+Reason: Rank-1 constraint supported
+==================================================
+
+======================================================================
+MECHANISM SWEEP: BaBar phi-f0(980) vs phi-pi+pi-
+Experiment: BaBar
+======================================================================
+
+Found prior results for babar_phi_f0_vs_phi_pipi
+  Prior M0 verdict: DISFAVORED
+  Prior Lambda: 342.139698270595
+  Prior p-value: 0.0
+
+==================================================
+MECHANISM VERDICT: M0_DISFAVORED
+Best mechanism: M1
+Reason: Rank-1 rejected: p=0.0000, Lambda=342.139698270595
+ΔAIC (M0-M1): 338.14
+==================================================
+
+======================================================================
+MECHANISM SWEEP: BaBar omega(1420)/omega(1650)
+Experiment: BaBar
+======================================================================
+
+Found prior results for babar_omega_1420_1650
+  Prior M0 verdict: DISFAVORED
+  Prior Lambda: None
+  Prior p-value: None
+ERROR running babar_omega_1420_1650: unsupported format string passed to NoneType.__format__
+======================================================================
+MECHANISM SWEEP: Y(4220)/Y(4360) Belle vs BaBar
+Experiment: Belle/BaBar
+======================================================================
+
+Found prior results for y_states_belle_babar
+  Prior M0 verdict: INCONCLUSIVE
+  Prior Lambda: None
+  Prior p-value: 0.732
+
+==================================================
+MECHANISM VERDICT: INCONCLUSIVE
+Best mechanism: INCONCLUSIVE
+Reason: Channel B underconstrained: chi2/dof=0.36
+==================================================
+
+======================================================================
+MECHANISM SWEEP: BESIII Y(4220)/Y(4360)
+Experiment: BESIII
+======================================================================
+
+Found prior results for besiii_y_states
+  Prior M0 verdict: INCONCLUSIVE
+  Prior Lambda: None
+  Prior p-value: None
+
+==================================================
+MECHANISM VERDICT: INCONCLUSIVE
+Best mechanism: INCONCLUSIVE
+Reason: Channel B chi2/dof=8.8 >> 3.0
+==================================================
+
+======================================================================
+MECHANISM SWEEP: BaBar K*(892)K I=0 vs I=1
+Experiment: BaBar
+======================================================================
+
+Found prior results for babar_kstar_k_isospin
+  Prior M0 verdict: MODEL MISMATCH
+  Prior Lambda: 0.07089889819231887
+  Prior p-value: None
+
+==================================================
+MECHANISM VERDICT: MODEL MISMATCH
+Best mechanism: UNDETERMINED
+Reason: chi2/dof << 0.5 (underconstrained)
+ΔAIC (M0-M1): -3.93
+==================================================
+
+======================================================================
+MECHANISM SWEEP: BaBar phi-eta vs K+K-eta
+Experiment: BaBar
+======================================================================
+
+Found prior results for babar_phi_eta_vs_kketa
+  Prior M0 verdict: MODEL MISMATCH
+  Prior Lambda: 0.037111555054236134
+  Prior p-value: None
+
+==================================================
+MECHANISM VERDICT: MODEL MISMATCH
+Best mechanism: UNDETERMINED
+Reason: chi2/dof << 0.5 (underconstrained)
+ΔAIC (M0-M1): -3.96
+==================================================
+
+Saved: /home/primary/DarkBItParticleColiderPredictions/mega_mechanism_sweep/out/MEGA_TABLE.csv
+Saved: /home/primary/DarkBItParticleColiderPredictions/mega_mechanism_sweep/out/MEGA_TABLE.md
+Saved: /home/primary/DarkBItParticleColiderPredictions/mega_mechanism_sweep/out/SUMMARY.md
+
+======================================================================
+SWEEP COMPLETE
+======================================================================
+
+Total tests: 10
+
+M0 (Rank-1) Verdicts:
+  DISFAVORED: 1
+  INCONCLUSIVE: 2
+  MODEL MISMATCH: 3
+  RANK-1 CONSTRAINT SUPPORTED: 1
+  SUPPORTED: 2
+  UNKNOWN: 1
+
+Outputs saved to: /home/primary/DarkBItParticleColiderPredictions/mega_mechanism_sweep/out

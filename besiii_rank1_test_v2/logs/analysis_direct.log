@@ -1,0 +1,67 @@
+======================================================================
+BESIII Rank-1 Bottleneck Test
+Testing Y-state amplitude ratio universality
+======================================================================
+
+Loading data...
+Channel A (π+π- J/ψ): 65 points, E=[4.11, 4.50] GeV
+Channel B (π+π- ψ(3686)): 24 points, E=[4.13, 4.47] GeV
+
+Background model: order 1 (A), order 1 (B)
+
+============================================================
+Fitting Channel A (BESIII π+π- J/ψ)...
+============================================================
+  Running differential evolution...
+  DE succeeded: NLL = 48.13
+  L-BFGS-B refinement: NLL = 48.13
+  c1 = 10.034
+  c2 = 1.603
+  phi = 158.6 deg
+  R_A = 0.160 * exp(i * 158.6 deg)
+  s0 = 1.0000
+  s1 = -0.006845
+  chi2/dof = 1.660 (96.3/58)
+  NLL = 48.13
+  Health: PASS
+
+============================================================
+Fitting Channel B (BESIII π+π- ψ(3686))...
+============================================================
+  Running differential evolution...
+  DE succeeded: NLL = 74.94
+  L-BFGS-B refinement: NLL = 74.94
+  c1 = 0.100
+  c2 = 7.060
+  phi = -74.3 deg
+  R_B = 70.597 * exp(i * -74.3 deg)
+  s0 = 0.9976
+  s1 = -0.009545
+  chi2/dof = 8.816 (149.9/17)
+  NLL = 74.94
+  Health: POOR FIT
+
+============================================================
+Fitting Joint Constrained (shared R)...
+============================================================
+  Shared R = 0.158 * exp(i * 159.4 deg)
+  NLL_unconstrained = 123.07
+  NLL_constrained = 1580.84
+  Lambda = 2*(NLL_con - NLL_unc) = 2915.5321
+  Chi2 p-value (2 dof) = 0.0000
+
+============================================================
+Bootstrap p-value estimation...
+============================================================
+Running 800 bootstrap replicates...
+Valid bootstrap samples: 800/800
+  Bootstrap p-value = 0.4825
+
+============================================================
+FINAL VERDICT
+============================================================
+Verdict: INCONCLUSIVE
+Reason: Fit unhealthy: A=PASS, B=POOR FIT
+
+Results saved to: /home/primary/DarkBItParticleColiderPredictions/besiii_rank1_test_v2/out/results.json
+Report saved to: /home/primary/DarkBItParticleColiderPredictions/besiii_rank1_test_v2/out/REPORT.md

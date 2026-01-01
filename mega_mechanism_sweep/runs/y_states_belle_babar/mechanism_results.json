@@ -1,0 +1,31 @@
+{
+  "test_name": "y_states_belle_babar",
+  "display_name": "Y(4220)/Y(4360) Belle vs BaBar",
+  "experiment": "Belle/BaBar",
+  "paper_ref": "Multiple papers",
+  "proxy_test": false,
+  "amplitude_level": true,
+  "status": "inconclusive",
+  "M0": {
+    "name": "Rank-1 Bottleneck",
+    "verdict": "INCONCLUSIVE",
+    "Lambda": null,
+    "p_value": 0.732,
+    "nll_unconstrained": null,
+    "nll_constrained": null,
+    "chi2_dof_A": 0.7029855439890009,
+    "chi2_dof_B": 0.3636043216335064,
+    "health_A": "PASS",
+    "health_B": "UNDERCONSTRAINED",
+    "gates_pass": false,
+    "r_A": null,
+    "r_B": null,
+    "shared_r": null,
+    "shared_in_both_95": null
+  },
+  "best_mechanism": "INCONCLUSIVE",
+  "mechanism_verdict": "INCONCLUSIVE",
+  "mechanism_reason": "Channel B underconstrained: chi2/dof=0.36",
+  "delta_AIC": null,
+  "delta_BIC": null
+}

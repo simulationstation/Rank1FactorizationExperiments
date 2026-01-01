@@ -1,0 +1,285 @@
+
+======================================================================
+RANK-1 BOTTLENECK POWER & CALIBRATION SWEEP
+======================================================================
+Tests: ['Y-states', 'Zc-like', 'Di-charmonium']
+Stats levels: [0.5, 1.0, 2.0, 4.0]
+M0 trials: 300, M1 trials: 300, M4 trials: 200
+M4 grid: dr=[0.05, 0.1, 0.2], dphi=[10, 20, 40]
+Workers: 31
+======================================================================
+
+[Y-states] M0 @ 0.5x stats...
+  Type I (Wilks): 0.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Y-states] M1 @ 0.5x stats...
+  Power (Wilks): 1.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Y-states] M0 @ 1.0x stats...
+  Type I (Wilks): 0.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Y-states] M1 @ 1.0x stats...
+  Power (Wilks): 1.000 +/- 0.000
+  Pass rate: 0.99, Identifiable: 1.00
+
+[Y-states] M0 @ 2.0x stats...
+  Type I (Wilks): 0.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Y-states] M1 @ 2.0x stats...
+  Power (Wilks): 1.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Y-states] M0 @ 4.0x stats...
+  Type I (Wilks): 0.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Y-states] M1 @ 4.0x stats...
+  Power (Wilks): 1.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Zc-like] M0 @ 0.5x stats...
+  Type I (Wilks): 0.053 +/- 0.013
+  Pass rate: 1.00, Identifiable: 0.99
+
+[Zc-like] M1 @ 0.5x stats...
+  Power (Wilks): 1.000 +/- 0.000
+  Pass rate: 0.99, Identifiable: 1.00
+
+[Zc-like] M0 @ 1.0x stats...
+  Type I (Wilks): 0.057 +/- 0.013
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Zc-like] M1 @ 1.0x stats...
+  Power (Wilks): 1.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Zc-like] M0 @ 2.0x stats...
+  Type I (Wilks): 0.033 +/- 0.010
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Zc-like] M1 @ 2.0x stats...
+  Power (Wilks): 1.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Zc-like] M0 @ 4.0x stats...
+  Type I (Wilks): 0.030 +/- 0.010
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Zc-like] M1 @ 4.0x stats...
+  Power (Wilks): 1.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Di-charmonium] M0 @ 0.5x stats...
+  Type I (Wilks): 0.087 +/- 0.016
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Di-charmonium] M1 @ 0.5x stats...
+  Power (Wilks): 0.970 +/- 0.010
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Di-charmonium] M0 @ 1.0x stats...
+  Type I (Wilks): 0.177 +/- 0.022
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Di-charmonium] M1 @ 1.0x stats...
+  Power (Wilks): 0.997 +/- 0.003
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Di-charmonium] M0 @ 2.0x stats...
+  Type I (Wilks): 0.060 +/- 0.014
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Di-charmonium] M1 @ 2.0x stats...
+  Power (Wilks): 1.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Di-charmonium] M0 @ 4.0x stats...
+  Type I (Wilks): 0.047 +/- 0.012
+  Pass rate: 1.00, Identifiable: 1.00
+
+[Di-charmonium] M1 @ 4.0x stats...
+  Power (Wilks): 1.000 +/- 0.000
+  Pass rate: 1.00, Identifiable: 1.00
+
+----------------------------------------------------------------------
+M4 GRID SWEEP (Rank-2 Detectability)
+----------------------------------------------------------------------
+
+[Y-states] M4 dr=0.05, dphi=10deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.05, dphi=10deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.05, dphi=20deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.05, dphi=20deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.05, dphi=40deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.05, dphi=40deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.10, dphi=10deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.10, dphi=10deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.10, dphi=20deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.10, dphi=20deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.10, dphi=40deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.10, dphi=40deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.20, dphi=10deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.20, dphi=10deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.20, dphi=20deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.20, dphi=20deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.20, dphi=40deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Y-states] M4 dr=0.20, dphi=40deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Zc-like] M4 dr=0.05, dphi=10deg @ 1.0x...
+  Power: 0.320 +/- 0.033
+
+[Zc-like] M4 dr=0.05, dphi=10deg @ 2.0x...
+  Power: 0.455 +/- 0.035
+
+[Zc-like] M4 dr=0.05, dphi=20deg @ 1.0x...
+  Power: 0.715 +/- 0.032
+
+[Zc-like] M4 dr=0.05, dphi=20deg @ 2.0x...
+  Power: 0.930 +/- 0.018
+
+[Zc-like] M4 dr=0.05, dphi=40deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Zc-like] M4 dr=0.05, dphi=40deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Zc-like] M4 dr=0.10, dphi=10deg @ 1.0x...
+  Power: 0.610 +/- 0.034
+
+[Zc-like] M4 dr=0.10, dphi=10deg @ 2.0x...
+  Power: 0.845 +/- 0.026
+
+[Zc-like] M4 dr=0.10, dphi=20deg @ 1.0x...
+  Power: 0.835 +/- 0.026
+
+[Zc-like] M4 dr=0.10, dphi=20deg @ 2.0x...
+  Power: 0.990 +/- 0.007
+
+[Zc-like] M4 dr=0.10, dphi=40deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Zc-like] M4 dr=0.10, dphi=40deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Zc-like] M4 dr=0.20, dphi=10deg @ 1.0x...
+  Power: 0.980 +/- 0.010
+
+[Zc-like] M4 dr=0.20, dphi=10deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Zc-like] M4 dr=0.20, dphi=20deg @ 1.0x...
+  Power: 0.995 +/- 0.005
+
+[Zc-like] M4 dr=0.20, dphi=20deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Zc-like] M4 dr=0.20, dphi=40deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Zc-like] M4 dr=0.20, dphi=40deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Di-charmonium] M4 dr=0.05, dphi=10deg @ 1.0x...
+  Power: 0.445 +/- 0.035
+
+[Di-charmonium] M4 dr=0.05, dphi=10deg @ 2.0x...
+  Power: 0.385 +/- 0.034
+
+[Di-charmonium] M4 dr=0.05, dphi=20deg @ 1.0x...
+  Power: 0.755 +/- 0.030
+
+[Di-charmonium] M4 dr=0.05, dphi=20deg @ 2.0x...
+  Power: 0.855 +/- 0.025
+
+[Di-charmonium] M4 dr=0.05, dphi=40deg @ 1.0x...
+  Power: 0.995 +/- 0.005
+
+[Di-charmonium] M4 dr=0.05, dphi=40deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Di-charmonium] M4 dr=0.10, dphi=10deg @ 1.0x...
+  Power: 0.605 +/- 0.035
+
+[Di-charmonium] M4 dr=0.10, dphi=10deg @ 2.0x...
+  Power: 0.630 +/- 0.034
+
+[Di-charmonium] M4 dr=0.10, dphi=20deg @ 1.0x...
+  Power: 0.820 +/- 0.027
+
+[Di-charmonium] M4 dr=0.10, dphi=20deg @ 2.0x...
+  Power: 0.905 +/- 0.021
+
+[Di-charmonium] M4 dr=0.10, dphi=40deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Di-charmonium] M4 dr=0.10, dphi=40deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Di-charmonium] M4 dr=0.20, dphi=10deg @ 1.0x...
+  Power: 0.920 +/- 0.019
+
+[Di-charmonium] M4 dr=0.20, dphi=10deg @ 2.0x...
+  Power: 0.980 +/- 0.010
+
+[Di-charmonium] M4 dr=0.20, dphi=20deg @ 1.0x...
+  Power: 0.975 +/- 0.011
+
+[Di-charmonium] M4 dr=0.20, dphi=20deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+[Di-charmonium] M4 dr=0.20, dphi=40deg @ 1.0x...
+  Power: 1.000 +/- 0.000
+
+[Di-charmonium] M4 dr=0.20, dphi=40deg @ 2.0x...
+  Power: 1.000 +/- 0.000
+
+======================================================================
+SWEEP COMPLETE: 18000 total trials
+======================================================================
+Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_v2/code/src/../../out/POWER_TABLE_TOP3.csv
+Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_v2/code/src/../../out/POWER_TABLE_TOP3.md
+Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_v2/code/src/../../out/M4_DETECTABILITY_MAPS.md
+Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_v2/code/src/../../out/FINAL_RECOMMENDATIONS.md
+Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_v2/code/src/../../out/REPRODUCIBILITY.md
+
+======================================================================
+ALL OUTPUTS SAVED
+======================================================================

@@ -1,0 +1,57 @@
+{
+  "model": "babar_kstar_k_isospin",
+  "display_name": "BaBar K*(892)K I=0 vs I=1",
+  "paper_ref": "BaBar PRD 77, 092002 (2008)",
+  "hepdata_doi": "10.17182/hepdata.50372",
+  "channel_A": {
+    "name": "Isoscalar (I=0) K*(892) K cross section",
+    "n_points": 38,
+    "E_range": [
+      1.41,
+      2.38
+    ],
+    "r": 0.4004009481767197,
+    "phi_deg": 74.47739086104622,
+    "chi2_dof": 0.010358479044889986,
+    "health": "UNDERCONSTRAINED",
+    "nll": 0.16573566471835097
+  },
+  "channel_B": {
+    "name": "Isovector (I=1) K*(892) K cross section",
+    "n_points": 39,
+    "E_range": [
+      1.41,
+      2.38
+    ],
+    "r": 0.826212872523582,
+    "phi_deg": 70.22504419146608,
+    "chi2_dof": 0.014611237717513341,
+    "health": "UNDERCONSTRAINED",
+    "nll": 0.24108542233897426
+  },
+  "shared": {
+    "r": 0.506042990565798,
+    "phi_deg": 72.12807024330523
+  },
+  "contour_check": {
+    "shared_in_A_68": true,
+    "shared_in_A_95": true,
+    "shared_in_B_68": true,
+    "shared_in_B_95": true,
+    "shared_in_both_95": true
+  },
+  "likelihood_ratio": {
+    "Lambda": 0.07089889819231887,
+    "nll_unconstrained": 0.4068210870573252,
+    "nll_constrained": 0.44227053615348466,
+    "optimizer_stable": true
+  },
+  "optimizer_stability": {
+    "phase_identifiable": false,
+    "r_stable": false,
+    "n_starts": 300
+  },
+  "gates_pass": false,
+  "verdict": "MODEL MISMATCH",
+  "reason": "Fit health gates failed: A=UNDERCONSTRAINED, B=UNDERCONSTRAINED"
+}

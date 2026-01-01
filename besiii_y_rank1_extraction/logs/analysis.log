@@ -1,0 +1,31 @@
+============================================================
+BESIII Y-Sector Rank-1 Bottleneck Test
+============================================================
+
+Step 1: Extracting cross-section data...
+  Channel A (ππJ/ψ): 35 points
+  Channel B (ππh_c): 27 points
+  Saved: /home/primary/DarkBItParticleColiderPredictions/besiii_y_rank1_extraction/data/extracted/pipiJpsi_points.csv
+  Saved: /home/primary/DarkBItParticleColiderPredictions/besiii_y_rank1_extraction/data/extracted/pipihc_points.csv
+  Filtered range [4.01, 4.6] GeV:
+    Channel A: 28 points
+    Channel B: 27 points
+
+Step 2: Fitting individual channels...
+  Channel A: χ²/dof = 9.81, Health: FAIL
+    r_A = 18.969, φ_A = -2.205 rad
+  Channel B: χ²/dof = 1.21, Health: PASS
+    r_B = 3.548, φ_B = 0.033 rad
+
+Step 3: Running joint fits...
+  Constrained fit (shared R)...
+    NLL_con = 163.41
+    r_shared = 3.409, φ_shared = 1.044 rad
+  Unconstrained fit (independent R)...
+    NLL_unc = 159.85
+    r_A = 25.204, φ_A = 0.307 rad
+    r_B = 13.485, φ_B = -0.050 rad
+  Λ = 2*(NLL_con - NLL_unc) = 7.13
+
+Step 4: Running bootstrap analysis...
+Running 800 bootstrap replicates with 31 workers...

@@ -1,0 +1,384 @@
+
+============================================================
+MEDIUM CALIBRATION: Di-charmonium
+Trials=120, Bootstrap=120, Starts=150
+============================================================
+
+  Trial   0: Lambda=0.0894, p_boot=0.942, gates=PASS
+  Trial   1: Lambda=3.2915, p_boot=0.158, gates=PASS
+  Trial   2: Lambda=4.7619, p_boot=0.067, gates=PASS
+  Trial   3: Lambda=1.9765, p_boot=0.375, gates=PASS
+  Trial   4: Lambda=4.8309, p_boot=0.067, gates=PASS
+  Trial   5: Lambda=0.0469, p_boot=0.992, gates=PASS
+  Trial   6: Lambda=0.4258, p_boot=0.817, gates=PASS
+  Trial   7: Lambda=0.9345, p_boot=0.600, gates=PASS
+  Trial   8: Lambda=3.5780, p_boot=0.142, gates=PASS
+  Trial   9: Lambda=1.7107, p_boot=0.392, gates=PASS
+
+--- Checkpoint: 10 trials, 10 PASS (100.0%) ---
+
+  Trial  10: Lambda=2.8255, p_boot=0.183, gates=PASS
+  Trial  11: Lambda=0.9495, p_boot=0.675, gates=PASS
+  Trial  12: Lambda=0.0111, p_boot=0.992, gates=PASS
+  Trial  13: Lambda=2.8119, p_boot=0.233, gates=PASS
+  Trial  14: Lambda=5.8272, p_boot=0.042, gates=PASS
+  Trial  15: Lambda=0.7174, p_boot=0.675, gates=PASS
+  Trial  16: Lambda=1.8867, p_boot=0.383, gates=PASS
+  Trial  17: Lambda=2.2981, p_boot=0.250, gates=PASS
+  Trial  18: Lambda=1.9291, p_boot=0.392, gates=PASS
+  Trial  19: Lambda=0.5102, p_boot=0.833, gates=PASS
+
+--- Checkpoint: 20 trials, 20 PASS (100.0%) ---
+
+  Trial  20: Lambda=1.9926, p_boot=0.358, gates=PASS
+  Trial  21: Lambda=3.2602, p_boot=0.167, gates=PASS
+  Trial  22: Lambda=1.0064, p_boot=0.642, gates=PASS
+  Trial  23: Lambda=1.6168, p_boot=0.475, gates=PASS
+  Trial  24: Lambda=0.1310, p_boot=0.950, gates=PASS
+  Trial  25: Lambda=4.1810, p_boot=0.100, gates=PASS
+  Trial  26: Lambda=2.5969, p_boot=0.250, gates=PASS
+  Trial  27: Lambda=0.9778, p_boot=0.600, gates=PASS
+  Trial  28: Lambda=1.2023, p_boot=0.567, gates=PASS
+  Trial  29: Lambda=0.3662, p_boot=0.858, gates=PASS
+
+--- Checkpoint: 30 trials, 30 PASS (100.0%) ---
+
+  Trial  30: Lambda=1.9502, p_boot=0.370, gates=PASS
+  Trial  31: Lambda=0.9709, p_boot=0.650, gates=PASS
+  Trial  32: Lambda=0.3038, p_boot=0.842, gates=PASS
+  Trial  33: Lambda=9.6260, p_boot=0.025, gates=PASS
+  Trial  34: Lambda=0.3132, p_boot=0.908, gates=PASS
+  Trial  35: Lambda=1.4810, p_boot=0.458, gates=PASS
+  Trial  36: Lambda=1.3597, p_boot=0.517, gates=PASS
+  Trial  37: Lambda=3.0589, p_boot=0.192, gates=PASS
+  Trial  38: Lambda=0.9819, p_boot=0.592, gates=PASS
+  Trial  39: Lambda=3.1095, p_boot=0.208, gates=PASS
+
+--- Checkpoint: 40 trials, 40 PASS (100.0%) ---
+
+  Trial  40: Lambda=0.3870, p_boot=0.850, gates=PASS
+  Trial  41: Lambda=3.1245, p_boot=0.200, gates=PASS
+  Trial  42: Lambda=1.4575, p_boot=0.483, gates=PASS
+  Trial  43: Lambda=3.0994, p_boot=0.183, gates=PASS
+  Trial  44: Lambda=3.1670, p_boot=0.192, gates=PASS
+  Trial  45: Lambda=0.3647, p_boot=0.875, gates=PASS
+  Trial  46: Lambda=1.5471, p_boot=0.475, gates=PASS
+  Trial  47: Lambda=3.0418, p_boot=0.200, gates=PASS
+  Trial  48: Lambda=0.2785, p_boot=0.858, gates=PASS
+  Trial  49: Lambda=3.7922, p_boot=0.142, gates=PASS
+
+--- Checkpoint: 50 trials, 50 PASS (100.0%) ---
+
+  Trial  50: Lambda=1.3687, p_boot=0.508, gates=PASS
+  Trial  51: Lambda=1.6608, p_boot=0.458, gates=PASS
+  Trial  52: Lambda=0.6146, p_boot=0.767, gates=PASS
+  Trial  53: Lambda=2.8658, p_boot=0.200, gates=PASS
+  Trial  54: Lambda=3.3657, p_boot=0.150, gates=PASS
+  Trial  55: Lambda=0.5931, p_boot=0.767, gates=PASS
+  Trial  56: Lambda=1.3761, p_boot=0.492, gates=PASS
+  Trial  57: Lambda=0.2432, p_boot=0.908, gates=PASS
+  Trial  58: Lambda=0.1912, p_boot=0.908, gates=PASS
+  Trial  59: Lambda=6.8008, p_boot=0.050, gates=PASS
+
+--- Checkpoint: 60 trials, 60 PASS (100.0%) ---
+  Type-I: 2/60 = 3.3% (Wilson CI: [0.9%, 11.4%])
+  KS test: stat=0.1167, p=0.3596
+
+  Trial  60: Lambda=1.2386, p_boot=0.575, gates=PASS
+  Trial  61: Lambda=3.7159, p_boot=0.133, gates=PASS
+  Trial  62: Lambda=2.2470, p_boot=0.308, gates=PASS
+  Trial  63: Lambda=0.2794, p_boot=0.867, gates=PASS
+  Trial  64: Lambda=8.0911, p_boot=0.025, gates=PASS
+  Trial  65: Lambda=0.9054, p_boot=0.650, gates=PASS
+  Trial  66: Lambda=9.0633, p_boot=0.017, gates=PASS
+  Trial  67: Lambda=0.2303, p_boot=0.925, gates=PASS
+  Trial  68: Lambda=0.1997, p_boot=0.917, gates=PASS
+  Trial  69: Lambda=4.1100, p_boot=0.108, gates=PASS
+
+--- Checkpoint: 70 trials, 70 PASS (100.0%) ---
+  Type-I: 4/70 = 5.7% (Wilson CI: [2.2%, 13.8%])
+  KS test: stat=0.1214, p=0.2336
+
+  Trial  70: Lambda=5.9599, p_boot=0.033, gates=PASS
+  Trial  71: Lambda=2.8037, p_boot=0.233, gates=PASS
+  Trial  72: Lambda=0.0039, p_boot=1.000, gates=PASS
+  Trial  73: Lambda=0.3278, p_boot=0.892, gates=PASS
+  Trial  74: Lambda=6.6185, p_boot=0.025, gates=PASS
+  Trial  75: Lambda=1.5162, p_boot=0.483, gates=PASS
+  Trial  76: Lambda=5.3856, p_boot=0.042, gates=PASS
+  Trial  77: Lambda=0.1708, p_boot=0.933, gates=PASS
+  Trial  78: Lambda=0.2824, p_boot=0.875, gates=PASS
+  Trial  79: Lambda=6.0160, p_boot=0.042, gates=PASS
+
+--- Checkpoint: 80 trials, 80 PASS (100.0%) ---
+  Type-I: 8/80 = 10.0% (Wilson CI: [5.2%, 18.5%])
+  KS test: stat=0.1375, p=0.0882
+
+  Trial  80: Lambda=0.2206, p_boot=0.917, gates=PASS
+  Trial  81: Lambda=0.2985, p_boot=0.892, gates=PASS
+  Trial  82: Lambda=2.0450, p_boot=0.333, gates=PASS
+  Trial  83: Lambda=2.3366, p_boot=0.300, gates=PASS
+  Trial  84: Lambda=4.3653, p_boot=0.100, gates=PASS
+  Trial  85: Lambda=1.4737, p_boot=0.442, gates=PASS
+  Trial  86: Lambda=0.8465, p_boot=0.708, gates=PASS
+  Trial  87: Lambda=0.1762, p_boot=0.917, gates=PASS
+  Trial  88: Lambda=4.8709, p_boot=0.083, gates=PASS
+  Trial  89: Lambda=3.3183, p_boot=0.175, gates=PASS
+
+--- Checkpoint: 90 trials, 90 PASS (100.0%) ---
+  Type-I: 8/90 = 8.9% (Wilson CI: [4.6%, 16.6%])
+  KS test: stat=0.1278, p=0.0968
+
+  Trial  90: Lambda=0.0713, p_boot=0.967, gates=PASS
+  Trial  91: Lambda=3.4692, p_boot=0.142, gates=PASS
+  Trial  92: Lambda=1.7989, p_boot=0.342, gates=PASS
+  Trial  93: Lambda=1.7826, p_boot=0.350, gates=PASS
+  Trial  94: Lambda=2.0889, p_boot=0.358, gates=PASS
+  Trial  95: Lambda=2.3916, p_boot=0.308, gates=PASS
+  Trial  96: Lambda=0.3517, p_boot=0.850, gates=PASS
+  Trial  97: Lambda=6.8327, p_boot=0.025, gates=PASS
+  Trial  98: Lambda=2.9413, p_boot=0.267, gates=PASS
+  Trial  99: Lambda=5.0617, p_boot=0.050, gates=PASS
+
+--- Checkpoint: 100 trials, 100 PASS (100.0%) ---
+  Type-I: 9/100 = 9.0% (Wilson CI: [4.8%, 16.2%])
+  KS test: stat=0.1217, p=0.0952
+
+  Trial 100: Lambda=3.6398, p_boot=0.100, gates=PASS
+  Trial 101: Lambda=0.9832, p_boot=0.583, gates=PASS
+  Trial 102: Lambda=3.6805, p_boot=0.133, gates=PASS
+  Trial 103: Lambda=2.6115, p_boot=0.283, gates=PASS
+  Trial 104: Lambda=2.0264, p_boot=0.375, gates=PASS
+  Trial 105: Lambda=1.4455, p_boot=0.467, gates=PASS
+  Trial 106: Lambda=1.9211, p_boot=0.408, gates=PASS
+  Trial 107: Lambda=1.8296, p_boot=0.450, gates=PASS
+  Trial 108: Lambda=0.9600, p_boot=0.692, gates=PASS
+  Trial 109: Lambda=0.1621, p_boot=0.958, gates=PASS
+
+--- Checkpoint: 110 trials, 110 PASS (100.0%) ---
+  Type-I: 9/110 = 8.2% (Wilson CI: [4.4%, 14.8%])
+  KS test: stat=0.1098, p=0.1304
+
+  Trial 110: Lambda=1.5299, p_boot=0.517, gates=PASS
+  Trial 111: Lambda=6.7529, p_boot=0.033, gates=PASS
+  Trial 112: Lambda=6.7331, p_boot=0.025, gates=PASS
+  Trial 113: Lambda=1.5812, p_boot=0.425, gates=PASS
+  Trial 114: Lambda=0.1460, p_boot=0.950, gates=PASS
+  Trial 115: Lambda=0.4406, p_boot=0.867, gates=PASS
+  Trial 116: Lambda=0.0532, p_boot=0.992, gates=PASS
+  Trial 117: Lambda=0.1415, p_boot=0.950, gates=PASS
+  Trial 118: Lambda=7.4466, p_boot=0.025, gates=PASS
+  Trial 119: Lambda=0.6481, p_boot=0.750, gates=PASS
+
+--- Checkpoint: 120 trials, 120 PASS (100.0%) ---
+  Type-I: 12/120 = 10.0% (Wilson CI: [5.8%, 16.7%])
+  KS test: stat=0.1083, p=0.1110
+
+
+============================================================
+FINAL SUMMARY: Di-charmonium
+============================================================
+Total trials: 120
+Pass rate: 120/120 = 100.0%
+Type-I: 12/120 = 10.0% (CI: [5.8%, 16.7%])
+KS test: stat=0.1083, p=0.1110
+Lambda_obs mean: 2.2657
+Lambda_obs max: 9.6260
+
+*** MEDIUM CALIBRATION PASS ***
+
+============================================================
+MEDIUM CALIBRATION: Zc-like
+Trials=120, Bootstrap=120, Starts=150
+============================================================
+
+  Trial   0: Lambda=0.3402, p_boot=0.825, gates=PASS
+  Trial   1: Lambda=0.2213, p_boot=0.892, gates=PASS
+  Trial   2: Lambda=2.2741, p_boot=0.267, gates=PASS
+  Trial   3: Lambda=0.2431, p_boot=0.892, gates=PASS
+  Trial   4: Lambda=1.0314, p_boot=0.600, gates=PASS
+  Trial   5: Lambda=1.2131, p_boot=0.483, gates=PASS
+  Trial   6: Lambda=2.5712, p_boot=0.200, gates=PASS
+  Trial   7: Lambda=1.8892, p_boot=0.342, gates=PASS
+  Trial   8: Lambda=1.6236, p_boot=0.392, gates=PASS
+  Trial   9: Lambda=0.5054, p_boot=0.733, gates=PASS
+
+--- Checkpoint: 10 trials, 10 PASS (100.0%) ---
+
+  Trial  10: Lambda=1.3040, p_boot=0.487, gates=PASS
+  Trial  11: Lambda=1.8787, p_boot=0.358, gates=PASS
+  Trial  12: Lambda=1.6955, p_boot=0.408, gates=PASS
+  Trial  13: Lambda=0.5916, p_boot=0.675, gates=PASS
+  Trial  14: Lambda=3.1973, p_boot=0.193, gates=PASS
+  Trial  15: Lambda=2.0158, p_boot=0.317, gates=PASS
+  Trial  16: Lambda=0.1653, p_boot=0.908, gates=PASS
+  Trial  17: Lambda=0.7147, p_boot=0.681, gates=PASS
+  Trial  18: Lambda=3.1477, p_boot=0.192, gates=PASS
+  Trial  19: Lambda=0.1059, p_boot=0.925, gates=PASS
+
+--- Checkpoint: 20 trials, 20 PASS (100.0%) ---
+
+  Trial  20: Lambda=0.6626, p_boot=0.683, gates=PASS
+  Trial  21: Lambda=0.4702, p_boot=0.792, gates=PASS
+  Trial  22: Lambda=0.9830, p_boot=0.550, gates=PASS
+  Trial  23: Lambda=1.8193, p_boot=0.392, gates=PASS
+  Trial  24: Lambda=0.9238, p_boot=0.608, gates=PASS
+  Trial  25: Lambda=12.6925, p_boot=0.000, gates=PASS
+  Trial  26: Lambda=4.7153, p_boot=0.092, gates=PASS
+  Trial  27: Lambda=0.1596, p_boot=0.933, gates=PASS
+  Trial  28: Lambda=2.3985, p_boot=0.300, gates=PASS
+  Trial  29: Lambda=3.4604, p_boot=0.183, gates=PASS
+
+--- Checkpoint: 30 trials, 30 PASS (100.0%) ---
+
+  Trial  30: Lambda=0.1457, p_boot=0.883, gates=PASS
+  Trial  31: Lambda=1.1791, p_boot=0.500, gates=PASS
+  Trial  32: Lambda=1.6460, p_boot=0.400, gates=PASS
+  Trial  33: Lambda=2.6547, p_boot=0.233, gates=PASS
+  Trial  34: Lambda=1.7298, p_boot=0.375, gates=PASS
+  Trial  35: Lambda=0.7755, p_boot=0.633, gates=PASS
+  Trial  36: Lambda=1.8798, p_boot=0.358, gates=PASS
+  Trial  37: Lambda=4.7414, p_boot=0.092, gates=PASS
+  Trial  38: Lambda=1.4260, p_boot=0.517, gates=PASS
+  Trial  39: Lambda=2.8551, p_boot=0.217, gates=PASS
+
+--- Checkpoint: 40 trials, 40 PASS (100.0%) ---
+
+  Trial  40: Lambda=0.4993, p_boot=0.750, gates=PASS
+  Trial  41: Lambda=3.4791, p_boot=0.167, gates=PASS
+  Trial  42: Lambda=9.4374, p_boot=0.000, gates=PASS
+  Trial  43: Lambda=1.7451, p_boot=0.383, gates=PASS
+  Trial  44: Lambda=1.5508, p_boot=0.417, gates=PASS
+  Trial  45: Lambda=2.7182, p_boot=0.225, gates=PASS
+  Trial  46: Lambda=2.2958, p_boot=0.267, gates=PASS
+  Trial  47: Lambda=1.6511, p_boot=0.417, gates=PASS
+  Trial  48: Lambda=2.9989, p_boot=0.217, gates=PASS
+  Trial  49: Lambda=2.2005, p_boot=0.267, gates=PASS
+
+--- Checkpoint: 50 trials, 50 PASS (100.0%) ---
+
+  Trial  50: Lambda=0.1845, p_boot=0.925, gates=PASS
+  Trial  51: Lambda=0.3711, p_boot=0.817, gates=PASS
+  Trial  52: Lambda=0.0985, p_boot=0.975, gates=PASS
+  Trial  53: Lambda=0.1459, p_boot=0.942, gates=PASS
+  Trial  54: Lambda=1.3297, p_boot=0.483, gates=PASS
+  Trial  55: Lambda=0.8475, p_boot=0.583, gates=PASS
+  Trial  56: Lambda=1.0438, p_boot=0.583, gates=PASS
+  Trial  57: Lambda=0.7403, p_boot=0.642, gates=PASS
+  Trial  58: Lambda=0.3466, p_boot=0.842, gates=PASS
+  Trial  59: Lambda=0.3729, p_boot=0.825, gates=PASS
+
+--- Checkpoint: 60 trials, 60 PASS (100.0%) ---
+  Type-I: 2/60 = 3.3% (Wilson CI: [0.9%, 11.4%])
+  KS test: stat=0.1000, p=0.5522
+
+  Trial  60: Lambda=4.4209, p_boot=0.100, gates=PASS
+  Trial  61: Lambda=1.4320, p_boot=0.458, gates=PASS
+  Trial  62: Lambda=0.7809, p_boot=0.658, gates=PASS
+  Trial  63: Lambda=0.0545, p_boot=0.958, gates=PASS
+  Trial  64: Lambda=0.5283, p_boot=0.758, gates=PASS
+  Trial  65: Lambda=0.5704, p_boot=0.750, gates=PASS
+  Trial  66: Lambda=0.1700, p_boot=0.933, gates=PASS
+  Trial  67: Lambda=0.3162, p_boot=0.825, gates=PASS
+  Trial  68: Lambda=1.1865, p_boot=0.533, gates=PASS
+  Trial  69: Lambda=2.7363, p_boot=0.167, gates=PASS
+
+--- Checkpoint: 70 trials, 70 PASS (100.0%) ---
+  Type-I: 2/70 = 2.9% (Wilson CI: [0.8%, 9.8%])
+  KS test: stat=0.0952, p=0.5185
+
+  Trial  70: Lambda=2.0251, p_boot=0.333, gates=PASS
+  Trial  71: Lambda=0.9659, p_boot=0.600, gates=PASS
+  Trial  72: Lambda=0.3292, p_boot=0.833, gates=PASS
+  Trial  73: Lambda=0.2250, p_boot=0.883, gates=PASS
+  Trial  74: Lambda=3.9786, p_boot=0.133, gates=PASS
+  Trial  75: Lambda=5.0790, p_boot=0.083, gates=PASS
+  Trial  76: Lambda=0.6421, p_boot=0.675, gates=PASS
+  Trial  77: Lambda=6.4254, p_boot=0.050, gates=PASS
+  Trial  78: Lambda=0.4741, p_boot=0.767, gates=PASS
+  Trial  79: Lambda=2.1207, p_boot=0.317, gates=PASS
+
+--- Checkpoint: 80 trials, 80 PASS (100.0%) ---
+  Type-I: 2/80 = 2.5% (Wilson CI: [0.7%, 8.7%])
+  KS test: stat=0.0667, p=0.8457
+
+  Trial  80: Lambda=0.2637, p_boot=0.908, gates=PASS
+  Trial  81: Lambda=0.2774, p_boot=0.875, gates=PASS
+  Trial  82: Lambda=1.0056, p_boot=0.575, gates=PASS
+  Trial  83: Lambda=8.0289, p_boot=0.017, gates=PASS
+  Trial  84: Lambda=4.7703, p_boot=0.092, gates=PASS
+  Trial  85: Lambda=12.2488, p_boot=0.000, gates=PASS
+  Trial  86: Lambda=2.3918, p_boot=0.283, gates=PASS
+  Trial  87: Lambda=0.7112, p_boot=0.700, gates=PASS
+  Trial  88: Lambda=0.5025, p_boot=0.742, gates=PASS
+  Trial  89: Lambda=0.2794, p_boot=0.867, gates=PASS
+
+--- Checkpoint: 90 trials, 90 PASS (100.0%) ---
+  Type-I: 4/90 = 4.4% (Wilson CI: [1.7%, 10.9%])
+  KS test: stat=0.0500, p=0.9697
+
+  Trial  90: Lambda=0.0428, p_boot=0.983, gates=PASS
+  Trial  91: Lambda=0.1340, p_boot=0.933, gates=PASS
+  Trial  92: Lambda=1.0238, p_boot=0.558, gates=PASS
+  Trial  93: Lambda=1.0997, p_boot=0.625, gates=PASS
+  Trial  94: Lambda=4.2565, p_boot=0.100, gates=PASS
+  Trial  95: Lambda=2.5549, p_boot=0.233, gates=PASS
+  Trial  96: Lambda=0.7709, p_boot=0.642, gates=PASS
+  Trial  97: Lambda=1.6685, p_boot=0.417, gates=PASS
+  Trial  98: Lambda=1.2500, p_boot=0.542, gates=PASS
+  Trial  99: Lambda=0.0565, p_boot=0.992, gates=PASS
+
+--- Checkpoint: 100 trials, 100 PASS (100.0%) ---
+  Type-I: 4/100 = 4.0% (Wilson CI: [1.6%, 9.8%])
+  KS test: stat=0.0567, p=0.8869
+
+  Trial 100: Lambda=2.9591, p_boot=0.183, gates=PASS
+  Trial 101: Lambda=1.6499, p_boot=0.392, gates=PASS
+  Trial 102: Lambda=2.1195, p_boot=0.342, gates=PASS
+  Trial 103: Lambda=6.5593, p_boot=0.017, gates=PASS
+  Trial 104: Lambda=0.3946, p_boot=0.825, gates=PASS
+  Trial 105: Lambda=2.6425, p_boot=0.225, gates=PASS
+  Trial 106: Lambda=1.8908, p_boot=0.317, gates=PASS
+  Trial 107: Lambda=3.6578, p_boot=0.133, gates=PASS
+  Trial 108: Lambda=2.2266, p_boot=0.292, gates=PASS
+  Trial 109: Lambda=2.6879, p_boot=0.250, gates=PASS
+
+--- Checkpoint: 110 trials, 110 PASS (100.0%) ---
+  Type-I: 5/110 = 4.5% (Wilson CI: [2.0%, 10.2%])
+  KS test: stat=0.0561, p=0.8604
+
+  Trial 110: Lambda=2.2387, p_boot=0.300, gates=PASS
+  Trial 111: Lambda=0.1374, p_boot=0.917, gates=PASS
+  Trial 112: Lambda=0.4491, p_boot=0.817, gates=PASS
+  Trial 113: Lambda=2.2983, p_boot=0.233, gates=PASS
+  Trial 114: Lambda=3.4521, p_boot=0.150, gates=PASS
+  Trial 115: Lambda=1.2829, p_boot=0.458, gates=PASS
+  Trial 116: Lambda=1.0882, p_boot=0.558, gates=PASS
+  Trial 117: Lambda=0.0857, p_boot=0.950, gates=PASS
+  Trial 118: Lambda=4.2999, p_boot=0.083, gates=PASS
+  Trial 119: Lambda=0.7993, p_boot=0.625, gates=PASS
+
+--- Checkpoint: 120 trials, 120 PASS (100.0%) ---
+  Type-I: 5/120 = 4.2% (Wilson CI: [1.8%, 9.4%])
+  KS test: stat=0.0500, p=0.9103
+
+
+============================================================
+FINAL SUMMARY: Zc-like
+============================================================
+Total trials: 120
+Pass rate: 120/120 = 100.0%
+Type-I: 5/120 = 4.2% (CI: [1.8%, 9.4%])
+KS test: stat=0.0500, p=0.9103
+Lambda_obs mean: 1.9069
+Lambda_obs max: 12.6925
+
+*** MEDIUM CALIBRATION PASS ***
+
+============================================================
+OVERALL MEDIUM CALIBRATION RESULTS
+============================================================
+Di-charmonium: Type-I=10.0%, KS p=0.1110
+Zc-like: Type-I=4.2%, KS p=0.9103
+
+*** ALL MEDIUM CALIBRATIONS PASSED - READY FOR POWER RUNS ***

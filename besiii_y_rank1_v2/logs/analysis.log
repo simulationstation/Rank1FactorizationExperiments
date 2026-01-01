@@ -1,0 +1,25 @@
+============================================================
+BESIII Y-Sector Rank-1 Test v2
+3-resonance model for ππJ/ψ, 2-resonance for ππh_c
+============================================================
+
+Step 1: Loading data...
+  Channel A (ππJ/ψ): 28 points in [4.01, 4.60] GeV
+  Channel B (ππh_c): 27 points in [4.01, 4.60] GeV
+
+Step 2: Running joint fits (500 starts each)...
+  Unconstrained fit (independent R_A, R_B)...
+    NLL_unc = 156.68
+    R_A = 73.861 exp(i 1.286)
+    R_B = 2.132 exp(i -2.345)
+  Constrained fit (shared R)...
+    NLL_con = 114.38
+    R_shared = 2.860 exp(i -0.468)
+  Λ = 2*(NLL_con - NLL_unc) = 0.00
+
+Step 3: Fit health check...
+  Channel A: χ²/dof = 10.24, Health: FAIL
+  Channel B: χ²/dof = 2.06, Health: PASS
+
+Step 4: Running bootstrap (800 replicates)...
+Running 800 bootstrap replicates with 31 workers...

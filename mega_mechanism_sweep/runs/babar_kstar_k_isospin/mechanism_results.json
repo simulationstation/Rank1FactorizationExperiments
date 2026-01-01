@@ -1,0 +1,31 @@
+{
+  "test_name": "babar_kstar_k_isospin",
+  "display_name": "BaBar K*(892)K I=0 vs I=1",
+  "experiment": "BaBar",
+  "paper_ref": "PRD 77, 092002 (2008)",
+  "proxy_test": false,
+  "amplitude_level": true,
+  "status": "model_mismatch",
+  "M0": {
+    "name": "Rank-1 Bottleneck",
+    "verdict": "MODEL MISMATCH",
+    "Lambda": 0.07089889819231887,
+    "p_value": null,
+    "nll_unconstrained": 0.4068210870573252,
+    "nll_constrained": 0.44227053615348466,
+    "chi2_dof_A": 0.010358479044889986,
+    "chi2_dof_B": 0.014611237717513341,
+    "health_A": "UNDERCONSTRAINED",
+    "health_B": "UNDERCONSTRAINED",
+    "gates_pass": false,
+    "r_A": 0.4004009481767197,
+    "r_B": 0.826212872523582,
+    "shared_r": 0.506042990565798,
+    "shared_in_both_95": true
+  },
+  "best_mechanism": "UNDETERMINED",
+  "mechanism_verdict": "MODEL MISMATCH",
+  "mechanism_reason": "chi2/dof << 0.5 (underconstrained)",
+  "delta_AIC": -3.9291011018076816,
+  "delta_BIC": -7.753147112663974
+}

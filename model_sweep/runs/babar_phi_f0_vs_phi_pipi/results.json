@@ -1,0 +1,63 @@
+{
+  "model": "babar_phi_f0_vs_phi_pipi",
+  "display_name": "BaBar phi-f0(980) vs phi-pi+pi-",
+  "paper_ref": "BaBar PRD 86, 012008 (2012)",
+  "hepdata_doi": "10.17182/hepdata.62222",
+  "channel_A": {
+    "name": "e+e- -> phi pi+pi- cross section",
+    "n_points": 40,
+    "E_range": [
+      1.5125,
+      2.4875
+    ],
+    "r": 0.6232575953107911,
+    "phi_deg": 107.97288978206058,
+    "chi2_dof": 1.1413601393415096,
+    "health": "PASS",
+    "nll": 19.40312236880969
+  },
+  "channel_B": {
+    "name": "e+e- -> phi f0(980) cross section",
+    "n_points": 24,
+    "E_range": [
+      1.9125,
+      2.4875
+    ],
+    "r": 0.8264633591192119,
+    "phi_deg": 11.716238244665622,
+    "chi2_dof": 2.815885552500829,
+    "health": "PASS",
+    "nll": 25.342969972508055
+  },
+  "shared": {
+    "r": 0.26950775307143177,
+    "phi_deg": -108.83151630153255
+  },
+  "contour_check": {
+    "shared_in_A_68": false,
+    "shared_in_A_95": false,
+    "shared_in_B_68": false,
+    "shared_in_B_95": false,
+    "shared_in_both_95": false
+  },
+  "likelihood_ratio": {
+    "Lambda": 342.139698270595,
+    "nll_unconstrained": 44.74609234131775,
+    "nll_constrained": 215.81594147661522,
+    "optimizer_stable": true
+  },
+  "optimizer_stability": {
+    "phase_identifiable": false,
+    "r_stable": true,
+    "n_starts": 300
+  },
+  "gates_pass": true,
+  "verdict": "DISFAVORED",
+  "reason": "Magnitude-only: p=0.0000 < 0.05, shared outside 95%",
+  "bootstrap": {
+    "p_value": 0.0,
+    "n_bootstrap": 800,
+    "Lambda_mean": 34.07323646326466,
+    "Lambda_std": 47.19331146324161
+  }
+}

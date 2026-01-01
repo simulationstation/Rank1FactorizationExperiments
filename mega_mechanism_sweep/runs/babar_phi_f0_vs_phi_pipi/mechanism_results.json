@@ -1,0 +1,31 @@
+{
+  "test_name": "babar_phi_f0_vs_phi_pipi",
+  "display_name": "BaBar phi-f0(980) vs phi-pi+pi-",
+  "experiment": "BaBar",
+  "paper_ref": "PRD 86, 012008 (2012)",
+  "proxy_test": false,
+  "amplitude_level": true,
+  "status": "testable",
+  "M0": {
+    "name": "Rank-1 Bottleneck",
+    "verdict": "DISFAVORED",
+    "Lambda": 342.139698270595,
+    "p_value": 0.0,
+    "nll_unconstrained": 44.74609234131775,
+    "nll_constrained": 215.81594147661522,
+    "chi2_dof_A": 1.1413601393415096,
+    "chi2_dof_B": 2.815885552500829,
+    "health_A": "PASS",
+    "health_B": "PASS",
+    "gates_pass": true,
+    "r_A": 0.6232575953107911,
+    "r_B": 0.8264633591192119,
+    "shared_r": 0.26950775307143177,
+    "shared_in_both_95": false
+  },
+  "best_mechanism": "M1",
+  "mechanism_verdict": "M0_DISFAVORED",
+  "mechanism_reason": "Rank-1 rejected: p=0.0000, Lambda=342.139698270595",
+  "delta_AIC": 338.139698270595,
+  "delta_BIC": 334.31565225973867
+}

@@ -1,0 +1,20 @@
+# Y-state Rank-1 Test v2 Commands
+# Rigorous analysis with nuisance parameters and strict health gates
+
+# Run main analysis
+cd /home/primary/DarkBItParticleColiderPredictions/y_rank1_test_v2
+nohup python3 -u src/y_rank1_analysis_v2.py > logs/analysis.log 2>&1 &
+echo $!
+
+# Monitor progress
+tail -f logs/analysis.log
+
+# Check if running
+ps aux | grep y_rank1_analysis_v2 | grep -v grep
+
+# Key fixes in v2:
+# 1. Nuisance parameters for correlated systematics (not quadrature sum)
+# 2. Fit health gates: 0.5 < chi2/dof < 3.0 (added LOWER bound)
+# 3. Optimizer stability audit with multimodality detection
+# 4. AIC/BIC for background model selection
+# 5. Strict decision logic (SUPPORTED/DISFAVORED/INCONCLUSIVE/etc)

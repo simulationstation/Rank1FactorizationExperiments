@@ -1,0 +1,31 @@
+{
+  "test_name": "babar_phi_eta_vs_kketa",
+  "display_name": "BaBar phi-eta vs K+K-eta",
+  "experiment": "BaBar",
+  "paper_ref": "PRD 77, 092002 (2008)",
+  "proxy_test": false,
+  "amplitude_level": true,
+  "status": "model_mismatch",
+  "M0": {
+    "name": "Rank-1 Bottleneck",
+    "verdict": "MODEL MISMATCH",
+    "Lambda": 0.037111555054236134,
+    "p_value": null,
+    "nll_unconstrained": 0.47723135149521384,
+    "nll_constrained": 0.4957871290223319,
+    "chi2_dof_A": 0.017519963603685088,
+    "chi2_dof_B": 0.02294803805353423,
+    "health_A": "UNDERCONSTRAINED",
+    "health_B": "UNDERCONSTRAINED",
+    "gates_pass": false,
+    "r_A": 0.045111360690833546,
+    "r_B": 0.06555642732354246,
+    "shared_r": 0.04839008411298318,
+    "shared_in_both_95": true
+  },
+  "best_mechanism": "UNDETERMINED",
+  "mechanism_verdict": "MODEL MISMATCH",
+  "mechanism_reason": "chi2/dof << 0.5 (underconstrained)",
+  "delta_AIC": -3.9628884449457615,
+  "delta_BIC": -7.786934455802054
+}

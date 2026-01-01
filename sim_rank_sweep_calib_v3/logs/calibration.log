@@ -1,0 +1,92 @@
+[2025-12-31 14:47:23] ======================================================================
+[2025-12-31 14:47:23] CALIBRATION DIAGNOSTICS - v3 with all fixes
+[2025-12-31 14:47:23] ======================================================================
+[2025-12-31 14:47:23] Config: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/tests_top3.json
+[2025-12-31 14:47:23] Trials: 200, Bootstrap: 50, Starts: 50
+[2025-12-31 14:47:23] Stats level: 1.0x
+[2025-12-31 14:47:23] Workers: 31
+[2025-12-31 14:47:23] 
+[2025-12-31 14:47:23] Tests: ['Y-states', 'Zc-like', 'Di-charmonium']
+[2025-12-31 14:47:23] 
+[2025-12-31 14:47:23] Starting calibration for Y-states: 200 trials
+[2025-12-31 14:47:28]   Sanity check: Sanity check passed: Lambda = 0.0030
+[2025-12-31 14:53:48]   [Y-states] 20/200 completed
+[2025-12-31 15:00:00]   [Y-states] 40/200 completed
+[2025-12-31 15:00:14]   [Y-states] 60/200 completed
+[2025-12-31 15:06:24]   [Y-states] 80/200 completed
+[2025-12-31 15:12:33]   [Y-states] 100/200 completed
+[2025-12-31 15:12:56]   [Y-states] 120/200 completed
+[2025-12-31 15:19:38]   [Y-states] 140/200 completed
+[2025-12-31 15:26:35]   [Y-states] 160/200 completed
+[2025-12-31 15:27:20]   [Y-states] 180/200 completed
+[2025-12-31 15:32:19]   [Y-states] 200/200 completed
+[2025-12-31 15:32:19]   Saved trace: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/diagnostics/trace_Y_states_m0_1x.csv
+[2025-12-31 15:32:19]   [Y-states] Summary:
+[2025-12-31 15:32:19]     Pass rate: 0.995 (199/200)
+[2025-12-31 15:32:19]     Type I: 0.171 +/- 0.027 (target: 0.05)
+[2025-12-31 15:32:19]     Lambda_obs mean: 0.190, median: 0.117
+[2025-12-31 15:32:19]     Lambda_boot mean: 0.101
+[2025-12-31 15:32:19]     KS test: D=0.232, p=0.0000
+[2025-12-31 15:32:19]   Saved plot: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/out/pboot_hist_Y_states.png
+[2025-12-31 15:32:19]   Saved plot: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/out/lambda_hist_Y_states.png
+[2025-12-31 15:32:19] 
+[2025-12-31 15:32:19] Starting calibration for Zc-like: 200 trials
+[2025-12-31 15:32:23]   Sanity check: Sanity check passed: Lambda = 0.0091
+[2025-12-31 15:39:39]   [Zc-like] 20/200 completed
+[2025-12-31 15:45:51]   [Zc-like] 40/200 completed
+[2025-12-31 15:46:06]   [Zc-like] 60/200 completed
+[2025-12-31 15:50:58]   [Zc-like] 80/200 completed
+[2025-12-31 15:55:56]   [Zc-like] 100/200 completed
+[2025-12-31 15:56:12]   [Zc-like] 120/200 completed
+[2025-12-31 16:00:55]   [Zc-like] 140/200 completed
+[2025-12-31 16:05:31]   [Zc-like] 160/200 completed
+[2025-12-31 16:05:58]   [Zc-like] 180/200 completed
+[2025-12-31 16:08:36]   [Zc-like] 200/200 completed
+[2025-12-31 16:08:36]   Saved trace: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/diagnostics/trace_Zc_like_m0_1x.csv
+[2025-12-31 16:08:36]   [Zc-like] Summary:
+[2025-12-31 16:08:36]     Pass rate: 0.995 (199/200)
+[2025-12-31 16:08:36]     Type I: 0.060 +/- 0.017 (target: 0.05)
+[2025-12-31 16:08:36]     Lambda_obs mean: 1.962, median: 1.441
+[2025-12-31 16:08:36]     Lambda_boot mean: 1.837
+[2025-12-31 16:08:36]     KS test: D=0.077, p=0.1750
+[2025-12-31 16:08:37]   Saved plot: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/out/pboot_hist_Zc_like.png
+[2025-12-31 16:08:37]   Saved plot: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/out/lambda_hist_Zc_like.png
+[2025-12-31 16:08:37] 
+[2025-12-31 16:08:37] Starting calibration for Di-charmonium: 200 trials
+[2025-12-31 16:08:39]   Sanity check: Sanity check passed: Lambda = 0.1409
+[2025-12-31 16:14:16]   [Di-charmonium] 20/200 completed
+[2025-12-31 16:19:21]   [Di-charmonium] 40/200 completed
+[2025-12-31 16:20:02]   [Di-charmonium] 60/200 completed
+[2025-12-31 16:24:50]   [Di-charmonium] 80/200 completed
+[2025-12-31 16:29:34]   [Di-charmonium] 100/200 completed
+[2025-12-31 16:30:21]   [Di-charmonium] 120/200 completed
+[2025-12-31 16:35:07]   [Di-charmonium] 140/200 completed
+[2025-12-31 16:39:32]   [Di-charmonium] 160/200 completed
+[2025-12-31 16:40:43]   [Di-charmonium] 180/200 completed
+[2025-12-31 16:43:34]   [Di-charmonium] 200/200 completed
+[2025-12-31 16:43:34]   Saved trace: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/diagnostics/trace_Di_charmonium_m0_1x.csv
+[2025-12-31 16:43:34]   [Di-charmonium] Summary:
+[2025-12-31 16:43:34]     Pass rate: 1.000 (200/200)
+[2025-12-31 16:43:34]     Type I: 0.160 +/- 0.026 (target: 0.05)
+[2025-12-31 16:43:34]     Lambda_obs mean: 3.588, median: 1.897
+[2025-12-31 16:43:34]     Lambda_boot mean: 2.719
+[2025-12-31 16:43:34]     KS test: D=0.145, p=0.0004
+[2025-12-31 16:43:35]   Saved plot: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/out/pboot_hist_Di_charmonium.png
+[2025-12-31 16:43:35]   Saved plot: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/out/lambda_hist_Di_charmonium.png
+[2025-12-31 16:43:35] 
+[2025-12-31 16:43:35] Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/out/CALIBRATION_DIAG_TABLE.md
+[2025-12-31 16:43:35] Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/out/CALIBRATION_DIAG_TABLE.csv
+[2025-12-31 16:43:35] ======================================================================
+[2025-12-31 16:43:35] CALIBRATION FAILED
+[2025-12-31 16:43:35] See: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calib_v3/out/CALIBRATION_FAIL.md
+[2025-12-31 16:43:35]   - Y-states: Type I = 0.171 (expected [0.02, 0.08])
+[2025-12-31 16:43:35]   - Di-charmonium: Type I = 0.160 (expected [0.02, 0.08])
+[2025-12-31 16:43:35] ======================================================================
+[2025-12-31 16:43:35] 
+FINAL SUMMARY:
+[2025-12-31 16:43:35]   Y-states: Type I = 0.171, Pass Rate = 0.995
+[2025-12-31 16:43:35]   Zc-like: Type I = 0.060, Pass Rate = 0.995
+[2025-12-31 16:43:35]   Di-charmonium: Type I = 0.160, Pass Rate = 1.000
+te = 0.995
+[2025-12-31 16:43:35]   Zc-like: Type I = 0.060, Pass Rate = 0.995
+[2025-12-31 16:43:35]   Di-charmonium: Type I = 0.160, Pass Rate = 1.000

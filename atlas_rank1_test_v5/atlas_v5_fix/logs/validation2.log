@@ -1,0 +1,49 @@
+======================================================================
+ATLAS Rank-1 Test v6 - Statistically Corrected
+======================================================================
+
+Loading data...
+  4μ: 31 bins, 703 counts
+  4μ+2π: 33 bins, 1058 counts
+
+======================================================================
+VALIDATION MODE: Running both legacy and correct methods
+======================================================================
+
+======================================================================
+ATLAS Rank-1 Analysis - Mode: LEGACY
+  Bin integration: center × width (legacy)
+======================================================================
+
+--- Fitting 4μ channel ---
+  r = 0.4010, φ = -82.7°
+  χ²/dof = 1.39, D/dof = 1.34
+  Gate: PASS
+
+--- Fitting 4μ+2π channel ---
+  r = 0.3027, φ = -96.8°
+  χ²/dof = 9.74, D/dof = 8.96
+  Gate: FAIL
+
+--- Joint Constrained Fit ---
+  Shared r = 0.3261, φ = -95.1°
+  NLL unconstrained = -3986.30
+  NLL constrained = -3985.53
+  Λ = 1.5370
+
+======================================================================
+ATLAS Rank-1 Analysis - Mode: CORRECT
+  Bin integration: Gauss-Legendre quadrature
+======================================================================
+
+--- Fitting 4μ channel ---
+  r = 0.3885, φ = -82.2°
+  χ²/dof = 1.38, D/dof = 1.34
+  Gate: PASS
+
+--- Fitting 4μ+2π channel ---
+  r = 0.2954, φ = -97.6°
+  χ²/dof = 9.56, D/dof = 8.83
+  Gate: FAIL
+
+--- Joint Constrained Fit ---

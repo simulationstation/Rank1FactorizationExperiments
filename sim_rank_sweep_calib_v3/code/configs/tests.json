@@ -1,0 +1,158 @@
+{
+  "tests": [
+    {
+      "name": "di_charmonium_jpsi_jpsi_vs_jpsi_psi2s",
+      "family": "di_charmonium",
+      "description": "J/psi J/psi vs J/psi psi(2S) - CMS/ATLAS X(6900) region",
+      "channelA": {
+        "label": "J/psi J/psi",
+        "type": "poisson",
+        "nbins": 40,
+        "mean_count_scale": 50,
+        "bg_level": 0.3
+      },
+      "channelB": {
+        "label": "J/psi psi(2S)",
+        "type": "poisson",
+        "nbins": 40,
+        "mean_count_scale": 25,
+        "bg_level": 0.4
+      },
+      "R_true": {"r": 0.6, "phi_deg": -50},
+      "deltaR_M1": {"dr": 0.3, "dphi_deg": 60},
+      "deltaR_M4": {"dr": 0.1, "dphi_deg": 20},
+      "bw_params": {"m1": 0.0, "m2": 1.0, "gamma1": 0.10, "gamma2": 0.08}
+    },
+    {
+      "name": "di_charmonium_jpsi_psi2s_vs_psi2s_psi2s",
+      "family": "di_charmonium",
+      "description": "J/psi psi(2S) vs psi(2S) psi(2S) - higher mass tetraquark",
+      "channelA": {
+        "label": "J/psi psi(2S)",
+        "type": "poisson",
+        "nbins": 40,
+        "mean_count_scale": 25,
+        "bg_level": 0.4
+      },
+      "channelB": {
+        "label": "psi(2S) psi(2S)",
+        "type": "poisson",
+        "nbins": 40,
+        "mean_count_scale": 10,
+        "bg_level": 0.5
+      },
+      "R_true": {"r": 0.5, "phi_deg": -40},
+      "deltaR_M1": {"dr": 0.35, "dphi_deg": 70},
+      "deltaR_M4": {"dr": 0.12, "dphi_deg": 25},
+      "bw_params": {"m1": 0.0, "m2": 1.0, "gamma1": 0.10, "gamma2": 0.08}
+    },
+    {
+      "name": "pentaquark_jpsi_p_vs_etac_p",
+      "family": "pentaquark",
+      "description": "J/psi p vs eta_c p - LHCb Pc states",
+      "channelA": {
+        "label": "J/psi p",
+        "type": "poisson",
+        "nbins": 50,
+        "mean_count_scale": 100,
+        "bg_level": 0.6
+      },
+      "channelB": {
+        "label": "eta_c p",
+        "type": "poisson",
+        "nbins": 50,
+        "mean_count_scale": 30,
+        "bg_level": 0.7
+      },
+      "R_true": {"r": 0.7, "phi_deg": -30},
+      "deltaR_M1": {"dr": 0.25, "dphi_deg": 50},
+      "deltaR_M4": {"dr": 0.08, "dphi_deg": 15},
+      "bw_params": {"m1": 0.0, "m2": 1.0, "gamma1": 0.08, "gamma2": 0.06}
+    },
+    {
+      "name": "zc_like_pi_jpsi_vs_dd_star",
+      "family": "zc_charged",
+      "description": "pi J/psi vs D D* - Zc(3900) type states",
+      "channelA": {
+        "label": "pi J/psi",
+        "type": "poisson",
+        "nbins": 35,
+        "mean_count_scale": 80,
+        "bg_level": 0.5
+      },
+      "channelB": {
+        "label": "D D*",
+        "type": "poisson",
+        "nbins": 35,
+        "mean_count_scale": 60,
+        "bg_level": 0.4
+      },
+      "R_true": {"r": 0.55, "phi_deg": -60},
+      "deltaR_M1": {"dr": 0.28, "dphi_deg": 55},
+      "deltaR_M4": {"dr": 0.09, "dphi_deg": 18},
+      "bw_params": {"m1": 0.0, "m2": 1.0, "gamma1": 0.12, "gamma2": 0.10}
+    },
+    {
+      "name": "y_state_pipi_jpsi_vs_pipi_hc",
+      "family": "y_states",
+      "description": "pi pi J/psi vs pi pi h_c - Y(4220)/Y(4360) e+e- line-shape",
+      "channelA": {
+        "label": "pi pi J/psi",
+        "type": "gaussian",
+        "nbins": 30,
+        "mean_count_scale": 200,
+        "error_scale": 0.08,
+        "bg_level": 0.3,
+        "correlated_syst": true,
+        "syst_scale": 0.03
+      },
+      "channelB": {
+        "label": "pi pi h_c",
+        "type": "gaussian",
+        "nbins": 30,
+        "mean_count_scale": 50,
+        "error_scale": 0.12,
+        "bg_level": 0.4,
+        "correlated_syst": true,
+        "syst_scale": 0.04
+      },
+      "R_true": {"r": 0.65, "phi_deg": -45},
+      "deltaR_M1": {"dr": 0.32, "dphi_deg": 65},
+      "deltaR_M4": {"dr": 0.11, "dphi_deg": 22},
+      "bw_params": {"m1": 0.0, "m2": 1.0, "gamma1": 0.06, "gamma2": 0.05}
+    },
+    {
+      "name": "bottomonium_pi_upsilon_vs_pi_hb",
+      "family": "bottomonium",
+      "description": "pi Upsilon vs pi h_b - Zb(10610)/Zb(10650) states",
+      "channelA": {
+        "label": "pi Upsilon",
+        "type": "poisson",
+        "nbins": 45,
+        "mean_count_scale": 40,
+        "bg_level": 0.35
+      },
+      "channelB": {
+        "label": "pi h_b",
+        "type": "poisson",
+        "nbins": 45,
+        "mean_count_scale": 15,
+        "bg_level": 0.45
+      },
+      "R_true": {"r": 0.58, "phi_deg": -55},
+      "deltaR_M1": {"dr": 0.30, "dphi_deg": 58},
+      "deltaR_M4": {"dr": 0.10, "dphi_deg": 19},
+      "bw_params": {"m1": 0.0, "m2": 1.0, "gamma1": 0.07, "gamma2": 0.055}
+    }
+  ],
+  "global_settings": {
+    "n_bootstrap": 200,
+    "n_bootstrap_final": 500,
+    "n_mc_trials": 100,
+    "stats_levels": [0.5, 1.0, 2.0, 4.0, 8.0],
+    "alpha": 0.05,
+    "power_target": 0.80,
+    "chi2_dof_min": 0.5,
+    "chi2_dof_max": 3.0
+  }
+}

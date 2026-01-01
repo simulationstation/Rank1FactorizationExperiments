@@ -1,0 +1,64 @@
+{
+  "channel_A": {
+    "name": "BESIII pi+pi- J/psi",
+    "paper": "PRL 118, 092001 (2017)",
+    "arxiv": "1611.01317",
+    "n_points": 65,
+    "E_range": [
+      4.1074,
+      4.4974
+    ],
+    "r": 0.15979269659065187,
+    "phi_deg": 158.6270185294166,
+    "chi2_dof": 1.6597225608806556,
+    "nll": 48.134296986442564,
+    "health": "PASS",
+    "syst_corr": 0.058
+  },
+  "channel_B": {
+    "name": "BESIII pi+pi- psi(3686)",
+    "paper": "PRD 104, 052012 (2021)",
+    "arxiv": "2107.09210",
+    "n_points": 24,
+    "E_range": [
+      4.1285,
+      4.4671
+    ],
+    "r": 70.59657522895711,
+    "phi_deg": -74.25165689122527,
+    "chi2_dof": 8.815631814751953,
+    "nll": 74.93880649363877,
+    "health": "POOR FIT",
+    "syst_corr": 0.046
+  },
+  "joint": {
+    "r_shared": 0.15781130102656904,
+    "phi_shared_deg": 159.36232273630657,
+    "nll_unconstrained": 123.07310348008133,
+    "nll_constrained": 1580.8391697382647,
+    "Lambda": 2915.532132516367,
+    "p_chi2": 0.0,
+    "p_bootstrap": 0.4825,
+    "n_bootstrap": 800
+  },
+  "resonances": {
+    "Y4220": {
+      "M_GeV": 4.222,
+      "Gamma_GeV": 0.044
+    },
+    "Y4360": {
+      "M_GeV": 4.368,
+      "Gamma_GeV": 0.096
+    }
+  },
+  "verdict": "INCONCLUSIVE",
+  "reason": "Fit unhealthy: A=PASS, B=POOR FIT",
+  "analysis_region": {
+    "E_min": 4.1,
+    "E_max": 4.5
+  },
+  "health_gates": {
+    "chi2_dof_min": 0.5,
+    "chi2_dof_max": 3.0
+  }
+}

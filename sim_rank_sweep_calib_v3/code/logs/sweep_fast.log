@@ -1,0 +1,183 @@
+============================================================
+RANK-1 BOTTLENECK POWER STUDY (FAST ASYMPTOTIC)
+============================================================
+Trials: 100
+Stats levels: [1.0, 2.0, 4.0]
+Workers: 31
+============================================================
+
+============================================================
+Processing: di_charmonium_jpsi_jpsi_vs_jpsi_psi2s
+============================================================
+
+[1/18] Stats level = 1.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[2/18] Stats level = 2.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[3/18] Stats level = 4.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+============================================================
+Processing: di_charmonium_jpsi_psi2s_vs_psi2s_psi2s
+============================================================
+
+[4/18] Stats level = 1.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[5/18] Stats level = 2.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[6/18] Stats level = 4.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+============================================================
+Processing: pentaquark_jpsi_p_vs_etac_p
+============================================================
+
+[7/18] Stats level = 1.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[8/18] Stats level = 2.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[9/18] Stats level = 4.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+============================================================
+Processing: zc_like_pi_jpsi_vs_dd_star
+============================================================
+
+[10/18] Stats level = 1.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[11/18] Stats level = 2.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[12/18] Stats level = 4.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+============================================================
+Processing: y_state_pipi_jpsi_vs_pipi_hc
+============================================================
+
+[13/18] Stats level = 1.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[14/18] Stats level = 2.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[15/18] Stats level = 4.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+============================================================
+Processing: bottomonium_pi_upsilon_vs_pi_hb
+============================================================
+
+[16/18] Stats level = 1.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[17/18] Stats level = 2.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+[18/18] Stats level = 4.0x
+  Type I (M0): nan +/- nan
+  Power (M1): nan +/- nan
+  Power (M4): nan +/- nan
+  Lambda M0/M1/M4: nan/nan/nan
+  Identifiability: nan
+  Pass rate: 0.00
+
+Saved: out/POWER_TABLE.csv
+Saved: out/POWER_TABLE.md
+Saved: out/POWER_SUMMARY.md
+
+============================================================
+SWEEP COMPLETE
+============================================================

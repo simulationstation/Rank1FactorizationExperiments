@@ -1,0 +1,57 @@
+======================================================================
+BaBar ω(1420)/ω(1650) Rank-1 Bottleneck Test
+======================================================================
+
+Loading HEPData tables...
+Channel A (ω π⁺π⁻): 41 points, E=[1.20, 2.20] GeV
+Channel B (ω f₀): 21 points, E=[1.70, 2.20] GeV
+
+============================================================
+Fitting Channel A (e⁺e⁻ → ω π⁺π⁻)...
+============================================================
+  R_A = 1.910 × exp(i × -163.1°)
+  χ²/dof = 1.188 (41.6/35)
+  Health: PASS
+
+============================================================
+Fitting Channel B (e⁺e⁻ → ω f₀(980))...
+============================================================
+  R_B = 0.432 × exp(i × -112.9°)
+  χ²/dof = 1.169 (17.5/15)
+  Health: PASS
+
+============================================================
+Running optimizer stability audit...
+============================================================
+  Phase identifiable: False
+  r stable: True
+
+============================================================
+Fitting Joint Constrained (shared R)...
+============================================================
+  Shared R = 0.473 × exp(i × -115.1°)
+  NLL_unconstrained = 29.56
+  NLL_constrained = 508.70
+  Λ = 2×(NLL_con - NLL_unc) = 958.2697
+  χ² p-value (2 dof) = 0.0000
+
+============================================================
+Bootstrap p-value estimation...
+============================================================
+Running 800 bootstrap replicates...
+Valid bootstrap samples: 800/800
+  Bootstrap p-value = 0.0000
+
+============================================================
+Computing profile likelihood contours...
+============================================================
+  Shared R in A 95% CL: False
+  Shared R in B 95% CL: False
+
+============================================================
+FINAL VERDICT
+============================================================
+Verdict: DISFAVORED
+Reason: Magnitude-only test: |r_A - r_B| = 1.478, p_boot = 0.0000 << 0.05
+
+Report saved to: /home/primary/DarkBItParticleColiderPredictions/babar_omega_rank1/out/REPORT.md

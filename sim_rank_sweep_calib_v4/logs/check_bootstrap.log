@@ -1,0 +1,24 @@
+=== BOOTSTRAP ANALYSIS: Di-charmonium Trial 0 ===
+
+Lambda_obs: 8.2457
+NLL_unc: -13039.4192
+NLL_con: -13035.2963
+
+Running 100 bootstrap samples...
+
+Bootstrap results:
+  p_boot: 0.0000
+  n_exceed: 0/100
+  n_fail: 0
+  Lambda_boot mean: 1.9766
+  Lambda_boot max: 7.9291
+  Lambda_boot 95th percentile: 5.5312
+  Lambda_boot 99th percentile: 7.4173
+
+Expected under chi2(2):
+  Mean: 2.0000
+  95th percentile: 5.9915
+  99th percentile: 9.2103
+
+DIAGNOSIS:
+  Bootstrap Lambda mean looks reasonable

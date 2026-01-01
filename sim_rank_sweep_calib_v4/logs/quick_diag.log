@@ -1,0 +1,33 @@
+=== QUICK DIAGNOSTIC: Y-states ===
+
+1) DATA STRUCTURE:
+   Channel A type: gaussian
+   Has stat_error: True
+   Has syst_error: True
+   sigma mean: 1.4924
+   stat_error mean: 0.2331
+   syst_error mean: 1.4693
+   sigma/stat ratio: 5.60
+   nuisance_s0: 0.2322
+   nuisance_s1: 0.1167
+
+2) FIT OBSERVED DATA:
+   NLL_unc: 3.7594
+   NLL_con: 3.7866
+   Lambda_obs: 0.0544
+
+3) BOOTSTRAP COMPARISON (20 reps):
+   Comparing bootstrap WITH vs WITHOUT new systematic shifts...
+
+   CURRENT (stat-only bootstrap):
+     Lambda_boot mean: 0.1122
+     Lambda_boot median: 0.0930
+     p_boot estimate: 0.650
+
+   WITH SYSTEMATIC SHIFTS (proposed fix):
+     Lambda_boot mean: 0.0932
+     Lambda_boot median: 0.0637
+     p_boot estimate: 0.600
+
+4) DIAGNOSIS:
+   Systematic shifts don't explain the gap - check optimization

@@ -1,0 +1,22 @@
+=== DIAGNOSTIC: Di-charmonium ===
+
+1) DATA STRUCTURE:
+   Channel A type: poisson
+   Channel B type: poisson
+   Channel A nbins: 90
+   Channel B nbins: 90
+   Channel A mean counts: 34.3
+   Channel B mean counts: 16.6
+
+2) FIT OBSERVED DATA:
+   NLL_unc: -12317.4999
+   NLL_con: -12317.2881
+   Lambda_obs: 0.4235
+   Fit_unc gates: None
+   Fit_con gates: None
+
+3) QUICK CALIBRATION CHECK (15 trials):
+   Trial  0: Lambda=8.2455, p_boot=0.000, gates=PASS
+   Trial  1: Lambda=1.6089, p_boot=0.520, gates=PASS
+   Trial  2: Lambda=0.5456, p_boot=0.740, gates=PASS
+   Trial  3: Lambda=0.0403, p_boot=1.000, gates=PASS

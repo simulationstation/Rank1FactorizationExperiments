@@ -1,0 +1,31 @@
+{
+  "test_name": "besiii_y_states",
+  "display_name": "BESIII Y(4220)/Y(4360)",
+  "experiment": "BESIII",
+  "paper_ref": "PRL 118, 092001 (2017) & PRD 104, 052012 (2021)",
+  "proxy_test": false,
+  "amplitude_level": true,
+  "status": "model_mismatch",
+  "M0": {
+    "name": "Rank-1 Bottleneck",
+    "verdict": "INCONCLUSIVE",
+    "Lambda": null,
+    "p_value": null,
+    "nll_unconstrained": null,
+    "nll_constrained": null,
+    "chi2_dof_A": 1.6597225608806556,
+    "chi2_dof_B": 8.815631814751953,
+    "health_A": "PASS",
+    "health_B": "POOR FIT",
+    "gates_pass": false,
+    "r_A": null,
+    "r_B": null,
+    "shared_r": null,
+    "shared_in_both_95": null
+  },
+  "best_mechanism": "INCONCLUSIVE",
+  "mechanism_verdict": "INCONCLUSIVE",
+  "mechanism_reason": "Channel B chi2/dof=8.8 >> 3.0",
+  "delta_AIC": null,
+  "delta_BIC": null
+}

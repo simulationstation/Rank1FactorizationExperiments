@@ -1,0 +1,54 @@
+To: besiii-publication@ihep.ac.cn
+CC: hepdata-info@cern.ch
+Subject: Request for HEPData Submission - Cross Section Tables for pi+pi- J/psi and pi+pi- psi(3686)
+
+Dear BESIII Collaboration,
+
+I am conducting a physics analysis that requires the numerical cross-section data from two of your important publications:
+
+1. "Precise measurement of the e+e- -> pi+pi- J/psi cross section at center-of-mass energies from 3.77 to 4.60 GeV"
+   - Phys. Rev. Lett. 118, 092001 (2017)
+   - DOI: 10.1103/PhysRevLett.118.092001
+   - arXiv: 1611.01317
+
+2. "Cross section measurement of e+e- -> pi+pi- psi(3686) from sqrt(s)=4.0076 to 4.6984 GeV"
+   - Phys. Rev. D 104, 052012 (2021)
+   - DOI: 10.1103/PhysRevD.104.052012
+   - arXiv: 2107.09210
+
+I am specifically looking for machine-readable tables containing:
+- Center-of-mass energy sqrt(s) [GeV]
+- Born cross section sigma [pb]
+- Statistical uncertainty
+- Systematic uncertainty (or total uncertainty if not separated)
+- Integrated luminosity per energy point (if available)
+
+I have searched HEPData (https://www.hepdata.net) but could not find these datasets submitted there. The cross-section tables appear in the supplemental material of the papers, but these are in PDF format and not suitable for precision analysis.
+
+Could you please consider one of the following:
+
+1. **Preferred**: Submit the cross-section tables to HEPData
+   - HEPData provides a permanent, citable record
+   - The submission process is documented at https://www.hepdata.net/submission
+   - Your HEPData coordinator can assist with the upload
+
+2. **Alternative**: Provide the data as CSV or plain text files
+   - These could be added to the arXiv record as ancillary files
+   - Or shared directly via email
+
+The data would enable important phenomenological studies of the Y-state resonances, including tests of the resonance structure consistency across different decay channels.
+
+Thank you very much for your consideration. Please let me know if you need any additional information.
+
+Best regards,
+
+[Your Name]
+[Your Institution]
+[Your Email]
+
+---
+
+Note: This email can also be sent to individual corresponding authors listed on the papers.
+Alternative contacts:
+- BESIII Spokesperson: spokesperson@besiii.ihep.ac.cn
+- Physics Coordinator for Charmonium: (check BESIII website for current contact)

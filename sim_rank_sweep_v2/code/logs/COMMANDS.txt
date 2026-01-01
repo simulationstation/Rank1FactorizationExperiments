@@ -1,0 +1,5 @@
+Tue Dec 30 18:47:35 HST 2025: Created sim_rank_sweep folder structure
+Tue Dec 30 18:53:32 HST 2025: Starting power study simulation (quick mode)
+Tue Dec 30 19:00:28 HST 2025: Starting fast power study
+Tue Dec 30 19:04:28 HST 2025: Restarting fast power study with fixed fitting
+Tue Dec 30 19:08:14 HST 2025: Power study completed successfully

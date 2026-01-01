@@ -1,0 +1,26 @@
+=== LEAN DI-CHARMONIUM RUN ===
+Started: Thu Jan  1 09:28:56 HST 2026
+
+=== POWER ANALYSIS ===
+
+============================================================
+POWER ANALYSIS: Di-charmonium
+============================================================
+
+  Stats level: 0.5x
+  M0 trials: 150, M1 trials: 150
+    Running M0...
+      M0: 4/148 rejected (2.7%)
+    Running M1...
+      M1: 107/150 rejected (71.3%)
+
+  Stats level: 1.0x
+  M0 trials: 150, M1 trials: 150
+    Running M0...
+      M0: 11/150 rejected (7.3%)
+    Running M1...
+      M1: 148/150 rejected (98.7%)
+
+  Stats level: 2.0x
+  M0 trials: 150, M1 trials: 150
+    Running M0...

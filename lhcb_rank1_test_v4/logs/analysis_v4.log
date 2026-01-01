@@ -1,0 +1,134 @@
+======================================================================
+LHCb Pentaquark Rank-1 Bottleneck Test v4
+Yield-based test with LHCb 1D model choices
+======================================================================
+
+Loading data...
+Table 1 (full): 546 bins
+Table 2 (mKp cut): 521 bins
+Table 3 (weighted): 546 bins
+
+######################################################################
+# PAIR 1: Table 1 (full) vs Table 2 (mKp > 1.9 GeV cut)
+# Both channels: Poisson NLL
+######################################################################
+
+>>> Window: WIDE (4270, 4520)
+Channel A: 125 bins, 172530 counts
+Channel B: 125 bins, 44912 counts
+
+Selecting background order for Channel A...
+Selected: Poly3 (AIC=-2155731.6)
+Selecting background order for Channel B...
+Selected: Poly3 (AIC=-440725.2)
+
+============================================================
+Configuration: Pair1_WIDE_AIC(Poly3,Poly3)
+============================================================
+Channel A: 125 bins, bg_order=3
+Channel B: 125 bins, bg_order=3
+Fitting Channel A...
+Fitting Channel B...
+r²_A = 1.0247, r²_B = 1.5870
+χ²/dof A = 2.887, B = 2.016
+Fitting Joint (constrained)...
+r²_shared = 1.2499
+Λ = 9.9710
+Running 500 bootstrap replicates...
+Bootstrap p-value = 0.0000
+
+============================================================
+Configuration: Pair1_WIDE_Poly3
+============================================================
+Channel A: 125 bins, bg_order=3
+Channel B: 125 bins, bg_order=3
+Fitting Channel A...
+Fitting Channel B...
+r²_A = 1.0247, r²_B = 1.5870
+χ²/dof A = 2.887, B = 2.016
+Fitting Joint (constrained)...
+r²_shared = 1.2500
+Λ = 9.9710
+Running 500 bootstrap replicates...
+Bootstrap p-value = 0.0000
+
+>>> Window: TIGHT (4320, 4490)
+Channel A: 85 bins, 124568 counts
+Channel B: 85 bins, 32452 counts
+
+Selecting background order for Channel A...
+Selected: Poly2 (AIC=-1570391.0)
+Selecting background order for Channel B...
+Selected: Poly2 (AIC=-321835.3)
+
+============================================================
+Configuration: Pair1_TIGHT_AIC(Poly2,Poly2)
+============================================================
+Channel A: 85 bins, bg_order=2
+Channel B: 85 bins, bg_order=2
+Fitting Channel A...
+Fitting Channel B...
+r²_A = 1.1942, r²_B = 1.6700
+χ²/dof A = 2.169, B = 2.340
+Fitting Joint (constrained)...
+r²_shared = 1.3821
+Λ = 6.2151
+Running 500 bootstrap replicates...
+Bootstrap p-value = 0.0080
+
+============================================================
+Configuration: Pair1_TIGHT_Poly3
+============================================================
+Channel A: 85 bins, bg_order=3
+Channel B: 85 bins, bg_order=3
+Fitting Channel A...
+Fitting Channel B...
+r²_A = 1.1884, r²_B = 1.6721
+χ²/dof A = 2.196, B = 2.370
+Fitting Joint (constrained)...
+r²_shared = 1.3828
+Λ = 6.0755
+Running 500 bootstrap replicates...
+Bootstrap p-value = 0.0120
+
+######################################################################
+# PAIR 2: Table 1 (full, Poisson) vs Table 3 (weighted, Gaussian)
+# Table 3: Poly6 background (LHCb standard)
+######################################################################
+
+>>> Window: WIDE (4270, 4520)
+Channel A (Table 1): 125 bins, 172530 counts
+Channel C (Table 3): 125 bins, weighted
+
+============================================================
+Configuration: Pair2_WIDE_AIC(Poly3)+Poly6
+============================================================
+Channel A: 125 bins, bg_order=3
+Channel B: 125 bins, bg_order=6
+Fitting Channel A...
+Fitting Channel B...
+r²_A = 1.0247, r²_B = 1.3338
+χ²/dof A = 2.887, B = 1.097
+Fitting Joint (constrained)...
+r²_shared = 1.1389
+Λ = 3.1352
+Running 500 bootstrap replicates...
+Bootstrap p-value = 0.0780
+
+>>> Window: TIGHT (4320, 4490)
+Channel A (Table 1): 85 bins, 124568 counts
+Channel C (Table 3): 85 bins, weighted
+
+============================================================
+Configuration: Pair2_TIGHT_AIC(Poly2)+Poly6
+============================================================
+Channel A: 85 bins, bg_order=2
+Channel B: 85 bins, bg_order=6
+Fitting Channel A...
+Fitting Channel B...
+r²_A = 1.1942, r²_B = 1.7031
+χ²/dof A = 2.169, B = 1.131
+Fitting Joint (constrained)...
+r²_shared = 1.2739
+Λ = 3.9580
+Running 500 bootstrap replicates...

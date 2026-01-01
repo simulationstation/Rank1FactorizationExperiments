@@ -1,0 +1,61 @@
+[2025-12-31 13:05:37] ======================================================================
+[2025-12-31 13:05:37] CALIBRATION DIAGNOSTICS - 50 trials per test @ 1.0x stats
+[2025-12-31 13:05:37] ======================================================================
+[2025-12-31 13:05:37] n_bootstrap = 200, n_restarts = 80, dof_diff = 2
+[2025-12-31 13:05:37] Workers: 31
+[2025-12-31 13:05:37] 
+[2025-12-31 13:05:37] Tests: ['Y-states', 'Zc-like', 'Di-charmonium']
+[2025-12-31 13:05:37] 
+[2025-12-31 13:05:37] Starting diagnostics for Y-states: 50 trials
+[2025-12-31 13:15:45]   [Y-states] 10/50 completed
+[2025-12-31 13:15:50]   [Y-states] 20/50 completed
+[2025-12-31 13:15:59]   [Y-states] 30/50 completed
+[2025-12-31 13:22:41]   [Y-states] 40/50 completed
+[2025-12-31 13:22:53]   [Y-states] 50/50 completed
+[2025-12-31 13:22:53] Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calibration_fix/code/src/../../diagnostics/calibration_trace_Y_states.csv
+[2025-12-31 13:22:53]   [Y-states] Summary:
+[2025-12-31 13:22:53]     Valid trials: 50/50
+[2025-12-31 13:22:53]     Type I error: 0.000 (target: 0.05)
+[2025-12-31 13:22:53]     Lambda mean: 0.159, std: 0.140
+[2025-12-31 13:22:53]     Lambda median: 0.092
+[2025-12-31 13:22:53] 
+[2025-12-31 13:22:53] Starting diagnostics for Zc-like: 50 trials
+[2025-12-31 13:31:11]   [Zc-like] 10/50 completed
+[2025-12-31 13:31:14]   [Zc-like] 20/50 completed
+[2025-12-31 13:31:18]   [Zc-like] 30/50 completed
+[2025-12-31 13:36:46]   [Zc-like] 40/50 completed
+[2025-12-31 13:36:51]   [Zc-like] 50/50 completed
+[2025-12-31 13:36:51] Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calibration_fix/code/src/../../diagnostics/calibration_trace_Zc_like.csv
+[2025-12-31 13:36:51]   [Zc-like] Summary:
+[2025-12-31 13:36:51]     Valid trials: 50/50
+[2025-12-31 13:36:51]     Type I error: 0.160 (target: 0.05)
+[2025-12-31 13:36:51]     Lambda mean: 2.329, std: 2.611
+[2025-12-31 13:36:51]     Lambda median: 1.312
+[2025-12-31 13:36:51] 
+[2025-12-31 13:36:51] Starting diagnostics for Di-charmonium: 50 trials
+[2025-12-31 13:46:23]   [Di-charmonium] 10/50 completed
+[2025-12-31 13:46:37]   [Di-charmonium] 20/50 completed
+[2025-12-31 13:46:52]   [Di-charmonium] 30/50 completed
+[2025-12-31 13:53:13]   [Di-charmonium] 40/50 completed
+[2025-12-31 13:53:34]   [Di-charmonium] 50/50 completed
+[2025-12-31 13:53:34] Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calibration_fix/code/src/../../diagnostics/calibration_trace_Di_charmonium.csv
+[2025-12-31 13:53:34]   [Di-charmonium] Summary:
+[2025-12-31 13:53:34]     Valid trials: 50/50
+[2025-12-31 13:53:34]     Type I error: 0.220 (target: 0.05)
+[2025-12-31 13:53:34]     Lambda mean: 3.862, std: 3.382
+[2025-12-31 13:53:34]     Lambda median: 3.541
+[2025-12-31 13:53:34] 
+[2025-12-31 13:53:34] ======================================================================
+[2025-12-31 13:53:34] DIAGNOSTIC SUMMARY
+[2025-12-31 13:53:34] ======================================================================
+[2025-12-31 13:53:34] Y-states: Type I = 0.000, Lambda = 0.159 +/- 0.140
+[2025-12-31 13:53:34] Zc-like: Type I = 0.160, Lambda = 2.329 +/- 2.611
+[2025-12-31 13:53:34] Di-charmonium: Type I = 0.220, Lambda = 3.862 +/- 3.382
+[2025-12-31 13:53:34] 
+Saved: /home/primary/DarkBItParticleColiderPredictions/sim_rank_sweep_calibration_fix/code/src/../../diagnostics/DIAGNOSTIC_SUMMARY.md
+[2025-12-31 13:53:34] ======================================================================
+[2025-12-31 13:53:34] DIAGNOSTICS COMPLETE
+[2025-12-31 13:53:34] ======================================================================
+==================================
+[2025-12-31 13:53:34] DIAGNOSTICS COMPLETE
+[2025-12-31 13:53:34] ======================================================================

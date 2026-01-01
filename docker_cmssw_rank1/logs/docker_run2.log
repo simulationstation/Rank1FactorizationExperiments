@@ -1,0 +1,47 @@
+[sudo] password for primary: ============================================================
+CMS Rank-1 Pipeline - Container Execution
+Started: Wed Dec 31 12:31:03 PM UTC 2025
+============================================================
+
+=== Sourcing CMS environment ===
+CMS environment sourced successfully
+SCRAM_ARCH: el9_amd64_gcc12
+
+=== Creating CMSSW_14_0_13 ===
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+CMSSW_BASE: /work/CMSSW_14_0_13
+SCRAM_ARCH: el9_amd64_gcc12
+
+=== Cloning CMSSW fork ===
+Cloning into 'fork_cmssw'...
+Updating files:  31% (19660/62363)Updating files:  32% (19957/62363)Updating files:  33% (20580/62363)Updating files:  34% (21204/62363)Updating files:  35% (21828/62363)Updating files:  36% (22451/62363)Updating files:  37% (23075/62363)Updating files:  38% (23698/62363)Updating files:  39% (24322/62363)Updating files:  40% (24946/62363)Updating files:  41% (25569/62363)Updating files:  42% (26193/62363)Updating files:  43% (26817/62363)Updating files:  44% (27440/62363)Updating files:  45% (28064/62363)Updating files:  46% (28687/62363)Updating files:  47% (29311/62363)Updating files:  48% (29935/62363)Updating files:  49% (30558/62363)Updating files:  50% (31182/62363)Updating files:  51% (31806/62363)Updating files:  52% (32429/62363)Updating files:  53% (33053/62363)Updating files:  54% (33677/62363)Updating files:  54% (34267/62363)Updating files:  55% (34300/62363)Updating files:  56% (34924/62363)Updating files:  57% (35547/62363)Updating files:  58% (36171/62363)Updating files:  59% (36795/62363)Updating files:  60% (37418/62363)Updating files:  61% (38042/62363)Updating files:  62% (38666/62363)Updating files:  63% (39289/62363)Updating files:  64% (39913/62363)Updating files:  65% (40536/62363)Updating files:  66% (41160/62363)Updating files:  67% (41784/62363)Updating files:  68% (42407/62363)Updating files:  69% (43031/62363)Updating files:  70% (43655/62363)Updating files:  71% (44278/62363)Updating files:  72% (44902/62363)Updating files:  73% (45525/62363)Updating files:  74% (46149/62363)Updating files:  75% (46773/62363)Updating files:  76% (47396/62363)Updating files:  77% (48020/62363)Updating files:  78% (48644/62363)Updating files:  79% (49267/62363)Updating files:  80% (49891/62363)Updating files:  81% (50515/62363)Updating files:  81% (50884/62363)Updating files:  82% (51138/62363)Updating files:  83% (51762/62363)Updating files:  84% (52385/62363)Updating files:  85% (53009/62363)Updating files:  86% (53633/62363)Updating files:  87% (54256/62363)Updating files:  88% (54880/62363)Updating files:  89% (55504/62363)Updating files:  90% (56127/62363)Updating files:  91% (56751/62363)Updating files:  92% (57374/62363)Updating files:  93% (57998/62363)Updating files:  94% (58622/62363)Updating files:  95% (59245/62363)Updating files:  96% (59869/62363)Updating files:  97% (60493/62363)Updating files:  98% (61116/62363)Updating files:  99% (61740/62363)Updating files: 100% (62363/62363)Updating files: 100% (62363/62363), done.
+Fork commit: 161f87df7a9b83b583468969bf352f6a852d6db3
+
+=== Copying generator modules ===
+Generator modules copied
+
+=== Building CMSSW (scram b) ===
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Python completed for CMSSW CMSSW_14_0_13
+Build complete
+
+============================================================
+=== FourMu GEN-only (20000 events) ===
+============================================================
+GEN,ENDJOB
+with DB:
+Step: GEN Spec: 
+Loading generator fragment from Configuration.Generator.FourMuPt_1_200_pythia8_cfi
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/bin/el9_amd64_gcc12/cmsDriver.py", line 40, in <module>
+    run()
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/bin/el9_amd64_gcc12/cmsDriver.py", line 16, in run
+    configBuilder.prepare()
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/src/Configuration/Applications/python/ConfigBuilder.py", line 2313, in prepare
+    self.addStandardSequences()
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/src/Configuration/Applications/python/ConfigBuilder.py", line 848, in addStandardSequences
+    getattr(self,"prepare_"+stepName)(stepSpec = getattr(self,stepName+"DefaultSeq"))
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/src/Configuration/Applications/python/ConfigBuilder.py", line 1446, in prepare_GEN
+    from Configuration.Generator.concurrentLumisDisable import noConcurrentLumiGenerators
+ModuleNotFoundError: No module named 'Configuration.Generator.concurrentLumisDisable'

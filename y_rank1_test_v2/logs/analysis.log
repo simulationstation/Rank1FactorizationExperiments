@@ -1,0 +1,100 @@
+======================================================================
+Y-state Rank-1 Bottleneck Test v2
+Rigorous analysis with nuisance parameters and strict health gates
+======================================================================
+
+Loading data...
+Channel A (Belle pi+pi- J/psi): 85 points, E=[3.81, 5.49] GeV
+  Stat errors: median=3.91 pb
+  Syst: 7.0% (correlated)
+Channel B (BaBar pi+pi- psi2S): 35 points, E=[4.13, 7.48] GeV
+  Stat errors: median=7.00 pb
+  Syst: 12.3% (correlated)
+
+============================================================
+Background Model Selection (AIC/BIC)
+============================================================
+Channel A: bg_order=1 (0=const, 1=const+linear)
+  AIC=71.4, BIC=93.4
+Channel B: bg_order=0
+  AIC=24.2, BIC=35.1
+
+============================================================
+Fitting Channel A (Belle pi+pi- J/psi)...
+============================================================
+Channel A results:
+  c1 = 2.568
+  c2 = 4.252
+  phi = -86.1 deg
+  R_A = 1.655 * exp(i * -86.1 deg)
+  s0 = 1.0000 (nuisance scale)
+  s1 = 0.000156 (nuisance slope)
+  chi2/dof = 0.703 (53.4/76)
+  NLL = 26.71
+  Health: PASS - Channel A: chi2/dof=0.703
+  Optimizer: MULTIMODAL_R - r std/mean = 6.88
+
+============================================================
+Fitting Channel B (BaBar pi+pi- psi2S)...
+============================================================
+Channel B results:
+  c1 = 0.703
+  c2 = 3.320
+  phi = 29.1 deg
+  R_B = 4.726 * exp(i * 29.1 deg)
+  s0 = 1.0000 (nuisance scale)
+  s1 = -0.000104 (nuisance slope)
+  chi2/dof = 0.364 (10.2/28)
+  NLL = 5.09
+  Health: UNDERCONSTRAINED - Channel B: chi2/dof=0.364 < 0.5
+  Optimizer: MULTIMODAL_R - r std/mean = 12.19
+
+============================================================
+Fitting Joint Constrained (shared R)...
+============================================================
+Shared R = 3.531 * exp(i * -165.6 deg)
+NLL_constrained = 32.16
+NLL_unconstrained = 31.80
+Lambda = 2*(NLL_con - NLL_unc) = 0.7056
+
+============================================================
+Bootstrap p-value estimation...
+============================================================
+Running 500 bootstrap replicates...
+Valid bootstrap samples: 500/500
+Bootstrap p-value = 0.7320
+
+============================================================
+Computing profile likelihood contours...
+============================================================
+Shared R within 95% CL of Channel A: YES
+Shared R within 95% CL of Channel B: YES
+
+============================================================
+Magnitude-only check (ignoring phase)
+============================================================
+Channel A 95% CI on r: [0.497, 4.203]
+Channel B 95% CI on r: [2.041, 9.453]
+r_shared in Channel A 95% marginal: YES
+r_shared in Channel B 95% marginal: YES
+
+============================================================
+FINAL VERDICT
+============================================================
+Verdict: INCONCLUSIVE
+Reason: Fit underconstrained: Channel B: chi2/dof=0.364 < 0.5
+
+Generating plots...
+
+======================================================================
+SUMMARY
+======================================================================
+Channel A: R_A = 1.655 * exp(i * -86.1 deg), chi2/dof = 0.703 [PASS]
+Channel B: R_B = 4.726 * exp(i * 29.1 deg), chi2/dof = 0.364 [UNDERCONSTRAINED]
+Shared: R = 3.531 * exp(i * -165.6 deg)
+Lambda = 0.7056
+Bootstrap p-value = 0.7320
+Verdict: INCONCLUSIVE
+
+Report saved to: /home/primary/DarkBItParticleColiderPredictions/y_rank1_test_v2/out/REPORT_v2.md
+Results saved to: /home/primary/DarkBItParticleColiderPredictions/y_rank1_test_v2/out/results.json

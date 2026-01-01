@@ -1,0 +1,23 @@
+=== VERIFY FIX: Y-states ===
+
+Running 10 quick trials with n_bootstrap=30, n_starts=50...
+
+Trial 0: Lambda=5.1788, p_boot=0.000, gates=PASS
+Trial 1: Lambda=0.3358, p_boot=0.767, gates=PASS
+Trial 2: Lambda=0.2671, p_boot=0.733, gates=PASS
+Trial 3: Lambda=1.1211, p_boot=0.333, gates=PASS
+Trial 4: Lambda=2.6499, p_boot=0.200, gates=PASS
+Trial 5: Lambda=5.8368, p_boot=0.033, gates=PASS
+Trial 6: Lambda=5.5077, p_boot=0.100, gates=PASS
+Trial 7: Lambda=6.1385, p_boot=0.000, gates=PASS
+Trial 8: Lambda=1.7249, p_boot=0.333, gates=PASS
+Trial 9: Lambda=0.9662, p_boot=0.367, gates=PASS
+
+=== RESULTS ===
+Pass rate: 10/10
+Type I: 3/10 = 0.30
+Lambda_obs mean: 2.9727
+Lambda_boot mean: nan
+Ratio (should be ~1): nan
+
+FIX MAY NOT BE SUFFICIENT - need more investigation

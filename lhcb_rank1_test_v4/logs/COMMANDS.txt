@@ -1,0 +1,8 @@
+# LHCb Pentaquark Rank-1 Test v4 Commands
+
+# Run main analysis
+cd /home/primary/DarkBItParticleColiderPredictions/lhcb_rank1_test_v4
+nohup python3 -u src/pentaquark_rank1_v4.py > logs/analysis_v4.log 2>&1 &
+
+# Monitor progress
+tail -f logs/analysis_v4.log

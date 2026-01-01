@@ -1,0 +1,81 @@
+# CMS Rank-1 Pipeline LXPLUS Run Log
+# Generated: 2025-12-31
+# ============================================================
+
+=== PRECONDITIONS CHECK ===
+Hostname: reggin
+Status: FAILED - NOT ON LXPLUS
+
+=== CMSSW Tools ===
+cmsrel: NOT FOUND
+cmsenv: NOT FOUND
+scramv1: NOT FOUND
+
+=== ROOT ===
+root: NOT FOUND
+
+=== Python ===
+/usr/bin/python3
+
+=== DAS Client ===
+dasgoclient: NOT FOUND
+
+=== VOMS Proxy ===
+voms-proxy-info: NOT FOUND
+
+============================================================
+RESULT: CANNOT EXECUTE LOCALLY - CMSSW ENVIRONMENT NOT AVAILABLE
+============================================================
+
+This machine does not have CMS software installed.
+
+============================================================
+HOW TO RUN ON LXPLUS - SIMPLE 3-STEP PROCESS
+============================================================
+
+STEP 1: Copy pipeline to lxplus
+-------------------------------------------
+scp -r /home/primary/DarkBItParticleColiderPredictions/cms_rank1_pipeline username@lxplus.cern.ch:~/
+
+STEP 2: SSH to lxplus
+-------------------------------------------
+ssh username@lxplus.cern.ch
+
+STEP 3: Run the automated script
+-------------------------------------------
+cd ~/cms_rank1_pipeline
+chmod +x run_on_lxplus.sh
+./run_on_lxplus.sh
+
+============================================================
+
+The script will:
+1. Set up CMSSW_14_0_13
+2. Clone and build the fork
+3. Generate FourMu sample (20000 events)
+4. Generate EtaB→J/ψJ/ψ sample (50000 events)
+5. Run histogram analysis on both
+6. Run rank-1 bottleneck test
+7. Attempt real data workflow (if DAS/proxy available)
+8. Generate summary report
+
+Outputs will be in:
+- ~/cms_rank1_pipeline_run/outputs/local_mc/fourmu/
+- ~/cms_rank1_pipeline_run/outputs/local_mc/dijpsi/
+- ~/cms_rank1_pipeline_run/outputs/local_mc/rank1_test_mc/
+- ~/cms_rank1_pipeline_run/outputs/real_data/
+
+============================================================
+ALTERNATIVE: Manual execution
+============================================================
+
+See: reports/READY_TO_RUN_ON_LXPLUS.md
+
+============================================================
+ALTERNATIVE: Use CMS Docker container
+============================================================
+
+docker run --rm -it -v $(pwd):/work cmscloud/cc7-cms:latest
+source /cvmfs/cms.cern.ch/cmsset_default.sh
+cd /work/cms_rank1_pipeline
+./run_on_lxplus.sh

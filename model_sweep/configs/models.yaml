@@ -1,0 +1,347 @@
+# Model Registry for Rank-1 Bottleneck Sweep
+# ============================================
+#
+# Each model requires:
+#   - name: unique identifier
+#   - hepdata_record: INSPIRE record ID (e.g., "ins765258")
+#   - channel_A/channel_B: table identifiers or keywords
+#   - resonance_pair: (BW1, BW2) with mass/width from PDG or paper
+#   - likelihood_type: "gaussian" (cross sections) or "poisson" (counts)
+#   - systematics: nuisance parameter treatment
+#
+# IMPORTANT: Only models with BOTH channels as numeric HEPData tables are testable.
+# Models lacking numeric data will be marked NO DATA.
+
+models:
+  # =========================================================================
+  # MODEL 1: BaBar KKpi/phi-f0 Multi-channel (HEPData ins892684)
+  # =========================================================================
+  - name: "babar_phi_f0_vs_phi_pipi"
+    display_name: "BaBar phi-f0(980) vs phi-pi+pi-"
+    hepdata_record: "ins892684"
+    hepdata_doi: "10.17182/hepdata.62222"
+    paper_ref: "BaBar PRD 86, 012008 (2012)"
+
+    channel_A:
+      table_number: 3
+      table_name: "e+e- -> phi pi+pi- cross section"
+      column_x: "SQRT(S)"
+      column_y: "SIG"
+      column_stat: "stat"
+      column_syst: "sys"
+      unit_x: "GeV"
+      unit_y: "nb"
+
+    channel_B:
+      table_number: 4
+      table_name: "e+e- -> phi f0(980) cross section"
+      column_x: "SQRT(S)"
+      column_y: "SIG"
+      column_stat: "stat"
+      column_syst: "sys"
+      unit_x: "GeV"
+      unit_y: "nb"
+
+    resonance_pair:
+      BW1:
+        name: "phi(1680)"
+        mass_gev: 1.680
+        width_gev: 0.150
+        source: "PDG 2024"
+      BW2:
+        name: "phi(2170)/Y(2175)"
+        mass_gev: 2.162
+        width_gev: 0.100
+        source: "PDG 2024"
+
+    energy_range:
+      min_gev: 1.5
+      max_gev: 2.5
+
+    likelihood_type: "gaussian"
+
+    systematics:
+      correlated_scale_A: 0.10  # 10% systematic per channel
+      correlated_scale_B: 0.10
+      nuisance_prior: "gaussian"
+
+    background:
+      model: "constant_complex"  # or "linear_complex"
+      order: 0  # 0=constant, 1=linear
+
+    fit_health_gates:
+      chi2_dof_min: 0.5
+      chi2_dof_max: 3.0
+
+    optimizer:
+      n_starts: 300
+      n_bootstrap: 800
+
+    status: "testable"
+
+  # =========================================================================
+  # MODEL 2: BaBar K*(892)K channels (HEPData ins765258)
+  # =========================================================================
+  - name: "babar_kstar_k_isospin"
+    display_name: "BaBar K*(892)K I=0 vs I=1"
+    hepdata_record: "ins765258"
+    hepdata_doi: "10.17182/hepdata.50372"
+    paper_ref: "BaBar PRD 77, 092002 (2008)"
+
+    channel_A:
+      table_number: 6
+      table_name: "Isoscalar (I=0) K*(892) K cross section"
+      column_x: "SQRT(S)"
+      column_y: "SIG"
+      column_stat: "stat"
+      column_syst: null  # stat only
+      unit_x: "GeV"
+      unit_y: "nb"
+
+    channel_B:
+      table_number: 7
+      table_name: "Isovector (I=1) K*(892) K cross section"
+      column_x: "SQRT(S)"
+      column_y: "SIG"
+      column_stat: "stat"
+      column_syst: null
+      unit_x: "GeV"
+      unit_y: "nb"
+
+    resonance_pair:
+      BW1:
+        name: "phi(1680)"
+        mass_gev: 1.680
+        width_gev: 0.150
+        source: "PDG 2024"
+      BW2:
+        name: "phi(2170)"
+        mass_gev: 2.162
+        width_gev: 0.100
+        source: "PDG 2024"
+
+    energy_range:
+      min_gev: 1.4
+      max_gev: 2.4
+
+    likelihood_type: "gaussian"
+
+    systematics:
+      correlated_scale_A: 0.07
+      correlated_scale_B: 0.07
+      nuisance_prior: "gaussian"
+
+    background:
+      model: "constant_complex"
+      order: 0
+
+    fit_health_gates:
+      chi2_dof_min: 0.5
+      chi2_dof_max: 3.0
+
+    optimizer:
+      n_starts: 300
+      n_bootstrap: 800
+
+    status: "testable"
+
+  # =========================================================================
+  # MODEL 3: BaBar omega(1420)/omega(1650) - REFERENCE from existing test
+  # =========================================================================
+  - name: "babar_omega_1420_1650"
+    display_name: "BaBar omega(1420)/omega(1650)"
+    hepdata_record: "51824"
+    hepdata_doi: "10.17182/hepdata.51824"
+    paper_ref: "BaBar PRD 76, 092005 (2007)"
+
+    channel_A:
+      table_number: 3
+      table_name: "e+e- -> omega pi+pi- cross section"
+      column_x: "SQRT(S)"
+      column_y: "SIG"
+      column_stat: "stat,+"
+      column_syst: null
+      unit_x: "GeV"
+      unit_y: "nb"
+
+    channel_B:
+      table_number: 4
+      table_name: "e+e- -> omega f0(980) cross section"
+      column_x: "SQRT(S)"
+      column_y: "SIG"
+      column_stat: "stat,+"
+      column_syst: null
+      unit_x: "GeV"
+      unit_y: "nb"
+
+    resonance_pair:
+      BW1:
+        name: "omega(1420)"
+        mass_gev: 1.420
+        width_gev: 0.290
+        source: "PDG 2024"
+      BW2:
+        name: "omega(1650)"
+        mass_gev: 1.670
+        width_gev: 0.315
+        source: "PDG 2024"
+
+    energy_range:
+      min_gev: 1.2
+      max_gev: 2.2
+
+    likelihood_type: "gaussian"
+
+    systematics:
+      correlated_scale_A: 0.10
+      correlated_scale_B: 0.10
+      nuisance_prior: "gaussian"
+
+    background:
+      model: "constant_complex"
+      order: 0
+
+    fit_health_gates:
+      chi2_dof_min: 0.5
+      chi2_dof_max: 3.0
+
+    optimizer:
+      n_starts: 300
+      n_bootstrap: 800
+
+    status: "testable"
+    existing_result: "babar_omega_rank1"  # Already analyzed, can compare
+
+  # =========================================================================
+  # MODEL 4: BaBar phi-eta vs K+K-eta (ins765258)
+  # =========================================================================
+  - name: "babar_phi_eta_vs_kketa"
+    display_name: "BaBar phi-eta vs K+K-eta"
+    hepdata_record: "ins765258"
+    hepdata_doi: "10.17182/hepdata.50372"
+    paper_ref: "BaBar PRD 77, 092002 (2008)"
+
+    channel_A:
+      table_number: 5
+      table_name: "e+e- -> phi eta cross section"
+      column_x: "SQRT(S)"
+      column_y: "SIG"
+      column_stat: "stat"
+      column_syst: null
+      unit_x: "GeV"
+      unit_y: "nb"
+
+    channel_B:
+      table_number: 4
+      table_name: "e+e- -> eta K+K- (excl. phi) cross section"
+      column_x: "SQRT(S)"
+      column_y: "SIG"
+      column_stat: "stat"
+      column_syst: null
+      unit_x: "GeV"
+      unit_y: "nb"
+
+    resonance_pair:
+      BW1:
+        name: "phi(1680)"
+        mass_gev: 1.680
+        width_gev: 0.150
+        source: "PDG 2024"
+      BW2:
+        name: "phi(2170)"
+        mass_gev: 2.162
+        width_gev: 0.100
+        source: "PDG 2024"
+
+    energy_range:
+      min_gev: 1.6
+      max_gev: 2.8
+
+    likelihood_type: "gaussian"
+
+    systematics:
+      correlated_scale_A: 0.10
+      correlated_scale_B: 0.10
+      nuisance_prior: "gaussian"
+
+    background:
+      model: "constant_complex"
+      order: 0
+
+    fit_health_gates:
+      chi2_dof_min: 0.5
+      chi2_dof_max: 3.0
+
+    optimizer:
+      n_starts: 300
+      n_bootstrap: 800
+
+    status: "testable"
+
+  # =========================================================================
+  # MODEL 5: BaBar amplitude/phase data (10.17182/hepdata.50372)
+  # Phase-aware candidate - NEEDS VERIFICATION
+  # =========================================================================
+  - name: "babar_isr_amplitude_phase"
+    display_name: "BaBar ISR Amplitude+Phase (if available)"
+    hepdata_record: "ins765258"
+    hepdata_doi: "10.17182/hepdata.50372"
+    paper_ref: "BaBar PRD 77, 092002 (2008)"
+
+    channel_A:
+      table_number: null  # Need to verify
+      table_name: "moduli data (if exists)"
+      column_x: null
+      column_y: null
+      column_stat: null
+      column_syst: null
+      unit_x: null
+      unit_y: null
+
+    channel_B:
+      table_number: null
+      table_name: "phase data (if exists)"
+      column_x: null
+      column_y: null
+      column_stat: null
+      column_syst: null
+      unit_x: null
+      unit_y: null
+
+    resonance_pair:
+      BW1:
+        name: "TBD"
+        mass_gev: null
+        width_gev: null
+        source: null
+      BW2:
+        name: "TBD"
+        mass_gev: null
+        width_gev: null
+        source: null
+
+    energy_range:
+      min_gev: null
+      max_gev: null
+
+    likelihood_type: "gaussian"
+
+    systematics:
+      correlated_scale_A: 0.10
+      correlated_scale_B: 0.10
+      nuisance_prior: "gaussian"
+
+    background:
+      model: "constant_complex"
+      order: 0
+
+    fit_health_gates:
+      chi2_dof_min: 0.5
+      chi2_dof_max: 3.0
+
+    optimizer:
+      n_starts: 300
+      n_bootstrap: 800
+
+    status: "needs_verification"
+    notes: "Requires manual verification of HEPData tables for amplitude/phase content"

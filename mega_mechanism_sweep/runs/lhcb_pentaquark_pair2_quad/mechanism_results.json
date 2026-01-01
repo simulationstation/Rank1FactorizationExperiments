@@ -1,0 +1,31 @@
+{
+  "test_name": "lhcb_pentaquark_pair2_quad",
+  "display_name": "LHCb Pentaquark Pair2 T1vsT3 (quad bg)",
+  "experiment": "LHCb",
+  "paper_ref": "PRL 122, 222001 (2019)",
+  "proxy_test": true,
+  "amplitude_level": false,
+  "status": "testable",
+  "M0": {
+    "name": "Rank-1 Bottleneck",
+    "verdict": "SUPPORTED",
+    "Lambda": -5.936433902511453,
+    "p_value": 0.32,
+    "nll_unconstrained": null,
+    "nll_constrained": null,
+    "chi2_dof_A": 1.6988900222312775,
+    "chi2_dof_B": 1.390822894927072,
+    "health_A": "PASS",
+    "health_B": "PASS",
+    "gates_pass": true,
+    "r_A": 0.211639258246069,
+    "r_B": 0.2410885633833787,
+    "shared_r": 0.22676405526721533,
+    "shared_in_both_95": null
+  },
+  "best_mechanism": "M0",
+  "mechanism_verdict": "M0_SUPPORTED",
+  "mechanism_reason": "Rank-1 constraint passes: p=0.320",
+  "delta_AIC": null,
+  "delta_BIC": null
+}

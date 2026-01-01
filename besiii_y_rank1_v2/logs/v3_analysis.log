@@ -1,0 +1,36 @@
+============================================================
+BESIII Y-Sector Rank-1 Test v3 (Fixed)
+============================================================
+
+Data: 25 (A), 25 (B) points in [4.08, 4.55] GeV
+
+1) Fitting constrained (shared R)...
+   NLL_con = 233.34
+   M1 = 4243.7 MeV, G1 = 150.0 MeV
+   M2 = 4280.0 MeV, G2 = 300.0 MeV
+   R_shared = 1.453 exp(i 2.031)
+
+2) Fitting unconstrained (seeded from constrained)...
+   NLL_unc = 189.93
+   R_A = 1.425 exp(i 2.036)
+   R_B = 1.645 exp(i 2.279)
+
+3) Lambda = 2*(NLL_con - NLL_unc) = 86.81
+
+4) Fit health:
+   Channel A: chi2/dof = 12.88
+   Channel B: chi2/dof = 10.45
+
+5) Running bootstrap (500 replicates)...
+   p-value = 0.000
+
+6) Generating plots...
+
+============================================================
+VERDICT: MODEL MISMATCH
+Reason: chi2/dof: A=12.88, B=10.45
+R_A = 1.425 exp(i 2.036)
+R_B = 1.645 exp(i 2.279)
+R_shared = 1.453 exp(i 2.031)
+Lambda = 86.81, p = 0.000
+chi2/dof: A = 12.88, B = 10.45

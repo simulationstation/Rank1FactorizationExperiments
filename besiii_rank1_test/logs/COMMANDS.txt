@@ -1,0 +1,35 @@
+# BESIII Rank-1 Test - Command Log
+# Analysis aborted due to missing numeric data tables
+
+# Workspace created
+mkdir -p besiii_rank1_test/{data/hepdata,data/papers,src,out,logs}
+
+# HEPData searches attempted
+# 1. Direct INSPIRE ID lookups (both returned 404)
+curl -s "https://www.hepdata.net/record/ins1510563?format=json"  # Channel A - NOT FOUND
+curl -s "https://www.hepdata.net/record/ins1879529?format=json"  # Channel B - NOT FOUND
+
+# 2. Keyword searches on HEPData
+# https://www.hepdata.net/search/?q=BESIII+pi+pi+J/psi+cross+section
+# https://www.hepdata.net/search/?q=BESIII+pi+pi+psi(3686)+cross+section
+# https://www.hepdata.net/search/?collaboration=BESIII
+
+# 3. Web searches for supplemental material
+# Searched: "BESIII PhysRevLett.118.092001 supplemental material cross section table"
+# Searched: "BESIII PhysRevD.104.052012 psi(3686) cross section table data supplemental"
+
+# APS supplemental material URLs (returned 403 Forbidden)
+# https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.118.092001
+# https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.104.052012
+
+# arXiv source files (binary archives, not machine-readable)
+# https://arxiv.org/src/1611.01317
+# https://arxiv.org/src/2107.09210
+
+# RESULT: STOP CONDITION TRIGGERED
+# Neither channel has numeric tables available on HEPData
+# Supplemental material is in PDF format only (no CSV/DAT files)
+
+# Output files created:
+# out/NO_DATA.md - Documentation of search attempts
+# out/EMAIL_REQUEST.txt - Draft email to BESIII collaboration

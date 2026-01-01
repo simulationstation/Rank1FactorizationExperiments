@@ -1,0 +1,86 @@
+============================================================
+Zc Rank-1 Bottleneck Test v3: PROVENANCE & SANITY
+============================================================
+
+Step 1: Finding and extracting figure pages...
+  zc3900_piJpsi: found target on page 3
+    Saved: /home/primary/DarkBItParticleColiderPredictions/zc_rank1_test_v3_provenance/data/figures/zc3900_piJpsi_page.png
+    Saved: /home/primary/DarkBItParticleColiderPredictions/zc_rank1_test_v3_provenance/data/figures/zc3900_piJpsi_page.pdf
+  zc3885_ddstar: found target on page 4
+    Saved: /home/primary/DarkBItParticleColiderPredictions/zc_rank1_test_v3_provenance/data/figures/zc3885_ddstar_page.png
+    Saved: /home/primary/DarkBItParticleColiderPredictions/zc_rank1_test_v3_provenance/data/figures/zc3885_ddstar_page.pdf
+  zc4020_pihc: found target on page 5
+    Saved: /home/primary/DarkBItParticleColiderPredictions/zc_rank1_test_v3_provenance/data/figures/zc4020_pihc_page.png
+    Saved: /home/primary/DarkBItParticleColiderPredictions/zc_rank1_test_v3_provenance/data/figures/zc4020_pihc_page.pdf
+  zc4025_dstardstar: found target on page 5
+    Saved: /home/primary/DarkBItParticleColiderPredictions/zc_rank1_test_v3_provenance/data/figures/zc4025_dstardstar_page.png
+    Saved: /home/primary/DarkBItParticleColiderPredictions/zc_rank1_test_v3_provenance/data/figures/zc4025_dstardstar_page.pdf
+
+Step 2: Attempting vector/image extraction...
+  SVG conversion failed for zc3900_piJpsi: [Errno 2] No such file or directory: 'pdf2svg'
+  PNG extraction: found 1540 potential bars, axis calibration not implemented
+  SVG conversion failed for zc3885_ddstar: [Errno 2] No such file or directory: 'pdf2svg'
+  PNG extraction: found 849 potential bars, axis calibration not implemented
+  SVG conversion failed for zc4020_pihc: [Errno 2] No such file or directory: 'pdf2svg'
+  PNG extraction: found 1651 potential bars, axis calibration not implemented
+  SVG conversion failed for zc4025_dstardstar: [Errno 2] No such file or directory: 'pdf2svg'
+  PNG extraction: found 813 potential bars, axis calibration not implemented
+
+Step 3: Reconstructing spectra from publication parameters...
+  zc3900_piJpsi: RECONSTRUCTED (seed=4819)
+  zc3885_ddstar: RECONSTRUCTED (seed=5338)
+  zc4020_pihc: RECONSTRUCTED (seed=5779)
+  zc4025_dstardstar: RECONSTRUCTED (seed=1037)
+
+Step 4: Running anti-clone checks...
+  Pair A: R²=0.0394, JS=0.5988, Clone-like: False
+  Pair B: R²=0.4369, JS=0.3306, Clone-like: False
+
+Step 5: Fitting individual channels...
+  zc3900_piJpsi: M=3.8993, Γ=46.2MeV, χ²/dof=0.67, Health: PASS
+  zc3885_ddstar: M=3.8839, Γ=24.8MeV, χ²/dof=1.45, Health: PASS
+  zc4020_pihc: M=4.0228, Γ=7.5MeV, χ²/dof=0.63, Health: PASS
+  zc4025_dstardstar: M=4.0262, Γ=25.2MeV, χ²/dof=1.14, Health: PASS
+
+Step 6: Running Mode 1 joint fits and bootstrap...
+  Pair A: Running joint fit...
+    Shared M=3.8918, Γ=43.5MeV, Λ=4700.71
+  Pair A: Running bootstrap (300 replicates)...
+    Bootstrap p-value: 0.000
+  Pair B: Running joint fit...
+    Shared M=4.0259, Γ=19.1MeV, Λ=1294.37
+  Pair B: Running bootstrap (300 replicates)...
+    Bootstrap p-value: 0.000
+
+Step 7: Running sensitivity analysis...
+  Pair A sensitivity:
+    Baseline (linear bg): Λ=4700.71
+    Quadratic background: Λ=4694.01
+    Window 90%: Λ=4704.50
+    Window 110%: Λ=4695.44
+  Pair B sensitivity:
+    Baseline (linear bg): Λ=1294.37
+    Quadratic background: Λ=1285.63
+    Window 90%: Λ=1295.98
+    Window 110%: Λ=1292.76
+
+Step 8: Generating plots...
+  Saved: bootstrap_distributions.png
+Step 9: Determining verdicts...
+  Pair A: DISFAVORED - p=0.000 < 0.05, tension with shared resonance
+  Pair B: DISFAVORED - p=0.000 < 0.05, tension with shared resonance
+
+Step 10: Generating REPORT.md...
+  Saved: /home/primary/DarkBItParticleColiderPredictions/zc_rank1_test_v3_provenance/out/REPORT.md
+
+============================================================
+ANALYSIS COMPLETE
+============================================================
+
+Pair A (Zc3900/Zc3885): DISFAVORED
+  Λ = 4700.71, p = 0.000
+  Clone-like: False
+
+Pair B (Zc4020/Zc4025): DISFAVORED
+  Λ = 1294.37, p = 0.000
+  Clone-like: False

@@ -1,0 +1,57 @@
+{
+  "model": "babar_omega_1420_1650",
+  "display_name": "BaBar omega(1420)/omega(1650)",
+  "paper_ref": "BaBar PRD 76, 092005 (2007)",
+  "hepdata_doi": "10.17182/hepdata.51824",
+  "channel_A": {
+    "name": "e+e- -> omega pi+pi- cross section",
+    "n_points": 41,
+    "E_range": [
+      1.2,
+      2.2
+    ],
+    "r": 1.3438326946446402,
+    "phi_deg": -99.72884737905025,
+    "chi2_dof": 0.0067052873650276755,
+    "health": "UNDERCONSTRAINED",
+    "nll": 0.11734252888798535
+  },
+  "channel_B": {
+    "name": "e+e- -> omega f0(980) cross section",
+    "n_points": 21,
+    "E_range": [
+      1.7,
+      2.2
+    ],
+    "r": 0.08191962168970872,
+    "phi_deg": -122.83151841126666,
+    "chi2_dof": 3.949272539191773e-06,
+    "health": "UNDERCONSTRAINED",
+    "nll": 2.9619544064936534e-05
+  },
+  "shared": {
+    "r": 0.6679831574159075,
+    "phi_deg": -101.16329878246667
+  },
+  "contour_check": {
+    "shared_in_A_68": false,
+    "shared_in_A_95": false,
+    "shared_in_B_68": true,
+    "shared_in_B_95": true,
+    "shared_in_both_95": false
+  },
+  "likelihood_ratio": {
+    "Lambda": 152.32543914928974,
+    "nll_unconstrained": 0.1173721484320503,
+    "nll_constrained": 76.28009172307692,
+    "optimizer_stable": true
+  },
+  "optimizer_stability": {
+    "phase_identifiable": false,
+    "r_stable": false,
+    "n_starts": 300
+  },
+  "gates_pass": false,
+  "verdict": "MODEL MISMATCH",
+  "reason": "Fit health gates failed: A=UNDERCONSTRAINED, B=UNDERCONSTRAINED"
+}

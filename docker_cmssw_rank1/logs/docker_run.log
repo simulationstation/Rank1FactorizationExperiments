@@ -1,0 +1,73 @@
+[sudo] password for primary: ============================================================
+CMS Rank-1 Pipeline - Container Execution
+Started: Wed Dec 31 12:12:59 PM UTC 2025
+============================================================
+
+=== Sourcing CMS environment ===
+CMS environment sourced successfully
+SCRAM_ARCH: el9_amd64_gcc12
+
+=== Creating CMSSW_14_0_13 ===
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+CMSSW_BASE: /work/CMSSW_14_0_13
+SCRAM_ARCH: el9_amd64_gcc12
+
+=== Cloning CMSSW fork ===
+Cloning into 'fork_cmssw'...
+Updating files:  29% (18187/62363)Updating files:  30% (18709/62363)Updating files:  31% (19333/62363)Updating files:  32% (19957/62363)Updating files:  33% (20580/62363)Updating files:  34% (21204/62363)Updating files:  35% (21828/62363)Updating files:  36% (22451/62363)Updating files:  37% (23075/62363)Updating files:  38% (23698/62363)Updating files:  39% (24322/62363)Updating files:  40% (24946/62363)Updating files:  41% (25569/62363)Updating files:  42% (26193/62363)Updating files:  43% (26817/62363)Updating files:  44% (27440/62363)Updating files:  45% (28064/62363)Updating files:  46% (28687/62363)Updating files:  47% (29311/62363)Updating files:  48% (29935/62363)Updating files:  49% (30558/62363)Updating files:  50% (31182/62363)Updating files:  51% (31806/62363)Updating files:  52% (32429/62363)Updating files:  52% (32509/62363)Updating files:  53% (33053/62363)Updating files:  54% (33677/62363)Updating files:  55% (34300/62363)Updating files:  56% (34924/62363)Updating files:  57% (35547/62363)Updating files:  58% (36171/62363)Updating files:  59% (36795/62363)Updating files:  60% (37418/62363)Updating files:  61% (38042/62363)Updating files:  62% (38666/62363)Updating files:  63% (39289/62363)Updating files:  64% (39913/62363)Updating files:  65% (40536/62363)Updating files:  66% (41160/62363)Updating files:  67% (41784/62363)Updating files:  68% (42407/62363)Updating files:  69% (43031/62363)Updating files:  69% (43618/62363)Updating files:  70% (43655/62363)Updating files:  71% (44278/62363)Updating files:  72% (44902/62363)Updating files:  73% (45525/62363)Updating files:  74% (46149/62363)Updating files:  75% (46773/62363)Updating files:  76% (47396/62363)Updating files:  77% (48020/62363)Updating files:  78% (48644/62363)Updating files:  79% (49267/62363)Updating files:  80% (49891/62363)Updating files:  81% (50515/62363)Updating files:  82% (51138/62363)Updating files:  83% (51762/62363)Updating files:  84% (52385/62363)Updating files:  85% (53009/62363)Updating files:  86% (53633/62363)Updating files:  87% (54256/62363)Updating files:  88% (54880/62363)Updating files:  89% (55504/62363)Updating files:  90% (56127/62363)Updating files:  91% (56751/62363)Updating files:  92% (57374/62363)Updating files:  93% (57998/62363)Updating files:  93% (58048/62363)Updating files:  94% (58622/62363)Updating files:  95% (59245/62363)Updating files:  96% (59869/62363)Updating files:  97% (60493/62363)Updating files:  98% (61116/62363)Updating files:  99% (61740/62363)Updating files: 100% (62363/62363)Updating files: 100% (62363/62363), done.
+Fork commit: 161f87df7a9b83b583468969bf352f6a852d6db3
+
+=== Copying BPHNano modules ===
+Modules copied
+
+=== Building CMSSW (scram b) ===
+In file included from src/PhysicsTools/BPHNano/plugins/BToV0TrkDisplacedLLBuilder.cc:25:
+src/PhysicsTools/BPHNano/plugins/helper.h:109:70: warning: use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts'
+  109 |   inline bool track_to_lepton_match(edm::Ptr<reco::Candidate> l_ptr, auto iso_tracks_id, unsigned int iTrk) {
+      |                                                                      ^~~~
+In file included from src/PhysicsTools/BPHNano/plugins/BToV0TrkLLBuilder.cc:25:
+src/PhysicsTools/BPHNano/plugins/helper.h:109:70: warning: use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts'
+  109 |   inline bool track_to_lepton_match(edm::Ptr<reco::Candidate> l_ptr, auto iso_tracks_id, unsigned int iTrk) {
+      |                                                                      ^~~~
+In file included from src/PhysicsTools/BPHNano/plugins/DiLeptonBuilder.cc:22:
+src/PhysicsTools/BPHNano/plugins/helper.h:109:70: warning: use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts'
+  109 |   inline bool track_to_lepton_match(edm::Ptr<reco::Candidate> l_ptr, auto iso_tracks_id, unsigned int iTrk) {
+      |                                                                      ^~~~
+In file included from src/PhysicsTools/BPHNano/plugins/MatchEmbedder.cc:18:
+src/PhysicsTools/BPHNano/plugins/helper.h:109:70: warning: use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts'
+  109 |   inline bool track_to_lepton_match(edm::Ptr<reco::Candidate> l_ptr, auto iso_tracks_id, unsigned int iTrk) {
+      |                                                                      ^~~~
+In file included from src/PhysicsTools/BPHNano/plugins/BPHTrackMerger.cc:25:
+src/PhysicsTools/BPHNano/plugins/helper.h:109:70: warning: use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts'
+  109 |   inline bool track_to_lepton_match(edm::Ptr<reco::Candidate> l_ptr, auto iso_tracks_id, unsigned int iTrk) {
+      |                                                                      ^~~~
+In file included from src/PhysicsTools/BPHNano/plugins/MuonTriggerSelector.cc:28:
+src/PhysicsTools/BPHNano/plugins/helper.h:109:70: warning: use of 'auto' in parameter declaration only available with '-std=c++20' or '-fconcepts'
+  109 |   inline bool track_to_lepton_match(edm::Ptr<reco::Candidate> l_ptr, auto iso_tracks_id, unsigned int iTrk) {
+      |                                                                      ^~~~
+>> Building edm plugin tmp/el9_amd64_gcc12/src/PhysicsTools/BPHNano/plugins/PhysicsToolsBPHNanoPlugins/libPhysicsToolsBPHNanoPlugins.so
+/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/gcc/12.3.1-40d504be6370b5a30e3947a6e575ca28/bin/../lib/gcc/x86_64-redhat-linux-gnu/12.3.1/../../../../x86_64-redhat-linux-gnu/bin/ld.bfd: cannot find -lssl: No such file or directory
+/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/gcc/12.3.1-40d504be6370b5a30e3947a6e575ca28/bin/../lib/gcc/x86_64-redhat-linux-gnu/12.3.1/../../../../x86_64-redhat-linux-gnu/bin/ld.bfd: cannot find -lcrypto: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake: *** [config/SCRAM/GMake/Makefile.rules:1861: tmp/el9_amd64_gcc12/src/PhysicsTools/BPHNano/plugins/PhysicsToolsBPHNanoPlugins/libPhysicsToolsBPHNanoPlugins.so] Error 1
+gmake: *** [There are compilation/build errors. Please see the detail log above.] Error 2
+Build complete
+
+============================================================
+=== FourMu GEN-only (20000 events) ===
+============================================================
+GEN,ENDJOB
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/bin/el9_amd64_gcc12/cmsDriver.py", line 40, in <module>
+    run()
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/bin/el9_amd64_gcc12/cmsDriver.py", line 16, in run
+    configBuilder.prepare()
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/src/Configuration/Applications/python/ConfigBuilder.py", line 2309, in prepare
+    self.loadAndRemember(self.EVTCONTDefaultCFF)  #load the event contents regardless
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/src/Configuration/Applications/python/ConfigBuilder.py", line 376, in loadAndRemember
+    self.process.load(includeFile)
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/src/FWCore/ParameterSet/python/Config.py", line 761, in load
+    module = __import__(moduleName)
+  File "/cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/src/Configuration/EventContent/python/EventContent_cff.py", line 109, in <module>
+    from PhysicsTools.NanoAOD.NanoAODEDMEventContent_cff import *
+ModuleNotFoundError: No module named 'PhysicsTools.NanoAOD.NanoAODEDMEventContent_cff'

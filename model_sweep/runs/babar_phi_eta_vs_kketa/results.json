@@ -1,0 +1,57 @@
+{
+  "model": "babar_phi_eta_vs_kketa",
+  "display_name": "BaBar phi-eta vs K+K-eta",
+  "paper_ref": "BaBar PRD 77, 092002 (2008)",
+  "hepdata_doi": "10.17182/hepdata.50372",
+  "channel_A": {
+    "name": "e+e- -> phi eta cross section",
+    "n_points": 50,
+    "E_range": [
+      1.61,
+      2.78
+    ],
+    "r": 0.045111360690833546,
+    "phi_deg": 42.68589481156143,
+    "chi2_dof": 0.017519963603685088,
+    "health": "UNDERCONSTRAINED",
+    "nll": 0.3854391992810765
+  },
+  "channel_B": {
+    "name": "e+e- -> eta K+K- (excl. phi) cross section",
+    "n_points": 14,
+    "E_range": [
+      1.69,
+      2.78
+    ],
+    "r": 0.06555642732354246,
+    "phi_deg": 21.89132744188226,
+    "chi2_dof": 0.02294803805353423,
+    "health": "UNDERCONSTRAINED",
+    "nll": 0.09179215221413733
+  },
+  "shared": {
+    "r": 0.04839008411298318,
+    "phi_deg": 35.556219356273424
+  },
+  "contour_check": {
+    "shared_in_A_68": true,
+    "shared_in_A_95": true,
+    "shared_in_B_68": true,
+    "shared_in_B_95": true,
+    "shared_in_both_95": true
+  },
+  "likelihood_ratio": {
+    "Lambda": 0.037111555054236134,
+    "nll_unconstrained": 0.47723135149521384,
+    "nll_constrained": 0.4957871290223319,
+    "optimizer_stable": true
+  },
+  "optimizer_stability": {
+    "phase_identifiable": false,
+    "r_stable": false,
+    "n_starts": 300
+  },
+  "gates_pass": false,
+  "verdict": "MODEL MISMATCH",
+  "reason": "Fit health gates failed: A=UNDERCONSTRAINED, B=UNDERCONSTRAINED"
+}

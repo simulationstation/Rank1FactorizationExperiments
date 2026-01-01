@@ -1,0 +1,66 @@
+[sudo] password for primary: ============================================================
+CMS Rank-1 Pipeline - GEN-ONLY Container Execution
+Started: Wed Dec 31 05:14:19 PM UTC 2025
+============================================================
+
+=== Checking CVMFS mount ===
+CVMFS mount verified: /cvmfs/cms.cern.ch exists
+total 2830
+drwxr-xr-x 120 107 108    4096 Aug 29  2014 .
+drwxr-xr-x   8 107 108      22 Jan 25  2022 alma8_aarch64_gcc11
+drwxr-xr-x   8 107 108      33 Mar 30  2022 alma8_amd64_gcc10
+drwxr-xr-x   8 107 108      22 Jan 26  2022 alma8_ppc64le_gcc11
+
+=== Sourcing CMS environment ===
+CMS environment sourced successfully
+SCRAM_ARCH: el9_amd64_gcc12
+cmsrel command available: cmsrel ()
+{ 
+    scramv1 project CMSSW $@
+}
+
+=== Creating CMSSW_14_0_13 work area ===
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+CMSSW_BASE: /work/CMSSW_14_0_13
+SCRAM_ARCH: el9_amd64_gcc12
+cmsRun command available: /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/bin/el9_amd64_gcc12/cmsRun
+
+=== Creating generator fragment files ===
+Generator fragments created:
+total 16
+drwxr-xr-x 2 root root 4096 Dec 31 17:14 .
+drwxr-xr-x 3 root root 4096 Dec 31 17:14 ..
+-rw-r--r-- 1 root root  927 Dec 31 17:14 EtaBToJpsiJpsi_14TeV_TuneCP5_pythia8_cfi.py
+-rw-r--r-- 1 root root  963 Dec 31 17:14 FourMuPt_1_200_pythia8_cfi.py
+
+=== Building CMSSW (scram b python) ===
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Python completed for CMSSW CMSSW_14_0_13
+Build complete
+
+============================================================
+=== FourMu GEN-only (5000 events) ===
+============================================================
+Running cmsRun fourmu_gen_cfg.py...
+----- Begin Fatal Exception 31-Dec-2025 17:14:33 UTC-----------------------
+An exception of category 'ConfigFileReadError' occurred while
+   [0] Processing the python configuration file named fourmu_gen_cfg.py
+Exception Message:
+ unknown python problem occurred.
+ModuleNotFoundError: No module named 'Configuration.Generator.Pythia8CommonSettings_cfi'
+
+At:
+  /work/CMSSW_14_0_13/src/Configuration/Generator/python/FourMuPt_1_200_pythia8_cfi.py(2): <module>
+  <frozen importlib._bootstrap>(228): _call_with_frames_removed
+  <frozen importlib._bootstrap_external>(850): exec_module
+  <frozen importlib._bootstrap>(695): _load_unlocked
+  <frozen importlib._bootstrap>(986): _find_and_load_unlocked
+  <frozen importlib._bootstrap>(1007): _find_and_load
+  fourmu_gen_cfg.py(2): <module>
+
+----- End Fatal Exception -------------------------------------------------
+
+real	0m4.389s
+user	0m0.148s
+sys	0m0.153s

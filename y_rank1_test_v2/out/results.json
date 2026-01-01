@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-12-30T12:29:25.114996",
+  "channel_A": {
+    "experiment": "Belle",
+    "reaction": "e+e- -> pi+pi- J/psi",
+    "n_points": 85,
+    "r": 1.6553623700758908,
+    "Phi_deg": -86.11346907521263,
+    "chi2_dof": 0.7029855439890009,
+    "nll": 26.71353649018297,
+    "s0": 0.999999439183139,
+    "s1": 0.00015596471129334123,
+    "health": "PASS",
+    "optimizer": "MULTIMODAL_R",
+    "bg_order": 1
+  },
+  "channel_B": {
+    "experiment": "BaBar",
+    "reaction": "e+e- -> pi+pi- psi(2S)",
+    "n_points": 35,
+    "r": 4.726425218265732,
+    "Phi_deg": 29.140648787256445,
+    "chi2_dof": 0.3636043216335064,
+    "nll": 5.090613127895238,
+    "s0": 0.9999999992523387,
+    "s1": -0.00010430690570912424,
+    "health": "UNDERCONSTRAINED",
+    "optimizer": "MULTIMODAL_R",
+    "bg_order": 0
+  },
+  "shared": {
+    "r": 3.5311738048976364,
+    "Phi_deg": -165.62807699771776,
+    "nll_constrained": 32.1569388556228,
+    "nll_unconstrained": 31.80414961807821,
+    "Lambda": 0.705578475089176,
+    "in_A_95cl": true,
+    "in_B_95cl": true
+  },
+  "bootstrap": {
+    "n_samples": 500,
+    "p_value": 0.732
+  },
+  "magnitude_only": {
+    "r_shared_in_A_marginal": true,
+    "r_shared_in_B_marginal": true
+  },
+  "verdict": "INCONCLUSIVE",
+  "reason": "Fit underconstrained: Channel B: chi2/dof=0.364 < 0.5"
+}

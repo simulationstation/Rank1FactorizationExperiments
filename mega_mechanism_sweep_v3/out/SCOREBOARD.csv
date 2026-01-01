@@ -1,0 +1,11 @@
+test_name,experiment,data_fidelity,type,channels,family,gates,Lambda,p_boot,delta_AIC,delta_BIC,winner,notes
+cms_x6900_x7100,CMS,vector_extraction,AMPLITUDE,4mu vs 2mu2e,tetraquark,PASS,1.8247718147333671,0.4033333333333333,,,M0,p=0.403 ≥ 0.05 (M0 not rejected)
+atlas_x6900_x7200,ATLAS,figure_extraction,AMPLITUDE,4mu vs 4mu+2pi,tetraquark,MISMATCH,1.5369999204121996,,-2.4630000795878004,-6.287046090444164,NO_VERDICT,Gates: MISMATCH
+lhcb_pair1_quad,LHCb,official_supplementary,PROXY,T1 vs T2 (Jpsi p),pentaquark,PASS,-15.660395232758674,0.4,,,OPTIMIZER_FAILURE,Λ=-15.66 < 0
+lhcb_pair2_quad,LHCb,official_supplementary,PROXY,T1 vs T3 (Jpsi p),pentaquark,PASS,-5.936433902511453,0.32,,,OPTIMIZER_FAILURE,Λ=-5.94 < 0
+babar_phi_f0,BaBar,hepdata_numeric,AMPLITUDE,phi-pipi vs phi-f0,light_mesons,PASS,342.139698270595,0.0,338.139698270595,334.31565225973867,M1,"p=0.0000 < 0.05, Λ=342.1"
+babar_omega,BaBar,hepdata_numeric,AMPLITUDE,omega-pipi vs omega-f0,light_mesons,PASS,958.2697198046197,0.0,,,M1,"p=0.0000 < 0.05, Λ=958.3"
+y_states_belle_babar,Belle/BaBar,hepdata_numeric,AMPLITUDE,Jpsi-pipi vs psi2S-pipi,Y_states,UNDERCONSTRAINED,0.705578475089176,0.732,-3.294421524910831,-7.118467535767124,NO_VERDICT,Gates: UNDERCONSTRAINED
+besiii_y_states,BESIII,hepdata_numeric,AMPLITUDE,Jpsi-pipi vs psi3686-pipi,Y_states,MISMATCH,2915.532132516367,0.4825,2911.532132516367,2907.7080865055104,NO_VERDICT,Gates: MISMATCH
+babar_kstar_k,BaBar,hepdata_numeric,AMPLITUDE,K*K I=0 vs I=1,light_mesons,UNDERCONSTRAINED,0.07089889819231887,,-3.9291011018076816,-7.753147112663974,NO_VERDICT,Gates: UNDERCONSTRAINED
+babar_phi_eta,BaBar,hepdata_numeric,AMPLITUDE,phi-eta vs KK-eta,light_mesons,UNDERCONSTRAINED,0.037111555054236134,,-3.9628884449457615,-7.786934455802054,NO_VERDICT,Gates: UNDERCONSTRAINED

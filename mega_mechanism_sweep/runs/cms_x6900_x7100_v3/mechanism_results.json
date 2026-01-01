@@ -1,0 +1,31 @@
+{
+  "test_name": "cms_x6900_x7100_v3",
+  "display_name": "CMS X(6900)/X(7100) Di-J/psi",
+  "experiment": "CMS",
+  "paper_ref": "CMS-BPH-21-003 / arXiv:2306.07164",
+  "proxy_test": false,
+  "amplitude_level": true,
+  "status": "testable",
+  "M0": {
+    "name": "Rank-1 Bottleneck",
+    "verdict": "SUPPORTED",
+    "Lambda": 1.8247718147333671,
+    "p_value": 0.4033333333333333,
+    "nll_unconstrained": null,
+    "nll_constrained": null,
+    "chi2_dof_A": 1.016286225275991,
+    "chi2_dof_B": 2.486865269540029,
+    "health_A": "PASS",
+    "health_B": "PASS",
+    "gates_pass": true,
+    "r_A": 0.6331340873292702,
+    "r_B": 0.9231195970982796,
+    "shared_r": 0.5963744496285257,
+    "shared_in_both_95": null
+  },
+  "best_mechanism": "M0",
+  "mechanism_verdict": "M0_SUPPORTED",
+  "mechanism_reason": "Rank-1 constraint passes: p=0.403",
+  "delta_AIC": null,
+  "delta_BIC": null
+}

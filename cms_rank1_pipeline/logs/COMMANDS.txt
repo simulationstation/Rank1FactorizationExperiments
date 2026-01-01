@@ -1,0 +1,105 @@
+# CMS Rank-1 Pipeline Commands Log
+# Generated: 2025-12-31
+# Environment: CONFIG GENERATION MODE (no CMSSW tools)
+
+# ============================================================
+# 1. Workspace Creation
+# ============================================================
+mkdir -p cms_rank1_pipeline/{cmssw,configs,outputs/{local_mc,real_data_stub,rank1_inputs},logs,reports}
+
+# ============================================================
+# 2. Clone CMSSW Fork
+# ============================================================
+git clone --depth 1 https://github.com/simulationstation/cmssw cmssw
+
+# Repository info:
+# - Commit: 161f87df7a9b83b583468969bf352f6a852d6db3
+# - Branch: master
+# - Inferred CMSSW release: CMSSW_14_0_X (Run3 compatible)
+
+# ============================================================
+# 3. Environment Check Results
+# ============================================================
+# scramv1: NOT FOUND
+# cmsenv: NOT FOUND
+# cmsDriver.py: NOT FOUND
+# root: NOT FOUND
+# python3: /usr/bin/python3
+# dasgoclient: NOT FOUND
+# voms-proxy: NOT AVAILABLE
+#
+# MODE: CONFIG GENERATION (cannot run CMSSW locally)
+
+# ============================================================
+# 4. Relevant Modules Identified
+# ============================================================
+# Generator configs:
+#   - Configuration/Generator/python/FourMuPt_1_200_pythia8_cfi.py
+#   - Configuration/Generator/python/FourMuExtendedPt_1_200_pythia8_cfi.py
+#   - Configuration/Generator/python/EtaBToJpsiJpsi_14TeV_TuneCP5_pythia8_cfi.py
+#
+# NanoAOD/BPH:
+#   - PhysicsTools/NanoAOD/python/custom_bph_cff.py
+#   - PhysicsTools/BPHNano/python/muons_cff.py
+#   - PhysicsTools/BPHNano/production/samples.yml
+#
+# Heavy Flavor:
+#   - HeavyFlavorAnalysis/SpecificDecay/plugins/BPHHistoSpecificDecay.cc
+
+# ============================================================
+# 5. Configs Generated
+# ============================================================
+# Workflow documentation:
+#   - configs/fourmu_workflow.md
+#   - configs/dijpsi_workflow.md
+#
+# Analysis scripts:
+#   - configs/fourmu_analysis_cfg.py
+#   - configs/dijpsi_analysis_cfg.py
+#   - configs/realdata_bphnano_cfg.py
+#   - configs/realdata_hist_cfg.py
+#   - configs/cms_rank1_test.py
+
+# ============================================================
+# 6. Rank-1 Test Execution (Mock Data)
+# ============================================================
+python3 configs/cms_rank1_test.py \
+  --generate-mock \
+  --mock-dir outputs/rank1_inputs \
+  --output reports/RANK1_LOCAL_VALIDATION.md \
+  --bootstrap 200
+
+# Results:
+# - NLL_con = 919.94
+# - NLL_unc = 896.29
+# - Lambda = 47.31
+# - p-value = 0.490
+# - VERDICT: MODEL MISMATCH (chi2/dof too high - expected for mock data)
+
+# ============================================================
+# 7. Commands for LXPLUS (CMS Environment)
+# ============================================================
+# See reports/READY_TO_RUN_ON_LXPLUS.md for full instructions
+#
+# Quick start:
+#   ssh username@lxplus.cern.ch
+#   cmsrel CMSSW_14_0_13
+#   cd CMSSW_14_0_13/src && cmsenv
+#   git clone https://github.com/simulationstation/cmssw fork_cmssw
+#   cp -r fork_cmssw/PhysicsTools/BPHNano PhysicsTools/
+#   scram b -j8
+#
+# Generate FourMu:
+#   cmsDriver.py Configuration/Generator/python/FourMuPt_1_200_pythia8_cfi.py \
+#     --fileout file:fourmu_gen.root --mc --step GEN --era Run3 -n 10000
+#
+# Generate Di-J/psi:
+#   cmsDriver.py Configuration/Generator/python/EtaBToJpsiJpsi_14TeV_TuneCP5_pythia8_cfi.py \
+#     --fileout file:dijpsi_gen.root --mc --step GEN --era Run3 -n 50000
+#
+# Query real data:
+#   dasgoclient -query="file dataset=/ParkingDoubleMuonLowMass0/Run2022G-22Sep2023-v1/MINIAOD" --limit=20
+
+# ============================================================
+# END OF LOG
+# ============================================================

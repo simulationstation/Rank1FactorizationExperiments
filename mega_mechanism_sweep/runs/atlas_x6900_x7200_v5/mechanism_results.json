@@ -1,0 +1,31 @@
+{
+  "test_name": "atlas_x6900_x7200_v5",
+  "display_name": "ATLAS X(6900)/X(7200) Di-Charmonium",
+  "experiment": "ATLAS",
+  "paper_ref": "ATLAS arXiv:2304.08962 / arXiv:2509.13101",
+  "proxy_test": false,
+  "amplitude_level": true,
+  "status": "model_mismatch",
+  "M0": {
+    "name": "Rank-1 Bottleneck",
+    "verdict": "MODEL MISMATCH",
+    "Lambda": null,
+    "p_value": null,
+    "nll_unconstrained": null,
+    "nll_constrained": null,
+    "chi2_dof_A": null,
+    "chi2_dof_B": null,
+    "health_A": "UNKNOWN",
+    "health_B": "UNKNOWN",
+    "gates_pass": false,
+    "r_A": null,
+    "r_B": null,
+    "shared_r": null,
+    "shared_in_both_95": null
+  },
+  "best_mechanism": "UNDETERMINED",
+  "mechanism_verdict": "MODEL MISMATCH",
+  "mechanism_reason": "4mu+2pi chi2/dof=9.74 >> 3.0",
+  "delta_AIC": null,
+  "delta_BIC": null
+}

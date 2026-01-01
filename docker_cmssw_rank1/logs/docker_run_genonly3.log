@@ -1,0 +1,53 @@
+[sudo] password for primary: ============================================================
+CMS Rank-1 Pipeline - GEN-ONLY Container Execution
+Started: Wed Dec 31 05:20:02 PM UTC 2025
+============================================================
+
+=== Checking CVMFS mount ===
+CVMFS mount verified: /cvmfs/cms.cern.ch exists
+total 2830
+drwxr-xr-x 120 107 108    4096 Aug 29  2014 .
+drwxr-xr-x   8 107 108      22 Jan 25  2022 alma8_aarch64_gcc11
+drwxr-xr-x   8 107 108      33 Mar 30  2022 alma8_amd64_gcc10
+drwxr-xr-x   8 107 108      22 Jan 26  2022 alma8_ppc64le_gcc11
+
+=== Sourcing CMS environment ===
+CMS environment sourced successfully
+SCRAM_ARCH: el9_amd64_gcc12
+cmsrel command available: cmsrel ()
+{ 
+    scramv1 project CMSSW $@
+}
+
+=== Creating CMSSW_14_0_13 work area ===
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+CMSSW_BASE: /work/CMSSW_14_0_13
+SCRAM_ARCH: el9_amd64_gcc12
+cmsRun command available: /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/bin/el9_amd64_gcc12/cmsRun
+
+=== Using inline generator configurations (no local fragments) ===
+Generator configs will be created inline in cmsRun config files
+
+=== Skipping scram b (no local code) ===
+Using purely central CMSSW configuration
+
+============================================================
+=== FourMu GEN-only (5000 events) ===
+============================================================
+Running cmsRun fourmu_gen_cfg.py...
+----- Begin Fatal Exception 31-Dec-2025 17:20:04 UTC-----------------------
+An exception of category 'ConfigFileReadError' occurred while
+   [0] Processing the python configuration file named fourmu_gen_cfg.py
+Exception Message:
+ unknown python problem occurred.
+ModuleNotFoundError: No module named 'Configuration.StandardSequences.VtxSmearedParameters_cff'
+
+At:
+  /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_14_0_13/src/FWCore/ParameterSet/python/Config.py(761): load
+  fourmu_gen_cfg.py(50): <module>
+
+----- End Fatal Exception -------------------------------------------------
+
+real	0m0.629s
+user	0m0.160s
+sys	0m0.180s

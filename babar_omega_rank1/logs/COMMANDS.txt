@@ -1,0 +1,6 @@
+Tue Dec 30 13:17:04 HST 2025
+# HEPData acquisition
+curl -L -H "Accept: application/vnd.hepdata.ld+json" "https://doi.org/10.17182/hepdata.51824" -o data/hepdata/record_ld.json
+curl -s "https://www.hepdata.net/download/table/ins758568/Table%203/1/csv" -o data/hepdata/table3_omega_pipi_raw.csv
+curl -s "https://www.hepdata.net/download/table/ins758568/Table%204/1/csv" -o data/hepdata/table4_omega_f0_raw.csv
+curl -s "https://www.hepdata.net/record/ins758568?format=json" -o data/hepdata/record_full.json

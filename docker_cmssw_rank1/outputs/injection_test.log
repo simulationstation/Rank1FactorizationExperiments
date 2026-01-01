@@ -1,0 +1,30 @@
+============================================================
+Rank-1 Injection/Recovery Test
+============================================================
+
+Running 30 trials for each scenario...
+Bootstrap: 200, Starts: 30
+
+--- Scenario: RANK-1 TRUE ---
+  Completed 10/30 trials
+  Completed 20/30 trials
+  Completed 30/30 trials
+
+--- Scenario: RANK-1 FALSE ---
+  Completed 10/30 trials
+  Completed 20/30 trials
+  Completed 30/30 trials
+
+============================================================
+INJECTION/RECOVERY SUMMARY
+============================================================
+
+Rank-1 TRUE scenario (30 trials):
+  Type-I error rate: 0.000 (0/30)
+  Inconclusive: 30/30
+
+Rank-1 FALSE scenario (30 trials):
+  Power (rejection rate): 0.000 (0/30)
+  Inconclusive: 30/30
+
+Injection report written to: outputs/injection_test/INJECTION_REPORT.md

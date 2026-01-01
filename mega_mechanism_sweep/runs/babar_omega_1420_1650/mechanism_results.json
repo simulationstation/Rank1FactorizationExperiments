@@ -1,0 +1,31 @@
+{
+  "test_name": "babar_omega_1420_1650",
+  "display_name": "BaBar omega(1420)/omega(1650)",
+  "experiment": "BaBar",
+  "paper_ref": "PRD 76, 092005 (2007)",
+  "proxy_test": false,
+  "amplitude_level": true,
+  "status": "model_mismatch",
+  "M0": {
+    "name": "Rank-1 Bottleneck",
+    "verdict": "DISFAVORED",
+    "Lambda": 958.2697198046197,
+    "p_value": 0.0,
+    "nll_unconstrained": null,
+    "nll_constrained": null,
+    "chi2_dof_A": 1.1880750221892287,
+    "chi2_dof_B": 1.169367911389312,
+    "health_A": "PASS",
+    "health_B": "PASS",
+    "gates_pass": true,
+    "r_A": 1.9100739322504088,
+    "r_B": 0.432097378039815,
+    "shared_r": 0.47268327306125163,
+    "shared_in_both_95": null
+  },
+  "best_mechanism": "M1",
+  "mechanism_verdict": "M0_DISFAVORED",
+  "mechanism_reason": "Rank-1 rejected: p=0.0000, Lambda=958.2697198046197",
+  "delta_AIC": null,
+  "delta_BIC": null
+}
