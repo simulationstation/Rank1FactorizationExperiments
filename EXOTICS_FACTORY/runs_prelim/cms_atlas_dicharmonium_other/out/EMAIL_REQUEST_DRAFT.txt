@@ -1,0 +1,26 @@
+Subject: Data Request for Rank-1 Factorization Test: CMS/ATLAS other di-charmonium families
+
+Dear Colleagues,
+
+We are conducting a systematic study of rank-1 factorization in exotic hadron production.
+We would like to request access to binned spectra or amplitude-level data for the following states:
+
+Family: CMS/ATLAS other di-charmonium families
+States: di-J/psi structures, 4mu structures
+Channels: CMS di-J/psi, ATLAS di-J/psi
+
+Relevant publications:
+- CMS PAS BPH-21-003 (placeholder)
+- ATLAS-CONF-2023-XYZ (placeholder)
+
+Specifically, we need:
+1. Binned invariant mass spectra with uncertainties
+2. Efficiency corrections (if applicable)
+3. Background parameterization (optional)
+
+The data will be used for a statistical test of production mechanism factorization.
+
+Thank you for your consideration.
+
+Best regards,
+[Your Name]

@@ -1,0 +1,25 @@
+Subject: Data Request for Rank-1 Factorization Test: BaBar control: omega(1420)/omega(1650)
+
+Dear Colleagues,
+
+We are conducting a systematic study of rank-1 factorization in exotic hadron production.
+We would like to request access to binned spectra or amplitude-level data for the following states:
+
+Family: BaBar control: omega(1420)/omega(1650)
+States: omega(1420), omega(1650)
+Channels: e+e- -> omega pi pi, e+e- -> omega f0
+
+Relevant publications:
+- arXiv:1912.00262
+
+Specifically, we need:
+1. Binned invariant mass spectra with uncertainties
+2. Efficiency corrections (if applicable)
+3. Background parameterization (optional)
+
+The data will be used for a statistical test of production mechanism factorization.
+
+Thank you for your consideration.
+
+Best regards,
+[Your Name]

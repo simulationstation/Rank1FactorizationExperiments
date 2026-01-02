@@ -1,0 +1,26 @@
+Subject: Data Request for Rank-1 Factorization Test: BaBar control: phi(1680)/phi(2170)
+
+Dear Colleagues,
+
+We are conducting a systematic study of rank-1 factorization in exotic hadron production.
+We would like to request access to binned spectra or amplitude-level data for the following states:
+
+Family: BaBar control: phi(1680)/phi(2170)
+States: phi(1680), phi(2170)
+Channels: e+e- -> phi f0, e+e- -> phi pi pi
+
+Relevant publications:
+- arXiv:0708.2461
+- DOI:10.1103/PhysRevD.76.012008
+
+Specifically, we need:
+1. Binned invariant mass spectra with uncertainties
+2. Efficiency corrections (if applicable)
+3. Background parameterization (optional)
+
+The data will be used for a statistical test of production mechanism factorization.
+
+Thank you for your consideration.
+
+Best regards,
+[Your Name]
