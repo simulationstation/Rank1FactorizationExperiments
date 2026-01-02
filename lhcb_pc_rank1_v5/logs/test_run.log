@@ -1,0 +1,86 @@
+======================================================================
+LHCb Pentaquark Pc(4440)/Pc(4457) Rank-1 Test
+PROJECTION-BASED (1D spectrum) - NOT full amplitude workspace
+======================================================================
+
+Loading HEPData tables...
+  Table 1 (full): 546 bins
+  Table 2 (mKp>1.9): 521 bins
+  Table 3 (cosθ-weighted): 546 bins
+
+Selecting fit window: 4400-4500 MeV
+  Table 1 window: 50 bins
+  Table 2 window: 50 bins
+  Table 3 window: 50 bins
+
+============================================================
+PAIR: Pair 1: Full vs mKp>1.9 cut
+============================================================
+
+1. Individual spectrum fits:
+   Spectrum A: χ²/dof = 64.2/44 = 1.46, Health: HEALTHY
+     R_A = 0.252 exp(i -72.4°)
+   Spectrum B: χ²/dof = 65.2/44 = 1.48, Health: HEALTHY
+     R_B = 0.281 exp(i -42.9°)
+
+2. Joint fits:
+   Constrained NLL: 67.57
+   R_shared = 0.263 exp(i -58.3°)
+   Unconstrained NLL: 64.71
+   R_A = 0.438 exp(i 134.1°)
+   R_B = 0.281 exp(i -42.9°)
+
+3. Test statistic:
+   Λ = 2*(NLL_con - NLL_unc) = 5.73
+   Wilks p-value (ref): 0.0570
+
+4. Bootstrap (200 replicates)...
+   p_boot = 10/200 = 0.0500
+
+5. Verdict:
+   NOT_REJECTED: p_boot = 0.050 >= 0.05
+
+============================================================
+PAIR: Pair 2: Full vs cosθ-weighted
+============================================================
+
+1. Individual spectrum fits:
+   Spectrum A: χ²/dof = 64.2/44 = 1.46, Health: HEALTHY
+     R_A = 0.252 exp(i -72.4°)
+   Spectrum B: χ²/dof = 83.8/44 = 1.91, Health: HEALTHY
+     R_B = 0.248 exp(i -53.1°)
+
+2. Joint fits:
+   Constrained NLL: 74.99
+   R_shared = 0.439 exp(i 131.1°)
+   Unconstrained NLL: 74.01
+   R_A = 0.438 exp(i 134.1°)
+   R_B = 0.439 exp(i 128.9°)
+
+3. Test statistic:
+   Λ = 2*(NLL_con - NLL_unc) = 1.96
+   Wilks p-value (ref): 0.3759
+
+4. Bootstrap (200 replicates)...
+   p_boot = 88/200 = 0.4400
+
+5. Verdict:
+   NOT_REJECTED: p_boot = 0.440 >= 0.05
+
+======================================================================
+Generating outputs
+======================================================================
+  Saved: ../out/result.json
+  Saved: ../out/fit_pair1.png
+  Saved: ../out/fit_pair2.png
+  Saved: ../out/bootstrap_hist_pair1.png
+  Saved: ../out/bootstrap_hist_pair2.png
+  Saved: ../out/REPORT.md
+  Saved: ../out/RANK1_RESULT.md
+  Saved: ../out/optimizer_audit.md
+
+======================================================================
+SUMMARY
+======================================================================
+  Pair 1 (Full vs mKp cut): NOT_REJECTED
+  Pair 2 (Full vs cosθ-weighted): NOT_REJECTED
