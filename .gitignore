@@ -1,2 +1,20 @@
 docker_cmssw_rank1/outputs/*.root
 __pycache__/
+
+# Rank1 Discovery Mine - exclude downloaded raw files
+discoveries/**/raw/*.pdf
+discoveries/**/raw/*.json
+discoveries/**/raw/*.root
+discoveries/**/raw/*.csv
+discoveries/**/raw/*.tar.gz
+discoveries/**/raw/*.zip
+
+# Keep directory structure but not large files
+!discoveries/_registry/
+!discoveries/**/.gitkeep
+
+# Temporary files
+*.tmp
+*.log
+*.pyc
+.DS_Store

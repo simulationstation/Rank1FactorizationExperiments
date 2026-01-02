@@ -750,6 +750,82 @@ tail -f out/run.log
 
 ---
 
+---
+
+## Rank1 Discovery Mine
+
+Automated system for discovering publicly available data for exotic hadron families and running rank-1 factorization tests.
+
+### Quick Start
+
+```bash
+# Validate configuration
+python -m rank1_discovery_mine validate
+
+# Build plan and scaffold directories (no downloads)
+python -m rank1_discovery_mine plan
+
+# View current status
+python -m rank1_discovery_mine status
+
+# Resume processing (requires --execute for actual downloads)
+python -m rank1_discovery_mine run --resume --execute
+
+# Process single candidate
+python -m rank1_discovery_mine run --one lhcb_pc_4312_extensions --execute
+```
+
+### Directory Structure
+
+```
+discoveries/
+├── _registry/                    # Global state and tracking
+│   ├── state.json               # Resumable progress state
+│   ├── MASTER_TABLE.csv         # One row per candidate
+│   ├── MASTER_TABLE.md          # Markdown rendering
+│   ├── errors.jsonl             # Append-only error log
+│   └── README.md                # Registry documentation
+│
+└── <candidate_slug>/            # Per-candidate directories
+    ├── raw/                     # Downloaded files (PDFs, JSON)
+    ├── extracted/               # Clean CSV tables
+    ├── out/                     # REPORT.md, result.json, plots
+    ├── logs/                    # Step logs
+    ├── meta.json                # Candidate metadata
+    └── status.json              # Per-candidate state
+```
+
+### Candidate Configuration
+
+Candidates are defined in `configs/discovery_candidates.yaml` with:
+- States (e.g., "X(4140)", "X(4274)")
+- Channels (decay modes for rank-1 testing)
+- Preferred data sources (HEPData, arXiv, CERN Open Data, GitHub)
+- Search terms for automated discovery
+
+### Pipeline Steps
+
+1. **scaffold**: Create directory structure
+2. **locate_data**: Search for public data sources (dry-run by default)
+3. **acquire**: Download files (requires `--execute`)
+4. **extract_numeric**: Extract tables from PDFs/JSON
+5. **run_rank1**: Execute rank-1 test harness
+6. **summarize**: Update master table
+
+### Status Codes
+
+| Status | Meaning |
+|--------|---------|
+| PENDING | Not yet started |
+| PLANNED | Dry-run completed |
+| IN_PROGRESS | Currently processing |
+| DONE | Successfully completed |
+| NO_DATA | No public data available |
+| BLOCKED | Data found but extraction failed |
+| ERROR | Processing error |
+
+---
+
 ## License
 
 This analysis code is provided for scientific research purposes.

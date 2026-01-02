@@ -1,0 +1,773 @@
+# Rank1 Discovery Mine - Candidate Configuration
+# ==============================================
+#
+# This file defines exotic hadron candidates for automated rank-1 testing.
+# Each candidate specifies states, channels, data sources, and test parameters.
+#
+# Schema version: 1.0
+
+schema_version: "1.0"
+
+# Global settings
+settings:
+  default_bootstrap_reps: 200
+  default_optimizer_starts: 300
+  parallel_downloads: false  # Keep sequential for now
+  timeout_seconds: 120
+
+candidates:
+  # ===========================================================================
+  # X(4140) / X(4274) family - J/psi phi
+  # ===========================================================================
+
+  lhcb_jpsiphi_x4140_family:
+    title: "LHCb J/psi-phi X(4140)/X(4274) Family"
+    collaboration: "LHCb"
+    category: exotic
+    states:
+      - "X(4140)"
+      - "X(4274)"
+      - "X(4500)"
+      - "X(4700)"
+    channels:
+      - id: ch_bu_jpsiphi_k
+        label: "B+ -> J/psi phi K+"
+        final_state: "J/psi phi"
+      - id: ch_bs_jpsiphi
+        label: "Bs -> J/psi phi (if available)"
+        final_state: "J/psi phi"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+      - supplementary
+    search_terms:
+      - "LHCb X(4140)"
+      - "LHCb J/psi phi"
+      - "X(4274) LHCb"
+      - "B+ J/psi phi K"
+    arxiv_ids:
+      - "1606.07895"
+      - "1606.07898"
+    hepdata_ids: []
+    notes: "LHCb full amplitude analysis of B+ -> J/psi phi K+. Multiple X states observed."
+    expected_data_kind: binned_spectrum
+    rank1_mode: multi_state_pairwise
+
+  cms_jpsiphi_x4140_family:
+    title: "CMS J/psi-phi X(4140) Family"
+    collaboration: "CMS"
+    category: exotic
+    states:
+      - "X(4140)"
+      - "X(4274)"
+    channels:
+      - id: ch_bu_jpsiphi_k_cms
+        label: "B+ -> J/psi phi K+ (CMS)"
+        final_state: "J/psi phi"
+      - id: ch_prompt_jpsiphi
+        label: "Prompt J/psi phi production"
+        final_state: "J/psi phi"
+    preferred_sources:
+      - hepdata
+      - cern_opendata
+      - arxiv_pdf
+    search_terms:
+      - "CMS X(4140)"
+      - "CMS J/psi phi"
+      - "CMS B+ J/psi phi"
+    arxiv_ids:
+      - "1309.6920"
+      - "1712.02170"
+    hepdata_ids: []
+    notes: "CMS observation of X(4140) in B+ decay."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  atlas_jpsiphi_x4140_family:
+    title: "ATLAS J/psi-phi X(4140) Family"
+    collaboration: "ATLAS"
+    category: exotic
+    states:
+      - "X(4140)"
+      - "X(4274)"
+    channels:
+      - id: ch_bu_jpsiphi_k_atlas
+        label: "B+ -> J/psi phi K+ (ATLAS)"
+        final_state: "J/psi phi"
+      - id: ch_prompt_jpsiphi_atlas
+        label: "Prompt J/psi phi (ATLAS)"
+        final_state: "J/psi phi"
+    preferred_sources:
+      - hepdata
+      - cern_opendata
+      - arxiv_pdf
+    search_terms:
+      - "ATLAS X(4140)"
+      - "ATLAS J/psi phi"
+    arxiv_ids: []
+    hepdata_ids: []
+    notes: "ATLAS measurements of X(4140) region."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  # ===========================================================================
+  # X(2900) family - D K
+  # ===========================================================================
+
+  lhcb_x2900_doublet_dk:
+    title: "LHCb X(2900) Doublet in DK"
+    collaboration: "LHCb"
+    category: exotic
+    states:
+      - "X0(2900)"
+      - "X1(2900)"
+    channels:
+      - id: ch_bu_dsplusdk
+        label: "B+ -> D+s D- K+"
+        final_state: "D- K+"
+      - id: ch_bu_d0dk
+        label: "B+ -> D0 Dbar0 K+"
+        final_state: "D K"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "LHCb X(2900)"
+      - "LHCb DK exotic"
+      - "open charm tetraquark"
+      - "X0(2900) X1(2900)"
+    arxiv_ids:
+      - "2009.00025"
+      - "2009.00026"
+    hepdata_ids: []
+    notes: "First open-charm tetraquark candidates. Two states with J^P = 0+ and 1-."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  # ===========================================================================
+  # Zcs family - J/psi K
+  # ===========================================================================
+
+  lhcb_zcs_4000_4220:
+    title: "LHCb Zcs(4000)/Zcs(4220) in J/psi K"
+    collaboration: "LHCb"
+    category: exotic
+    states:
+      - "Zcs(4000)"
+      - "Zcs(4220)"
+    channels:
+      - id: ch_bu_jpsiks_k
+        label: "B+ -> J/psi K+s K-"
+        final_state: "J/psi K"
+      - id: ch_b0_jpsik_kstar
+        label: "B0 -> J/psi K- K*+"
+        final_state: "J/psi K"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "LHCb Zcs"
+      - "Zcs(4000)"
+      - "Zcs(4220)"
+      - "J/psi K strange tetraquark"
+    arxiv_ids:
+      - "2103.01803"
+    hepdata_ids: []
+    notes: "Strange-charm tetraquark candidates analogous to Zc states."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  besiii_zcs_3985:
+    title: "BESIII Zcs(3985) in D-s D*0 / D*-s D0"
+    collaboration: "BESIII"
+    category: exotic
+    states:
+      - "Zcs(3985)"
+      - "Zcs(4000)"  # Potentially related to LHCb Zcs(4000)
+    channels:
+      - id: ch_ee_kzcs_ds_dstar
+        label: "e+e- -> K+ (D-s D*0 + D*-s D0)"
+        final_state: "D-s D*0"
+      - id: ch_ee_kzcs_recoil
+        label: "e+e- -> K+ Zcs recoil"
+        final_state: "Ds D"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "BESIII Zcs"
+      - "Zcs(3985)"
+      - "strange charm exotic"
+    arxiv_ids:
+      - "2011.07855"
+    hepdata_ids: []
+    notes: "BESIII discovery of Zcs(3985). May be related to LHCb Zcs states."
+    expected_data_kind: cross_section_scan
+    rank1_mode: two_state_ratio
+
+  # ===========================================================================
+  # Zc(3900) family
+  # ===========================================================================
+
+  besiii_zc3900_pijpsi_ddstar:
+    title: "BESIII Zc(3900)/Zc(4020) in pi J/psi and DD*"
+    collaboration: "BESIII"
+    category: exotic
+    states:
+      - "Zc(3900)"
+      - "Zc(4020)"  # Both Zc states observed by BESIII
+    channels:
+      - id: ch_ee_pipijpsi
+        label: "e+e- -> pi+pi- J/psi (Zc peak)"
+        final_state: "pi J/psi"
+      - id: ch_ee_piddstar
+        label: "e+e- -> pi (DD*)"
+        final_state: "DD*"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "BESIII Zc(3900)"
+      - "Zc(3900) pi J/psi"
+      - "Zc(3900) DD*"
+    arxiv_ids:
+      - "1303.5949"
+      - "1310.1163"
+    hepdata_ids: []
+    notes: "First charged charmonium-like state. Key test of tetraquark vs molecule."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  # ===========================================================================
+  # Zc(4020) family
+  # ===========================================================================
+
+  besiii_zc4020_pihc_dstar_dstar:
+    title: "BESIII Zc(4020)/Zc(3900) in pi hc and D*D*"
+    collaboration: "BESIII"
+    category: exotic
+    states:
+      - "Zc(4020)"
+      - "Zc(3900)"  # Include both Zc states
+    channels:
+      - id: ch_ee_pipihc
+        label: "e+e- -> pi+pi- hc (Zc peak)"
+        final_state: "pi hc"
+      - id: ch_ee_pidstardstar
+        label: "e+e- -> pi (D*D*)"
+        final_state: "D*D*"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "BESIII Zc(4020)"
+      - "Zc(4020) pi hc"
+      - "Zc(4020) D*D*"
+    arxiv_ids:
+      - "1309.1896"
+      - "1308.2760"
+    hepdata_ids: []
+    notes: "Higher-mass charged Zc state. Tests isospin partner of Zc(3900)."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  # ===========================================================================
+  # Y(4360)/Y(4660) family
+  # ===========================================================================
+
+  besiii_y4360_y4660_pipipsi2s:
+    title: "BESIII Y(4360)/Y(4660) in pi+pi- psi(2S)"
+    collaboration: "BESIII"
+    category: exotic
+    states:
+      - "Y(4360)"
+      - "Y(4660)"
+    channels:
+      - id: ch_ee_pipipsi2s
+        label: "e+e- -> pi+pi- psi(2S)"
+        final_state: "pi+pi- psi(2S)"
+      - id: ch_ee_scan
+        label: "e+e- -> hadrons (R scan)"
+        final_state: "hadrons"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "BESIII Y(4360)"
+      - "Y(4660) psi(2S)"
+      - "pi pi psi(2S) BESIII"
+    arxiv_ids:
+      - "1611.01317"
+      - "1912.11253"
+    hepdata_ids: []
+    notes: "Y states in pi+pi- psi(2S). Related to Y(4220)/Y(4320) analysis."
+    expected_data_kind: cross_section_scan
+    rank1_mode: two_state_ratio
+
+  # ===========================================================================
+  # Belle ISR Y family
+  # ===========================================================================
+
+  belle_isr_y_family:
+    title: "Belle ISR Y-state Family"
+    collaboration: "Belle"
+    category: exotic
+    states:
+      - "Y(4260)"
+      - "Y(4360)"
+      - "Y(4660)"
+    channels:
+      - id: ch_isr_pijpsi
+        label: "ISR -> pi+pi- J/psi"
+        final_state: "pi+pi- J/psi"
+      - id: ch_isr_pipsi2s
+        label: "ISR -> pi+pi- psi(2S)"
+        final_state: "pi+pi- psi(2S)"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "Belle Y(4260)"
+      - "Belle ISR charmonium"
+      - "Y(4360) Belle"
+    arxiv_ids:
+      - "1204.2158"
+      - "0707.3699"
+    hepdata_ids: []
+    notes: "Belle ISR measurements of Y states. Complements BESIII energy scan."
+    expected_data_kind: binned_spectrum
+    rank1_mode: multi_state_pairwise
+
+  # ===========================================================================
+  # LHCb Pentaquark extensions
+  # ===========================================================================
+
+  lhcb_pcs_jpsilambda_family:
+    title: "LHCb Pcs J/psi-Lambda Family"
+    collaboration: "LHCb"
+    category: exotic
+    states:
+      - "Pcs(4338)"
+      - "Pcs(4459)"
+    channels:
+      - id: ch_xib_jpsilambdak
+        label: "Xi_b -> J/psi Lambda K"
+        final_state: "J/psi Lambda"
+      - id: ch_bu_jpsilambdapbar
+        label: "B- -> J/psi Lambda pbar"
+        final_state: "J/psi Lambda"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "LHCb Pcs"
+      - "Pcs(4459)"
+      - "Pcs(4338)"
+      - "strange pentaquark"
+      - "J/psi Lambda LHCb"
+    arxiv_ids:
+      - "2012.10380"
+      - "2210.10346"
+    hepdata_ids: []
+    notes: "Strange pentaquark candidates. Different production modes for each state."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  lhcb_pc_4312_extensions:
+    title: "LHCb Pc(4312) and Extensions"
+    collaboration: "LHCb"
+    category: exotic
+    states:
+      - "Pc(4312)"
+      - "Pc(4440)"
+      - "Pc(4457)"
+    channels:
+      - id: ch_lb_jpsip_k_full
+        label: "Lambda_b -> J/psi p K (full)"
+        final_state: "J/psi p"
+      - id: ch_lb_jpsip_k_mkp
+        label: "Lambda_b -> J/psi p K (mKp>1.9)"
+        final_state: "J/psi p"
+      - id: ch_lb_jpsip_k_weighted
+        label: "Lambda_b -> J/psi p K (cos-weighted)"
+        final_state: "J/psi p"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "LHCb Pc(4312)"
+      - "LHCb pentaquark 2019"
+      - "Pc(4440) Pc(4457)"
+    arxiv_ids:
+      - "1904.03947"
+    hepdata_ids:
+      - "1728691"
+    notes: "Extended Pc analysis including Pc(4312). HEPData available."
+    expected_data_kind: binned_spectrum
+    rank1_mode: multi_state_pairwise
+
+  # ===========================================================================
+  # Tcc+ tetraquark
+  # ===========================================================================
+
+  lhcb_tcc_d0d0pi:
+    title: "LHCb Tcc+ in D0D0pi+"
+    collaboration: "LHCb"
+    category: exotic
+    states:
+      - "Tcc(3875)+"
+      - "Tcc(3875)+ threshold"  # Threshold structure study
+    channels:
+      - id: ch_d0d0pi
+        label: "D0 D0 pi+"
+        final_state: "D0 D0 pi+"
+      - id: ch_d0dstarplus
+        label: "D0 D*+"
+        final_state: "D0 D*+"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "LHCb Tcc"
+      - "Tcc(3875)"
+      - "double charm tetraquark"
+      - "D0 D0 pi"
+    arxiv_ids:
+      - "2109.01038"
+      - "2109.01056"
+    hepdata_ids: []
+    notes: "First doubly-charmed tetraquark. Extremely narrow width. Single-state cross-channel test."
+    expected_data_kind: binned_spectrum
+    rank1_mode: multi_state_pairwise
+
+  # ===========================================================================
+  # X(6900) tetraquark family
+  # ===========================================================================
+
+  lhcb_x6900_jpsijpsi:
+    title: "LHCb X(6900) in J/psi J/psi"
+    collaboration: "LHCb"
+    category: exotic
+    states:
+      - "X(6200)"
+      - "X(6600)"
+      - "X(6900)"
+      - "X(7300)"
+    channels:
+      - id: ch_jpsijpsi_lhcb
+        label: "J/psi J/psi (LHCb)"
+        final_state: "J/psi J/psi"
+      - id: ch_jpsipsi2s_lhcb
+        label: "J/psi psi(2S) (LHCb)"
+        final_state: "J/psi psi(2S)"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "LHCb X(6900)"
+      - "di-J/psi LHCb"
+      - "fully charm tetraquark"
+    arxiv_ids:
+      - "2006.16957"
+      - "2011.08157"
+    hepdata_ids: []
+    notes: "Fully-charm tetraquark candidates. Multiple structures observed."
+    expected_data_kind: binned_spectrum
+    rank1_mode: multi_state_pairwise
+
+  atlas_x6900_jpsijpsi:
+    title: "ATLAS X(6900) in J/psi J/psi"
+    collaboration: "ATLAS"
+    category: exotic
+    states:
+      - "X(6900)"
+      - "X(7100)"
+    channels:
+      - id: ch_jpsijpsi_atlas
+        label: "J/psi J/psi (ATLAS)"
+        final_state: "J/psi J/psi"
+      - id: ch_jpsijpsi_atlas_alt
+        label: "J/psi J/psi (ATLAS, alt selection)"
+        final_state: "J/psi J/psi"
+    preferred_sources:
+      - hepdata
+      - cern_opendata
+      - arxiv_pdf
+    search_terms:
+      - "ATLAS X(6900)"
+      - "ATLAS di-J/psi"
+      - "ATLAS tetraquark"
+    arxiv_ids:
+      - "2208.04572"
+    hepdata_ids: []
+    notes: "ATLAS observation of X(6900). Cross-check of LHCb discovery."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  # ===========================================================================
+  # Chi_c1(3872) / X(3872) - control/benchmark
+  # ===========================================================================
+
+  control_x3872_multichannnel:
+    title: "X(3872) Multi-channel Control"
+    collaboration: "Multiple"
+    category: control
+    states:
+      - "X(3872)"
+    channels:
+      - id: ch_jpsipipi
+        label: "J/psi pi+ pi-"
+        final_state: "J/psi pi pi"
+      - id: ch_jpsigamma
+        label: "J/psi gamma"
+        final_state: "J/psi gamma"
+      - id: ch_psi2sgamma
+        label: "psi(2S) gamma"
+        final_state: "psi(2S) gamma"
+      - id: ch_d0dstarbar
+        label: "D0 D*bar0"
+        final_state: "D0 D*bar0"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "X(3872)"
+      - "chi_c1(3872)"
+      - "X(3872) J/psi pi pi"
+      - "X(3872) D D*"
+    arxiv_ids:
+      - "2005.13419"
+      - "1904.01892"
+    hepdata_ids:
+      - "1836131"
+    notes: "Well-established exotic state. Use as control/benchmark for pipeline."
+    expected_data_kind: binned_spectrum
+    rank1_mode: multi_state_pairwise
+
+  # ===========================================================================
+  # Additional Y states
+  # ===========================================================================
+
+  besiii_y4230_4390_pipiomega:
+    title: "BESIII Y(4230)/Y(4390) in omega chi_cJ"
+    collaboration: "BESIII"
+    category: exotic
+    states:
+      - "Y(4230)"
+      - "Y(4390)"
+    channels:
+      - id: ch_ee_omegachic0
+        label: "e+e- -> omega chi_c0"
+        final_state: "omega chi_c0"
+      - id: ch_ee_omegachic1
+        label: "e+e- -> omega chi_c1"
+        final_state: "omega chi_c1"
+      - id: ch_ee_omegachic2
+        label: "e+e- -> omega chi_c2"
+        final_state: "omega chi_c2"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "BESIII omega chi_c"
+      - "Y(4230) omega"
+      - "e+e- omega charmonium"
+    arxiv_ids:
+      - "1903.04695"
+    hepdata_ids: []
+    notes: "Y states in omega chi_cJ final states."
+    expected_data_kind: cross_section_scan
+    rank1_mode: two_state_ratio
+
+  # ===========================================================================
+  # Bottomonium-like states
+  # ===========================================================================
+
+  belle_yb_10750_10860:
+    title: "Belle Yb(10750)/Yb(10860) in Upsilon pi pi"
+    collaboration: "Belle"
+    category: exotic
+    states:
+      - "Yb(10750)"
+      - "Upsilon(10860)"
+    channels:
+      - id: ch_ee_ups1spipi
+        label: "e+e- -> Upsilon(1S) pi+ pi-"
+        final_state: "Upsilon(1S) pi pi"
+      - id: ch_ee_ups2spipi
+        label: "e+e- -> Upsilon(2S) pi+ pi-"
+        final_state: "Upsilon(2S) pi pi"
+      - id: ch_ee_ups3spipi
+        label: "e+e- -> Upsilon(3S) pi+ pi-"
+        final_state: "Upsilon(3S) pi pi"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "Belle Yb(10750)"
+      - "Upsilon(10860) pi pi"
+      - "bottomonium exotic"
+    arxiv_ids:
+      - "1508.06562"
+    hepdata_ids: []
+    notes: "Bottomonium analogs of Y states."
+    expected_data_kind: cross_section_scan
+    rank1_mode: two_state_ratio
+
+  belle_zb_hb_pipi:
+    title: "Belle Zb in hb pi and Upsilon pi"
+    collaboration: "Belle"
+    category: exotic
+    states:
+      - "Zb(10610)"
+      - "Zb(10650)"
+    channels:
+      - id: ch_ee_hb1ppi
+        label: "e+e- -> hb(1P) pi+ pi-"
+        final_state: "hb(1P) pi"
+      - id: ch_ee_hb2ppi
+        label: "e+e- -> hb(2P) pi+ pi-"
+        final_state: "hb(2P) pi"
+      - id: ch_ee_ups1spi
+        label: "e+e- -> Upsilon(nS) pi"
+        final_state: "Upsilon pi"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "Belle Zb(10610)"
+      - "Zb(10650)"
+      - "hb pi Belle"
+    arxiv_ids:
+      - "1105.4583"
+      - "1110.2251"
+    hepdata_ids: []
+    notes: "Charged bottomonium-like states. Heavy-quark analog of Zc."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  # ===========================================================================
+  # Additional LHCb exotic candidates
+  # ===========================================================================
+
+  lhcb_x3960_dsd_s:
+    title: "LHCb X(3960) in Ds+ Ds-"
+    collaboration: "LHCb"
+    category: exotic
+    states:
+      - "X(3960)"
+      - "chi_c0(3930)"  # Nearby conventional state for comparison
+    channels:
+      - id: ch_dsds
+        label: "Ds+ Ds-"
+        final_state: "Ds+ Ds-"
+      - id: ch_dsds_alt
+        label: "Ds+ Ds- (alternative selection)"
+        final_state: "Ds+ Ds-"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "LHCb X(3960)"
+      - "Ds Ds resonance"
+      - "ccss tetraquark"
+    arxiv_ids:
+      - "2209.02711"
+    hepdata_ids: []
+    notes: "Possible ccss tetraquark state."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  lhcb_x4630_jpsi_phi:
+    title: "LHCb X(4630) in J/psi phi"
+    collaboration: "LHCb"
+    category: exotic
+    states:
+      - "X(4630)"
+      - "X(4685)"
+    channels:
+      - id: ch_bs_jpsiphiph
+        label: "Bs -> J/psi phi phi"
+        final_state: "J/psi phi"
+      - id: ch_bu_jpsiphik
+        label: "B+ -> J/psi phi K+"
+        final_state: "J/psi phi"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "LHCb X(4630)"
+      - "Bs J/psi phi phi"
+    arxiv_ids:
+      - "2405.07299"
+    hepdata_ids: []
+    notes: "New charmonium-like states in J/psi phi."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
+
+  # ===========================================================================
+  # BESIII additional states
+  # ===========================================================================
+
+  besiii_x3872_lineshape:
+    title: "BESIII X(3872) Lineshape Studies"
+    collaboration: "BESIII"
+    category: control
+    states:
+      - "X(3872)"
+      - "psi(2S)"  # Nearby conventional state for comparison
+    channels:
+      - id: ch_ee_gammaxjpsipipi
+        label: "e+e- -> gamma X(3872) -> gamma J/psi pi pi"
+        final_state: "J/psi pi pi"
+      - id: ch_ee_gammaxd0dstar
+        label: "e+e- -> gamma X(3872) -> gamma D0 D*bar"
+        final_state: "D0 D*bar"
+    preferred_sources:
+      - hepdata
+      - arxiv_pdf
+    search_terms:
+      - "BESIII X(3872)"
+      - "X(3872) lineshape"
+      - "X(3872) BESIII gamma"
+    arxiv_ids:
+      - "1901.03992"
+      - "2007.07287"
+    hepdata_ids: []
+    notes: "BESIII precision X(3872) measurements. Control sample."
+    expected_data_kind: binned_spectrum
+    rank1_mode: multi_state_pairwise
+
+  # ===========================================================================
+  # CMS additional analyses
+  # ===========================================================================
+
+  cms_x6900_x7100_jpsijpsi:
+    title: "CMS X(6900)/X(7100) in di-J/psi"
+    collaboration: "CMS"
+    category: exotic
+    states:
+      - "X(6900)"
+      - "X(7100)"
+    channels:
+      - id: ch_jpsijpsi_cms
+        label: "J/psi J/psi (CMS)"
+        final_state: "J/psi J/psi"
+      - id: ch_jpsipsi2s_cms
+        label: "J/psi psi(2S) (CMS)"
+        final_state: "J/psi psi(2S)"
+    preferred_sources:
+      - hepdata
+      - cern_opendata
+      - arxiv_pdf
+    search_terms:
+      - "CMS di-J/psi"
+      - "CMS X(6900)"
+      - "CMS tetraquark"
+    arxiv_ids:
+      - "2306.07164"
+    hepdata_ids:
+      - "2668013"
+    notes: "CMS observation of all-charm tetraquark structures."
+    expected_data_kind: binned_spectrum
+    rank1_mode: two_state_ratio
