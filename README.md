@@ -4,7 +4,7 @@
 
 ---
 
-## Latest Result: CMS X(6900)/X(7100)
+## Result: CMS X(6900)/X(7100) (Validated)
 
 ### Verdict: **NOT_REJECTED** (p = 0.40)
 
