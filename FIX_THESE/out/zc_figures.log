@@ -1,0 +1,13 @@
+Test: Zc-like
+Channel A: pi_Jpsi
+Channel B: DD_star
+
+Generating M0 dataset...
+Running rank-1 test (100 bootstrap, 60 starts)...
+
+Lambda_obs: 1.7858
+p_boot: 0.3900
+Saved: out/zc_bootstrap_hist.png
+Saved: out/zc_channel_spectra.png
+
+Done!

@@ -1,0 +1,4 @@
+test_name,scale_factor,type_i,type_i_rejected,type_i_total,power,power_rejected,power_total,m0_pass_rate,m1_pass_rate
+Di-charmonium,0.5,0.02702702702702703,4,148,0.7133333333333334,107,150,0.9866666666666667,1.0
+Di-charmonium,1.0,0.07333333333333333,11,150,0.9866666666666667,148,150,1.0,1.0
+Di-charmonium,2.0,0.07333333333333333,11,150,1.0,150,150,1.0,1.0

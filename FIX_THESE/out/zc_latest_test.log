@@ -1,0 +1,17 @@
+Test: Zc-like
+Channel A: pi_Jpsi
+Channel B: DD_star
+
+Generating M0 (rank-1 true) dataset...
+  Channel A bins: 60
+  Channel B bins: 60
+
+Running rank-1 test (100 bootstrap, 60 starts)...
+
+==================================================
+RESULT
+==================================================
+Lambda_obs: 1.6849
+p_boot: 0.4100
+Gates: PASS
+Rejected: False

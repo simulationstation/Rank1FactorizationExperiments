@@ -24,3 +24,20 @@ POWER ANALYSIS: Di-charmonium
   Stats level: 2.0x
   M0 trials: 150, M1 trials: 150
     Running M0...
+      M0: 11/150 rejected (7.3%)
+    Running M1...
+      M1: 150/150 rejected (100.0%)
+
+  Written: out/POWER_DICHARM.md
+
+*** POWER ANALYSIS COMPLETE ***
+
+=== M4 GRID ===
+
+============================================================
+M4 DETECTABILITY GRID: Di-charmonium
+============================================================
+
+  Stats level: 1.0x
+    dr=0.03, dphi=5°... Power=5.3% (4/75)
+    dr=0.03, dphi=10°... 

@@ -1,0 +1,17 @@
+
+============================================================
+POWER ANALYSIS: Zc-like
+============================================================
+
+  Stats level: 0.5x
+  M0 trials: 100, M1 trials: 100
+    Running M0...
+      M0: 7/100 rejected (7.0%)
+    Running M1...
+      M1: 90/100 rejected (90.0%)
+
+  Stats level: 1.0x
+  M0 trials: 100, M1 trials: 100
+    Running M0...
+      M0: 4/100 rejected (4.0%)
+    Running M1...
