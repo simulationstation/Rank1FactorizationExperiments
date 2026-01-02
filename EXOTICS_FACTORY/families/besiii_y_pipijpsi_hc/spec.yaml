@@ -1,0 +1,79 @@
+schema_version: "1.0"
+family:
+  id: besiii_y_pipijpsi_hc
+  name: "BESIII Y-sector cross sections (pi pi J/psi vs pi pi hc)"
+  category: exotic
+  states:
+    - "Y(4220)"
+    - "Y(4320)"
+    - "Y(4390) (channel A only)"
+  channels:
+    - "e+e- -> pi+pi- J/psi"
+    - "e+e- -> pi+pi- hc"
+  preferred_backends:
+    - pdf
+    - hepdata
+  model_class: shared-subspace
+  amplitude_level_requires:
+    - "covariance matrices or unfolded amplitudes"
+  proxy_only: true
+  source_pointers:
+    - "arXiv:1610.01883"
+    - "arXiv:1701.06936"
+
+sources:
+  - id: besiii_pdf
+    backend: pdf
+    description: "BESIII cross section plots"
+    placeholders:
+      - "https://arxiv.org/pdf/1610.01883.pdf"
+  - id: besiii_tables
+    backend: hepdata
+    description: "Cross section tables (if available)"
+    placeholders:
+      - "record: TBD"
+
+channels:
+  - id: ch_jpsi
+    label: "e+e- -> pi+pi- J/psi"
+    source_ref: besiii_pdf
+    notes: "Allow 3 BW in this channel."
+  - id: ch_hc
+    label: "e+e- -> pi+pi- hc"
+    source_ref: besiii_pdf
+    notes: "Allow 2 BW in this channel."
+
+model:
+  type: shared-subspace
+  parameters:
+    - "m_Y1"
+    - "g_Y1"
+    - "m_Y2"
+    - "g_Y2"
+    - "m_Y3 (channel A only)"
+    - "g_Y3 (channel A only)"
+  shared_structure: "Shared subspace with 3-resonance channel A vs 2-resonance channel B."
+  notes: "Explicitly allow model mismatch across channels."
+
+outputs:
+  output_dir: "EXOTICS_FACTORY/outputs/besiii_y_pipijpsi_hc"
+  report_template: "EXOTICS_FACTORY/toolkit/reporting/report_writer.py"
+  artifacts:
+    - "overlay_vector.png"
+    - "proxy_fit_results.json"
+    - "shared_subspace_summary.json"
+
+runtime:
+  dry_run_only: true
+  steps:
+    - "load_sources"
+    - "extract_pdf_vectors"
+    - "construct_proxy_datasets"
+    - "configure_shared_subspace"
+    - "emit_report"
+  backend_settings:
+    pdf:
+      vector_first: true
+      overlay_required: true
+    hepdata:
+      allow_fetch: false

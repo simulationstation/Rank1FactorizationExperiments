@@ -1,0 +1,70 @@
+schema_version: "1.0"
+family:
+  id: besiii_belle_isr_y
+  name: "BESIII/Belle ISR Y-sector (pi pi J/psi vs pi pi psi(2S))"
+  category: exotic
+  states:
+    - "Y(4260)"
+    - "Y(4360)"
+    - "Y(4660)"
+  channels:
+    - "ISR pi+pi- J/psi"
+    - "ISR pi+pi- psi(2S)"
+  preferred_backends:
+    - pdf
+  model_class: two-bw-coherent
+  amplitude_level_requires:
+    - "dense scan or covariance matrices"
+  proxy_only: true
+  source_pointers:
+    - "arXiv:1303.6604"
+    - "arXiv:0707.3699"
+
+sources:
+  - id: isr_pdf
+    backend: pdf
+    description: "ISR cross section plots"
+    placeholders:
+      - "https://arxiv.org/pdf/0707.3699.pdf"
+      - "https://arxiv.org/pdf/1303.6604.pdf"
+
+channels:
+  - id: ch_jpsi
+    label: "ISR pi+pi- J/psi"
+    source_ref: isr_pdf
+  - id: ch_psi2s
+    label: "ISR pi+pi- psi(2S)"
+    source_ref: isr_pdf
+    notes: "Likely underconstrained; requires covariance or denser scan."
+
+model:
+  type: two-bw-coherent
+  parameters:
+    - "m_Y1"
+    - "g_Y1"
+    - "m_Y2"
+    - "g_Y2"
+    - "relative_phase"
+  shared_structure: "Two-state shared complex ratio across ISR channels."
+  notes: "Likely underconstrained; treat results as tentative."
+
+outputs:
+  output_dir: "EXOTICS_FACTORY/outputs/besiii_belle_isr_y"
+  report_template: "EXOTICS_FACTORY/toolkit/reporting/report_writer.py"
+  artifacts:
+    - "overlay_vector.png"
+    - "proxy_fit_results.json"
+    - "underconstrained_warning.txt"
+
+runtime:
+  dry_run_only: true
+  steps:
+    - "load_sources"
+    - "extract_pdf_vectors"
+    - "construct_proxy_datasets"
+    - "configure_rank1_test"
+    - "emit_report"
+  backend_settings:
+    pdf:
+      vector_first: true
+      overlay_required: true

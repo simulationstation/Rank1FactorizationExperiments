@@ -1,0 +1,74 @@
+schema_version: "1.0"
+family:
+  id: strange_pcs
+  name: "Strange pentaquarks (Pcs)"
+  category: exotic
+  states:
+    - "Pcs(4459)"
+    - "Pcs(4443) (if applicable)"
+  channels:
+    - "J/psi Lambda (primary)"
+    - "J/psi Lambda (alternate selection proxy)"
+  preferred_backends:
+    - hepdata
+    - pdf
+  model_class: one-pole-shared-shape
+  amplitude_level_requires:
+    - "amplitude-level workspace or efficiency-corrected spectra"
+  proxy_only: true
+  source_pointers:
+    - "arXiv:2109.01038"
+
+sources:
+  - id: pcs_hepdata
+    backend: hepdata
+    description: "Proxy mass spectrum tables"
+    placeholders:
+      - "record: TBD"
+  - id: pcs_pdf
+    backend: pdf
+    description: "PDF extraction fallback"
+    placeholders:
+      - "https://arxiv.org/pdf/2109.01038.pdf"
+
+channels:
+  - id: ch_primary
+    label: "J/psi Lambda (primary)"
+    source_ref: pcs_hepdata
+  - id: ch_alt
+    label: "J/psi Lambda (alternate selection proxy)"
+    source_ref: pcs_pdf
+    notes: "Use PDF extraction if tables are absent."
+
+model:
+  type: one-pole-shared-shape
+  parameters:
+    - "m_Pcs"
+    - "g_Pcs"
+    - "scale_primary"
+    - "scale_alt"
+  shared_structure: "Shared pole with channel-dependent scales."
+  notes: "Explicitly label proxy-only if only spectra are available."
+
+outputs:
+  output_dir: "EXOTICS_FACTORY/outputs/strange_pcs"
+  report_template: "EXOTICS_FACTORY/toolkit/reporting/report_writer.py"
+  artifacts:
+    - "proxy_tables.csv"
+    - "overlay_vector.png"
+    - "proxy_fit_results.json"
+
+runtime:
+  dry_run_only: true
+  steps:
+    - "load_sources"
+    - "extract_pdf_vectors"
+    - "construct_proxy_datasets"
+    - "configure_one_pole_test"
+    - "emit_report"
+  backend_settings:
+    pdf:
+      vector_first: true
+      overlay_required: true
+    hepdata:
+      allow_fetch: false

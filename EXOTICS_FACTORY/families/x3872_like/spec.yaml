@@ -1,0 +1,72 @@
+schema_version: "1.0"
+family:
+  id: x3872_like
+  name: "X(3872)-like channel sharing"
+  category: exotic
+  states:
+    - "X(3872)"
+    - "X(3872) companion (if any)"
+  channels:
+    - "J/psi pi+ pi-"
+    - "J/psi pi+ pi- pi0"
+  preferred_backends:
+    - workspace
+    - hepdata
+  model_class: one-pole-shared-shape
+  amplitude_level_requires:
+    - "workspace preferred for amplitude-level fit"
+  proxy_only: true
+  source_pointers:
+    - "LHCb-PAPER-2020-XXX (placeholder)"
+    - "CMS-PAS-BPH-20-XXX (placeholder)"
+
+sources:
+  - id: x_workspace
+    backend: workspace
+    description: "Workspace preferred for amplitude-level analysis"
+    placeholders:
+      - "workspace: /path/to/workspace.root"
+      - "snapshot: nominal"
+  - id: x_hepdata
+    backend: hepdata
+    description: "Proxy tables if workspace unavailable"
+    placeholders:
+      - "record: TBD"
+
+channels:
+  - id: ch_jpsi_pipi
+    label: "J/psi pi+ pi-"
+    source_ref: x_hepdata
+  - id: ch_jpsi_pipipi0
+    label: "J/psi pi+ pi- pi0"
+    source_ref: x_hepdata
+
+model:
+  type: one-pole-shared-shape
+  parameters:
+    - "m_X"
+    - "g_X"
+    - "scale_pipi"
+    - "scale_pipipi0"
+  shared_structure: "One shared pole with channel-specific yields."
+  notes: "Workspace preferred; proxy-only otherwise."
+
+outputs:
+  output_dir: "EXOTICS_FACTORY/outputs/x3872_like"
+  report_template: "EXOTICS_FACTORY/toolkit/reporting/report_writer.py"
+  artifacts:
+    - "workspace_requirements.txt"
+    - "proxy_fit_results.json"
+
+runtime:
+  dry_run_only: true
+  steps:
+    - "load_sources"
+    - "construct_proxy_datasets"
+    - "configure_one_pole_test"
+    - "emit_report"
+  backend_settings:
+    workspace:
+      required_for_amplitude: true
+    hepdata:
+      allow_fetch: false

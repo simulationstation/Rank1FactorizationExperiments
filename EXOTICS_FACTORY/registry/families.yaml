@@ -1,0 +1,177 @@
+registry_version: "1.0"
+families:
+  - id: belle_zb
+    name: "Belle Zb family"
+    category: exotic
+    states:
+      - "Zb(10610)"
+      - "Zb(10650)"
+    channels:
+      - "pi± Upsilon(1S)"
+      - "pi± Upsilon(2S)"
+      - "pi± Upsilon(3S)"
+      - "pi± hb(1P)"
+      - "pi± hb(2P)"
+    preferred_backends:
+      - pdf
+      - hepdata
+    model_class: two-bw-coherent
+    amplitude_level_requires:
+      - "amplitude workspace or unfolded complex amplitude points"
+    proxy_only: true
+    source_pointers:
+      - "arXiv:1105.4583"
+      - "arXiv:1110.2251"
+      - "DOI:10.1103/PhysRevLett.108.122001"
+  - id: lhcb_pc_doublet
+    name: "LHCb Pc narrow doublet"
+    category: exotic
+    states:
+      - "Pc(4440)"
+      - "Pc(4457)"
+      - "Pc(4312) (nuisance)"
+    channels:
+      - "J/psi p (full selection proxy)"
+      - "J/psi p (tight selection proxy)"
+      - "J/psi p (weighted proxy)"
+      - "Amplitude-level workspace (placeholder)"
+    preferred_backends:
+      - hepdata
+      - workspace
+    model_class: shared-subspace
+    amplitude_level_requires:
+      - "RooWorkspace or Combine workspace with parameter map"
+    proxy_only: true
+    source_pointers:
+      - "arXiv:1904.03947"
+      - "arXiv:2007.06995"
+  - id: strange_pcs
+    name: "Strange pentaquarks (Pcs)"
+    category: exotic
+    states:
+      - "Pcs(4459)"
+      - "Pcs(4443) (if applicable)"
+    channels:
+      - "J/psi Lambda (primary)"
+      - "J/psi Lambda (alternate selection proxy)"
+    preferred_backends:
+      - hepdata
+      - pdf
+    model_class: one-pole-shared-shape
+    amplitude_level_requires:
+      - "amplitude-level workspace or efficiency-corrected spectra"
+    proxy_only: true
+    source_pointers:
+      - "arXiv:2109.01038"
+  - id: besiii_y_pipijpsi_hc
+    name: "BESIII Y-sector cross sections (pi pi J/psi vs pi pi hc)"
+    category: exotic
+    states:
+      - "Y(4220)"
+      - "Y(4320)"
+      - "Y(4390) (channel A only)"
+    channels:
+      - "e+e- -> pi+pi- J/psi"
+      - "e+e- -> pi+pi- hc"
+    preferred_backends:
+      - pdf
+      - hepdata
+    model_class: shared-subspace
+    amplitude_level_requires:
+      - "covariance matrices or unfolded amplitudes"
+    proxy_only: true
+    source_pointers:
+      - "arXiv:1610.01883"
+      - "arXiv:1701.06936"
+  - id: besiii_belle_isr_y
+    name: "BESIII/Belle ISR Y-sector (pi pi J/psi vs pi pi psi(2S))"
+    category: exotic
+    states:
+      - "Y(4260)"
+      - "Y(4360)"
+      - "Y(4660)"
+    channels:
+      - "ISR pi+pi- J/psi"
+      - "ISR pi+pi- psi(2S)"
+    preferred_backends:
+      - pdf
+    model_class: two-bw-coherent
+    amplitude_level_requires:
+      - "dense scan or covariance matrices"
+    proxy_only: true
+    source_pointers:
+      - "arXiv:1303.6604"
+      - "arXiv:0707.3699"
+  - id: cms_atlas_dicharmonium_other
+    name: "CMS/ATLAS other di-charmonium families"
+    category: exotic
+    states:
+      - "di-J/psi structures"
+      - "4mu structures"
+    channels:
+      - "CMS di-J/psi"
+      - "ATLAS di-J/psi"
+    preferred_backends:
+      - hepdata
+      - pdf
+    model_class: two-bw-coherent
+    amplitude_level_requires:
+      - "publication-level mass spectrum tables or workspace"
+    proxy_only: true
+    source_pointers:
+      - "CMS PAS BPH-21-003 (placeholder)"
+      - "ATLAS-CONF-2023-XYZ (placeholder)"
+  - id: control_babar_phi
+    name: "BaBar control: phi(1680)/phi(2170)"
+    category: control
+    states:
+      - "phi(1680)"
+      - "phi(2170)"
+    channels:
+      - "e+e- -> phi f0"
+      - "e+e- -> phi pi pi"
+    preferred_backends:
+      - hepdata
+    model_class: two-bw-coherent
+    amplitude_level_requires:
+      - "cross section tables"
+    proxy_only: false
+    source_pointers:
+      - "arXiv:0708.2461"
+      - "DOI:10.1103/PhysRevD.76.012008"
+  - id: control_babar_omega
+    name: "BaBar control: omega(1420)/omega(1650)"
+    category: control
+    states:
+      - "omega(1420)"
+      - "omega(1650)"
+    channels:
+      - "e+e- -> omega pi pi"
+      - "e+e- -> omega f0"
+    preferred_backends:
+      - hepdata
+    model_class: two-bw-coherent
+    amplitude_level_requires:
+      - "cross section tables"
+    proxy_only: false
+    source_pointers:
+      - "arXiv:1912.00262"
+  - id: x3872_like
+    name: "X(3872)-like channel sharing"
+    category: exotic
+    states:
+      - "X(3872)"
+      - "X(3872) companion (if any)"
+    channels:
+      - "J/psi pi+ pi-"
+      - "J/psi pi+ pi- pi0"
+    preferred_backends:
+      - workspace
+      - hepdata
+    model_class: one-pole-shared-shape
+    amplitude_level_requires:
+      - "workspace preferred for amplitude-level fit"
+    proxy_only: true
+    source_pointers:
+      - "LHCb-PAPER-2020-XXX (placeholder)"
+      - "CMS-PAS-BPH-20-XXX (placeholder)"

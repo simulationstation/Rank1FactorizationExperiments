@@ -1,0 +1,75 @@
+schema_version: "1.0"
+family:
+  id: cms_atlas_dicharmonium_other
+  name: "CMS/ATLAS other di-charmonium families"
+  category: exotic
+  states:
+    - "di-J/psi structures"
+    - "4mu structures"
+  channels:
+    - "CMS di-J/psi"
+    - "ATLAS di-J/psi"
+  preferred_backends:
+    - hepdata
+    - pdf
+  model_class: two-bw-coherent
+  amplitude_level_requires:
+    - "publication-level mass spectrum tables or workspace"
+  proxy_only: true
+  source_pointers:
+    - "CMS PAS BPH-21-003 (placeholder)"
+    - "ATLAS-CONF-2023-XYZ (placeholder)"
+
+sources:
+  - id: cms_hepdata
+    backend: hepdata
+    description: "CMS di-J/psi tables (placeholder)"
+    placeholders:
+      - "record: TBD"
+  - id: atlas_pdf
+    backend: pdf
+    description: "ATLAS di-J/psi figure placeholder"
+    placeholders:
+      - "CDS figure placeholder"
+
+channels:
+  - id: ch_cms
+    label: "CMS di-J/psi"
+    source_ref: cms_hepdata
+  - id: ch_atlas
+    label: "ATLAS di-J/psi"
+    source_ref: atlas_pdf
+
+model:
+  type: two-bw-coherent
+  parameters:
+    - "m_state1"
+    - "g_state1"
+    - "m_state2"
+    - "g_state2"
+    - "relative_phase"
+  shared_structure: "Shared two-state model across experiments."
+  notes: "Skeleton only; do not assume availability."
+
+outputs:
+  output_dir: "EXOTICS_FACTORY/outputs/cms_atlas_dicharmonium_other"
+  report_template: "EXOTICS_FACTORY/toolkit/reporting/report_writer.py"
+  artifacts:
+    - "proxy_tables.csv"
+    - "overlay_vector.png"
+    - "proxy_fit_results.json"
+
+runtime:
+  dry_run_only: true
+  steps:
+    - "load_sources"
+    - "extract_pdf_vectors"
+    - "construct_proxy_datasets"
+    - "configure_rank1_test"
+    - "emit_report"
+  backend_settings:
+    pdf:
+      vector_first: true
+      overlay_required: true
+    hepdata:
+      allow_fetch: false

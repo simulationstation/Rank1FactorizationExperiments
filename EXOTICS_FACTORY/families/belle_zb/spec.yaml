@@ -1,0 +1,91 @@
+schema_version: "1.0"
+family:
+  id: belle_zb
+  name: "Belle Zb family"
+  category: exotic
+  states:
+    - "Zb(10610)"
+    - "Zb(10650)"
+  channels:
+    - "pi± Upsilon(1S)"
+    - "pi± Upsilon(2S)"
+    - "pi± Upsilon(3S)"
+    - "pi± hb(1P)"
+    - "pi± hb(2P)"
+  preferred_backends:
+    - pdf
+    - hepdata
+  model_class: two-bw-coherent
+  amplitude_level_requires:
+    - "amplitude workspace or unfolded complex amplitude points"
+  proxy_only: true
+  source_pointers:
+    - "arXiv:1105.4583"
+    - "arXiv:1110.2251"
+    - "DOI:10.1103/PhysRevLett.108.122001"
+
+sources:
+  - id: belle_pdf
+    backend: pdf
+    description: "Belle arXiv PDF with Zb line shapes"
+    placeholders:
+      - "https://arxiv.org/pdf/1105.4583.pdf"
+      - "figure: Zb(10610/10650) line shapes"
+  - id: belle_hepdata
+    backend: hepdata
+    description: "Optional HEPData tables (if available)"
+    placeholders:
+      - "record: TBD"
+
+channels:
+  - id: ch_upsilon1s
+    label: "pi± Upsilon(1S)"
+    source_ref: belle_pdf
+    notes: "Vector-first extraction; overlay proof required."
+  - id: ch_upsilon2s
+    label: "pi± Upsilon(2S)"
+    source_ref: belle_pdf
+  - id: ch_upsilon3s
+    label: "pi± Upsilon(3S)"
+    source_ref: belle_pdf
+  - id: ch_hb1p
+    label: "pi± hb(1P)"
+    source_ref: belle_pdf
+  - id: ch_hb2p
+    label: "pi± hb(2P)"
+    source_ref: belle_pdf
+
+model:
+  type: two-bw-coherent
+  parameters:
+    - "m_Zb1"
+    - "g_Zb1"
+    - "m_Zb2"
+    - "g_Zb2"
+    - "relative_phase"
+  shared_structure: "Shared complex R across channels, pairwise tests." 
+  notes: "Global shared complex ratio with pairwise cross-checks."
+
+outputs:
+  output_dir: "EXOTICS_FACTORY/outputs/belle_zb"
+  report_template: "EXOTICS_FACTORY/toolkit/reporting/report_writer.py"
+  artifacts:
+    - "overlay_vector.png"
+    - "overlay_raster.png"
+    - "proxy_fit_results.json"
+
+runtime:
+  dry_run_only: true
+  steps:
+    - "load_sources"
+    - "extract_pdf_vectors"
+    - "build_overlays"
+    - "construct_proxy_datasets"
+    - "configure_rank1_test"
+    - "emit_report"
+  backend_settings:
+    pdf:
+      vector_first: true
+      overlay_required: true
+    hepdata:
+      allow_fetch: false

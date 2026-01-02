@@ -1,0 +1,85 @@
+schema_version: "1.0"
+family:
+  id: lhcb_pc_doublet
+  name: "LHCb Pc narrow doublet"
+  category: exotic
+  states:
+    - "Pc(4440)"
+    - "Pc(4457)"
+    - "Pc(4312) (nuisance)"
+  channels:
+    - "J/psi p (full selection proxy)"
+    - "J/psi p (tight selection proxy)"
+    - "J/psi p (weighted proxy)"
+    - "Amplitude-level workspace (placeholder)"
+  preferred_backends:
+    - hepdata
+    - workspace
+  model_class: shared-subspace
+  amplitude_level_requires:
+    - "RooWorkspace or Combine workspace with parameter map"
+  proxy_only: true
+  source_pointers:
+    - "arXiv:1904.03947"
+    - "arXiv:2007.06995"
+
+sources:
+  - id: pc_hepdata
+    backend: hepdata
+    description: "Proxy mass spectra tables"
+    placeholders:
+      - "record: TBD"
+      - "table: J/psi p mass spectrum"
+  - id: pc_workspace
+    backend: workspace
+    description: "Amplitude-level workspace placeholder"
+    placeholders:
+      - "workspace: /path/to/workspace.root"
+      - "snapshot: nominal"
+
+channels:
+  - id: ch_full
+    label: "J/psi p (full selection proxy)"
+    source_ref: pc_hepdata
+  - id: ch_tight
+    label: "J/psi p (tight selection proxy)"
+    source_ref: pc_hepdata
+  - id: ch_weighted
+    label: "J/psi p (weighted proxy)"
+    source_ref: pc_hepdata
+  - id: ch_workspace
+    label: "Amplitude-level workspace (placeholder)"
+    source_ref: pc_workspace
+    notes: "Required for amplitude-level test; otherwise PROXY_ONLY."
+
+model:
+  type: shared-subspace
+  parameters:
+    - "m_Pc1"
+    - "g_Pc1"
+    - "m_Pc2"
+    - "g_Pc2"
+    - "shared_phase"
+  shared_structure: "Shared two-state subspace across proxy channels."
+  notes: "Mark PROXY_ONLY unless workspace backend is provided."
+
+outputs:
+  output_dir: "EXOTICS_FACTORY/outputs/lhcb_pc_doublet"
+  report_template: "EXOTICS_FACTORY/toolkit/reporting/report_writer.py"
+  artifacts:
+    - "proxy_tables.csv"
+    - "proxy_fit_results.json"
+    - "workspace_requirements.txt"
+
+runtime:
+  dry_run_only: true
+  steps:
+    - "load_hepdata_tables"
+    - "construct_proxy_datasets"
+    - "configure_shared_subspace"
+    - "emit_report"
+  backend_settings:
+    hepdata:
+      allow_fetch: false
+    workspace:
+      required_for_amplitude: true

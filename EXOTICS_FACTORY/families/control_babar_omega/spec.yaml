@@ -1,0 +1,63 @@
+schema_version: "1.0"
+family:
+  id: control_babar_omega
+  name: "BaBar control: omega(1420)/omega(1650)"
+  category: control
+  states:
+    - "omega(1420)"
+    - "omega(1650)"
+  channels:
+    - "e+e- -> omega pi pi"
+    - "e+e- -> omega f0"
+  preferred_backends:
+    - hepdata
+  model_class: two-bw-coherent
+  amplitude_level_requires:
+    - "cross section tables"
+  proxy_only: false
+  source_pointers:
+    - "arXiv:1912.00262"
+
+sources:
+  - id: babar_hepdata
+    backend: hepdata
+    description: "BaBar cross section tables"
+    placeholders:
+      - "record: TBD"
+
+channels:
+  - id: ch_omega_pipi
+    label: "e+e- -> omega pi pi"
+    source_ref: babar_hepdata
+  - id: ch_omega_f0
+    label: "e+e- -> omega f0"
+    source_ref: babar_hepdata
+
+model:
+  type: two-bw-coherent
+  parameters:
+    - "m_omega1"
+    - "g_omega1"
+    - "m_omega2"
+    - "g_omega2"
+    - "relative_phase"
+  shared_structure: "Control sample expected to disfavor rank-1."
+  notes: "Negative control for shared-subspace tests."
+
+outputs:
+  output_dir: "EXOTICS_FACTORY/outputs/control_babar_omega"
+  report_template: "EXOTICS_FACTORY/toolkit/reporting/report_writer.py"
+  artifacts:
+    - "proxy_tables.csv"
+    - "control_fit_results.json"
+
+runtime:
+  dry_run_only: true
+  steps:
+    - "load_hepdata_tables"
+    - "construct_control_datasets"
+    - "configure_rank1_test"
+    - "emit_report"
+  backend_settings:
+    hepdata:
+      allow_fetch: false
