@@ -1,1 +1,2 @@
 docker_cmssw_rank1/outputs/*.root
+__pycache__/

@@ -1,0 +1,4 @@
+test_name,scale_factor,type_i,type_i_rejected,type_i_total,power,power_rejected,power_total,m0_pass_rate,m1_pass_rate
+Zc-like,0.5,0.07,7,100,0.9,90,100,1.0,1.0
+Zc-like,1.0,0.04,4,100,1.0,99,99,1.0,0.99
+Zc-like,2.0,0.08,8,100,1.0,100,100,1.0,1.0
