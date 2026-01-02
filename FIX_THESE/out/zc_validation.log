@@ -15,3 +15,15 @@ POWER ANALYSIS: Zc-like
     Running M0...
       M0: 4/100 rejected (4.0%)
     Running M1...
+      M1: 99/99 rejected (100.0%)
+
+  Stats level: 2.0x
+  M0 trials: 100, M1 trials: 100
+    Running M0...
+      M0: 8/100 rejected (8.0%)
+    Running M1...
+      M1: 100/100 rejected (100.0%)
+
+  Written: out/POWER_ZCLIKE.md
+
+*** POWER ANALYSIS COMPLETE ***

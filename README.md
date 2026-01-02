@@ -34,7 +34,7 @@ The complex coupling ratio R = g(X7100)/g(X6900) is **consistent with being shar
 
 ---
 
-## Preliminary Result: Zc States (Validation In Progress)
+## Result: Zc States (Validated)
 
 ### Verdict: **NOT_REJECTED** (p = 0.42)
 
@@ -43,7 +43,15 @@ The complex coupling ratio R = g(X7100)/g(X6900) is **consistent with being shar
 | Lambda (test statistic) | 1.69 |
 | Bootstrap p-value | 0.42 |
 | Gates | PASS |
-| Status | **Validation in progress** |
+| Status | **Validated** |
+
+### Validation Results
+
+| Stats | Type-I Error | Power |
+|-------|--------------|-------|
+| 0.5x | 7.0% | 90.0% |
+| 1.0x | 4.0% | 100% |
+| 2.0x | 8.0% | 100% |
 
 | Channel | Decay |
 |---------|-------|
@@ -62,7 +70,7 @@ The complex coupling ratio R = g(X7100)/g(X6900) is **consistent with being shar
 
 *Left: πJ/ψ channel. Right: DD* channel.*
 
-*Note: Calibration passed (Type-I 4.2%, KS p=0.91). Full validation pending.*
+*Calibration and validation complete. Type-I error within tolerance, excellent power.*
 
 ---
 
