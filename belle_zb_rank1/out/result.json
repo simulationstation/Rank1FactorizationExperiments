@@ -1,0 +1,20 @@
+{
+  "Lambda_obs": 32.76295850562991,
+  "p_boot": 0.475,
+  "n_boot": 200,
+  "k_exceed": 95,
+  "chi2_dof_A": 2.6659624474428805,
+  "chi2_dof_B": 53.584921987191585,
+  "gate_A": "HEALTHY",
+  "gate_B": "MODEL_MISMATCH",
+  "gates_pass": false,
+  "r_shared": 0.5581295696498815,
+  "phi_shared": -0.4530553363929091,
+  "r_A": 10.0,
+  "phi_A": -3.141592653589793,
+  "r_B": 0.8512814322650439,
+  "phi_B": -3.141592653589793,
+  "verdict": "INCONCLUSIVE",
+  "channel_A": "upsilon2s",
+  "channel_B": "upsilon3s"
+}

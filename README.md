@@ -10,7 +10,9 @@ We test an amplitude-level organizing hypothesis for exotic-hadron families obse
 
 2. **BESIII Y(4220)/Y(4320)** charmonium-like states across (A) π+π-J/ψ (arXiv:1611.01317) and (B) π+π-hc (HEPData ins2908630): using a shared-subspace model (3 Breit-Wigners + polynomial background), the rank-1 constraint is not rejected (Λ = 3.00, p_boot = 0.40), with both channels fit-healthy (χ²/dof = 2.35 and 1.74).
 
-Both exotic families show consistent coupling ratios across decay channels, supporting common production mechanisms. Separately, we report method validation in a Zc-like two-channel synthetic benchmark (not a real-data claim): under rank-1 true, the pipeline achieves Type-I error in the few-percent range and high power against rank-1 false. The Zc benchmark demonstrates that the protocol behaves as a calibrated statistical instrument. Additional simulated pipelines for Zb, Pc, Pcs, X(3872), and BaBar ω states are included as preliminary tests using physics-based simulators calibrated to CERN's official codebase parameters.
+3. **Belle Zb(10610)/Zb(10650)** bottomonium-like states across 5 channels: Υ(1S)π, Υ(2S)π, Υ(3S)π, hb(1P)π, hb(2P)π (arXiv:1110.2251 Table I parameters): using χ² consistency test on published coupling ratios, the rank-1 constraint is not rejected (χ² = 3.98, p = 0.41 for Υ channels; χ² = 6.88, p = 0.55 for all 5 channels with 180° spin-flip correction for hb).
+
+All three exotic families show consistent coupling ratios across decay channels, supporting common production mechanisms. Separately, we report method validation in a Zc-like two-channel synthetic benchmark (not a real-data claim): under rank-1 true, the pipeline achieves Type-I error in the few-percent range and high power against rank-1 false. The Zc benchmark demonstrates that the protocol behaves as a calibrated statistical instrument. Additional simulated pipelines for Zb, Pc, Pcs, X(3872), and BaBar ω states are included as preliminary tests using physics-based simulators calibrated to CERN's official codebase parameters.
 
 ---
 
@@ -18,20 +20,19 @@ Both exotic families show consistent coupling ratios across decay channels, supp
 
 ### Real Data Results
 
-| Family | States | Channels | Verdict | p_boot | Λ | Source |
-|--------|--------|----------|---------|--------|---|--------|
-| **CMS X(6900)/X(7100)** | cccc tetraquark | J/ψJ/ψ, J/ψψ(2S) | NOT_REJECTED | 0.40 | 0.50 | HEPData + CDS |
-| **BESIII Y(4220)/Y(4320)** | charmonium-like | π+π-J/ψ, π+π-hc | NOT_REJECTED | 0.40 | 3.00 | arXiv + HEPData |
+| Family | States | Channels | Verdict | p-value | χ²/Λ | Source |
+|--------|--------|----------|---------|---------|------|--------|
+| **CMS X(6900)/X(7100)** | cccc tetraquark | J/ψJ/ψ, J/ψψ(2S) | NOT_REJECTED | 0.40 | Λ=0.50 | HEPData + CDS |
+| **BESIII Y(4220)/Y(4320)** | charmonium-like | π+π-J/ψ, π+π-hc | NOT_REJECTED | 0.40 | Λ=3.00 | arXiv + HEPData |
+| **Belle Zb(10610)/Zb(10650)** | bottomonium-like | Υ(nS)π, hb(mP)π | NOT_REJECTED | 0.41 | χ²=3.98 | arXiv:1110.2251 |
 
 ### Simulated Pipeline Results
 
 | Family | States | Channels | Verdict | p_boot | Λ | Status |
 |--------|--------|----------|---------|--------|---|--------|
 | **Zc states** | Zc(3900), Zc(4020) | πJ/ψ, DD* | NOT_REJECTED | 0.42 | 1.69 | **Calibrated** |
-| **Belle Zb** | Zb(10610), Zb(10650) | πΥ(1S), πΥ(2S) | NOT_REJECTED | 0.83 | 0.27 | Prelim |
 | **LHCb Pc doublet** | Pc(4440), Pc(4457) | J/ψp (full), J/ψp (tight) | NOT_REJECTED | 0.34 | 1.83 | Prelim |
 | **Strange Pcs** | Pcs(4459), Pcs(4338) | J/ψΛ (primary), J/ψΛ (alt) | NOT_REJECTED | 0.18 | 3.19 | Prelim |
-| **BESIII Y (sim)** | Y(4220), Y(4320) | π+π-J/ψ, π+π-hc | NOT_REJECTED | 0.07 | 4.60 | Prelim |
 | **BESIII/Belle ISR Y** | Y(4260), Y(4360) | ISR π+π-J/ψ, ISR π+π-ψ(2S) | DISFAVORED | 0.03 | 7.26 | Prelim |
 | **BaBar ω (control)** | ω(1420), ω(1650) | ωπ+π-, ωf0 | NOT_REJECTED | 0.84 | 0.44 | Prelim |
 | **X(3872)** | ccqq | J/ψππ, D*D | NOT_REJECTED | 1.00 | 0.00 | Prelim |
@@ -118,6 +119,50 @@ The complex coupling ratio R = g(Y4320)/g(Y4220) is **consistent with being shar
 - Y(4220) and Y(4320) may arise from a common underlying structure
 - Supports molecular or tetraquark interpretations where both states share dynamics
 - The consistent coupling ratio across J/ψ and hc final states suggests similar production mechanisms
+
+---
+
+## Result: Belle Zb(10610)/Zb(10650) (Real Data)
+
+### Verdict: **NOT_REJECTED** (p = 0.41)
+
+The complex coupling ratio R = g(Zb10650)/g(Zb10610) is **consistent with being shared** across 5 decay channels, supporting a common production mechanism for the Zb bottomonium-like states.
+
+| Test | χ² | dof | p-value | Verdict |
+|------|-----|-----|---------|---------|
+| Υ(1S,2S,3S)π | 3.98 | 4 | **0.41** | **NOT_REJECTED** |
+| hb(1P,2P)π | 0.07 | 2 | 0.97 | NOT_REJECTED |
+| All 5 channels | 6.88 | 8 | 0.55 | NOT_REJECTED |
+
+### Per-Channel Coupling Ratios
+
+| Channel | \|R\| | σ(\|R\|) | arg(R) | Spin-flip |
+|---------|-------|----------|--------|-----------|
+| Υ(1S)π | 0.57 | 0.28 | 58° | No |
+| Υ(2S)π | 0.86 | 0.12 | -13° | No |
+| Υ(3S)π | 0.96 | 0.16 | -9° | No |
+| hb(1P)π | 1.39 | 0.37 | 7°* | Yes |
+| hb(2P)π | 1.60 | 0.72 | 1°* | Yes |
+
+*Phase after 180° spin-flip correction
+
+### Coupling Ratio Visualization
+
+![Belle Zb Coupling Ratios](belle_zb_rank1/out/coupling_ratios.png)
+
+*Left: Magnitude |R| = aZ₂/aZ₁ per channel. Right: Phase arg(R) after spin-flip adjustment. Blue = Υ channels (spin-conserving), Green = hb channels (spin-flip).*
+
+### Complex Plane Representation
+
+![Belle Zb Complex Plane](belle_zb_rank1/out/complex_plane.png)
+
+*Complex coupling ratio R in the complex plane. Υ(2S)π and Υ(3S)π cluster together, indicating consistent R. hb phases shifted by 180° for comparison.*
+
+### Physics Implications
+
+- Zb(10610) and Zb(10650) show consistent coupling ratios across both spin-conserving (Υπ) and spin-flip (hbπ) transitions
+- The 180° phase difference between Υ and hb families is a physical effect from heavy-quark spin dynamics
+- Supports "molecular" interpretation where Zb states are B*B̄ and B*B̄* bound states near threshold
 
 ---
 

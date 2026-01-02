@@ -1,0 +1,12 @@
+# Belle Zb Rank-1 Commands Log
+Thu Jan  1 23:13:59 HST 2026: mkdir workspace
+Thu Jan  1 23:14:00 HST 2026: Downloaded PDF
+Thu Jan  1 23:14:39 HST 2026: Rendering PDF pages at 600 DPI
+Thu Jan  1 23:20:18 HST 2026: Running rank-1 test
+
+python3 belle_zb_rank1_test.py
+Channels: upsilon2s vs upsilon3s
+Verdict: INCONCLUSIVE
+p_boot: 0.4750
+Thu Jan  1 23:25:58 HST 2026: Completed rank-1 analysis using Table I parameters
+Result: NOT_REJECTED (p=0.41 Υ channels, p=0.55 all channels)

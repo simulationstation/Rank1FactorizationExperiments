@@ -1,0 +1,59 @@
+{
+  "method": "table_parameters",
+  "source": "arXiv:1110.2251 Table I",
+  "channels": [
+    "upsilon1s",
+    "upsilon2s",
+    "upsilon3s",
+    "hb1p",
+    "hb2p"
+  ],
+  "table_data": {
+    "upsilon1s": {
+      "M1": 10.611,
+      "G1": 0.0223,
+      "M2": 10.657,
+      "G2": 0.0163,
+      "rel_norm": 0.57,
+      "rel_phase": 58,
+      "n_events_approx": 350
+    },
+    "upsilon2s": {
+      "M1": 10.609,
+      "G1": 0.0242,
+      "M2": 10.651,
+      "G2": 0.0133,
+      "rel_norm": 0.86,
+      "rel_phase": -13,
+      "n_events_approx": 500
+    },
+    "upsilon3s": {
+      "M1": 10.608,
+      "G1": 0.0176,
+      "M2": 10.652,
+      "G2": 0.0084,
+      "rel_norm": 0.96,
+      "rel_phase": -9,
+      "n_events_approx": 550
+    },
+    "hb1p": {
+      "M1": 10.605,
+      "G1": 0.0114,
+      "M2": 10.654,
+      "G2": 0.0209,
+      "rel_norm": 1.39,
+      "rel_phase": 187,
+      "n_events_approx": 8000
+    },
+    "hb2p": {
+      "M1": 10.599,
+      "G1": 0.013,
+      "M2": 10.651,
+      "G2": 0.019,
+      "rel_norm": 1.6,
+      "rel_phase": 181,
+      "n_events_approx": 12000
+    }
+  },
+  "note": "Bin-by-bin data requires manual digitization from figures"
+}

@@ -1,0 +1,42 @@
+======================================================================
+Belle Zb(10610)/Zb(10650) Rank-1 Factorization Test
+======================================================================
+Loaded hb(1P)π: 14 points
+Loaded hb(2P)π: 14 points
+Loaded Υ(2S)π: 17 points
+Loaded Υ(3S)π: 15 points
+
+Using Υ(2S)π vs Υ(3S)π (same spin-conserving phase)
+
+======================================================================
+Pairwise Rank-1 Test: upsilon2s vs upsilon3s
+======================================================================
+
+[1/4] Fitting constrained model (shared R)...
+[2/4] Fitting unconstrained model (independent R)...
+
+NLL constrained: 255.79
+NLL unconstrained: 239.41
+Lambda_obs: 32.7630
+
+Shared R: |R|=0.558, φ=-26.0°
+Channel A R: |R|=10.000, φ=-180.0°
+Channel B R: |R|=0.851, φ=-180.0°
+
+[3/4] Fit health:
+  Channel A chi2/dof: 2.666 [HEALTHY]
+  Channel B chi2/dof: 53.585 [MODEL_MISMATCH]
+
+[4/4] Running bootstrap (200 replicates)...
+Running 200 bootstrap trials with 31 workers...
+p_boot = 0.4750 (95/200 exceedances)
+
+======================================================================
+VERDICT: INCONCLUSIVE
+======================================================================
+
+Generating plots...
+Generating report...
+
+Report saved to: /home/primary/DarkBItParticleColiderPredictions/belle_zb_rank1/out/REPORT.md
+Results saved to: /home/primary/DarkBItParticleColiderPredictions/belle_zb_rank1/out/result.json
