@@ -10,6 +10,7 @@ Implements the step-by-step workflow:
     STEP 5: summarize      - Update master table and finalize
 """
 
+import gc
 import json
 import logging
 from datetime import datetime, timezone
@@ -413,38 +414,86 @@ class Pipeline:
         """
         self._write_log(slug, "run_rank1", f"Starting rank-1 test for {slug}")
 
+        candidate_dir = self.registry.get_candidate_dir(slug)
+        out_dir = candidate_dir / "out"
+
         if not self.execute:
             self._write_log(slug, "run_rank1", "DRY-RUN: Skipping rank-1 test")
-
-            # Write planned command
-            extracted_dir = self.registry.get_candidate_dir(slug) / "extracted"
-            out_dir = self.registry.get_candidate_dir(slug) / "out"
-
-            planned_cmd = (
-                f"python {self.harness_path or 'docker_cmssw_rank1/configs/cms_rank1_test.py'} \\\n"
-                f"  --channel-a {extracted_dir}/channelA.csv \\\n"
-                f"  --channel-b {extracted_dir}/channelB.csv \\\n"
-                f"  --bootstrap 200 \\\n"
-                f"  --outdir {out_dir}/"
-            )
-
-            self._write_log(slug, "run_rank1", f"Planned command:\n{planned_cmd}")
 
             return StepResult(
                 success=True,
                 status=CandidateStatus.PLANNED,
                 message="Rank-1 test planned (dry-run)",
-                data={"planned_command": planned_cmd},
+                data={"candidate_dir": str(candidate_dir)},
             )
 
-        # In execute mode, would actually run the harness
-        # This is a stub - full implementation would use subprocess
-        return StepResult(
-            success=False,
-            status=CandidateStatus.BLOCKED,
-            message="Rank-1 execution not yet implemented",
-            blocked_reason="HARNESS_NOT_CONFIGURED",
-        )
+        # Check if we have state configuration
+        from .harness.state_configs import get_state_config
+        config = get_state_config(slug)
+
+        if config is None:
+            self._write_log(slug, "run_rank1", f"No state configuration for {slug}")
+            return StepResult(
+                success=False,
+                status=CandidateStatus.BLOCKED,
+                message=f"No state configuration for {slug}",
+                blocked_reason="NO_STATE_CONFIG",
+            )
+
+        # Check if we have raw data
+        raw_dir = candidate_dir / "raw"
+        csv_files = list(raw_dir.glob("hepdata_*.csv"))
+
+        if not csv_files:
+            self._write_log(slug, "run_rank1", "No HEPData CSV files found")
+            return StepResult(
+                success=False,
+                status=CandidateStatus.NO_DATA,
+                message="No HEPData CSV files available for testing",
+                blocked_reason="NO_DATA",
+            )
+
+        # Run the rank-1 test
+        self._write_log(slug, "run_rank1", f"Running rank-1 test on {len(csv_files)} tables")
+
+        try:
+            from .harness.run_test import run_rank1_test
+            results = run_rank1_test(candidate_dir, slug, n_boot=100)
+
+            status = results.get("status", "ERROR")
+            verdict = results.get("overall_verdict", "UNKNOWN")
+
+            self._write_log(slug, "run_rank1", f"Test completed: {status}, verdict: {verdict}")
+
+            if status == "COMPLETED":
+                return StepResult(
+                    success=True,
+                    status=CandidateStatus.DONE,
+                    message=f"Rank-1 test completed: {verdict}",
+                    data={"verdict": verdict, "pairs_tested": len(results.get("pairs", []))},
+                )
+            elif status == "NO_SUITABLE_DATA":
+                return StepResult(
+                    success=False,
+                    status=CandidateStatus.BLOCKED,
+                    message="No suitable table pairs found for testing",
+                    blocked_reason="NO_SUITABLE_PAIRS",
+                )
+            else:
+                return StepResult(
+                    success=False,
+                    status=CandidateStatus.ERROR,
+                    message=f"Rank-1 test failed: {results.get('error', 'Unknown error')}",
+                )
+
+        except Exception as e:
+            self.logger.exception(f"Rank-1 test error for {slug}")
+            self._write_log(slug, "run_rank1", f"ERROR: {e}")
+            return StepResult(
+                success=False,
+                status=CandidateStatus.ERROR,
+                message=f"Rank-1 test error: {e}",
+            )
 
     def _step_summarize(self, slug: str, candidate: Candidate) -> StepResult:
         """
@@ -625,6 +674,10 @@ class Pipeline:
             self.logger.info(f"Processing {slug}")
             results[slug] = self.run_candidate(slug)
 
+            # Force garbage collection after each candidate to prevent memory accumulation
+            # This is important when processing many candidates with large PDFs/data
+            gc.collect()
+
         return results
 
     def plan_all(self) -> int:
@@ -649,5 +702,8 @@ class Pipeline:
 
             # Plan data location (dry-run)
             self.run_step(slug, PipelineStep.LOCATE_DATA)
+
+            # Cleanup between candidates
+            gc.collect()
 
         return count

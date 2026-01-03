@@ -23,13 +23,37 @@ from .reporting.write_master_table import initialize_master_table
 
 
 def setup_logging(verbose: bool = False):
-    """Configure logging."""
+    """Configure logging.
+
+    IMPORTANT: Only enable DEBUG for our own loggers.
+    Third-party libraries (especially pdfminer) generate millions of DEBUG
+    log lines when processing PDFs, causing memory exhaustion.
+    """
+    # Silence noisy third-party loggers that cause memory issues
+    noisy_loggers = [
+        'pdfminer',
+        'pdfminer.pdfparser',
+        'pdfminer.pdfdocument',
+        'pdfminer.pdfpage',
+        'pdfminer.pdfinterp',
+        'pdfminer.psparser',
+        'pdfplumber',
+        'urllib3',
+        'requests',
+        'numba',
+        'PIL',
+    ]
+    for logger_name in noisy_loggers:
+        logging.getLogger(logger_name).setLevel(logging.WARNING)
+
     level = logging.DEBUG if verbose else logging.INFO
     logging.basicConfig(
         level=level,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
     )
+    # Ensure our package loggers get the requested level
+    logging.getLogger("rank1_discovery_mine").setLevel(level)
 
 
 def get_paths(args) -> tuple:
