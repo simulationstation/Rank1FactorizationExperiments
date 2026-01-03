@@ -372,7 +372,10 @@ class Pipeline:
                 self._write_log(slug, "extract_numeric", f"HEPData conversion error: {e}")
 
         # Try PDF table extraction
-        for f in raw_dir.glob("*.pdf"):
+        pdf_files = list(raw_dir.glob("*.pdf"))
+        if pdf_files:
+            self._write_log(slug, "extract_numeric", f"Processing {len(pdf_files)} PDF files")
+        for f in pdf_files:
             try:
                 tables = pdf_tables.extract_tables(f)
                 for i, table in enumerate(tables):
@@ -381,6 +384,9 @@ class Pipeline:
                     extracted_files.append(str(csv_path))
             except Exception as e:
                 self._write_log(slug, "extract_numeric", f"PDF extraction error: {e}")
+            finally:
+                # Force cleanup after each PDF to prevent memory accumulation
+                gc.collect()
 
         # Write README
         readme_path = extracted_dir / "README.md"

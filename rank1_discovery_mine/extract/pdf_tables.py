@@ -9,6 +9,7 @@ Extracts numeric tables from PDF files using multiple backends:
 Tables are validated for numeric content relevant to HEP analyses.
 """
 
+import gc
 import logging
 import re
 from pathlib import Path
@@ -48,18 +49,24 @@ def extract_tables(
         tables = _extract_with_pdfplumber(pdf_path, pages, min_rows, min_cols)
         if tables:
             logger.info(f"Extracted {len(tables)} tables with pdfplumber")
+            gc.collect()  # Clean up pdfminer/pdfplumber objects
             return tables
     except Exception as e:
         logger.warning(f"pdfplumber extraction failed: {e}")
+    finally:
+        gc.collect()  # Always clean up after PDF processing
 
     # Try tabula as fallback
     try:
         tables = _extract_with_tabula(pdf_path, pages, min_rows, min_cols)
         if tables:
             logger.info(f"Extracted {len(tables)} tables with tabula")
+            gc.collect()
             return tables
     except Exception as e:
         logger.warning(f"tabula extraction failed: {e}")
+    finally:
+        gc.collect()
 
     logger.warning(f"No tables extracted from {pdf_path}")
     return []
