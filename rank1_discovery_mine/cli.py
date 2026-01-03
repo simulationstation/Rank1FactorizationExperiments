@@ -132,16 +132,17 @@ def cmd_validate(args):
     """
     Validate configuration and setup.
 
-    Fast, offline checks only.
+    Fast, offline checks only. v2.0: Includes testability checks.
     """
     config_path, discoveries_path = get_paths(args)
 
     print("=" * 60)
-    print("Rank1 Discovery Mine - Validation")
+    print("Rank1 Discovery Mine - Validation (v2.0)")
     print("=" * 60)
     print()
 
     errors = []
+    warnings = []
 
     # 1. Validate config file exists
     print(f"Config file: {config_path}")
@@ -161,13 +162,61 @@ def cmd_validate(args):
             print("  [OK] Schema valid")
             candidates = loader.load()
             print(f"  [OK] Loaded {len(candidates)} candidates")
+
+            # 3. v2.0: Testability analysis
+            print()
+            print("Testability analysis:")
+            testable = []
+            not_testable = []
+            disabled = []
+            completed_elsewhere = []
+            pinned_sources = []
+
+            for slug, candidate in candidates.items():
+                if not candidate.enabled:
+                    disabled.append(slug)
+                elif candidate.completed_elsewhere:
+                    completed_elsewhere.append((slug, candidate.completed_elsewhere))
+                elif candidate.not_testable_reason:
+                    not_testable.append((slug, candidate.not_testable_reason))
+                else:
+                    testable.append(slug)
+
+                if candidate.pinned_hepdata_record:
+                    pinned_sources.append((slug, candidate.pinned_hepdata_record))
+
+            print(f"  [OK] Testable candidates: {len(testable)}")
+
+            if not_testable:
+                print(f"  [WARN] NOT_TESTABLE candidates: {len(not_testable)}")
+                for slug, reason in not_testable[:5]:
+                    print(f"    - {slug}: {reason}")
+                if len(not_testable) > 5:
+                    print(f"    ... and {len(not_testable) - 5} more")
+                warnings.extend([f"{s}: {r}" for s, r in not_testable])
+
+            if disabled:
+                print(f"  [INFO] Disabled candidates: {len(disabled)}")
+                for slug in disabled[:5]:
+                    print(f"    - {slug}")
+
+            if completed_elsewhere:
+                print(f"  [INFO] Completed elsewhere: {len(completed_elsewhere)}")
+                for slug, path in completed_elsewhere[:5]:
+                    print(f"    - {slug} -> {path}")
+
+            if pinned_sources:
+                print(f"  [OK] Pinned HEPData sources: {len(pinned_sources)}")
+                for slug, record in pinned_sources[:5]:
+                    print(f"    - {slug}: {record}")
+
         else:
             print("  [FAIL] Schema errors:")
             for err in schema_errors:
                 print(f"    - {err}")
                 errors.append(err)
 
-    # 3. Validate discoveries directory
+    # 4. Validate discoveries directory
     print()
     print(f"Discoveries directory: {discoveries_path}")
     if discoveries_path.exists():
@@ -178,18 +227,28 @@ def cmd_validate(args):
         state = registry.load_global_state()
         if state:
             print(f"  [OK] Registry initialized ({len(state.candidate_slugs)} candidates)")
+
+            # Check for source audits
+            audit_count = 0
+            for slug in state.candidate_slugs:
+                audit_file = discoveries_path / slug / "out" / "source_audit.json"
+                if audit_file.exists():
+                    audit_count += 1
+            if audit_count > 0:
+                print(f"  [OK] Source audits available: {audit_count}")
         else:
             print("  [INFO] Registry not initialized (run 'plan' first)")
     else:
         print("  [INFO] Directory does not exist (will be created by 'plan')")
 
-    # 4. Check for required dependencies
+    # 5. Check for required dependencies
     print()
     print("Checking dependencies...")
     deps = [
         ("yaml", "pyyaml"),
         ("pandas", "pandas"),
         ("pdfplumber", "pdfplumber"),
+        ("requests", "requests"),
     ]
 
     for module, package in deps:
@@ -205,6 +264,9 @@ def cmd_validate(args):
     if errors:
         print(f"Validation FAILED with {len(errors)} error(s)")
         return 1
+    elif warnings:
+        print(f"Validation PASSED with {len(warnings)} warning(s)")
+        return 0
     else:
         print("Validation PASSED")
         return 0

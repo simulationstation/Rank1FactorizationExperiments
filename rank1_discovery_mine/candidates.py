@@ -9,8 +9,11 @@ Handles:
 
 import re
 from pathlib import Path
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Optional, Any, Tuple, TYPE_CHECKING
 from dataclasses import dataclass, field
+
+if TYPE_CHECKING:
+    pass
 import yaml
 
 
@@ -21,6 +24,38 @@ class Channel:
     label: str
     final_state: str
     notes: Optional[str] = None
+
+
+@dataclass
+class ValidationConfig:
+    """Configuration for data validation."""
+    expected_x_keywords: List[str] = field(default_factory=list)
+    expected_y_keywords: List[str] = field(default_factory=list)
+    expected_x_range: Optional[Tuple[float, float]] = None
+    min_points: int = 10
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "expected_x_keywords": self.expected_x_keywords,
+            "expected_y_keywords": self.expected_y_keywords,
+            "expected_x_range": list(self.expected_x_range) if self.expected_x_range else None,
+            "min_points": self.min_points,
+        }
+
+
+@dataclass
+class SourceConfig:
+    """Configuration for pinned data sources."""
+    hepdata_record: Optional[str] = None  # e.g., "ins1728691" or "141028"
+    hepdata_tables: List[str] = field(default_factory=list)  # Specific tables to use
+    arxiv_id: Optional[str] = None  # Pinned arXiv paper
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "hepdata_record": self.hepdata_record,
+            "hepdata_tables": self.hepdata_tables,
+            "arxiv_id": self.arxiv_id,
+        }
 
 
 @dataclass
@@ -39,10 +74,42 @@ class Candidate:
     hepdata_ids: List[str] = field(default_factory=list)
     collaboration: Optional[str] = None
     category: str = "exotic"
+    # New v2.0 fields
+    enabled: bool = True  # Set to False to skip this candidate
+    sources: Optional[SourceConfig] = None  # Pinned sources
+    validation: Optional[ValidationConfig] = None  # Validation config
+    completed_elsewhere: Optional[str] = None  # Path to existing analysis if done manually
+
+    @property
+    def pinned_hepdata_record(self) -> Optional[str]:
+        """Get pinned HEPData record if configured."""
+        if self.sources and self.sources.hepdata_record:
+            return self.sources.hepdata_record
+        return None
+
+    @property
+    def is_testable(self) -> bool:
+        """Check if candidate is testable (has >= 2 states for rank-1)."""
+        if self.rank1_mode == "two_state_ratio":
+            return len(self.states) >= 2
+        return len(self.states) >= 1 and len(self.channels) >= 2
+
+    @property
+    def not_testable_reason(self) -> Optional[str]:
+        """Get reason why candidate is not testable, or None if testable."""
+        if not self.enabled:
+            return "DISABLED"
+        if self.completed_elsewhere:
+            return f"COMPLETED_ELSEWHERE:{self.completed_elsewhere}"
+        if self.rank1_mode == "two_state_ratio" and len(self.states) < 2:
+            return "SINGLE_STATE"
+        if len(self.channels) < 2:
+            return "SINGLE_CHANNEL"
+        return None
 
     def to_meta_dict(self) -> Dict[str, Any]:
         """Convert to meta.json format."""
-        return {
+        result = {
             "slug": self.slug,
             "title": self.title,
             "states": self.states,
@@ -59,7 +126,15 @@ class Candidate:
             "hepdata_ids": self.hepdata_ids,
             "collaboration": self.collaboration,
             "category": self.category,
+            "enabled": self.enabled,
         }
+        if self.sources:
+            result["sources"] = self.sources.to_dict()
+        if self.validation:
+            result["validation"] = self.validation.to_dict()
+        if self.completed_elsewhere:
+            result["completed_elsewhere"] = self.completed_elsewhere
+        return result
 
 
 class ValidationError(Exception):
@@ -151,13 +226,16 @@ def validate_candidate_dict(slug: str, data: Dict, strict: bool = True) -> List[
         errors.append(f"[{slug}] 'title' must be a string")
 
     # Validate states (must be list with >= 2 items for two_state_ratio)
+    # Skip this check for disabled candidates
     if "states" in data:
         if not isinstance(data["states"], list):
             errors.append(f"[{slug}] 'states' must be a list")
         elif len(data["states"]) < 1:
             errors.append(f"[{slug}] 'states' must have at least 1 entry")
         elif data.get("rank1_mode") == "two_state_ratio" and len(data["states"]) < 2:
-            errors.append(f"[{slug}] 'states' must have >= 2 entries for two_state_ratio mode")
+            # Only error if candidate is enabled
+            if data.get("enabled", True):
+                errors.append(f"[{slug}] 'states' must have >= 2 entries for two_state_ratio mode")
 
     # Validate channels (must be list with >= 2 items)
     if "channels" in data:
@@ -262,6 +340,28 @@ class CandidateLoader:
                     notes=ch_data.get("notes"),
                 ))
 
+            # Parse source config
+            sources = None
+            if "sources" in data:
+                src_data = data["sources"]
+                sources = SourceConfig(
+                    hepdata_record=src_data.get("hepdata_record"),
+                    hepdata_tables=src_data.get("hepdata_tables", []),
+                    arxiv_id=src_data.get("arxiv_id"),
+                )
+
+            # Parse validation config
+            validation = None
+            if "validation" in data:
+                val_data = data["validation"]
+                x_range = val_data.get("expected_x_range")
+                validation = ValidationConfig(
+                    expected_x_keywords=val_data.get("expected_x_keywords", []),
+                    expected_y_keywords=val_data.get("expected_y_keywords", []),
+                    expected_x_range=tuple(x_range) if x_range else None,
+                    min_points=val_data.get("min_points", 10),
+                )
+
             candidate = Candidate(
                 slug=slug,
                 title=data.get("title", slug),
@@ -276,6 +376,10 @@ class CandidateLoader:
                 hepdata_ids=data.get("hepdata_ids", []),
                 collaboration=data.get("collaboration"),
                 category=data.get("category", "exotic"),
+                enabled=data.get("enabled", True),
+                sources=sources,
+                validation=validation,
+                completed_elsewhere=data.get("completed_elsewhere"),
             )
             self._candidates[slug] = candidate
 

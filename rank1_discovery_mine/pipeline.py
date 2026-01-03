@@ -64,6 +64,11 @@ class CandidateStatus(Enum):
     NO_DATA = "NO_DATA"
     BLOCKED = "BLOCKED"
     ERROR = "ERROR"
+    # New v2.0 statuses
+    NOT_TESTABLE = "NOT_TESTABLE"  # Single state or disabled
+    DISABLED = "DISABLED"  # Explicitly disabled
+    BLOCKED_WRONG_HEPDATA = "BLOCKED_WRONG_HEPDATA"  # No HEPData met scoring threshold
+    COMPLETED_ELSEWHERE = "COMPLETED_ELSEWHERE"  # Already done in another directory
 
     def is_terminal(self) -> bool:
         return self in {
@@ -71,6 +76,10 @@ class CandidateStatus(Enum):
             CandidateStatus.NO_DATA,
             CandidateStatus.BLOCKED,
             CandidateStatus.ERROR,
+            CandidateStatus.NOT_TESTABLE,
+            CandidateStatus.DISABLED,
+            CandidateStatus.BLOCKED_WRONG_HEPDATA,
+            CandidateStatus.COMPLETED_ELSEWHERE,
         }
 
 
@@ -182,7 +191,7 @@ class Pipeline:
 
     def _step_locate_data(self, slug: str, candidate: Candidate) -> StepResult:
         """
-        STEP 1: Search for data sources.
+        STEP 1: Search for data sources with scoring-based selection.
 
         In dry-run mode (execute=False):
             - Plans queries but doesn't execute them
@@ -191,15 +200,22 @@ class Pipeline:
 
         In execute mode:
             - Actually queries HEPData, arXiv, etc.
-            - Saves discovered URLs to meta.json
+            - Uses scoring to select best HEPData record
+            - Saves discovered URLs and source_audit.json
         """
         from .sources import hepdata, arxiv, cern_opendata, github_search
 
         self._write_log(slug, "locate_data", f"Starting locate_data for {slug}")
         self._write_log(slug, "locate_data", f"Execute mode: {self.execute}")
 
+        # Check if candidate has pinned source
+        if candidate.pinned_hepdata_record:
+            self._write_log(slug, "locate_data",
+                f"Using pinned HEPData record: {candidate.pinned_hepdata_record}")
+
         planned_queries = []
         discovered_urls = []
+        source_audit = None
 
         # Plan queries based on preferred_sources order
         for source in candidate.preferred_sources:
@@ -208,8 +224,19 @@ class Pipeline:
                 planned_queries.extend([("hepdata", q) for q in queries])
 
                 if self.execute:
-                    urls = hepdata.execute_search(candidate)
+                    # Use scoring-based search
+                    urls, audit = hepdata.execute_search_with_scoring(candidate)
                     discovered_urls.extend(urls)
+                    source_audit = audit
+
+                    # Log scoring results
+                    if audit.top_k_hits:
+                        self._write_log(slug, "locate_data", "HEPData scoring results:")
+                        for hit in audit.top_k_hits[:5]:
+                            self._write_log(slug, "locate_data",
+                                f"  Score {hit.score:.1f}: {hit.title[:60]}...")
+                    self._write_log(slug, "locate_data",
+                        f"Selection: {audit.selection_reason}")
 
             elif source == "arxiv_pdf":
                 queries = arxiv.plan_queries(candidate)
@@ -246,6 +273,15 @@ class Pipeline:
             "discovered_urls": discovered_urls,
         })
 
+        # Save source audit if we have one
+        if source_audit:
+            out_dir = self.registry.get_candidate_dir(slug) / "out"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            audit_file = out_dir / "source_audit.json"
+            with open(audit_file, 'w') as f:
+                json.dump(source_audit.to_dict(), f, indent=2)
+            self._write_log(slug, "locate_data", f"Saved source audit to {audit_file}")
+
         if not self.execute:
             self._write_log(slug, "locate_data", "DRY-RUN: Queries planned but not executed")
             return StepResult(
@@ -255,13 +291,26 @@ class Pipeline:
                 data={"planned_queries": planned_queries},
             )
 
-        if discovered_urls:
+        # Check if we got URLs
+        hepdata_urls = [u for u in discovered_urls if u.get("type") == "hepdata_record"]
+
+        if hepdata_urls:
             self._write_log(slug, "locate_data", f"Found {len(discovered_urls)} URLs")
             return StepResult(
                 success=True,
                 status=CandidateStatus.IN_PROGRESS,
                 message=f"Found {len(discovered_urls)} data sources",
                 data={"discovered_urls": discovered_urls},
+            )
+        elif source_audit and source_audit.top_k_hits:
+            # We had candidates but none met threshold
+            self._write_log(slug, "locate_data",
+                "No HEPData record met scoring threshold - needs manual review")
+            return StepResult(
+                success=False,
+                status=CandidateStatus.BLOCKED_WRONG_HEPDATA,
+                message="No HEPData record met scoring threshold",
+                blocked_reason="WRONG_HEPDATA_MATCH",
             )
         else:
             self._write_log(slug, "locate_data", "No data sources found")
@@ -616,6 +665,25 @@ class Pipeline:
 
         Returns final status.
         """
+        candidate = self._get_candidate(slug)
+
+        # Check if candidate is testable before proceeding
+        if not candidate.enabled:
+            self.logger.info(f"Skipping {slug}: DISABLED")
+            self.registry.update_candidate_status(slug, CandidateStatus.DISABLED.value)
+            return CandidateStatus.DISABLED
+
+        if candidate.completed_elsewhere:
+            self.logger.info(f"Skipping {slug}: COMPLETED_ELSEWHERE at {candidate.completed_elsewhere}")
+            self.registry.update_candidate_status(slug, CandidateStatus.COMPLETED_ELSEWHERE.value)
+            return CandidateStatus.COMPLETED_ELSEWHERE
+
+        not_testable_reason = candidate.not_testable_reason
+        if not_testable_reason and not_testable_reason.startswith("SINGLE"):
+            self.logger.info(f"Skipping {slug}: NOT_TESTABLE ({not_testable_reason})")
+            self.registry.update_candidate_status(slug, CandidateStatus.NOT_TESTABLE.value)
+            return CandidateStatus.NOT_TESTABLE
+
         steps = PipelineStep.ordered()
 
         # Find starting point

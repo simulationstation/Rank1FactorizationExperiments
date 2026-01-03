@@ -402,6 +402,9 @@ candidates:
       - "1904.03947"
     hepdata_ids:
       - "1728691"
+    # v2.0: Pinned source to ensure correct HEPData record
+    sources:
+      hepdata_record: "ins1728691"
     notes: "Extended Pc analysis including Pc(4312). HEPData available."
     expected_data_kind: binned_spectrum
     rank1_mode: multi_state_pairwise
@@ -414,9 +417,11 @@ candidates:
     title: "LHCb Tcc+ in D0D0pi+"
     collaboration: "LHCb"
     category: exotic
+    # v2.0: Tcc+ is a single state - NOT_TESTABLE for rank-1
+    # The "threshold" entry is not a real doublet partner
+    enabled: false  # Single state - cannot do rank-1 test
     states:
       - "Tcc(3875)+"
-      - "Tcc(3875)+ threshold"  # Threshold structure study
     channels:
       - id: ch_d0d0pi
         label: "D0 D0 pi+"
@@ -435,10 +440,13 @@ candidates:
     arxiv_ids:
       - "2109.01038"
       - "2109.01056"
-    hepdata_ids: []
-    notes: "First doubly-charmed tetraquark. Extremely narrow width. Single-state cross-channel test."
+    hepdata_ids:
+      - "1915358"
+    sources:
+      hepdata_record: "ins1915358"
+    notes: "First doubly-charmed tetraquark. SINGLE STATE - not testable for rank-1."
     expected_data_kind: binned_spectrum
-    rank1_mode: multi_state_pairwise
+    rank1_mode: two_state_ratio
 
   # ===========================================================================
   # X(6900) tetraquark family
@@ -618,6 +626,9 @@ candidates:
     title: "Belle Zb in hb pi and Upsilon pi"
     collaboration: "Belle"
     category: exotic
+    # v2.0: Already analyzed in belle_zb_rank1/ and belle_zb_openbottom_rank1/
+    enabled: false
+    completed_elsewhere: "belle_zb_rank1/"
     states:
       - "Zb(10610)"
       - "Zb(10650)"
@@ -642,7 +653,7 @@ candidates:
       - "1105.4583"
       - "1110.2251"
     hepdata_ids: []
-    notes: "Charged bottomonium-like states. Heavy-quark analog of Zc."
+    notes: "Charged bottomonium-like states. COMPLETED in belle_zb_rank1/ and belle_zb_openbottom_rank1/"
     expected_data_kind: binned_spectrum
     rank1_mode: two_state_ratio
 
@@ -746,6 +757,9 @@ candidates:
     title: "CMS X(6900)/X(7100) in di-J/psi"
     collaboration: "CMS"
     category: exotic
+    # v2.0: Already analyzed in cms_x6900_rank1_v4/
+    enabled: false
+    completed_elsewhere: "cms_x6900_rank1_v4/"
     states:
       - "X(6900)"
       - "X(7100)"
@@ -768,6 +782,8 @@ candidates:
       - "2306.07164"
     hepdata_ids:
       - "2668013"
-    notes: "CMS observation of all-charm tetraquark structures."
+    sources:
+      hepdata_record: "ins2668013"
+    notes: "CMS observation of all-charm tetraquark structures. COMPLETED in cms_x6900_rank1_v4/"
     expected_data_kind: binned_spectrum
     rank1_mode: two_state_ratio
