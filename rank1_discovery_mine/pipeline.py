@@ -568,11 +568,26 @@ class Pipeline:
             # Check existing state for resume
             state = self.registry.load_candidate_state(slug)
             if state and state.completed_steps:
+                # If in execute mode, check if locate_data was only dry-run
+                # (i.e., discovered_urls is empty). If so, re-run from locate_data.
+                if self.execute and "locate_data" in state.completed_steps:
+                    meta_file = self.registry.get_candidate_dir(slug) / "meta.json"
+                    if meta_file.exists():
+                        with open(meta_file, 'r') as f:
+                            meta = json.load(f)
+                        if not meta.get("discovered_urls"):
+                            # Re-run locate_data since it was only planned
+                            start_idx = steps.index(PipelineStep.LOCATE_DATA)
+                            state.completed_steps.remove("locate_data")
+                            self.registry.save_candidate_state(state)
+                            self.logger.info(f"Re-running locate_data for {slug} (was dry-run)")
+
                 # Start from first incomplete step
-                for i, step in enumerate(steps):
-                    if step.value not in state.completed_steps:
-                        start_idx = i
-                        break
+                if start_idx == 0:
+                    for i, step in enumerate(steps):
+                        if step.value not in state.completed_steps:
+                            start_idx = i
+                            break
 
         # Run steps
         final_status = CandidateStatus.IN_PROGRESS
