@@ -371,22 +371,28 @@ class Pipeline:
             except Exception as e:
                 self._write_log(slug, "extract_numeric", f"HEPData conversion error: {e}")
 
-        # Try PDF table extraction
-        pdf_files = list(raw_dir.glob("*.pdf"))
-        if pdf_files:
-            self._write_log(slug, "extract_numeric", f"Processing {len(pdf_files)} PDF files")
-        for f in pdf_files:
-            try:
-                tables = pdf_tables.extract_tables(f)
-                for i, table in enumerate(tables):
-                    csv_path = extracted_dir / f"pdf_table_{i}.csv"
-                    table.to_csv(csv_path, index=False)
-                    extracted_files.append(str(csv_path))
-            except Exception as e:
-                self._write_log(slug, "extract_numeric", f"PDF extraction error: {e}")
-            finally:
-                # Force cleanup after each PDF to prevent memory accumulation
-                gc.collect()
+        # Try PDF table extraction only if we don't have HEPData files
+        # HEPData CSVs are much higher quality than PDF-extracted tables
+        hepdata_csvs = list(raw_dir.glob("hepdata_*.csv"))
+        if hepdata_csvs:
+            self._write_log(slug, "extract_numeric",
+                f"Skipping PDF extraction - have {len(hepdata_csvs)} HEPData CSVs")
+        else:
+            pdf_files = list(raw_dir.glob("*.pdf"))
+            if pdf_files:
+                self._write_log(slug, "extract_numeric", f"Processing {len(pdf_files)} PDF files")
+            for f in pdf_files:
+                try:
+                    tables = pdf_tables.extract_tables(f)
+                    for i, table in enumerate(tables):
+                        csv_path = extracted_dir / f"pdf_table_{i}.csv"
+                        table.to_csv(csv_path, index=False)
+                        extracted_files.append(str(csv_path))
+                except Exception as e:
+                    self._write_log(slug, "extract_numeric", f"PDF extraction error: {e}")
+                finally:
+                    # Force cleanup after each PDF to prevent memory accumulation
+                    gc.collect()
 
         # Write README
         readme_path = extracted_dir / "README.md"
