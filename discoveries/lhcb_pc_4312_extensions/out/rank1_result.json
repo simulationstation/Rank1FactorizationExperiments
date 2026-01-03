@@ -1,0 +1,110 @@
+{
+  "status": "COMPLETED",
+  "slug": "lhcb_pc_4312_extensions",
+  "states": [
+    "Pc(4440)",
+    "Pc(4457)"
+  ],
+  "fit_window": [
+    4400,
+    4500
+  ],
+  "n_boot": 50,
+  "pairs": [
+    {
+      "pair": "Pair 1: Table 1 vs Table 2",
+      "chi2_A": 64.18139963855563,
+      "dof_A": 44,
+      "health_A": "HEALTHY",
+      "chi2_B": 65.23684457840875,
+      "dof_B": 44,
+      "health_B": "HEALTHY",
+      "R_A_ind": {
+        "r": 0.2517398718799475,
+        "phi_deg": -72.41877812829729
+      },
+      "R_B_ind": {
+        "r": 0.28089203439419136,
+        "phi_deg": -42.923269382592096
+      },
+      "R_shared": {
+        "r": 0.4461780148517338,
+        "phi_deg": 130.29747078010348
+      },
+      "R_A_unc": {
+        "r": 0.43908036719576393,
+        "phi_deg": 134.1011359495407
+      },
+      "R_B_unc": {
+        "r": 0.45411765643993623,
+        "phi_deg": 126.05831030412114
+      },
+      "nll_con": 67.57312978136201,
+      "nll_unc": 64.73289012935419,
+      "Lambda_raw": 5.680479304015648,
+      "Lambda": 5.680479304015648,
+      "invariant_holds": true,
+      "invariant_violation": -2.840239652007824,
+      "p_wilks": 0.05841166581399304,
+      "p_boot": 0.0784313725490196,
+      "k": 3,
+      "n_boot_valid": 50,
+      "n_boot_failed": 0,
+      "lambda_boot_mean": 2.1477358717573454,
+      "lambda_boot_std": 2.2262514333887298,
+      "lambda_boot_median": 1.606161414223024,
+      "verdict": "NOT_REJECTED",
+      "reason": "p_boot = 0.078 >= 0.05",
+      "table_A": "hepdata_ins1728691_Table%201.csv",
+      "table_B": "hepdata_ins1728691_Table%202.csv"
+    },
+    {
+      "pair": "Pair 2: Table 2 vs Table 3",
+      "chi2_A": 65.23684457840875,
+      "dof_A": 44,
+      "health_A": "HEALTHY",
+      "chi2_B": 83.8455100676437,
+      "dof_B": 44,
+      "health_B": "HEALTHY",
+      "R_A_ind": {
+        "r": 0.28089203439419136,
+        "phi_deg": -42.923269382592096
+      },
+      "R_B_ind": {
+        "r": 0.4393305505950632,
+        "phi_deg": 128.87545786894577
+      },
+      "R_shared": {
+        "r": 0.4453318053350464,
+        "phi_deg": 127.73953784170173
+      },
+      "R_A_unc": {
+        "r": 0.45411927663586327,
+        "phi_deg": 126.05893513896663
+      },
+      "R_B_unc": {
+        "r": 0.24786709604470605,
+        "phi_deg": -53.13208471065748
+      },
+      "nll_con": 75.50709021309518,
+      "nll_unc": 74.54117742197215,
+      "Lambda_raw": 1.9318255822460628,
+      "Lambda": 1.9318255822460628,
+      "invariant_holds": true,
+      "invariant_violation": -0.9659127911230314,
+      "p_wilks": 0.38063560032355626,
+      "p_boot": 0.5294117647058824,
+      "k": 26,
+      "n_boot_valid": 50,
+      "n_boot_failed": 0,
+      "lambda_boot_mean": 4.09998479819279,
+      "lambda_boot_std": 8.074575982762607,
+      "lambda_boot_median": 2.1849692584599936,
+      "verdict": "NOT_REJECTED",
+      "reason": "p_boot = 0.529 >= 0.05",
+      "table_A": "hepdata_ins1728691_Table%202.csv",
+      "table_B": "hepdata_ins1728691_Table%203.csv"
+    }
+  ],
+  "overall_verdict": "NOT_REJECTED"
+}

@@ -293,8 +293,19 @@ def run_rank1_test(candidate_dir: Path, slug: str, n_boot: int = 100) -> Dict[st
     return results
 
 
+def _format_r_value(r_dict: Optional[Dict], label: str = "") -> str:
+    """Format R value from dict with r and phi_deg."""
+    if r_dict is None:
+        return "N/A"
+    r = r_dict.get('r', 0)
+    phi = r_dict.get('phi_deg', 0)
+    if label:
+        return f"|R|={r:.3f}, φ={phi:.1f}°"
+    return f"{r:.3f}"
+
+
 def _generate_report(results: Dict, out_dir: Path, config: StateConfig):
-    """Generate markdown report."""
+    """Generate detailed markdown report from JSON results."""
     report = f"""# Rank-1 Test Report: {results['slug']}
 
 ## Summary
@@ -318,14 +329,115 @@ def _generate_report(results: Dict, out_dir: Path, config: StateConfig):
 
 """
     for i, pair in enumerate(results.get('pairs', [])):
+        # Format values safely
+        lambda_val = pair.get('Lambda')
+        lambda_raw = pair.get('Lambda_raw')
+        lambda_str = f"{lambda_val:.4f}" if lambda_val is not None else "N/A"
+        lambda_raw_str = f"{lambda_raw:.4f}" if lambda_raw is not None else "N/A"
+
+        p_boot = pair.get('p_boot')
+        p_boot_str = f"{p_boot:.4f}" if p_boot is not None else "N/A"
+        p_wilks = pair.get('p_wilks')
+        p_wilks_str = f"{p_wilks:.4f}" if p_wilks is not None else "N/A"
+
+        chi2_A = pair.get('chi2_A')
+        chi2_A_str = f"{chi2_A:.1f}" if chi2_A is not None else "?"
+        chi2_B = pair.get('chi2_B')
+        chi2_B_str = f"{chi2_B:.1f}" if chi2_B is not None else "?"
+
+        nll_con = pair.get('nll_con')
+        nll_unc = pair.get('nll_unc')
+        nll_con_str = f"{nll_con:.4f}" if nll_con is not None else "N/A"
+        nll_unc_str = f"{nll_unc:.4f}" if nll_unc is not None else "N/A"
+
+        invariant = pair.get('invariant_holds', 'N/A')
+        invariant_str = "✓ PASS" if invariant is True else ("✗ FAIL" if invariant is False else str(invariant))
+
+        n_boot_valid = pair.get('n_boot_valid', pair.get('n_boot', '?'))
+        n_boot_failed = pair.get('n_boot_failed', 0)
+        k = pair.get('k', '?')
+
         report += f"""### {pair.get('pair', f'Pair {i+1}')}
 
-- **Tables**: {pair.get('table_A', 'N/A')} vs {pair.get('table_B', 'N/A')}
-- **Verdict**: {pair.get('verdict', 'N/A')}
-- **Λ**: {pair.get('Lambda', 'N/A'):.2f if pair.get('Lambda') else 'N/A'}
-- **p_boot**: {pair.get('p_boot', 'N/A'):.4f if pair.get('p_boot') else 'N/A'} ({pair.get('k', '?')}/{pair.get('n_boot', '?')})
-- **Health A**: {pair.get('health_A', 'N/A')} (χ²/dof = {pair.get('chi2_A', '?'):.1f if pair.get('chi2_A') else '?'}/{pair.get('dof_A', '?')})
-- **Health B**: {pair.get('health_B', 'N/A')} (χ²/dof = {pair.get('chi2_B', '?'):.1f if pair.get('chi2_B') else '?'}/{pair.get('dof_B', '?')})
+**Tables**: `{pair.get('table_A', 'N/A')}` vs `{pair.get('table_B', 'N/A')}`
+
+**Verdict**: **{pair.get('verdict', 'N/A')}**
+
+**Reason**: {pair.get('reason', 'N/A')}
+
+#### Test Statistics
+
+| Metric | Value |
+|--------|-------|
+| Λ (clamped) | {lambda_str} |
+| Λ_raw | {lambda_raw_str} |
+| p_boot | {p_boot_str} ({k}/{n_boot_valid} exceedances) |
+| p_wilks (ref) | {p_wilks_str} |
+| NLL constrained | {nll_con_str} |
+| NLL unconstrained | {nll_unc_str} |
+
+#### Fit Health
+
+| Channel | Health | χ²/dof |
+|---------|--------|--------|
+| A | {pair.get('health_A', 'N/A')} | {chi2_A_str}/{pair.get('dof_A', '?')} |
+| B | {pair.get('health_B', 'N/A')} | {chi2_B_str}/{pair.get('dof_B', '?')} |
+
+#### Coupling Ratios
+
+| Fit Type | Channel | |R| | φ (deg) |
+|----------|---------|-----|---------|
+"""
+        # Individual fits
+        r_a_ind = pair.get('R_A_ind')
+        r_b_ind = pair.get('R_B_ind')
+        if r_a_ind:
+            report += f"| Individual | A | {r_a_ind.get('r', 0):.3f} | {r_a_ind.get('phi_deg', 0):.1f}° |\n"
+        if r_b_ind:
+            report += f"| Individual | B | {r_b_ind.get('r', 0):.3f} | {r_b_ind.get('phi_deg', 0):.1f}° |\n"
+
+        # Unconstrained joint fits
+        r_a_unc = pair.get('R_A_unc')
+        r_b_unc = pair.get('R_B_unc')
+        if r_a_unc:
+            report += f"| Unconstrained | A | {r_a_unc.get('r', 0):.3f} | {r_a_unc.get('phi_deg', 0):.1f}° |\n"
+        if r_b_unc:
+            report += f"| Unconstrained | B | {r_b_unc.get('r', 0):.3f} | {r_b_unc.get('phi_deg', 0):.1f}° |\n"
+
+        # Constrained (shared)
+        r_shared = pair.get('R_shared')
+        if r_shared:
+            report += f"| **Constrained** | **Shared** | **{r_shared.get('r', 0):.3f}** | **{r_shared.get('phi_deg', 0):.1f}°** |\n"
+
+        # Legacy R_A/R_B (if present but no R_A_ind)
+        if not r_a_ind:
+            r_a = pair.get('R_A')
+            r_b = pair.get('R_B')
+            if r_a:
+                report += f"| (legacy) | A | {r_a.get('r', 0):.3f} | {r_a.get('phi_deg', 0):.1f}° |\n"
+            if r_b:
+                report += f"| (legacy) | B | {r_b.get('r', 0):.3f} | {r_b.get('phi_deg', 0):.1f}° |\n"
+
+        # Sanity checks section
+        report += f"""
+#### Sanity Checks
+
+| Check | Status |
+|-------|--------|
+| Nested invariant (nll_unc ≤ nll_con) | {invariant_str} |
+| Invariant violation | {pair.get('invariant_violation', 'N/A')} |
+| Bootstrap valid/failed | {n_boot_valid}/{n_boot_failed} |
+
+"""
+        # Bootstrap stats if available
+        if pair.get('lambda_boot_mean') is not None:
+            report += f"""#### Bootstrap Distribution
+
+| Statistic | Value |
+|-----------|-------|
+| Mean Λ_boot | {pair.get('lambda_boot_mean', 'N/A'):.4f} |
+| Std Λ_boot | {pair.get('lambda_boot_std', 'N/A'):.4f} |
+| Median Λ_boot | {pair.get('lambda_boot_median', 'N/A'):.4f} |
 
 """
 
@@ -340,11 +452,16 @@ analyses or cuts of the same underlying data.
 - **NOT_REJECTED**: p ≥ 0.05, consistent with rank-1 factorization
 - **DISFAVORED**: p < 0.05, evidence against rank-1
 - **INCONCLUSIVE**: Fit issues prevent reliable conclusion
+- **OPTIMIZER_FAILURE**: Nested model invariant violated (nll_unc > nll_con)
+
+**Nested Model Invariant**: For a valid likelihood ratio test, the unconstrained
+fit (more parameters) must achieve NLL ≤ constrained fit NLL. Violation indicates
+optimizer failure, not a physics result.
 
 {config.notes}
 
 ---
-*Generated by rank1_discovery_mine*
+*Generated by rank1_discovery_mine v2.0 (with nested invariant checks)*
 """
 
     report_file = out_dir / "RANK1_REPORT.md"
