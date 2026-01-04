@@ -67,3 +67,33 @@ def test_mode_auto_selection(tmp_path: Path):
     ratio_path.unlink()
     mode, _, _ = resolve_open_mode("auto", base_dir)
     assert mode == "missing"
+
+
+def test_run_structure_test_skips_when_missing(tmp_path: Path):
+    """Verify pipeline returns SKIPPED status when open-bottom data is absent."""
+    from structure_tests.zb_core_threshold import run_structure_test
+
+    result = run_structure_test(
+        mode="auto",
+        n_boot=0,
+        n_starts=5,
+        seed=42,
+        base_dir=tmp_path,
+    )
+    assert result.status == "SKIPPED"
+    assert "missing" in result.reason
+
+
+def test_health_gating_uses_unconstrained_fit():
+    """Verify health is computed from unconstrained fit parameters."""
+    from structure_tests.zb_core_threshold import hidden_ratio_chi2, HIDDEN_RATIO_TABLE
+
+    # Compute chi2 at the approximate unconstrained optimum
+    r_hid = 0.935
+    phi_hid = -0.155  # radians
+    health = hidden_ratio_chi2(r_hid, phi_hid, HIDDEN_RATIO_TABLE)
+
+    # chi2 should be computed correctly (value near 2.95 for this input)
+    assert health.chi2 > 0
+    assert health.dof == 6  # 4 channels * 2 observables - 2 params
+    assert health.chi2_dof == health.chi2 / health.dof

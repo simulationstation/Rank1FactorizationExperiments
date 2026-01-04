@@ -104,6 +104,19 @@ docker_cmssw_rank1/configs/cms_rank1_test.py
 - **Belle Zb core + threshold dressing test:** `python3 structure_tests/run_zb_core_threshold.py`
   (docs: `docs/STRUCTURE_ZB_CORE_THRESHOLD.md`)
 
+  **Status: Work in Progress**
+
+  | Mode | Result | Notes |
+  |------|--------|-------|
+  | spectrum | INCONCLUSIVE | Hidden sector chi2/dof=0.49 (borderline <0.5 threshold) |
+  | ratio | INCONCLUSIVE | Same hidden sector limitation |
+  | missing data | SKIPPED | Clean skip with explanatory report |
+
+  The pipeline runs correctly and enforces all health gates. The INCONCLUSIVE result reflects
+  large uncertainties in the published hidden-bottom Table I ratios, causing chi2/dof to fall
+  just below the 0.5 acceptance threshold. Further tuning or additional open-bottom data may
+  resolve this.
+
 ### 2) "Discovery Mine" (Automated Public-Data Scouting)
 
 **Rank1 Discovery Mine** is an automated pipeline that:
