@@ -99,6 +99,11 @@ Primary harness location:
 docker_cmssw_rank1/configs/cms_rank1_test.py
 ```
 
+### 1b) Pre-registered structure tests
+
+- **Belle Zb core + threshold dressing test:** `python3 structure_tests/run_zb_core_threshold.py`
+  (docs: `docs/STRUCTURE_ZB_CORE_THRESHOLD.md`)
+
 ### 2) "Discovery Mine" (Automated Public-Data Scouting)
 
 **Rank1 Discovery Mine** is an automated pipeline that:
