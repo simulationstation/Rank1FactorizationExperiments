@@ -15,7 +15,7 @@ def parse_args() -> argparse.Namespace:
         description="Belle Zb core + threshold dressing structure test",
     )
     parser.add_argument("--mode", choices=["auto", "spectrum", "ratio"], default="auto")
-    parser.add_argument("--n-boot", type=int, default=200)
+    parser.add_argument("--n-boot", type=int, default=300)
     parser.add_argument("--n-starts", type=int, default=40)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--outdir", type=Path, default=Path("structure_tests/out/zb_core_threshold"))
