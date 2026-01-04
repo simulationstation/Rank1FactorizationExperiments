@@ -1,0 +1,102 @@
+{
+  "generated": "2026-01-03T20:54:41.391558",
+  "results": [
+    {
+      "name": "LHCb Pc(4440)/Pc(4457)",
+      "slug": "lhcb_pc",
+      "test_type": "pairwise",
+      "machinery_used": "lhcb_pc_rank1_test.py (2-BW coherent, pre-registered pairs)",
+      "Lambda_obs": 5.728015269969603,
+      "p_boot": 0.05,
+      "dof_diff": 2,
+      "verdict": "NOT_REJECTED",
+      "reason": "Pair1: NOT_REJECTED, Pair2: NOT_REJECTED",
+      "health_A": "HEALTHY",
+      "health_B": "HEALTHY",
+      "chi2_dof_A": 1.4586681735569949,
+      "chi2_dof_B": 1.482655558600186,
+      "pairs": [
+        {
+          "name": "Pair1: Full vs mKp>1.9 cut",
+          "Lambda": 5.728015269969603,
+          "p_boot": 0.05,
+          "verdict": "NOT_REJECTED",
+          "health_A": "HEALTHY",
+          "health_B": "HEALTHY",
+          "chi2_dof_A": 1.4586681735569949,
+          "chi2_dof_B": 1.482655558600186
+        },
+        {
+          "name": "Pair2: Full vs cos\u03b8-weighted",
+          "Lambda": 1.9570628044510272,
+          "p_boot": 0.44,
+          "verdict": "NOT_REJECTED",
+          "health_A": "HEALTHY",
+          "health_B": "HEALTHY",
+          "chi2_dof_A": 1.4586681735889975,
+          "chi2_dof_B": 1.9055797742609586
+        }
+      ],
+      "chi2": null,
+      "result_file": "/home/primary/DarkBItParticleColiderPredictions/lhcb_pc_rank1_v5/out/result.json"
+    },
+    {
+      "name": "BESIII Y(4220)/Y(4320)",
+      "slug": "besiii_y",
+      "test_type": "shared_subspace",
+      "machinery_used": "besiii_y_rank1_shared_subspace.py (3-BW + poly bg)",
+      "Lambda_obs": 2.995943095232718,
+      "p_boot": 0.395,
+      "dof_diff": 2,
+      "verdict": "NOT_REJECTED",
+      "reason": "gates_pass=True, identifiable=True",
+      "health_A": "HEALTHY",
+      "health_B": "HEALTHY",
+      "chi2_dof_A": 2.352488767062645,
+      "chi2_dof_B": 1.7379049714070995,
+      "pairs": null,
+      "chi2": null,
+      "result_file": "/home/primary/DarkBItParticleColiderPredictions/besiii_y_rank1/out/shared_subspace_result.json"
+    },
+    {
+      "name": "Belle Zb(10610)/Zb(10650) Hidden-Bottom",
+      "slug": "belle_zb",
+      "test_type": "ratio_consistency",
+      "machinery_used": "belle_zb_rank1_table_test.py (Table I \u03c7\u00b2 consistency)",
+      "Lambda_obs": null,
+      "p_boot": 0.4092064877892919,
+      "dof_diff": 4,
+      "verdict": "NOT_REJECTED",
+      "reason": "\u03c7\u00b2 consistency test on published coupling ratios",
+      "health_A": "N/A",
+      "health_B": "N/A",
+      "chi2_dof_A": null,
+      "chi2_dof_B": null,
+      "pairs": [
+        {
+          "name": "\u03a5 channels (primary)",
+          "chi2": 3.9764198080511632,
+          "p": 0.4092064877892919,
+          "dof": 4,
+          "verdict": "NOT_REJECTED"
+        },
+        {
+          "name": "hb channels",
+          "chi2": 0.07009307790401874,
+          "p": 0.9655604790391129,
+          "dof": 2,
+          "verdict": "NOT_REJECTED"
+        },
+        {
+          "name": "All 5 channels",
+          "chi2": 6.8758427066131045,
+          "p": 0.5500857728390648,
+          "dof": 8,
+          "verdict": "NOT_REJECTED"
+        }
+      ],
+      "chi2": 3.9764198080511632,
+      "result_file": "/home/primary/DarkBItParticleColiderPredictions/belle_zb_rank1/out/result_table.json"
+    }
+  ]
+}
