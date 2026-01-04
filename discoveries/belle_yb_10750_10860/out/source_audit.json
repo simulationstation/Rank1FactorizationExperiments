@@ -1,0 +1,140 @@
+{
+  "query": "https://www.hepdata.net/search?q=Belle+Yb%2810750%29&format=json; https://www.hepdata.net/search?q=Upsilon%2810860%29+pi+pi&format=json; https://www.hepdata.net/search?q=bottomonium+exotic&format=json",
+  "top_k_hits": [
+    {
+      "record_id": 50307,
+      "title": "Observation of anomalous $\\Upsilon(1S) \\pi^+ \\pi^-$ and $\\Upsilon(2S) \\pi^+ \\pi^-$ production near the $\\Upsilon(5S)$ resonance",
+      "collaboration": "",
+      "score": 90.0,
+      "breakdown": {
+        "channel_matches": 90
+      },
+      "reasons": [
+        "Channel matches: 3"
+      ]
+    },
+    {
+      "record_id": 64697,
+      "title": "Amplitude analysis of e+e- => Y(nS)pi+pi- at sqrt(s)=10.865 GeV",
+      "collaboration": "",
+      "score": 90.0,
+      "breakdown": {
+        "channel_matches": 90
+      },
+      "reasons": [
+        "Channel matches: 3"
+      ]
+    },
+    {
+      "record_id": 74710,
+      "title": "Energy scan of the $e^+e^- \\to h_b(nP)\\pi^+\\pi^-$ $(n=1,2)$ cross sections and evidence for the $\\Upsilon(11020)$ decays into charged bottomonium-like states",
+      "collaboration": "",
+      "score": 50.0,
+      "breakdown": {
+        "state_matches": 50
+      },
+      "reasons": [
+        "State matches: 1"
+      ]
+    },
+    {
+      "record_id": 72558,
+      "title": "Angular analysis of $B^0 \\to K^\\ast(892)^0 \\ell^+ \\ell^-$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 76987,
+      "title": "Precise determination of the CKM matrix element $\\left| V_{cb}\\right|$ with $\\bar B^0 \\to D^{*\\,+} \\, \\ell^- \\, \\bar \\nu_\\ell$ decays with hadronic tagging at Belle",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 82574,
+      "title": "Study of $\\chi_{bJ}(1P)$ Properties in the Radiative $\\Upsilon(2S)$ Decays",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 130199,
+      "title": "Search for $B^{+}\\to K^{+}\\nu\\bar{\\nu}$ decays using an inclusive tagging method at Belle II",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 61431,
+      "title": "Study of $e^+ e^- \\to \\pi^+ \\pi^- J/\\psi$ and Observation of a Charged Charmonium-like State at Belle",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 19700,
+      "title": "Measurement of the bottom quark production cross-section using semileptonic decay electrons in p anti-p collisions at s**(1/2) = 1.8-TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 159492,
+      "title": "Search for lepton flavor-violating decay modes $B^0 \\to K^{\\ast 0}\\tau^\\pm\\ell^\\mp$ ($\\ell = e,\\mu$) with hadronic B-tagging at Belle and Belle II",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 62276,
+      "title": "Precision measurement of charged pion and kaon multiplicities in electron-positron annihilation at Q = 10.52 GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 79449,
+      "title": "Measurement of the form factors of the decay B0 -> D*- ell+ nu and determination of the CKM matrix element |Vcb|",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 71501,
+      "title": "Measurement of $e^+e^- \\to \\pi^+\\pi^-\\psi(2S)$ via Initial State Radiation at Belle",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 37283,
+      "title": "BACKWARD PHOTOPRODUCTION OF POSITIVE PIONS ON HYDROGEN",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 98971,
+      "title": "K/pi Fluctuations at Relativistic Energies",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    }
+  ],
+  "selected_record": 50307,
+  "selection_reason": "Score 90.0 >= threshold 50",
+  "table_validations": []
+}

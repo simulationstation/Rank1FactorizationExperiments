@@ -1,0 +1,108 @@
+{
+  "query": "https://www.hepdata.net/search?q=ATLAS+X%284140%29&format=json; https://www.hepdata.net/search?q=ATLAS+J%2Fpsi+phi&format=json; https://www.hepdata.net/search?q=ATLAS+X%284140%29&format=json",
+  "top_k_hits": [
+    {
+      "record_id": 20031,
+      "title": "Dimuon Production in 800 GeV Proton Nucleus Collisions",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 31679,
+      "title": "Precision measurement of the neutron spin asymmetry A(1)(n) and spin-flavor decomposition in the valence quark region.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 31726,
+      "title": "Precision measurement of the neutron spin asymmetries and spin-dependent structure functions in the valence quark region.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 56870,
+      "title": "Near-threshold Photoproduction of Phi Mesons from Deuterium",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 141537,
+      "title": "Search for excited $\\tau$-leptons and leptoquarks in the final state with $\\tau$-leptons and jets in pp collisions at $\\sqrt{s} = 13$ TeV with the ATLAS detector",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 141494,
+      "title": "Search for Majorana neutrinos in same-sign $WW$ scattering events from $pp$ collisions at $\\sqrt{s}=13$ TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 157879,
+      "title": "Improved reconstruction of highly boosted $\\tau$-lepton pairs in the $\\tau\\tau\\rightarrow(\\mu\\nu_{\\mu}\\nu_{\\tau})({hadrons}+\\nu_{\\tau})$ decay channels with the ATLAS detector",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 151384,
+      "title": "Search for heavy Majorana neutrinos in $e^{\\pm} e^{\\pm}$ and $e^{\\pm} \\mu^{\\pm}$ final states via WW scattering in $pp$ collisions at $\\sqrt{s}=13$ TeV with the ATLAS detector",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 88920,
+      "title": "Search for the X(5568) state decaying into $\\mathrm{B}^{0}_{\\mathrm{s}}\\pi^{\\pm}$ in proton-proton collisions at $\\sqrt{s} = $ 8 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 80511,
+      "title": "Measurement of the production cross section of three isolated photons in $pp$ collisions at $\\sqrt{s}$ = 8 TeV using the ATLAS detector",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 44714,
+      "title": "Study of charged current e p interactions at Q**2 > 200-Gev**2 with the ZEUS detector at HERA",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 141076,
+      "title": "Search for a new heavy scalar particle decaying into a Higgs boson and a new scalar singlet in final states with one or two light leptons and a pair of $\\tau$-leptons with the ATLAS detector",
+      "collaboration": "",
+      "score": -100.0,
+      "breakdown": {
+        "unrelated_penalty": -100
+      },
+      "reasons": [
+        "Unrelated keyword: higgs"
+      ]
+    }
+  ],
+  "selected_record": null,
+  "selection_reason": "Best score 0.0 < threshold 50",
+  "table_validations": []
+}

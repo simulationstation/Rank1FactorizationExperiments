@@ -89,6 +89,251 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:besiii+Zc%283900%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.530145+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://www.hepdata.net/record/73771?format=json",
+      "type": "hepdata_record",
+      "record_id": 73771,
+      "title": "Observation of $Z_c(3900)^{0}$ in $e^+e^-\\to\\pi^0\\pi^0 J/\\psi$",
+      "collaboration": "",
+      "score": 50.0
+    },
+    {
+      "url": "http://arxiv.org/abs/1309.1896v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1309.1896v2",
+      "title": "Observation of a charged charmoniumlike structure Z_c(4020) and search for the Z_c(3900) in e+e- to pi+pi-h_c",
+      "pdf_url": "https://arxiv.org/pdf/1309.1896v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1308.2760v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1308.2760v2",
+      "title": "Observation of a charged charmoniumlike structure in $e^+e^- \\to (D^{*} \\bar{D}^{*})^{\\pm} \u03c0^\\mp$ at $\\sqrt{s}=4.26$GeV",
+      "pdf_url": "https://arxiv.org/pdf/1308.2760v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2111.07571v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2111.07571v1",
+      "title": "Number of $\\rm J/\u03c8$ events at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2111.07571v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0911.4960v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0911.4960v1",
+      "title": "Design and Construction of the BESIII Detector",
+      "pdf_url": "https://arxiv.org/pdf/0911.4960v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1311.1274v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1311.1274v1",
+      "title": "Study of charmonium decays at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1311.1274v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1307.2022v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1307.2022v1",
+      "title": "Measurement of the integrated luminosities of the data taken by BESIII at $\\sqrt s=$ 3.650 and 3.773 GeV",
+      "pdf_url": "https://arxiv.org/pdf/1307.2022v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1802.04057v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1802.04057v2",
+      "title": "Search for the rare decay of $\u03c8(3686) \\rightarrow \u039b_c^+ \\overline{p} e^+ e^- + c.c.$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1802.04057v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1310.4409v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1310.4409v1",
+      "title": "Recent results from BESIII experiment",
+      "pdf_url": "https://arxiv.org/pdf/1310.4409v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2009.11566v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2009.11566v1",
+      "title": "Study of BESIII Trigger Efficiencies with the 2018 $J/\u03c8$ Data",
+      "pdf_url": "https://arxiv.org/pdf/2009.11566v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1310.4101v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1310.4101v3",
+      "title": "Observation of $e^{+} e^{-} \\to \u03b3X(3872)$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1310.4101v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1304.3205v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1304.3205v1",
+      "title": "Search for the Lepton Flavor Violation Process $J/\u03c8\\to e\u03bc$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1304.3205v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2010.08320v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2010.08320v2",
+      "title": "Measurement of cross-section for $e^+e^-\\to\u039e^-\\bar\u039e^+$ near threshold at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2010.08320v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1011.0960v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1011.0960v2",
+      "title": "S-, P- and D-wave final state interactions and CP violation in B+- --> pi+- pi-+ pi+- decays",
+      "pdf_url": "https://arxiv.org/pdf/1011.0960v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/nucl-th/9706046v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "nucl-th/9706046v2",
+      "title": "Theoretical study of the N N --> N N pi pi reaction",
+      "pdf_url": "https://arxiv.org/pdf/nucl-th/9706046v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2406.10004v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2406.10004v2",
+      "title": "Cohomological stabilization, perverse filtrations, and refined BPS invariants for del Pezzo surfaces",
+      "pdf_url": "https://arxiv.org/pdf/2406.10004v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1204.2451v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1204.2451v3",
+      "title": "A product representation of pi",
+      "pdf_url": "https://arxiv.org/pdf/1204.2451v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0401048v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0401048v2",
+      "title": "Decay widths and energy shifts of pi pi and pi K atoms",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0401048v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1504.02631v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1504.02631v1",
+      "title": "Observation of the first iso-spin Charmonium-like State $Z_c(4020)$ }",
+      "pdf_url": "https://arxiv.org/pdf/1504.02631v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1306.0824v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1306.0824v2",
+      "title": "Strong decays of molecular states Zc(+) and Zc'(+)",
+      "pdf_url": "https://arxiv.org/pdf/1306.0824v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0602207v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0602207v3",
+      "title": "Hunting the CKM weak phase with time-integrated Dalitz analyses of Bs -> K pi pi decays",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0602207v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0401217v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0401217v1",
+      "title": "New Tensor Particles from pi -> e nu gamma and K -> pi e nu Decays",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0401217v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1505.05619v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1505.05619v2",
+      "title": "Mass spectra of Zc and Zb exotic states as hadron molecules",
+      "pdf_url": "https://arxiv.org/pdf/1505.05619v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1410.0259v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1410.0259v3",
+      "title": "Radiative and dilepton decays of the hadronic molecule Zc(3900)+",
+      "pdf_url": "https://arxiv.org/pdf/1410.0259v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2210.06783v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2210.06783v1",
+      "title": "Radiative decays of the neutral $Z_c(3900)$ and $Z_c(4020)$",
+      "pdf_url": "https://arxiv.org/pdf/2210.06783v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2302.10050v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2302.10050v2",
+      "title": "Pionic transitions from $Z_c(4020)$ to $D$ wave charmonia",
+      "pdf_url": "https://arxiv.org/pdf/2302.10050v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1501.03863v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1501.03863v2",
+      "title": "Zc(4200)+ decay width as a charmonium-like tetraquark state",
+      "pdf_url": "https://arxiv.org/pdf/1501.03863v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1601.03575v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1601.03575v2",
+      "title": "Study on decays of $Z_c(4020)$ and $Z_c(3900)$ into $h_c+\u03c0$",
+      "pdf_url": "https://arxiv.org/pdf/1601.03575v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2107.11026v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2107.11026v2",
+      "title": "Investigation of the $X(4020)$ peak in the $D^*\\bar D^*$ and $\u03c0h_c$ channels",
+      "pdf_url": "https://arxiv.org/pdf/2107.11026v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2503.10315v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2503.10315v2",
+      "title": "Mass and width of $T_{c\\bar c}(4020)$ in the developed Bethe-Salpeter theory",
+      "pdf_url": "https://arxiv.org/pdf/2503.10315v2.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:52:15.058717+00:00",
+  "downloaded_files": [
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/hepdata_73771.json",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/hepdata_ins1377204_Table%201.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1309.1896v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1308.2760v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_2111.07571v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_0911.4960v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1311.1274v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1307.2022v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1802.04057v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1310.4409v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_2009.11566v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1310.4101v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1304.3205v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_2010.08320v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1011.0960v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_9706046v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_2406.10004v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1204.2451v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_0401048v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1504.02631v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1306.0824v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_0602207v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_0401217v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1505.05619v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1410.0259v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_2210.06783v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_2302.10050v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1501.03863v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_1601.03575v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_2107.11026v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc4020_pihc_dstar_dstar/raw/arxiv_2503.10315v2.pdf"
+  ]
 }

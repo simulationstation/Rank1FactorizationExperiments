@@ -1,0 +1,128 @@
+{
+  "query": "https://www.hepdata.net/search?q=LHCb+X%283960%29&format=json; https://www.hepdata.net/search?q=Ds+Ds+resonance&format=json; https://www.hepdata.net/search?q=ccss+tetraquark&format=json",
+  "top_k_hits": [
+    {
+      "record_id": 105881,
+      "title": "Precise determination of the B0s-B0sbar oscillation frequency",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 165429,
+      "title": "Measurement of the $W \\to \u03bc\u03bd_\u03bc$ cross-sections as a function of the muon transverse momentum in $pp$ collisions at 5.02 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 19500,
+      "title": "The $^{10}$B($^7$Be, $^$8B)$^9$Be reaction and the $^7$Be(p, $\\gamma$)$^8$B S factor",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 31679,
+      "title": "Precision measurement of the neutron spin asymmetry A(1)(n) and spin-flavor decomposition in the valence quark region.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 31726,
+      "title": "Precision measurement of the neutron spin asymmetries and spin-dependent structure functions in the valence quark region.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 56870,
+      "title": "Near-threshold Photoproduction of Phi Mesons from Deuterium",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 88920,
+      "title": "Search for the X(5568) state decaying into $\\mathrm{B}^{0}_{\\mathrm{s}}\\pi^{\\pm}$ in proton-proton collisions at $\\sqrt{s} = $ 8 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 161096,
+      "title": "Comprehensive analysis of local and nonlocal amplitudes in the $B^0\\rightarrow K^{*0}\\mu^+\\mu^-$ decay",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 110430,
+      "title": "Measurement of differential $b\\bar{b}$- and $c\\bar{c}$-dijet cross-sections in the forward region of $pp$ collisions at $\\sqrt{s}=13 ~ \\mathrm{TeV}$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 20170,
+      "title": "Observation of $e^+ e^- \\to D(s$)+- $D^*(s$)-+ at $\\sqrt{s}=4$.14-{GeV}",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 20174,
+      "title": "Production of the D(s)+- by High-Energy Neutrons",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 21463,
+      "title": "Measurement of the double-charge-exchange reactions pi- p ---> k+ sigma- and k- p ---> pi+ sigma -",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 47185,
+      "title": "Measurement of Charm Production Cross Sections in $e^+e^-$ Annihilation at Energies between 3.97 and 4.26 GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 47241,
+      "title": "Measurements of B ---> D(s)+ X decays",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 50375,
+      "title": "A Direct measurement of the pseudoscalar decay constant, f(D(s))",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    }
+  ],
+  "selected_record": null,
+  "selection_reason": "Best score 0.0 < threshold 50",
+  "table_validations": []
+}

@@ -1,0 +1,128 @@
+{
+  "query": "https://www.hepdata.net/search?q=BESIII+Zcs&format=json; https://www.hepdata.net/search?q=Zcs%283985%29&format=json; https://www.hepdata.net/search?q=strange+charm+exotic&format=json",
+  "top_k_hits": [
+    {
+      "record_id": 160247,
+      "title": "Observation of a Three-Resonance Structure in the Cross Section of $e^+e^-\\to\\pi^+\\pi^- h_c$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 64597,
+      "title": "Study of $e^+e^- \\rightarrow p\\bar{p}$ in the vicinity of $\\psi(3770)$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 77048,
+      "title": "Study of $D^{+} \\to K^{-} \\pi^+ e^+ \\nu_e$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 77053,
+      "title": "Study of $\\psi$ decays to the $\\Xi^{-}\\bar\\Xi^{+}$ and $\\Sigma(1385)^{\\mp}\\bar\\Sigma(1385)^{\\pm}$ final states",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 78543,
+      "title": "Observation of $e^{+}e^{-} \\to \\eta^{\\prime} J/\\psi$ at center-of-mass energies between 4.189 and 4.600 GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 72880,
+      "title": "Evidence for $e^+e^-\\to\\gamma\\chi_{c1, 2}$ at center-of-mass energies from 4.009 to 4.360 GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 73802,
+      "title": "Measurement of azimuthal asymmetries in inclusive charged dipion production in $e^+e^-$ annihilations at $\\sqrt{s}$ = 3.65 GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 73771,
+      "title": "Observation of $Z_c(3900)^{0}$ in $e^+e^-\\to\\pi^0\\pi^0 J/\\psi$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 73672,
+      "title": "Observation of the Dalitz Decay $\\eta' \\to \\gamma e^+e^-$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 73336,
+      "title": "Measurement of the $e^{+}e^{-} \\to \\eta J/\\psi$ cross section and search for $e^{+}e^{-} \\to \\pi^{0} J/\\psi$ at center-of-mass energies between 3.810 and 4.600~GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 31784,
+      "title": "Low energy measurement of the 7Be(p,gamma)8B cross section",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 22669,
+      "title": "Mass identified particle production in proton anti-proton collisions at s**(1/2) = 300-GeV, 540-GeV, 1000-GeV, and 1800-GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 55557,
+      "title": "Midrapidity antiproton-to-proton ratio in pp collisions at $\\sqrt{s} = 0.9$ and $7$~TeV measured by the ALICE experiment",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 54795,
+      "title": "Charged-particle multiplicity measurement in proton-proton collisions at sqrt(s) = 7 TeV with ALICE at LHC",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 66750,
+      "title": "Study of the Underlying Event at Forward Rapidity in pp Collisions at $\\sqrt{s}$ = 0.9, 2.76, and 7 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    }
+  ],
+  "selected_record": null,
+  "selection_reason": "Best score 0.0 < threshold 50",
+  "table_validations": []
+}

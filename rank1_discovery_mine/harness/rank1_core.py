@@ -40,7 +40,7 @@ NESTED_MODEL_REL_TOL = 1e-6  # Relative tolerance
 
 
 def load_hepdata_csv(filepath: str, mass_col: int = 0, y_col: int = 3,
-                     err_col: int = 4, mass_scale: float = 1.0) -> np.ndarray:
+                     err_col: int = 4, mass_scale: str = 'auto') -> np.ndarray:
     """
     Load HEPData CSV format.
 
@@ -49,12 +49,13 @@ def load_hepdata_csv(filepath: str, mass_col: int = 0, y_col: int = 3,
         mass_col: Column index for mass values
         y_col: Column index for y values (counts/cross-section)
         err_col: Column index for error values
-        mass_scale: Multiply mass by this (1.0 for MeV, 0.001 for GeV->MeV)
+        mass_scale: 'auto' to detect, 'mev' for MeV input, 'gev' for GeV input
 
     Returns:
         Array of (m_GeV, y, y_err)
     """
     data = []
+    first_mass = None
     with open(filepath, 'r') as f:
         for line in f:
             if line.startswith('#') or line.startswith('$') or not line.strip():
@@ -62,14 +63,37 @@ def load_hepdata_csv(filepath: str, mass_col: int = 0, y_col: int = 3,
             parts = line.strip().split(',')
             if len(parts) > max(mass_col, y_col, err_col):
                 try:
-                    m = float(parts[mass_col]) * mass_scale
+                    m_raw = float(parts[mass_col])
+                    if first_mass is None:
+                        first_mass = m_raw
                     y = float(parts[y_col])
                     y_err = abs(float(parts[err_col]))
                     if y_err > 0:
-                        data.append((m / 1000.0, y, y_err))  # Convert to GeV
+                        data.append((m_raw, y, y_err))
                 except (ValueError, IndexError):
                     pass
-    return np.array(data) if data else np.array([]).reshape(0, 3)
+
+    if not data:
+        return np.array([]).reshape(0, 3)
+
+    # Auto-detect mass scale
+    if mass_scale == 'auto':
+        # If first mass < 100, likely in GeV; if >= 100, likely in MeV
+        if first_mass is not None and first_mass < 100:
+            # Already in GeV, no conversion needed
+            scale_factor = 1.0
+        else:
+            # Assume MeV, convert to GeV
+            scale_factor = 0.001
+    elif mass_scale == 'gev':
+        scale_factor = 1.0
+    else:  # 'mev'
+        scale_factor = 0.001
+
+    # Apply scale to convert to GeV
+    result = np.array(data)
+    result[:, 0] *= scale_factor
+    return result
 
 
 def select_window(data: np.ndarray, m_low: float, m_high: float) -> np.ndarray:

@@ -98,6 +98,581 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:lhcb+Tcc%283875%29%2B+threshold+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.545719+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://www.hepdata.net/record/105881?format=json",
+      "type": "hepdata_record",
+      "record_id": 105881,
+      "title": "Precise determination of the B0s-B0sbar oscillation frequency",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/113470?format=json",
+      "type": "hepdata_record",
+      "record_id": 113470,
+      "title": "Study of the doubly charmed tetraquark $T_{cc}^+$",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/114869?format=json",
+      "type": "hepdata_record",
+      "record_id": 114869,
+      "title": "Observation of an exotic narrow doubly charmed tetraquark",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/165429?format=json",
+      "type": "hepdata_record",
+      "record_id": 165429,
+      "title": "Measurement of the $W \\to \u03bc\u03bd_\u03bc$ cross-sections as a function of the muon transverse momentum in $pp$ collisions at 5.02 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/161096?format=json",
+      "type": "hepdata_record",
+      "record_id": 161096,
+      "title": "Comprehensive analysis of local and nonlocal amplitudes in the $B^0\\rightarrow K^{*0}\\mu^+\\mu^-$ decay",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/110430?format=json",
+      "type": "hepdata_record",
+      "record_id": 110430,
+      "title": "Measurement of differential $b\\bar{b}$- and $c\\bar{c}$-dijet cross-sections in the forward region of $pp$ collisions at $\\sqrt{s}=13 ~ \\mathrm{TeV}$",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/153613?format=json",
+      "type": "hepdata_record",
+      "record_id": 153613,
+      "title": "Observation of exotic $J/\\psi\\phi$ resonances in diffractive processes in proton-proton collisions",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/70048?format=json",
+      "type": "hepdata_record",
+      "record_id": 70048,
+      "title": "Measurement of forward $J/\\psi$ production cross-sections in $pp$ collisions at $\\sqrt{s}=13$ TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/58685?format=json",
+      "type": "hepdata_record",
+      "record_id": 58685,
+      "title": "Measurement of $V^0$ production ratios in $pp$ collisions at $\\sqrt{s} = 0.9$ and 7\\,TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/90457?format=json",
+      "type": "hepdata_record",
+      "record_id": 90457,
+      "title": "Measurement of the $\\eta_c(1S)$ production cross-section in $pp$ collisions at $\\sqrt{s} = 13$ TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/22669?format=json",
+      "type": "hepdata_record",
+      "record_id": 22669,
+      "title": "Mass identified particle production in proton anti-proton collisions at s**(1/2) = 300-GeV, 540-GeV, 1000-GeV, and 1800-GeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/55557?format=json",
+      "type": "hepdata_record",
+      "record_id": 55557,
+      "title": "Midrapidity antiproton-to-proton ratio in pp collisions at $\\sqrt{s} = 0.9$ and $7$~TeV measured by the ALICE experiment",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/54795?format=json",
+      "type": "hepdata_record",
+      "record_id": 54795,
+      "title": "Charged-particle multiplicity measurement in proton-proton collisions at sqrt(s) = 7 TeV with ALICE at LHC",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/66750?format=json",
+      "type": "hepdata_record",
+      "record_id": 66750,
+      "title": "Study of the Underlying Event at Forward Rapidity in pp Collisions at $\\sqrt{s}$ = 0.9, 2.76, and 7 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/57909?format=json",
+      "type": "hepdata_record",
+      "record_id": 57909,
+      "title": "Charged particle multiplicities in pp interactions at sqrt(s) = 0.9, 2.36, and 7 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/60018?format=json",
+      "type": "hepdata_record",
+      "record_id": 60018,
+      "title": "Measurement of Bose-Einstein Correlations in pp Collisions at sqrt(s)=0.9 and 7 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/58863?format=json",
+      "type": "hepdata_record",
+      "record_id": 58863,
+      "title": "Underlying Event measurements in pp collisions at sqrt(s) = 0.9 and 7 TeV with the ALICE experiment at the LHC",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/57561?format=json",
+      "type": "hepdata_record",
+      "record_id": 57561,
+      "title": "Initial-State Radiation Measurement of the e+e- -> pi+pi-pi+pi- Cross Section",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/65519?format=json",
+      "type": "hepdata_record",
+      "record_id": 65519,
+      "title": "Charm production studies at CDF",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/40983?format=json",
+      "type": "hepdata_record",
+      "record_id": 40983,
+      "title": "UPPER LIMITS ON PRODUCTION CROSS-SECTIONS OF CHARMED PARTICLES IN K+ p INTERACTIONS AT 32-GeV/c",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/115424?format=json",
+      "type": "hepdata_record",
+      "record_id": 115424,
+      "title": "Evidence of Mass Ordering of Charm and Bottom Quark Energy Loss in Au+Au Collisions at RHIC",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/20043?format=json",
+      "type": "hepdata_record",
+      "record_id": 20043,
+      "title": "Charm Photoproduction",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/15697?format=json",
+      "type": "hepdata_record",
+      "record_id": 15697,
+      "title": "A Precise Determination of the Electroweak Mixing Angle from Semileptonic Neutrino Scattering",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/27136?format=json",
+      "type": "hepdata_record",
+      "record_id": 27136,
+      "title": "Experimental Study of Neutral Current and Charged Current Neutrino Cross-Sections",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/30729?format=json",
+      "type": "hepdata_record",
+      "record_id": 30729,
+      "title": "Experimental Study of the Nucleon Structure Functions and of the Gluon Distribution from Charged Current Neutrino and anti-neutrinos Interactions",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/29877?format=json",
+      "type": "hepdata_record",
+      "record_id": 29877,
+      "title": "Experimental Study of X Distributions in Semileptonic Neutral Current Neutrino and Anti-neutrino Reactions",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/30554?format=json",
+      "type": "hepdata_record",
+      "record_id": 30554,
+      "title": "Experimental Study of the Nucleon Longitudinal Structure Function in Charged Current Neutrino and Anti-neutrinos Interactions",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/47863?format=json",
+      "type": "hepdata_record",
+      "record_id": 47863,
+      "title": "Search for the decay D0 ---> mu+ mu-",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/20493?format=json",
+      "type": "hepdata_record",
+      "record_id": 20493,
+      "title": "The D0 Spectrum From $B$ Meson Decay",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/30495?format=json",
+      "type": "hepdata_record",
+      "record_id": 30495,
+      "title": "Neutral $D$ Meson Properties in 360-{GeV}/$c \\pi^- p$ Interactions",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/6543?format=json",
+      "type": "hepdata_record",
+      "record_id": 6543,
+      "title": "Production and Fragmentation of the $D^*$0 Meson in $e^+ e^-$ Annihilations",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/156822?format=json",
+      "type": "hepdata_record",
+      "record_id": 156822,
+      "title": "Measurement of D$^0$ meson photoproduction in ultraperipheral heavy ion collisions",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/21354?format=json",
+      "type": "hepdata_record",
+      "record_id": 21354,
+      "title": "Study of Charged Hadronic Four-Body Decays of the $D^0$ Meson",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/23561?format=json",
+      "type": "hepdata_record",
+      "record_id": 23561,
+      "title": "A Study of D* Production in High-Energy $\\gamma$ p Interactions",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/42285?format=json",
+      "type": "hepdata_record",
+      "record_id": 42285,
+      "title": "Analysis of the Cabibbo suppressed decay D0 --> pi- l+ nu.",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/23380?format=json",
+      "type": "hepdata_record",
+      "record_id": 23380,
+      "title": "Limit on the Decay D0 $\\to e^\\pm \\mu^\\mp$",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/158634?format=json",
+      "type": "hepdata_record",
+      "record_id": 158634,
+      "title": "Search for the rare decay D$^0$ $\\to$ $\\mu^+\\mu^-$ in proton-proton collisions at $\\sqrt{s}$ = 13.6 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/156815?format=json",
+      "type": "hepdata_record",
+      "record_id": 156815,
+      "title": "Observation of a pseudoscalar excess at the top quark pair production threshold",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/69938?format=json",
+      "type": "hepdata_record",
+      "record_id": 69938,
+      "title": "Study of forward Z+jet production in pp collisions at $\\sqrt{s} = 7$ TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/126972?format=json",
+      "type": "hepdata_record",
+      "record_id": 126972,
+      "title": "Threshold \u03c00 photoproduction on transverse polarised protons at MAMI",
+      "collaboration": ""
+    },
+    {
+      "url": "http://arxiv.org/abs/2109.01038v4",
+      "type": "arxiv_paper",
+      "arxiv_id": "2109.01038v4",
+      "title": "Observation of an exotic narrow doubly charmed tetraquark",
+      "pdf_url": "https://arxiv.org/pdf/2109.01038v4.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2109.01056v4",
+      "type": "arxiv_paper",
+      "arxiv_id": "2109.01056v4",
+      "title": "Study of the doubly charmed tetraquark $T_{cc}^+$",
+      "pdf_url": "https://arxiv.org/pdf/2109.01056v4.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2212.07120v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2212.07120v2",
+      "title": "Search for the rare decays $W^+ \\to D^+_s\u03b3$ and $Z \\to D^0\u03b3$ at LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2212.07120v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2212.04977v5",
+      "type": "arxiv_paper",
+      "arxiv_id": "2212.04977v5",
+      "title": "Search for $K^0_{\\mathrm{S(L)}}\\to\u03bc^+\u03bc^-\u03bc^+\u03bc^-$ decays at LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2212.04977v5.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2112.08435v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2112.08435v2",
+      "title": "Identification of charm jets at LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2112.08435v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2310.05864v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2310.05864v2",
+      "title": "Helium identification with LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2310.05864v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2504.03088v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2504.03088v1",
+      "title": "Technology developments for LHCb Upgrade II",
+      "pdf_url": "https://arxiv.org/pdf/2504.03088v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1909.02957v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1909.02957v2",
+      "title": "Measurement of the electron reconstruction efficiency at LHCb",
+      "pdf_url": "https://arxiv.org/pdf/1909.02957v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2503.23087v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2503.23087v1",
+      "title": "Discovery potential of LHCb Upgrade II",
+      "pdf_url": "https://arxiv.org/pdf/2503.23087v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2503.24106v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2503.24106v1",
+      "title": "Computing and software for LHCb Upgrade II",
+      "pdf_url": "https://arxiv.org/pdf/2503.24106v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2403.09483v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2403.09483v2",
+      "title": "Tracking of charged particles with nanosecond lifetimes at LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2403.09483v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2503.23093v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2503.23093v1",
+      "title": "Heavy ion physics with LHCb Upgrade II",
+      "pdf_url": "https://arxiv.org/pdf/2503.23093v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2512.22694v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2512.22694v1",
+      "title": "The species scale and the refined TCC bound in time-dependent backgrounds of string theory",
+      "pdf_url": "https://arxiv.org/pdf/2512.22694v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1310.5538v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1310.5538v1",
+      "title": "TCC, with History",
+      "pdf_url": "https://arxiv.org/pdf/1310.5538v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2010.09760v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2010.09760v2",
+      "title": "de Sitter Complementarity, TCC, and the Swampland",
+      "pdf_url": "https://arxiv.org/pdf/2010.09760v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2004.00030v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2004.00030v2",
+      "title": "The web of swampland conjectures and the TCC bound",
+      "pdf_url": "https://arxiv.org/pdf/2004.00030v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2107.09994v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2107.09994v3",
+      "title": "Weakening Total Coloring Conjecture: Weak TCC and Hadwiger's Conjecture on Total Graphs",
+      "pdf_url": "https://arxiv.org/pdf/2107.09994v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2111.11436v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2111.11436v1",
+      "title": "Minimal warm inflation and TCC",
+      "pdf_url": "https://arxiv.org/pdf/2111.11436v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2003.14066v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2003.14066v1",
+      "title": "Generic 3-point Statistics with Tensor Modes in Light of Swampland and TCC",
+      "pdf_url": "https://arxiv.org/pdf/2003.14066v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2407.08793v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2407.08793v1",
+      "title": "TCC in the interior of moduli space and its implications for the string landscape and cosmology",
+      "pdf_url": "https://arxiv.org/pdf/2407.08793v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2211.09128v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2211.09128v2",
+      "title": "Holographic origin of TCC and the Distance Conjecture",
+      "pdf_url": "https://arxiv.org/pdf/2211.09128v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2006.09489v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2006.09489v3",
+      "title": "Brane inflation: swampland criteria, TCC, and reheating predictions",
+      "pdf_url": "https://arxiv.org/pdf/2006.09489v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1101.5881v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1101.5881v3",
+      "title": "Double J/psi-meson Production at LHC and 4c-tetraquark state",
+      "pdf_url": "https://arxiv.org/pdf/1101.5881v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1311.2473v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1311.2473v1",
+      "title": "Charm production in double parton scattering at the LHC",
+      "pdf_url": "https://arxiv.org/pdf/1311.2473v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1311.7467v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1311.7467v1",
+      "title": "CHARM 2013: X(4260) as a Mixed Charmonium-Tetraquark State",
+      "pdf_url": "https://arxiv.org/pdf/1311.7467v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/9506405v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/9506405v3",
+      "title": "How to Search for Doubly Charmed Baryons and Tetraquarks",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/9506405v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1712.08400v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1712.08400v2",
+      "title": "Heavy light tetraquarks from Lattice QCD",
+      "pdf_url": "https://arxiv.org/pdf/1712.08400v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2310.04258v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2310.04258v3",
+      "title": "Revealing the mystery of the double charm tetraquark in $pp$ collision",
+      "pdf_url": "https://arxiv.org/pdf/2310.04258v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1109.0074v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1109.0074v1",
+      "title": "Latest News from Double Chooz Reactor Neutrino Experiment",
+      "pdf_url": "https://arxiv.org/pdf/1109.0074v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2407.19494v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2407.19494v1",
+      "title": "Hidden and double charm-strange tetraquarks and their decays in a potential quark model",
+      "pdf_url": "https://arxiv.org/pdf/2407.19494v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0808.3912v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0808.3912v1",
+      "title": "Excited heavy tetraquarks with hidden charm",
+      "pdf_url": "https://arxiv.org/pdf/0808.3912v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2512.22070v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2512.22070v1",
+      "title": "Next-to-leading order QCD corrections to electromagnetic production and decay of fully charm tetraquarks",
+      "pdf_url": "https://arxiv.org/pdf/2512.22070v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/physics/0507191v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "physics/0507191v1",
+      "title": "The Upgraded D0 Detector",
+      "pdf_url": "https://arxiv.org/pdf/physics/0507191v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1207.0422v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1207.0422v1",
+      "title": "Updated Combination of Searches for the Standard Model Higgs Boson at the D0 Experiment in 9.7 fb-1 of Data",
+      "pdf_url": "https://arxiv.org/pdf/1207.0422v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1103.3233v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1103.3233v3",
+      "title": "Combined CDF and D0 Upper Limits on Standard Model Higgs Boson Production with up to 8.2 fb-1 of Data",
+      "pdf_url": "https://arxiv.org/pdf/1103.3233v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/9709018v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/9709018v1",
+      "title": "Scintillation Counters for the D0 Muon Upgrade",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/9709018v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1401.0029v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1401.0029v2",
+      "title": "Electron and Photon Identification in the D0 Experiment",
+      "pdf_url": "https://arxiv.org/pdf/1401.0029v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1203.0293v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1203.0293v2",
+      "title": "Measurement of the W Boson Mass with the D0 Detector",
+      "pdf_url": "https://arxiv.org/pdf/1203.0293v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1307.5202v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1307.5202v2",
+      "title": "Muon reconstruction and identification with the Run II D0 detector",
+      "pdf_url": "https://arxiv.org/pdf/1307.5202v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/9910029v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/9910029v1",
+      "title": "Recent results from D0 on the top quark",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/9910029v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0204014v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0204014v1",
+      "title": "Improved W boson mass measurement with the D0 detector",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0204014v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0106018v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0106018v2",
+      "title": "Improved D0 W Boson Mass Determination",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0106018v2.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T01:43:17.995089+00:00"
 }

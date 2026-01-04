@@ -84,6 +84,225 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:besiii+Zcs%284000%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.523850+00:00"
+  "discovered_urls": [
+    {
+      "url": "http://arxiv.org/abs/2011.07855v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2011.07855v2",
+      "title": "Observation of a near-threshold structure in the $K^+$ recoil-mass spectra in $e^+e^-\\to K^+ (D_s^- D^{*0} + D^{*-}_s D^0)$",
+      "pdf_url": "https://arxiv.org/pdf/2011.07855v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2111.07571v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2111.07571v1",
+      "title": "Number of $\\rm J/\u03c8$ events at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2111.07571v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0911.4960v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0911.4960v1",
+      "title": "Design and Construction of the BESIII Detector",
+      "pdf_url": "https://arxiv.org/pdf/0911.4960v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1311.1274v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1311.1274v1",
+      "title": "Study of charmonium decays at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1311.1274v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1307.2022v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1307.2022v1",
+      "title": "Measurement of the integrated luminosities of the data taken by BESIII at $\\sqrt s=$ 3.650 and 3.773 GeV",
+      "pdf_url": "https://arxiv.org/pdf/1307.2022v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1802.04057v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1802.04057v2",
+      "title": "Search for the rare decay of $\u03c8(3686) \\rightarrow \u039b_c^+ \\overline{p} e^+ e^- + c.c.$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1802.04057v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1310.4409v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1310.4409v1",
+      "title": "Recent results from BESIII experiment",
+      "pdf_url": "https://arxiv.org/pdf/1310.4409v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2009.11566v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2009.11566v1",
+      "title": "Study of BESIII Trigger Efficiencies with the 2018 $J/\u03c8$ Data",
+      "pdf_url": "https://arxiv.org/pdf/2009.11566v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1310.4101v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1310.4101v3",
+      "title": "Observation of $e^{+} e^{-} \\to \u03b3X(3872)$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1310.4101v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1304.3205v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1304.3205v1",
+      "title": "Search for the Lepton Flavor Violation Process $J/\u03c8\\to e\u03bc$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1304.3205v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2010.08320v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2010.08320v2",
+      "title": "Measurement of cross-section for $e^+e^-\\to\u039e^-\\bar\u039e^+$ near threshold at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2010.08320v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2102.13058v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2102.13058v2",
+      "title": "Axial meson exchange and the $Z_c(3900)$ and $Z_{cs}(3985)$ resonances as heavy hadron molecules",
+      "pdf_url": "https://arxiv.org/pdf/2102.13058v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1306.0824v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1306.0824v2",
+      "title": "Strong decays of molecular states Zc(+) and Zc'(+)",
+      "pdf_url": "https://arxiv.org/pdf/1306.0824v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1501.03863v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1501.03863v2",
+      "title": "Zc(4200)+ decay width as a charmonium-like tetraquark state",
+      "pdf_url": "https://arxiv.org/pdf/1501.03863v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2303.05990v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2303.05990v1",
+      "title": "Multiplicity of $Z_{cs}(3985)$ in heavy ion collisions",
+      "pdf_url": "https://arxiv.org/pdf/2303.05990v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1410.0259v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1410.0259v3",
+      "title": "Radiative and dilepton decays of the hadronic molecule Zc(3900)+",
+      "pdf_url": "https://arxiv.org/pdf/1410.0259v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2108.06700v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2108.06700v2",
+      "title": "Exploration of the hidden charm decays of $Z_{cs}(3985)$",
+      "pdf_url": "https://arxiv.org/pdf/2108.06700v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2011.09156v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2011.09156v2",
+      "title": "$Z_{cs}(3985)^-$: a strange hidden-charm tetraquark resonance or not?",
+      "pdf_url": "https://arxiv.org/pdf/2011.09156v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2112.08038v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2112.08038v1",
+      "title": "The $Z_{cs}(3985)^-$ structure in a coupled-channels model",
+      "pdf_url": "https://arxiv.org/pdf/2112.08038v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2104.08469v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2104.08469v2",
+      "title": "Implications of the $Z_{cs}(3985)$ and $Z_{cs}(4000)$ as two different states",
+      "pdf_url": "https://arxiv.org/pdf/2104.08469v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2011.08628v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2011.08628v3",
+      "title": "Toward charged $Z_{cs}(3985)$ structure under a reflection mechanism",
+      "pdf_url": "https://arxiv.org/pdf/2011.08628v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1209.0907v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1209.0907v1",
+      "title": "Charm and Strangeness with Heavy-Quark Spin Symmetry",
+      "pdf_url": "https://arxiv.org/pdf/1209.0907v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0912.0435v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0912.0435v1",
+      "title": "Exotic open and hidden charm states",
+      "pdf_url": "https://arxiv.org/pdf/0912.0435v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1301.1128v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1301.1128v1",
+      "title": "Hadron spectroscopy from strangeness to charm and beauty",
+      "pdf_url": "https://arxiv.org/pdf/1301.1128v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0712.4383v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0712.4383v1",
+      "title": "Structure of strange baryons",
+      "pdf_url": "https://arxiv.org/pdf/0712.4383v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1212.3943v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1212.3943v2",
+      "title": "Heavy-quark spin symmetry for charmed and strange baryon resonances",
+      "pdf_url": "https://arxiv.org/pdf/1212.3943v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1211.7286v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1211.7286v1",
+      "title": "Strangeness and Charm in Nuclear Matter",
+      "pdf_url": "https://arxiv.org/pdf/1211.7286v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1601.03233v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1601.03233v2",
+      "title": "Hidden-charm molecular pentaquarks and their charm-strange partners",
+      "pdf_url": "https://arxiv.org/pdf/1601.03233v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1509.04898v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1509.04898v1",
+      "title": "Non-strange and strange pentaquarks with hidden charm",
+      "pdf_url": "https://arxiv.org/pdf/1509.04898v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1209.5878v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1209.5878v1",
+      "title": "The charm physics programme at the LHCb upgrade, and Atlas and CMS upgrades",
+      "pdf_url": "https://arxiv.org/pdf/1209.5878v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/astro-ph/0112491v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "astro-ph/0112491v2",
+      "title": "The Role of Strangeness in Astrophysics - an Odyssey through Strange Phases",
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0112491v2.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:58:57.443230+00:00",
+  "downloaded_files": []
 }

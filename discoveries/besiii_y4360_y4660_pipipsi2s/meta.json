@@ -89,6 +89,195 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:besiii+Y%284660%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.533215+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://www.hepdata.net/record/71501?format=json",
+      "type": "hepdata_record",
+      "record_id": 71501,
+      "title": "Measurement of $e^+e^- \\to \\pi^+\\pi^-\\psi(2S)$ via Initial State Radiation at Belle",
+      "collaboration": "",
+      "score": 100.0
+    },
+    {
+      "url": "http://arxiv.org/abs/1611.01317v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1611.01317v2",
+      "title": "Precise measurement of the $e^+e^-\\to \u03c0^+\u03c0^-J/\u03c8$ cross section at center-of-mass energies from 3.77 to 4.60 GeV",
+      "pdf_url": "https://arxiv.org/pdf/1611.01317v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1912.11253v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1912.11253v1",
+      "title": "Observation of the $X(2370)$ and search for the $X(2120)$ in $J/\u03c8\\to\u03b3K\\bar{K} \u03b7'$",
+      "pdf_url": "https://arxiv.org/pdf/1912.11253v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2211.08561v5",
+      "type": "arxiv_paper",
+      "arxiv_id": "2211.08561v5",
+      "title": "Observation of the $Y(4230)$ and evidence for a new vector charmonium-like state $Y(4710)$ in $e^{+}e^{-}\\to K_{S}^{0} K_{S}^{0} J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2211.08561v5.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2204.07800v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2204.07800v3",
+      "title": "Observation of the $Y(4230)$ and a new structure in $e^+e^- \\rightarrow K^+K^-J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2204.07800v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2410.12620v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2410.12620v1",
+      "title": "Search for $e^{+}e^{-} \\to \u03c6\u03c7_{c0}$ and $\u03c6\u03b7_{c2}(1D)$ at center-of-mass energies from 4.47 to 4.95 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2410.12620v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2003.03705v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2003.03705v1",
+      "title": "Observation of the $Y(4220)$ and $Y(4360)$ in the process $e^{+}e^{-} \\to \u03b7J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2003.03705v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2407.07651v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2407.07651v1",
+      "title": "Study of the decay and production properties of $D_{s1}(2536)$ and $D_{s2}^*(2573)$",
+      "pdf_url": "https://arxiv.org/pdf/2407.07651v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2505.13222v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2505.13222v2",
+      "title": "Partial Wave Analysis of $e^{+}e^{-} \\rightarrow \u03c0^{+}\u03c0^{-}J/\u03c8$ and Cross Section Measurement of $e^{+}e^{-} \\rightarrow \u03c0^{\\pm}Z_{c}(3900)^{\\mp}$ from 4.1271 to 4.3583 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2505.13222v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2401.09468v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2401.09468v2",
+      "title": "Measurement of Born cross section of $e^{+}e^{-}\\rightarrow\u03a3^{+}\\bar\u03a3^{-}$ at center-of-mass energies between 3.510 and 4.951 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2401.09468v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2505.03180v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2505.03180v2",
+      "title": "Observation of resonant contribution to the $e^+e^-\\to \u03a9^{-}\\bar\u03a9^{+}$ around 4.2 GeV and evidence of $\u03c8(3770)\\to \u03a9^{-}\\bar\u03a9^{+}$",
+      "pdf_url": "https://arxiv.org/pdf/2505.03180v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.04215v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.04215v3",
+      "title": "Measurement of the cross section of $e^+e^-\\rightarrow\u039e^{-}\\bar\u039e^{+}$ at center-of-mass energies between 3.510 and 4.843 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2309.04215v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2402.03829v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2402.03829v3",
+      "title": "Precise Measurement of Born Cross Sections for $e^+e^-\\to D\\bar{D}$ at $\\sqrt{s} = 3.80-4.95$ GeV",
+      "pdf_url": "https://arxiv.org/pdf/2402.03829v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1011.0960v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1011.0960v2",
+      "title": "S-, P- and D-wave final state interactions and CP violation in B+- --> pi+- pi-+ pi+- decays",
+      "pdf_url": "https://arxiv.org/pdf/1011.0960v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/nucl-th/9706046v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "nucl-th/9706046v2",
+      "title": "Theoretical study of the N N --> N N pi pi reaction",
+      "pdf_url": "https://arxiv.org/pdf/nucl-th/9706046v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2406.10004v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2406.10004v2",
+      "title": "Cohomological stabilization, perverse filtrations, and refined BPS invariants for del Pezzo surfaces",
+      "pdf_url": "https://arxiv.org/pdf/2406.10004v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0001314v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0001314v2",
+      "title": "CP violation in psi(2S) -> J/psi pi pi processes",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0001314v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1204.2451v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1204.2451v3",
+      "title": "A product representation of pi",
+      "pdf_url": "https://arxiv.org/pdf/1204.2451v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0401048v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0401048v2",
+      "title": "Decay widths and energy shifts of pi pi and pi K atoms",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0401048v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1012.3510v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1012.3510v1",
+      "title": "Confirmation of the X(1835) and observation of the resonances X(2120) and X(2370) in J/psi->gamma pi^+pi^-eta'",
+      "pdf_url": "https://arxiv.org/pdf/1012.3510v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1011.0885v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1011.0885v1",
+      "title": "Evidence for psi' decays into gamma pi^0 and gamma eta",
+      "pdf_url": "https://arxiv.org/pdf/1011.0885v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0602207v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0602207v3",
+      "title": "Hunting the CKM weak phase with time-integrated Dalitz analyses of Bs -> K pi pi decays",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0602207v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/9801226v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/9801226v2",
+      "title": "An Explanation for the rho-pi Puzzle of J/psi and psi' Decays",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/9801226v2.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:52:31.710843+00:00",
+  "downloaded_files": [
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/hepdata_71501.json",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/hepdata_ins1324785_Table%201.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_1611.01317v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_1912.11253v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2211.08561v5.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2204.07800v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2410.12620v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2003.03705v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2407.07651v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2505.13222v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2401.09468v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2505.03180v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2309.04215v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2402.03829v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_1011.0960v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_9706046v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_2406.10004v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_0001314v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_1204.2451v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_0401048v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_1012.3510v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_1011.0885v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_0602207v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_y4360_y4660_pipipsi2s/raw/arxiv_9801226v2.pdf"
+  ]
 }

@@ -90,6 +90,278 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:belle+Upsilon%2810860%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.560268+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://www.hepdata.net/record/50307?format=json",
+      "type": "hepdata_record",
+      "record_id": 50307,
+      "title": "Observation of anomalous $\\Upsilon(1S) \\pi^+ \\pi^-$ and $\\Upsilon(2S) \\pi^+ \\pi^-$ production near the $\\Upsilon(5S)$ resonance",
+      "collaboration": "",
+      "score": 90.0
+    },
+    {
+      "url": "http://arxiv.org/abs/1508.06562v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1508.06562v2",
+      "title": "Energy scan of the $e^+e^- \\to h_b(nP)\u03c0^+\u03c0^-$ $(n=1,2)$ cross sections and evidence for $\u03a5(11020)$ decays into charged bottomonium-like states",
+      "pdf_url": "https://arxiv.org/pdf/1508.06562v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1409.4969v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1409.4969v1",
+      "title": "Study of Michel parameters in leptonic $\u03c4$ decays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/1409.4969v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2510.25461v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2510.25461v1",
+      "title": "Improved measurement of Born cross sections for $\u03c7_{bJ}\\,\u03c9$ and $\u03c7_{bJ}\\,(\u03c0^+\u03c0^-\u03c0^0)_{\\rm non-\u03c9}$ ($J$ = 0, 1, 2) at Belle and Belle II",
+      "pdf_url": "https://arxiv.org/pdf/2510.25461v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0708.1105v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "0708.1105v2",
+      "title": "Search for \\bar{B}^0\\to\u039b_c^+\\bar\u039b_c^- decay at Belle",
+      "pdf_url": "https://arxiv.org/pdf/0708.1105v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1910.05365v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1910.05365v2",
+      "title": "Measurement of the integrated luminosity of the Phase 2 data of the Belle II experiment",
+      "pdf_url": "https://arxiv.org/pdf/1910.05365v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1409.5269v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1409.5269v1",
+      "title": "Measurement of the branching fraction of $B^+ \\to \u03c4^+ \u03bd_\u03c4$ decays with the semileptonic tagging method and the full Belle data sample",
+      "pdf_url": "https://arxiv.org/pdf/1409.5269v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0408139v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0408139v1",
+      "title": "Moments of the Hadronic Mass Spectrum in Inclusive Semileptonic B Decays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0408139v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0507019v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0507019v3",
+      "title": "Observation of a new charmonium state in double charmonium production in e+ e- annihilation at \\sqrt{s} ~ 10.6 GeV",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0507019v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0207007v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0207007v1",
+      "title": "Study of B -> \u03c1\u03c0decays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0207007v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0508056v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0508056v1",
+      "title": "Moments of the Electron Energy Spectrum in B --> X_c l \u03bddecays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0508056v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2405.19734v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2405.19734v2",
+      "title": "Search for the decay $B^{0}\\to\u03b3\u03b3$ using Belle and Belle II data",
+      "pdf_url": "https://arxiv.org/pdf/2405.19734v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1011.0960v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1011.0960v2",
+      "title": "S-, P- and D-wave final state interactions and CP violation in B+- --> pi+- pi-+ pi+- decays",
+      "pdf_url": "https://arxiv.org/pdf/1011.0960v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/nucl-th/9706046v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "nucl-th/9706046v2",
+      "title": "Theoretical study of the N N --> N N pi pi reaction",
+      "pdf_url": "https://arxiv.org/pdf/nucl-th/9706046v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2406.10004v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2406.10004v2",
+      "title": "Cohomological stabilization, perverse filtrations, and refined BPS invariants for del Pezzo surfaces",
+      "pdf_url": "https://arxiv.org/pdf/2406.10004v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1204.2451v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1204.2451v3",
+      "title": "A product representation of pi",
+      "pdf_url": "https://arxiv.org/pdf/1204.2451v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0401048v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0401048v2",
+      "title": "Decay widths and energy shifts of pi pi and pi K atoms",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0401048v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0602207v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0602207v3",
+      "title": "Hunting the CKM weak phase with time-integrated Dalitz analyses of Bs -> K pi pi decays",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0602207v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0401217v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0401217v1",
+      "title": "New Tensor Particles from pi -> e nu gamma and K -> pi e nu Decays",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0401217v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/nucl-th/0306026v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "nucl-th/0306026v1",
+      "title": "Closed-flavor pi + J/psi and pi + Upsilon Cross Sections at Low Energies from Dipion Decays",
+      "pdf_url": "https://arxiv.org/pdf/nucl-th/0306026v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1203.4103v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1203.4103v1",
+      "title": "Number pi from the decoration of the Langstrup plate",
+      "pdf_url": "https://arxiv.org/pdf/1203.4103v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0806.2992v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0806.2992v1",
+      "title": "The anomalous Upsilon(1S)pi+pi- and Upsilon(2S)pi+pi- production near the Upsilon(5S) resonance",
+      "pdf_url": "https://arxiv.org/pdf/0806.2992v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2209.08548v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2209.08548v1",
+      "title": "Exotic bottomonium hadronic transitions",
+      "pdf_url": "https://arxiv.org/pdf/2209.08548v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1410.1461v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1410.1461v3",
+      "title": "Absolutely exotic compact 4-manifolds",
+      "pdf_url": "https://arxiv.org/pdf/1410.1461v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1410.8182v7",
+      "type": "arxiv_paper",
+      "arxiv_id": "1410.8182v7",
+      "title": "Exotic open $4$-manifolds which are non-leaves",
+      "pdf_url": "https://arxiv.org/pdf/1410.8182v7.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1511.06779v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1511.06779v2",
+      "title": "Issues and Opportunities in Exotic Hadrons",
+      "pdf_url": "https://arxiv.org/pdf/1511.06779v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2305.10908v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2305.10908v3",
+      "title": "Exotic 4-manifolds with signature zero",
+      "pdf_url": "https://arxiv.org/pdf/2305.10908v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1105.0855v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1105.0855v2",
+      "title": "Bottomonium Spectrum with Coupled-Channel Effects",
+      "pdf_url": "https://arxiv.org/pdf/1105.0855v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1212.1743v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1212.1743v2",
+      "title": "Exotic Stein fillings with arbitrary fundamental group",
+      "pdf_url": "https://arxiv.org/pdf/1212.1743v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2104.03975v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2104.03975v2",
+      "title": "Exotic to standard bottomonium transitions",
+      "pdf_url": "https://arxiv.org/pdf/2104.03975v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2109.06293v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2109.06293v2",
+      "title": "Exotic Ideals in Free Transformation Group $C^*$-Algebras",
+      "pdf_url": "https://arxiv.org/pdf/2109.06293v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1402.0801v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1402.0801v3",
+      "title": "Surgery along star shaped plumbings and exotic smooth structures on 4-manifolds",
+      "pdf_url": "https://arxiv.org/pdf/1402.0801v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0808.2445v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "0808.2445v3",
+      "title": "Observation of an enhancement in e+e- to Upsilon(1S)pi+pi-, Upsilon(2S)pi+pi-, and Upsilon(3S)pi+pi- production near sqrt{s}=10.89 GeV at Belle",
+      "pdf_url": "https://arxiv.org/pdf/0808.2445v3.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:54:36.042514+00:00",
+  "downloaded_files": [
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/hepdata_50307.json",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/hepdata_ins764099_Table%201.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/hepdata_ins764099_Table%202.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/hepdata_ins764099_Table%203.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/hepdata_ins764099_Table%204.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1508.06562v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1409.4969v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_2510.25461v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0708.1105v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1910.05365v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1409.5269v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0408139v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0507019v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0207007v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0508056v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_2405.19734v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1011.0960v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_9706046v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_2406.10004v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1204.2451v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0401048v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0602207v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0401217v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0306026v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1203.4103v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0806.2992v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_2209.08548v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1410.1461v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1410.8182v7.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1511.06779v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_2305.10908v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1105.0855v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1212.1743v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_2104.03975v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_2109.06293v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_1402.0801v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_yb_10750_10860/raw/arxiv_0808.2445v3.pdf"
+  ]
 }

@@ -1,0 +1,125 @@
+#: table_doi: 10.17182/hepdata.160247.v1/t3
+#: name: Table IV
+#: description: Dressed cross section and its upper limit at the 15 R-scan energy points with small statistics. The table also lists the integral luminosity, the number of signal events, the weighted efficiency, the radiative correction factor, and the dressed cross section. For the dressed cross section, the first error is statistical, the second error is the systematic, and the third error comes from the input branching ratios which is the dominant one in the multiplicative systematic uncertainties.
+#: data_file: table4.yaml
+#: keyword reactions: e+ e- --> pi+ pi- h_c
+#: keyword phrases: Cross Section | Electron-Positron Annihilation | BESIII
+SQRT(S) [GEV],luminisity [pb**-1]
+4.418,7.5
+4.423,7.4
+4.428,6.8
+4.438,7.6
+4.448,7.7
+4.458,8.7
+4.478,8.2
+4.498,8
+4.518,8.7
+4.538,9.3
+4.548,8.8
+4.558,8.3
+4.568,8.4
+4.578,8.5
+4.588,8.2
+
+SQRT(S) [GEV],N_sig,sta +,sta -
+4.418,5,3,-2
+4.423,12,5,-4
+4.428,8,4,-3
+4.438,5,3,-3
+4.448,1,3,-2
+4.458,6,4,-3
+4.478,7,5,-4
+4.498,0,4,-3
+4.518,-2,2,-1
+4.538,0,2,-2
+4.548,0,2,-1
+4.558,<3,0,0
+4.568,0,2,-1
+4.578,2,3,-2
+4.588,3,2,-2
+
+SQRT(S) [GEV],weighted efficiency [%]
+4.418,3.73
+4.423,3.72
+4.428,3.7
+4.438,3.63
+4.448,3.54
+4.458,3.35
+4.478,2.11
+4.498,0.4
+4.518,1.05
+4.538,1.82
+4.548,2.06
+4.558,2.24
+4.568,2.36
+4.578,2.45
+4.588,2.52
+
+SQRT(S) [GEV],ISR correction factor
+4.418,0.884
+4.423,0.889
+4.428,0.894
+4.438,0.909
+4.448,0.945
+4.458,1.035
+4.478,2.287
+4.498,133.2
+4.518,3.066
+4.538,1.777
+4.548,1.588
+4.558,1.478
+4.568,1.41
+4.578,1.368
+4.588,1.336
+
+SQRT(S) [GEV],dressed cross section [pb],sta +,sta -,"sys, others +","sys, others -","sys, branching ratios +","sys, branching ratios -"
+4.418,34.6,23.9,-18.5,2.2,-2.2,3.4,-3.4
+4.423,93.5,34.5,-28.1,5.8,-5.8,9.1,-9.1
+4.428,67.5,30.7,-24.9,4.2,-4.2,6.5,-6.5
+4.438,40.2,25.2,-19.9,2.5,-2.5,3.9,-3.9
+4.448,3.7,19.9,-14.7,0.2,-0.2,0.4,-0.4
+4.458,36.4,23.1,-18.5,2.7,-2.5,3.5,-3.5
+4.478,30.6,23.5,-19.5,14.5,-10.6,3,-3
+4.498,0.1,1.7,-1.5,5.5,-0.6,0,0
+4.518,-12,15,-9.5,0.8,-1.1,1.1,-1.1
+4.538,0.2,13.7,-9.3,0,0,0,0
+4.548,-0.8,11.8,-7.2,0,-0.1,0.1,-0.1
+4.558,,0,0,0,0,0,0
+4.568,2.2,13,-8.8,0.1,-0.1,0.2,-0.2
+4.578,9.7,17.4,-12.6,0.6,-0.6,0.9,-0.9
+4.588,17.7,16.1,-11.3,1.1,-1.1,1.7,-1.7
+
+SQRT(S) [GEV],upper limit w/o sys. [pb]
+4.418,72.9
+4.423,144.6
+4.428,114.9
+4.438,79.8
+4.448,42
+4.458,72.3
+4.478,66.2
+4.498,3.3
+4.518,29.1
+4.538,28.8
+4.548,25.9
+4.558,18.9
+4.568,29.1
+4.578,40.9
+4.588,45.8
+
+SQRT(S) [GEV],upper limit w/ sys. [pb]
+4.418,73.8
+4.423,147.7
+4.428,116.8
+4.438,80.8
+4.448,42.2
+4.458,73.3
+4.478,77.9
+4.498,105.1
+4.518,29.3
+4.538,28.9
+4.548,26
+4.558,18.9
+4.568,29.2
+4.578,41.1
+4.588,46.2
+

@@ -1,0 +1,136 @@
+{
+  "query": "https://www.hepdata.net/search?q=BESIII+Y%284360%29&format=json; https://www.hepdata.net/search?q=Y%284660%29+psi%282S%29&format=json; https://www.hepdata.net/search?q=pi+pi+psi%282S%29+BESIII&format=json",
+  "top_k_hits": [
+    {
+      "record_id": 71501,
+      "title": "Measurement of $e^+e^- \\to \\pi^+\\pi^-\\psi(2S)$ via Initial State Radiation at Belle",
+      "collaboration": "",
+      "score": 100.0,
+      "breakdown": {
+        "state_matches": 100
+      },
+      "reasons": [
+        "State matches: 2"
+      ]
+    },
+    {
+      "record_id": 73745,
+      "title": "Measurement of $e^+e^- \\to \\gamma\\chi_{cJ}$ via initial state radiation at Belle",
+      "collaboration": "",
+      "score": 100.0,
+      "breakdown": {
+        "state_matches": 100
+      },
+      "reasons": [
+        "State matches: 2"
+      ]
+    },
+    {
+      "record_id": 160247,
+      "title": "Observation of a Three-Resonance Structure in the Cross Section of $e^+e^-\\to\\pi^+\\pi^- h_c$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 77222,
+      "title": "Measurement and QCD analysis of double-differential inclusive jet cross-sections in pp collisions at sqrt(s) = 8 TeV and ratios to 2.76 and 7 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 93921,
+      "title": "Measurement of the $\\Upsilon$(1S) pair production cross section and search for resonances decaying to $\\Upsilon$(1S)$\\mu^+\\mu^-$ in proton-proton collisions at $\\sqrt{s}=$ 13 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 73692,
+      "title": "Search for the isospin violating decay $Y(4260)\\rightarrow J/\\psi \\eta \\pi^{0}$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 133217,
+      "title": "Observation of sequential $\\Upsilon$ suppression in Au+Au collisions at $\\sqrt{s_{_\\mathrm{NN}}}$ = 200 GeV with the STAR experiment",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 85744,
+      "title": "Measurement of quarkonium production cross sections in pp collisions at $\\sqrt{s}=$ 13 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 64597,
+      "title": "Study of $e^+e^- \\rightarrow p\\bar{p}$ in the vicinity of $\\psi(3770)$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 77781,
+      "title": "Energy dependence of forward-rapidity J/$\\psi$ and $\\psi(2S)$ production in pp collisions at the LHC",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 66886,
+      "title": "Measurement of J/psi and psi(2S) prompt double-differential cross sections in pp collisions at sqrt(s) = 7 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 69188,
+      "title": "Measurement of the production cross-section of $\\psi(2S)\\to J/\\psi(\\to\\mu^+\\mu^-)\\pi^+\\pi^-$ in $pp$ collisions at $\\sqrt{s}=7$ TeV at ATLAS",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 130959,
+      "title": "Observation of the $\\Upsilon$(3S) meson and suppression of $\\Upsilon$ states in PbPb collisions at $\\sqrt{s_\\mathrm{NN}}$ = 5.02 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 63898,
+      "title": "Measurement of the Prompt $J/\\psi$ and $\\psi$(2S) Polarizations in $pp$ Collisions at $\\sqrt{s}$ = 7 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 72881,
+      "title": "Measurement of $\\psi(2S)$ meson production in $pp$ collisions at $\\sqrt{s}$=7 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    }
+  ],
+  "selected_record": 71501,
+  "selection_reason": "Score 100.0 >= threshold 50",
+  "table_validations": []
+}

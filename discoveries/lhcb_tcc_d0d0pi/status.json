@@ -1,12 +1,14 @@
 {
   "slug": "lhcb_tcc_d0d0pi",
-  "current_step": "acquire",
+  "current_step": "done",
   "completed_steps": [
     "scaffold",
-    "locate_data"
+    "locate_data",
+    "extract_numeric",
+    "run_rank1"
   ],
-  "last_update_utc": "2026-01-02T23:42:59.545948+00:00",
-  "blocked_reason": null,
+  "last_update_utc": "2026-01-03T01:43:17.995788+00:00",
+  "blocked_reason": "MODEL_MISMATCH",
   "error_message": null,
   "discovered_urls": []
 }

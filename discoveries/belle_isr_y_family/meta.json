@@ -94,6 +94,203 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:belle+Y%284360%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.536675+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://www.hepdata.net/record/18803?format=json",
+      "type": "hepdata_record",
+      "record_id": 18803,
+      "title": "Study of the Exclusive Initial-State-Radiation Production of the DDbar System",
+      "collaboration": "",
+      "score": 170.0
+    },
+    {
+      "url": "http://arxiv.org/abs/1204.2158v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1204.2158v1",
+      "title": "Study of the reaction e^{+}e^{-} -->J/psi\u03c0^{+}\u03c0^{-} via initial-state radiation at BaBar",
+      "pdf_url": "https://arxiv.org/pdf/1204.2158v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0707.3699v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "0707.3699v2",
+      "title": "Observation of Two Resonant Structures in e+e- to pi+ pi- psi(2S) via Initial State Radiation at Belle",
+      "pdf_url": "https://arxiv.org/pdf/0707.3699v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2211.08561v5",
+      "type": "arxiv_paper",
+      "arxiv_id": "2211.08561v5",
+      "title": "Observation of the $Y(4230)$ and evidence for a new vector charmonium-like state $Y(4710)$ in $e^{+}e^{-}\\to K_{S}^{0} K_{S}^{0} J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2211.08561v5.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2204.07800v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2204.07800v3",
+      "title": "Observation of the $Y(4230)$ and a new structure in $e^+e^- \\rightarrow K^+K^-J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2204.07800v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2407.07651v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2407.07651v1",
+      "title": "Study of the decay and production properties of $D_{s1}(2536)$ and $D_{s2}^*(2573)$",
+      "pdf_url": "https://arxiv.org/pdf/2407.07651v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2410.12620v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2410.12620v1",
+      "title": "Search for $e^{+}e^{-} \\to \u03c6\u03c7_{c0}$ and $\u03c6\u03b7_{c2}(1D)$ at center-of-mass energies from 4.47 to 4.95 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2410.12620v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2505.13222v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2505.13222v2",
+      "title": "Partial Wave Analysis of $e^{+}e^{-} \\rightarrow \u03c0^{+}\u03c0^{-}J/\u03c8$ and Cross Section Measurement of $e^{+}e^{-} \\rightarrow \u03c0^{\\pm}Z_{c}(3900)^{\\mp}$ from 4.1271 to 4.3583 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2505.13222v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2003.03705v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2003.03705v1",
+      "title": "Observation of the $Y(4220)$ and $Y(4360)$ in the process $e^{+}e^{-} \\to \u03b7J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2003.03705v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2401.09468v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2401.09468v2",
+      "title": "Measurement of Born cross section of $e^{+}e^{-}\\rightarrow\u03a3^{+}\\bar\u03a3^{-}$ at center-of-mass energies between 3.510 and 4.951 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2401.09468v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2505.03180v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2505.03180v2",
+      "title": "Observation of resonant contribution to the $e^+e^-\\to \u03a9^{-}\\bar\u03a9^{+}$ around 4.2 GeV and evidence of $\u03c8(3770)\\to \u03a9^{-}\\bar\u03a9^{+}$",
+      "pdf_url": "https://arxiv.org/pdf/2505.03180v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2402.03829v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2402.03829v3",
+      "title": "Precise Measurement of Born Cross Sections for $e^+e^-\\to D\\bar{D}$ at $\\sqrt{s} = 3.80-4.95$ GeV",
+      "pdf_url": "https://arxiv.org/pdf/2402.03829v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.13883v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.13883v2",
+      "title": "Measurement of the $e^{+}e^{-} \\to K_{S}^{0} K_{L}^{0} \u03c0^{0}$ cross sections from $\\sqrt{s}=$ 2.000 to 3.080 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2309.13883v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1409.4969v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1409.4969v1",
+      "title": "Study of Michel parameters in leptonic $\u03c4$ decays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/1409.4969v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0507019v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0507019v3",
+      "title": "Observation of a new charmonium state in double charmonium production in e+ e- annihilation at \\sqrt{s} ~ 10.6 GeV",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0507019v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2510.25461v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2510.25461v1",
+      "title": "Improved measurement of Born cross sections for $\u03c7_{bJ}\\,\u03c9$ and $\u03c7_{bJ}\\,(\u03c0^+\u03c0^-\u03c0^0)_{\\rm non-\u03c9}$ ($J$ = 0, 1, 2) at Belle and Belle II",
+      "pdf_url": "https://arxiv.org/pdf/2510.25461v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0708.1105v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "0708.1105v2",
+      "title": "Search for \\bar{B}^0\\to\u039b_c^+\\bar\u039b_c^- decay at Belle",
+      "pdf_url": "https://arxiv.org/pdf/0708.1105v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0612006v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0612006v1",
+      "title": "Study of the Y (4260) resonance in e+e- collisions with initial state radiation at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0612006v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1910.05365v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1910.05365v2",
+      "title": "Measurement of the integrated luminosity of the Phase 2 data of the Belle II experiment",
+      "pdf_url": "https://arxiv.org/pdf/1910.05365v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1409.5269v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1409.5269v1",
+      "title": "Measurement of the branching fraction of $B^+ \\to \u03c4^+ \u03bd_\u03c4$ decays with the semileptonic tagging method and the full Belle data sample",
+      "pdf_url": "https://arxiv.org/pdf/1409.5269v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0408139v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0408139v1",
+      "title": "Moments of the Hadronic Mass Spectrum in Inclusive Semileptonic B Decays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0408139v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0207007v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0207007v1",
+      "title": "Study of B -> \u03c1\u03c0decays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0207007v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0508056v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0508056v1",
+      "title": "Moments of the Electron Energy Spectrum in B --> X_c l \u03bddecays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0508056v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.04215v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.04215v3",
+      "title": "Measurement of the cross section of $e^+e^-\\rightarrow\u039e^{-}\\bar\u039e^{+}$ at center-of-mass energies between 3.510 and 4.843 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2309.04215v3.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:52:48.829202+00:00",
+  "downloaded_files": [
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/hepdata_18803.json",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/hepdata_ins776519_Table%201.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_1204.2158v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_0707.3699v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2211.08561v5.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2204.07800v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2407.07651v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2410.12620v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2505.13222v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2003.03705v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2401.09468v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2505.03180v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2402.03829v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2309.13883v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_1409.4969v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_0507019v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2510.25461v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_0708.1105v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_0612006v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_1910.05365v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_1409.5269v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_0408139v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_0207007v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_0508056v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/belle_isr_y_family/raw/arxiv_2309.04215v3.pdf"
+  ]
 }

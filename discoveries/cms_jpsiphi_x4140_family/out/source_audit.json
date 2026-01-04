@@ -1,0 +1,120 @@
+{
+  "query": "https://www.hepdata.net/search?q=CMS+X%284140%29&format=json; https://www.hepdata.net/search?q=CMS+J%2Fpsi+phi&format=json; https://www.hepdata.net/search?q=CMS+B%2B+J%2Fpsi+phi&format=json",
+  "top_k_hits": [
+    {
+      "record_id": 20031,
+      "title": "Dimuon Production in 800 GeV Proton Nucleus Collisions",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 31679,
+      "title": "Precision measurement of the neutron spin asymmetry A(1)(n) and spin-flavor decomposition in the valence quark region.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 31726,
+      "title": "Precision measurement of the neutron spin asymmetries and spin-dependent structure functions in the valence quark region.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 56870,
+      "title": "Near-threshold Photoproduction of Phi Mesons from Deuterium",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 88920,
+      "title": "Search for the X(5568) state decaying into $\\mathrm{B}^{0}_{\\mathrm{s}}\\pi^{\\pm}$ in proton-proton collisions at $\\sqrt{s} = $ 8 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 94444,
+      "title": "Observation of the B$^0_\\mathrm{s}$ $\\to$ X(3872)$\\phi$ decay",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 50912,
+      "title": "Neutron-proton analyzing power at 12 MeV and inconsistencies in parametrizations of nucleon-nucleon data",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 101343,
+      "title": "Transverse Single-Spin Asymmetry and Cross-Section for pi0 and eta Mesons at Large Feynman-x in Polarized p+p Collisions at sqrt(s)=200 GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 44714,
+      "title": "Study of charged current e p interactions at Q**2 > 200-Gev**2 with the ZEUS detector at HERA",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 80511,
+      "title": "Measurement of the production cross section of three isolated photons in $pp$ collisions at $\\sqrt{s}$ = 8 TeV using the ATLAS detector",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 10313,
+      "title": "Production of $G(1590)$ and Other Mesons Decaying Into $\\eta$ Pairs by 100-{GeV}/$c \\pi^-$ on Protons",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 129530,
+      "title": "Constraints on anomalous Higgs boson couplings to vector bosons and fermions from the production of Higgs bosons using the $ \\tau\\tau$ final state",
+      "collaboration": "",
+      "score": -100.0,
+      "breakdown": {
+        "unrelated_penalty": -100
+      },
+      "reasons": [
+        "Unrelated keyword: higgs"
+      ]
+    },
+    {
+      "record_id": 141076,
+      "title": "Search for a new heavy scalar particle decaying into a Higgs boson and a new scalar singlet in final states with one or two light leptons and a pair of $\\tau$-leptons with the ATLAS detector",
+      "collaboration": "",
+      "score": -100.0,
+      "breakdown": {
+        "unrelated_penalty": -100
+      },
+      "reasons": [
+        "Unrelated keyword: higgs"
+      ]
+    }
+  ],
+  "selected_record": null,
+  "selection_reason": "Best score 0.0 < threshold 50",
+  "table_validations": []
+}

@@ -105,6 +105,162 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:atlas+X%287100%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.551656+00:00"
+  "discovered_urls": [
+    {
+      "url": "http://arxiv.org/abs/2208.04572v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2208.04572v2",
+      "title": "The coincidence of the Bruhat order and the secondary Bruhat order on $\\mathcal{A}(n,k)$",
+      "pdf_url": "https://arxiv.org/pdf/2208.04572v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2512.15091v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2512.15091v1",
+      "title": "Search for the decays $X(3872)\\to K_{S}^{0}K^{\\pm}\u03c0^{\\mp}$ and $K^*(892)\\bar{K}$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2512.15091v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2502.20821v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2502.20821v2",
+      "title": "Improved measurement of absolute branching fraction of the inclusive decay $\u039b_{c}^{+} \\to K_{S}^{0} X$",
+      "pdf_url": "https://arxiv.org/pdf/2502.20821v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2406.09475v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2406.09475v1",
+      "title": "Search for $X(1870)$ via the decay $J/\u03c8\\to \u03c9K^+ K^-\u03b7$",
+      "pdf_url": "https://arxiv.org/pdf/2406.09475v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2403.16811v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2403.16811v2",
+      "title": "Cross section measurement of $e^+e^-\\to \u03b7\u03c8(2S)$ and search for $e^+e^-\\to\u03b7\\tilde{X}(3872)$",
+      "pdf_url": "https://arxiv.org/pdf/2403.16811v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2408.01597v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2408.01597v2",
+      "title": "Search for $X(3872)\\to\u03c0^0\u03c0^0\u03c7_{c1,2}$",
+      "pdf_url": "https://arxiv.org/pdf/2408.01597v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2305.11682v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2305.11682v2",
+      "title": "Search for a scalar partner of the $X(3872)$ via $\u03c8(3770)$ decays into $\u03b3\u03b7\u03b7'$ and $\u03b3\u03c0^{+}\u03c0^{-}J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2305.11682v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2310.17937v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2310.17937v3",
+      "title": "Observation of the Anomalous Shape of $X(1840)$ in $J/\u03c8\\rightarrow \u03b33(\u03c0^+ \u03c0^-)$ Indicating a Second Resonance Near $p\\bar{p}$ Threshold",
+      "pdf_url": "https://arxiv.org/pdf/2310.17937v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.01502v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.01502v1",
+      "title": "A coupled-channel analysis of the $X(3872)$ lineshape with BESIII data",
+      "pdf_url": "https://arxiv.org/pdf/2309.01502v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2312.05324v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2312.05324v2",
+      "title": "Determination of spin-parity quantum numbers of X(2370) as $0^{-+}$ from $J/\u03c8\\rightarrow\u03b3K^{0}_{S}K^{0}_{S}\u03b7^{\\prime}$",
+      "pdf_url": "https://arxiv.org/pdf/2312.05324v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2301.03214v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2301.03214v2",
+      "title": "Measurements of the branching fractions of the inclusive decays $D^{0}(D^{+})\\to \u03c0^+\u03c0^+\u03c0^-X$",
+      "pdf_url": "https://arxiv.org/pdf/2301.03214v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1503.07589v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1503.07589v1",
+      "title": "Combined Measurement of the Higgs Boson Mass in $pp$ Collisions at $\\sqrt{s}=7$ and 8 TeV with the ATLAS and CMS Experiments",
+      "pdf_url": "https://arxiv.org/pdf/1503.07589v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2109.02551v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2109.02551v3",
+      "title": "AtlFast3: the next generation of fast simulation in ATLAS",
+      "pdf_url": "https://arxiv.org/pdf/2109.02551v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1611.09661v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1611.09661v2",
+      "title": "Performance of the ATLAS Trigger System in 2015",
+      "pdf_url": "https://arxiv.org/pdf/1611.09661v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2007.12539v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2007.12539v2",
+      "title": "Operation of the ATLAS trigger system in Run 2",
+      "pdf_url": "https://arxiv.org/pdf/2007.12539v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2401.06630v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2401.06630v2",
+      "title": "The ATLAS Trigger System for LHC Run 3 and Trigger performance in 2022",
+      "pdf_url": "https://arxiv.org/pdf/2401.06630v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2403.02455v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2403.02455v2",
+      "title": "The quest to discover supersymmetry at the ATLAS experiment",
+      "pdf_url": "https://arxiv.org/pdf/2403.02455v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2101.05078v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2101.05078v2",
+      "title": "The ATLAS Fast TracKer system",
+      "pdf_url": "https://arxiv.org/pdf/2101.05078v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2412.15090v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2412.15090v2",
+      "title": "Expected Tracking Performance of the ATLAS Inner Tracker at the High-Luminosity LHC",
+      "pdf_url": "https://arxiv.org/pdf/2412.15090v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2404.05498v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2404.05498v2",
+      "title": "Characterising the Higgs boson with ATLAS data from Run 2 of the LHC",
+      "pdf_url": "https://arxiv.org/pdf/2404.05498v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2304.12867v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2304.12867v2",
+      "title": "Performance of the reconstruction of large impact parameter tracks in the inner detector of ATLAS",
+      "pdf_url": "https://arxiv.org/pdf/2304.12867v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2402.06438v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2402.06438v2",
+      "title": "Performance of the ATLAS forward proton Time-of-Flight detector in Run 2",
+      "pdf_url": "https://arxiv.org/pdf/2402.06438v2.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:59:23.390950+00:00",
+  "downloaded_files": []
 }

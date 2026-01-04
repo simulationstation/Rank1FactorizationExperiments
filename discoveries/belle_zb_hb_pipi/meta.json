@@ -95,6 +95,392 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:belle+Zb%2810650%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.563357+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://www.hepdata.net/record/64697?format=json",
+      "type": "hepdata_record",
+      "record_id": 64697,
+      "title": "Amplitude analysis of e+e- => Y(nS)pi+pi- at sqrt(s)=10.865 GeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/74710?format=json",
+      "type": "hepdata_record",
+      "record_id": 74710,
+      "title": "Energy scan of the $e^+e^- \\to h_b(nP)\\pi^+\\pi^-$ $(n=1,2)$ cross sections and evidence for the $\\Upsilon(11020)$ decays into charged bottomonium-like states",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/72558?format=json",
+      "type": "hepdata_record",
+      "record_id": 72558,
+      "title": "Angular analysis of $B^0 \\to K^\\ast(892)^0 \\ell^+ \\ell^-$",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/76987?format=json",
+      "type": "hepdata_record",
+      "record_id": 76987,
+      "title": "Precise determination of the CKM matrix element $\\left| V_{cb}\\right|$ with $\\bar B^0 \\to D^{*\\,+} \\, \\ell^- \\, \\bar \\nu_\\ell$ decays with hadronic tagging at Belle",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/82574?format=json",
+      "type": "hepdata_record",
+      "record_id": 82574,
+      "title": "Study of $\\chi_{bJ}(1P)$ Properties in the Radiative $\\Upsilon(2S)$ Decays",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/130199?format=json",
+      "type": "hepdata_record",
+      "record_id": 130199,
+      "title": "Search for $B^{+}\\to K^{+}\\nu\\bar{\\nu}$ decays using an inclusive tagging method at Belle II",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/61431?format=json",
+      "type": "hepdata_record",
+      "record_id": 61431,
+      "title": "Study of $e^+ e^- \\to \\pi^+ \\pi^- J/\\psi$ and Observation of a Charged Charmonium-like State at Belle",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/159492?format=json",
+      "type": "hepdata_record",
+      "record_id": 159492,
+      "title": "Search for lepton flavor-violating decay modes $B^0 \\to K^{\\ast 0}\\tau^\\pm\\ell^\\mp$ ($\\ell = e,\\mu$) with hadronic B-tagging at Belle and Belle II",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/62276?format=json",
+      "type": "hepdata_record",
+      "record_id": 62276,
+      "title": "Precision measurement of charged pion and kaon multiplicities in electron-positron annihilation at Q = 10.52 GeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/79449?format=json",
+      "type": "hepdata_record",
+      "record_id": 79449,
+      "title": "Measurement of the form factors of the decay B0 -> D*- ell+ nu and determination of the CKM matrix element |Vcb|",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/83660?format=json",
+      "type": "hepdata_record",
+      "record_id": 83660,
+      "title": "Search for pair- and single-production of vector-like quarks in final states with at least one $Z$ boson decaying into a pair of electrons or muons in $pp$ collision data collected with the ATLAS detector at $\\sqrt{s} = 13$ TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/83661?format=json",
+      "type": "hepdata_record",
+      "record_id": 83661,
+      "title": "Search for pair production of heavy vector-like quarks decaying into hadronic final states in $pp$ collisions at $\\sqrt{s} = 13$ TeV with the ATLAS detector",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/134010?format=json",
+      "type": "hepdata_record",
+      "record_id": 134010,
+      "title": "Search for pair-production of vector-like quarks in $pp$ collision events at $\\sqrt{s}=13$ TeV with at least one leptonically decaying $Z$ boson and a third-generation quark with the ATLAS detector",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/1895?format=json",
+      "type": "hepdata_record",
+      "record_id": 1895,
+      "title": "PROMPT ELECTRON PRODUCTION IN e+ e- ANNIHILATIONS AT 29-GeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/83541?format=json",
+      "type": "hepdata_record",
+      "record_id": 83541,
+      "title": "Combination of the searches for pair-produced vector-like partners of the third-generation quarks at $\\sqrt{s} =$ 13 TeV with the ATLAS detector",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/16252?format=json",
+      "type": "hepdata_record",
+      "record_id": 16252,
+      "title": "Production and Muonic Decay of Heavy Quarks in e+ e- Annihilation at 34.5-GeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/20492?format=json",
+      "type": "hepdata_record",
+      "record_id": 20492,
+      "title": "Experimental Study of Inclusive Muon Spectra at PETRA",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/20548?format=json",
+      "type": "hepdata_record",
+      "record_id": 20548,
+      "title": "Fragmentation of Heavy Quarks Produced in $e^+ e^-$ Annihilation",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/155514?format=json",
+      "type": "hepdata_record",
+      "record_id": 155514,
+      "title": "Measurement of beauty production via non-prompt charm hadrons in p-Pb collisions at $\\sqrt{s_{\\mathrm{NN}}} = 5.02$ TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/37283?format=json",
+      "type": "hepdata_record",
+      "record_id": 37283,
+      "title": "BACKWARD PHOTOPRODUCTION OF POSITIVE PIONS ON HYDROGEN",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/156226?format=json",
+      "type": "hepdata_record",
+      "record_id": 156226,
+      "title": "High-Statistics Study of the $\\tau^- \\to \\pi^- \\pi^0 \\nu_\\tau$ Decay",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/98971?format=json",
+      "type": "hepdata_record",
+      "record_id": 98971,
+      "title": "K/pi Fluctuations at Relativistic Energies",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/71501?format=json",
+      "type": "hepdata_record",
+      "record_id": 71501,
+      "title": "Measurement of $e^+e^- \\to \\pi^+\\pi^-\\psi(2S)$ via Initial State Radiation at Belle",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/115577?format=json",
+      "type": "hepdata_record",
+      "record_id": 115577,
+      "title": "Search for long-lived particles decaying into muon pairs in proton-proton collisions at $\\sqrt{s}$ = 13 TeV collected with a dedicated high-rate data stream",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/70500?format=json",
+      "type": "hepdata_record",
+      "record_id": 70500,
+      "title": "Angular dependence of the recoil proton polarization from the reaction $\\gamma p \\to \\pi^0 p$ for photon energies between 360-MeV and 1200-MeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/75407?format=json",
+      "type": "hepdata_record",
+      "record_id": 75407,
+      "title": "Polarisation of recoil neutrons from single-pion photoproduction off protons in the resonance region",
+      "collaboration": ""
+    },
+    {
+      "url": "http://arxiv.org/abs/1105.4583v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1105.4583v3",
+      "title": "Observation of two charged bottomonium-like resonances",
+      "pdf_url": "https://arxiv.org/pdf/1105.4583v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1110.2251v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1110.2251v1",
+      "title": "Observation of two charged bottomonium-like resonances in Y(5S) decays",
+      "pdf_url": "https://arxiv.org/pdf/1110.2251v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1409.4969v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1409.4969v1",
+      "title": "Study of Michel parameters in leptonic $\u03c4$ decays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/1409.4969v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2510.25461v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2510.25461v1",
+      "title": "Improved measurement of Born cross sections for $\u03c7_{bJ}\\,\u03c9$ and $\u03c7_{bJ}\\,(\u03c0^+\u03c0^-\u03c0^0)_{\\rm non-\u03c9}$ ($J$ = 0, 1, 2) at Belle and Belle II",
+      "pdf_url": "https://arxiv.org/pdf/2510.25461v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0708.1105v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "0708.1105v2",
+      "title": "Search for \\bar{B}^0\\to\u039b_c^+\\bar\u039b_c^- decay at Belle",
+      "pdf_url": "https://arxiv.org/pdf/0708.1105v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1910.05365v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1910.05365v2",
+      "title": "Measurement of the integrated luminosity of the Phase 2 data of the Belle II experiment",
+      "pdf_url": "https://arxiv.org/pdf/1910.05365v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1409.5269v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1409.5269v1",
+      "title": "Measurement of the branching fraction of $B^+ \\to \u03c4^+ \u03bd_\u03c4$ decays with the semileptonic tagging method and the full Belle data sample",
+      "pdf_url": "https://arxiv.org/pdf/1409.5269v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0408139v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0408139v1",
+      "title": "Moments of the Hadronic Mass Spectrum in Inclusive Semileptonic B Decays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0408139v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0507019v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0507019v3",
+      "title": "Observation of a new charmonium state in double charmonium production in e+ e- annihilation at \\sqrt{s} ~ 10.6 GeV",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0507019v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0207007v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0207007v1",
+      "title": "Study of B -> \u03c1\u03c0decays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0207007v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0508056v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0508056v1",
+      "title": "Moments of the Electron Energy Spectrum in B --> X_c l \u03bddecays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0508056v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2405.19734v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2405.19734v2",
+      "title": "Search for the decay $B^{0}\\to\u03b3\u03b3$ using Belle and Belle II data",
+      "pdf_url": "https://arxiv.org/pdf/2405.19734v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1303.0101v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1303.0101v2",
+      "title": "Status and new results on the Zb resonances",
+      "pdf_url": "https://arxiv.org/pdf/1303.0101v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1203.1894v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1203.1894v2",
+      "title": "Decays of Zb(+) and Zb'(+) as hadronic molecules",
+      "pdf_url": "https://arxiv.org/pdf/1203.1894v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1310.3029v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1310.3029v1",
+      "title": "Decays of Zb -> Upsilon + pi via triangle diagrams in heavy meson molecules",
+      "pdf_url": "https://arxiv.org/pdf/1310.3029v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1212.3080v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1212.3080v2",
+      "title": "Bottom partner B' and Zb production at the LHC",
+      "pdf_url": "https://arxiv.org/pdf/1212.3080v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1706.04826v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1706.04826v2",
+      "title": "The influence of atmosphere on the performance of pure-phase WZ and ZB InAs nanowire transistors",
+      "pdf_url": "https://arxiv.org/pdf/1706.04826v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1709.03273v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1709.03273v2",
+      "title": "CSM tests in $gb\\to \u03b3b, Hb, Zb, W^-t$ processes",
+      "pdf_url": "https://arxiv.org/pdf/1709.03273v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1106.3798v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1106.3798v3",
+      "title": "$Z_b(10610)$ and $Z_b(10650)$ structures produced by the initial single pion emission in the $\u03a5(5S)$ decays",
+      "pdf_url": "https://arxiv.org/pdf/1106.3798v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1110.4433v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1110.4433v1",
+      "title": "Charged bottomonium-like structures $Z_b(10610)$ and $Z_b(10650)$",
+      "pdf_url": "https://arxiv.org/pdf/1110.4433v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1707.00539v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1707.00539v1",
+      "title": "$Z_b(10610)$ and $Z_b'(10650)$ decays in a covariant quark model",
+      "pdf_url": "https://arxiv.org/pdf/1707.00539v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2211.02896v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2211.02896v1",
+      "title": "Investigations on the light hadron decays of $Z_b(10610)$ and $Z_b(10650)$",
+      "pdf_url": "https://arxiv.org/pdf/2211.02896v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0706.2231v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0706.2231v1",
+      "title": "Study of tau- -> K_S pi- nu_tau decay at Belle",
+      "pdf_url": "https://arxiv.org/pdf/0706.2231v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0609003v4",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0609003v4",
+      "title": "B0 -> pi+ pi- pi0 time-dependent Dalitz analysis from Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0609003v4.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0707.2541v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "0707.2541v2",
+      "title": "Measurement of e^+e^- to pi^+pi^-J/psi Cross Section via Initial State Radiation at Belle",
+      "pdf_url": "https://arxiv.org/pdf/0707.2541v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0808.2445v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "0808.2445v3",
+      "title": "Observation of an enhancement in e+e- to Upsilon(1S)pi+pi-, Upsilon(2S)pi+pi-, and Upsilon(3S)pi+pi- production near sqrt{s}=10.89 GeV at Belle",
+      "pdf_url": "https://arxiv.org/pdf/0808.2445v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0707.3699v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "0707.3699v2",
+      "title": "Observation of Two Resonant Structures in e+e- to pi+ pi- psi(2S) via Initial State Radiation at Belle",
+      "pdf_url": "https://arxiv.org/pdf/0707.3699v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0612006v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0612006v1",
+      "title": "Study of the Y (4260) resonance in e+e- collisions with initial state radiation at Belle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0612006v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0701053v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0701053v1",
+      "title": "Measurement of the absolute branching fraction of the Ds+- meson",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0701053v1.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T01:43:16.465870+00:00"
 }

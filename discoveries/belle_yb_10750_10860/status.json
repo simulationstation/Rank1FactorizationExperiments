@@ -1,12 +1,14 @@
 {
   "slug": "belle_yb_10750_10860",
-  "current_step": "acquire",
+  "current_step": "run_rank1",
   "completed_steps": [
     "scaffold",
-    "locate_data"
+    "locate_data",
+    "acquire",
+    "extract_numeric"
   ],
-  "last_update_utc": "2026-01-02T23:42:59.560408+00:00",
-  "blocked_reason": null,
+  "last_update_utc": "2026-01-03T03:59:32.163303+00:00",
+  "blocked_reason": "NO_SUITABLE_PAIRS",
   "error_message": null,
   "discovered_urls": []
 }

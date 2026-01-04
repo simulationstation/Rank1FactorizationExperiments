@@ -1,0 +1,138 @@
+{
+  "query": "https://www.hepdata.net/search?q=LHCb+X%284140%29&format=json; https://www.hepdata.net/search?q=LHCb+J%2Fpsi+phi&format=json; https://www.hepdata.net/search?q=X%284274%29+LHCb&format=json",
+  "top_k_hits": [
+    {
+      "record_id": 153613,
+      "title": "Observation of exotic $J/\\psi\\phi$ resonances in diffractive processes in proton-proton collisions",
+      "collaboration": "",
+      "score": 340.0,
+      "breakdown": {
+        "state_matches": 100,
+        "channel_matches": 240
+      },
+      "reasons": [
+        "State matches: 2",
+        "Channel matches: 8"
+      ]
+    },
+    {
+      "record_id": 66871,
+      "title": "Exclusive $J/\\psi$ and $\\psi(2S)$ production in $pp$ collisions at $\\sqrt{s}=7$ TeV",
+      "collaboration": "",
+      "score": 240.0,
+      "breakdown": {
+        "channel_matches": 240
+      },
+      "reasons": [
+        "Channel matches: 8"
+      ]
+    },
+    {
+      "record_id": 20031,
+      "title": "Dimuon Production in 800 GeV Proton Nucleus Collisions",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 105881,
+      "title": "Precise determination of the B0s-B0sbar oscillation frequency",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 165429,
+      "title": "Measurement of the $W \\to \u03bc\u03bd_\u03bc$ cross-sections as a function of the muon transverse momentum in $pp$ collisions at 5.02 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 31679,
+      "title": "Precision measurement of the neutron spin asymmetry A(1)(n) and spin-flavor decomposition in the valence quark region.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 31726,
+      "title": "Precision measurement of the neutron spin asymmetries and spin-dependent structure functions in the valence quark region.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 56870,
+      "title": "Near-threshold Photoproduction of Phi Mesons from Deuterium",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 88920,
+      "title": "Search for the X(5568) state decaying into $\\mathrm{B}^{0}_{\\mathrm{s}}\\pi^{\\pm}$ in proton-proton collisions at $\\sqrt{s} = $ 8 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 84584,
+      "title": "Measurement of antiproton production in ${\\rm p He}$ collisions at $\\sqrt{s_{NN}}=110$ GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 130780,
+      "title": "Measurement of antiproton production from antihyperon decays in pHe collisions at $\\sqrt{s_{NN}}=110$ GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 44714,
+      "title": "Study of charged current e p interactions at Q**2 > 200-Gev**2 with the ZEUS detector at HERA",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 90457,
+      "title": "Measurement of the $\\eta_c(1S)$ production cross-section in $pp$ collisions at $\\sqrt{s} = 13$ TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 161096,
+      "title": "Comprehensive analysis of local and nonlocal amplitudes in the $B^0\\rightarrow K^{*0}\\mu^+\\mu^-$ decay",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 48894,
+      "title": "Inclusive production of the omega and eta mesons in Z decays, and the muonic branching ratio of the omega.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    }
+  ],
+  "selected_record": 153613,
+  "selection_reason": "Score 340.0 >= threshold 50",
+  "table_validations": []
+}

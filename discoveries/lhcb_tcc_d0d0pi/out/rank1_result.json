@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETED",
+  "slug": "lhcb_tcc_d0d0pi",
+  "states": [
+    "Tcc(3875)",
+    "Tcc*(3876)"
+  ],
+  "fit_window": [
+    3870,
+    3880
+  ],
+  "n_boot": 20,
+  "pairs": [
+    {
+      "pair": "Pair 3: Fig ED3a vs Fig ED3b",
+      "chi2_A": 3563.0237464259467,
+      "dof_A": 3,
+      "health_A": "MODEL_MISMATCH",
+      "chi2_B": 3489.6006203393067,
+      "dof_B": 4,
+      "health_B": "MODEL_MISMATCH",
+      "R_A_ind": {
+        "r": 0.855994458111966,
+        "phi_deg": 128.40748951945446
+      },
+      "R_B_ind": {
+        "r": 1.3742973127239837,
+        "phi_deg": 136.98112085136913
+      },
+      "R_shared": {
+        "r": 1.0033372548734374,
+        "phi_deg": 132.70638853663812
+      },
+      "R_A_unc": {
+        "r": 0.8548331238407887,
+        "phi_deg": 128.44308822969643
+      },
+      "R_B_unc": {
+        "r": 1.3744955275664839,
+        "phi_deg": 136.97785234343624
+      },
+      "nll_con": 3998.4153039450453,
+      "nll_unc": 3527.5833037773,
+      "Lambda_raw": 941.6640003354905,
+      "Lambda": 941.6640003354905,
+      "invariant_holds": true,
+      "invariant_violation": -470.83200016774526,
+      "p_wilks": 0.0,
+      "p_boot": 0.047619047619047616,
+      "k": 0,
+      "n_boot_valid": 20,
+      "n_boot_failed": 0,
+      "lambda_boot_mean": 1.913541899334933,
+      "lambda_boot_std": 1.7248214797797101,
+      "lambda_boot_median": 1.6729633977175071,
+      "verdict": "INCONCLUSIVE",
+      "reason": "Fit health issues: A=MODEL_MISMATCH, B=MODEL_MISMATCH",
+      "table_A": "hepdata_ins1915358_Fig ED3a.csv",
+      "table_B": "hepdata_ins1915358_Fig ED3b.csv"
+    }
+  ],
+  "overall_verdict": "INCONCLUSIVE"
+}

@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.153613.v1/t1
+#: name: Table 1
+#: description: Total $J/\psi(\to \mu^+ \mu^-)\phi(\to K^+ K^-)$ diffractive production cross-section, multiplied by $\mathcal{B}(J/\psi \to \mu^+ \mu^-)$ and $\mathcal{B}(\phi \to K^+ K^-)$ branching ratios.
+#: data_file: cross_section_total.yaml
+#: keyword reactions: pp --> p + JpsiPhi + p
+#: keyword observables: cross-section
+#: keyword cmenergies: 13000
+#: keyword phrases: QCD | forward physics | particle and resonance production | exotics | cross-section
+#: RE,,,$pp \to p+J/\psi\phi+p$
+#: $\eta(\mu^{\pm}, K^{\pm})$,,,$2.0 - 5.0$
+#: $p_{T}(\mu^{\pm}, K^{\pm})$,,,$>200$ MeV/$\it{c}$
+#: max($p_{T}(\mu^+)$, $p_{T}(\mu^-)$),,,$>400$ GeV/$\it{c}$
+#: $m(J/\psi\phi)$,,,$<6000$ MeV/$\it{c^2}$
+#: $\sqrt{s}$ [TeV],,,13
+#: Luminosity [fb$^{-1}$],,,5.1
+$\sqrt{s}$ [GeV],$\sqrt{s}$ [GeV] LOW,$\sqrt{s}$ [GeV] HIGH,$\sigma( J/\psi(\to \mu^+ \mu^-)\phi(\to K^+ K^-) )$ [pb],(Stat.) +,(Stat.) -,(Syst.) +,(Syst.) -,(Lumi.) +,(Lumi.) -
+13000.0,12999.5,13000.5,2.52,0.08,-0.08,0.12,-0.12,0.05,-0.05
+

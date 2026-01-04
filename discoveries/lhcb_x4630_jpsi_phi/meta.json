@@ -75,6 +75,192 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:lhcb+X%284685%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.569468+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://www.hepdata.net/record/153613?format=json",
+      "type": "hepdata_record",
+      "record_id": 153613,
+      "title": "Observation of exotic $J/\\psi\\phi$ resonances in diffractive processes in proton-proton collisions",
+      "collaboration": "",
+      "score": 240.0
+    },
+    {
+      "url": "http://arxiv.org/abs/2405.07299v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2405.07299v1",
+      "title": "Influence of initial correlations on evolution over time of an open quantum system",
+      "pdf_url": "https://arxiv.org/pdf/2405.07299v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2512.15091v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2512.15091v1",
+      "title": "Search for the decays $X(3872)\\to K_{S}^{0}K^{\\pm}\u03c0^{\\mp}$ and $K^*(892)\\bar{K}$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2512.15091v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2502.20821v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2502.20821v2",
+      "title": "Improved measurement of absolute branching fraction of the inclusive decay $\u039b_{c}^{+} \\to K_{S}^{0} X$",
+      "pdf_url": "https://arxiv.org/pdf/2502.20821v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2406.09475v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2406.09475v1",
+      "title": "Search for $X(1870)$ via the decay $J/\u03c8\\to \u03c9K^+ K^-\u03b7$",
+      "pdf_url": "https://arxiv.org/pdf/2406.09475v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2403.16811v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2403.16811v2",
+      "title": "Cross section measurement of $e^+e^-\\to \u03b7\u03c8(2S)$ and search for $e^+e^-\\to\u03b7\\tilde{X}(3872)$",
+      "pdf_url": "https://arxiv.org/pdf/2403.16811v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2408.01597v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2408.01597v2",
+      "title": "Search for $X(3872)\\to\u03c0^0\u03c0^0\u03c7_{c1,2}$",
+      "pdf_url": "https://arxiv.org/pdf/2408.01597v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2305.11682v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2305.11682v2",
+      "title": "Search for a scalar partner of the $X(3872)$ via $\u03c8(3770)$ decays into $\u03b3\u03b7\u03b7'$ and $\u03b3\u03c0^{+}\u03c0^{-}J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2305.11682v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2310.17937v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2310.17937v3",
+      "title": "Observation of the Anomalous Shape of $X(1840)$ in $J/\u03c8\\rightarrow \u03b33(\u03c0^+ \u03c0^-)$ Indicating a Second Resonance Near $p\\bar{p}$ Threshold",
+      "pdf_url": "https://arxiv.org/pdf/2310.17937v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.01502v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.01502v1",
+      "title": "A coupled-channel analysis of the $X(3872)$ lineshape with BESIII data",
+      "pdf_url": "https://arxiv.org/pdf/2309.01502v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2312.05324v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2312.05324v2",
+      "title": "Determination of spin-parity quantum numbers of X(2370) as $0^{-+}$ from $J/\u03c8\\rightarrow\u03b3K^{0}_{S}K^{0}_{S}\u03b7^{\\prime}$",
+      "pdf_url": "https://arxiv.org/pdf/2312.05324v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2301.03214v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2301.03214v2",
+      "title": "Measurements of the branching fractions of the inclusive decays $D^{0}(D^{+})\\to \u03c0^+\u03c0^+\u03c0^-X$",
+      "pdf_url": "https://arxiv.org/pdf/2301.03214v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0602005v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0602005v2",
+      "title": "Observation of Bs to Psi(2S)phi and Measurement of Ratio of Branching Fractions B (Bs --> Psi(2S)phi) / B (Bs --> J/Psi phi)",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0602005v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0309067v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0309067v1",
+      "title": "Physics potential of the decays Bs;d -> J/psi eta and Bs -> J/psi phi in the ATLAS experiment at the LHC",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0309067v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0910.2929v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "0910.2929v3",
+      "title": "New Physics in Bs -> J/psi phi: a General Analysis",
+      "pdf_url": "https://arxiv.org/pdf/0910.2929v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1108.6257v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1108.6257v1",
+      "title": "Measurement of CP violation in Bs --> J/psi phi decay",
+      "pdf_url": "https://arxiv.org/pdf/1108.6257v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1209.4477v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1209.4477v1",
+      "title": "CP Violation in Bs->J/psi phi",
+      "pdf_url": "https://arxiv.org/pdf/1209.4477v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1505.06539v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1505.06539v1",
+      "title": "Towards Modeling Energy Consumption of Xeon Phi",
+      "pdf_url": "https://arxiv.org/pdf/1505.06539v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0710.1789v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0710.1789v1",
+      "title": "Lifetime Difference and CP Asymmetry in the Bs -> J/psi phi decay",
+      "pdf_url": "https://arxiv.org/pdf/0710.1789v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0410044v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0410044v1",
+      "title": "Measurements of J/psi decays into phi pi^0, phi eta, and phi eta^prime",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0410044v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0612350v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0612350v1",
+      "title": "The cos 2 phi asymmetry of Drell-Yan and J/psi production in unpolarized ppbar scattering",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0612350v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/9911297v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/9911297v2",
+      "title": "The phi to pi+ pi- decay within a chiral unitary approach",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/9911297v2.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:55:03.086920+00:00",
+  "downloaded_files": [
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/hepdata_153613.json",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/hepdata_ins2809344_Table%201.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/hepdata_ins2809344_Table%202.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/hepdata_ins2809344_Table%203.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/hepdata_ins2809344_Table%204.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/hepdata_ins2809344_Table%205.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/hepdata_ins2809344_Table%206.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2405.07299v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2512.15091v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2502.20821v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2406.09475v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2403.16811v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2408.01597v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2305.11682v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2310.17937v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2309.01502v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2312.05324v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_2301.03214v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_0602005v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_0309067v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_0910.2929v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_1108.6257v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_1209.4477v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_1505.06539v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_0710.1789v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_0410044v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_0612350v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/lhcb_x4630_jpsi_phi/raw/arxiv_9911297v2.pdf"
+  ]
 }

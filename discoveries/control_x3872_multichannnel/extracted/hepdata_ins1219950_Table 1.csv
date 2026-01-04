@@ -1,0 +1,31 @@
+#: table_doi: 10.17182/hepdata.60421.v1/t1
+#: name: Table 1
+#: description: Ratio between the differential X(3872) and PSI(2S) cross sections times branching fractions with (R) and without (R_fiducial) acceptance corrections.
+
+#: data_file: Table1.yaml
+#: keyword reactions: P P --> X(3872) X | P P --> PSI(2S) X
+#: keyword observables: SIG/SIG
+#: keyword phrases: Inclusive | J/Psi | Integrated Cross Section | Cross Section | Proton-Proton Scattering
+#: keyword cmenergies: 7000.0
+#: ETARAP,,,-1.2-1.2
+#: RE(PSI(2S)),,,P P --> PSI(2s) < J/PSI PI+ PI- > X
+#: RE(X(3862)),,,P P --> X(3862) < J/PSI PI+ PI- > X
+#: SQRT(S) [GeV],,,7000.0
+PT [GEV],PT [GEV] LOW,PT [GEV] HIGH,R_fiducual,stat +,stat -,sys +,sys -
+11.75,10.0,13.5,0.0767,0.0082,-0.0082,0.0059,-0.0059
+14.25,13.5,15.0,0.0728,0.0076,-0.0076,0.0044,-0.0044
+16.5,15.0,18.0,0.0724,0.0056,-0.0056,0.0042,-0.0042
+24.0,18.0,30.0,0.0611,0.0042,-0.0042,0.0025,-0.0025
+40.0,30.0,50.0,0.075,0.012,-0.012,0.004,-0.004
+
+#: ETARAP,,,-1.2-1.2
+#: RE(PSI(2S)),,,P P --> PSI(2s) < J/PSI PI+ PI- > X
+#: RE(X(3862)),,,P P --> X(3862) < J/PSI PI+ PI- > X
+#: SQRT(S) [GeV],,,7000.0
+PT [GEV],PT [GEV] LOW,PT [GEV] HIGH,R,stat +,stat -,sys +,sys -
+11.75,10.0,13.5,0.0727,0.0079,-0.0079,0.0097,-0.0097
+14.25,13.5,15.0,0.0671,0.0072,-0.0072,0.0044,-0.0044
+16.5,15.0,18.0,0.0687,0.0055,-0.0055,0.0051,-0.0051
+24.0,18.0,30.0,0.0601,0.0042,-0.0042,0.0042,-0.0042
+40.0,30.0,50.0,0.078,0.013,-0.013,0.004,-0.004
+

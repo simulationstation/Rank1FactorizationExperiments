@@ -1,12 +1,11 @@
 {
   "slug": "atlas_x6900_jpsijpsi",
-  "current_step": "acquire",
+  "current_step": "locate_data",
   "completed_steps": [
-    "scaffold",
-    "locate_data"
+    "scaffold"
   ],
-  "last_update_utc": "2026-01-02T23:42:59.551801+00:00",
-  "blocked_reason": null,
+  "last_update_utc": "2026-01-03T03:59:23.392189+00:00",
+  "blocked_reason": "WRONG_HEPDATA_MATCH",
   "error_message": null,
   "discovered_urls": []
 }

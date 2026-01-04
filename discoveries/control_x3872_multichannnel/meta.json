@@ -72,7 +72,7 @@
     },
     {
       "source": "hepdata",
-      "query": "https://www.hepdata.net/api/record/ins1836131"
+      "query": "https://www.hepdata.net/record/ins1836131?format=json"
     },
     {
       "source": "hepdata",
@@ -107,6 +107,281 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:multiple+X%283872%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.554545+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://www.hepdata.net/record/60421?format=json",
+      "type": "hepdata_record",
+      "record_id": 60421,
+      "title": "Measurement of the $X$(3872) Production Cross Section Via Decays to $J/\\psi \\pi^+ \\pi^-$ in $pp$ collisions at $\\sqrt{s}$ = 7 TeV",
+      "collaboration": "",
+      "score": 150.0
+    },
+    {
+      "url": "http://arxiv.org/abs/2005.13419v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2005.13419v3",
+      "title": "Study of the lineshape of the $\u03c7_{c1}(3872)$ state",
+      "pdf_url": "https://arxiv.org/pdf/2005.13419v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1904.01892v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1904.01892v2",
+      "title": "Beyond Tracking: Selecting Memory and Refining Poses for Deep Visual Odometry",
+      "pdf_url": "https://arxiv.org/pdf/1904.01892v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2512.15091v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2512.15091v1",
+      "title": "Search for the decays $X(3872)\\to K_{S}^{0}K^{\\pm}\u03c0^{\\mp}$ and $K^*(892)\\bar{K}$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2512.15091v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2502.20821v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2502.20821v2",
+      "title": "Improved measurement of absolute branching fraction of the inclusive decay $\u039b_{c}^{+} \\to K_{S}^{0} X$",
+      "pdf_url": "https://arxiv.org/pdf/2502.20821v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2408.01597v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2408.01597v2",
+      "title": "Search for $X(3872)\\to\u03c0^0\u03c0^0\u03c7_{c1,2}$",
+      "pdf_url": "https://arxiv.org/pdf/2408.01597v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2403.16811v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2403.16811v2",
+      "title": "Cross section measurement of $e^+e^-\\to \u03b7\u03c8(2S)$ and search for $e^+e^-\\to\u03b7\\tilde{X}(3872)$",
+      "pdf_url": "https://arxiv.org/pdf/2403.16811v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2406.09475v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2406.09475v1",
+      "title": "Search for $X(1870)$ via the decay $J/\u03c8\\to \u03c9K^+ K^-\u03b7$",
+      "pdf_url": "https://arxiv.org/pdf/2406.09475v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.01502v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.01502v1",
+      "title": "A coupled-channel analysis of the $X(3872)$ lineshape with BESIII data",
+      "pdf_url": "https://arxiv.org/pdf/2309.01502v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2305.11682v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2305.11682v2",
+      "title": "Search for a scalar partner of the $X(3872)$ via $\u03c8(3770)$ decays into $\u03b3\u03b7\u03b7'$ and $\u03b3\u03c0^{+}\u03c0^{-}J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2305.11682v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2310.17937v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2310.17937v3",
+      "title": "Observation of the Anomalous Shape of $X(1840)$ in $J/\u03c8\\rightarrow \u03b33(\u03c0^+ \u03c0^-)$ Indicating a Second Resonance Near $p\\bar{p}$ Threshold",
+      "pdf_url": "https://arxiv.org/pdf/2310.17937v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2312.05324v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2312.05324v2",
+      "title": "Determination of spin-parity quantum numbers of X(2370) as $0^{-+}$ from $J/\u03c8\\rightarrow\u03b3K^{0}_{S}K^{0}_{S}\u03b7^{\\prime}$",
+      "pdf_url": "https://arxiv.org/pdf/2312.05324v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2202.00759v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2202.00759v2",
+      "title": "Search for $X(3872)\\to\u03c0^0\u03c7_{c0}$ and $X(3872)\\to\u03c0\u03c0\u03c7_{c0}$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2202.00759v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0905.0402v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "0905.0402v2",
+      "title": "Isospin breaking effects in the X(3872) resonance",
+      "pdf_url": "https://arxiv.org/pdf/0905.0402v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1304.6710v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1304.6710v2",
+      "title": "X(3872) and its production at hadron colliders",
+      "pdf_url": "https://arxiv.org/pdf/1304.6710v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2404.16575v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2404.16575v2",
+      "title": "Uncovering the mystery of $X(3872)$ with the coupled-channel dynamics",
+      "pdf_url": "https://arxiv.org/pdf/2404.16575v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0806.4098v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "0806.4098v3",
+      "title": "Observation of two resonance-like structures in the pi+ chi_c1 mass distribution in exclusive B0-bar --> K- pi+ chi_c1 decays",
+      "pdf_url": "https://arxiv.org/pdf/0806.4098v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1501.03583v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1501.03583v3",
+      "title": "X(3872), I^G(J^{PC})=0^+(1^{++}), as the \u03c7_{1c}(2P) charmonium",
+      "pdf_url": "https://arxiv.org/pdf/1501.03583v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0408230v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0408230v2",
+      "title": "Inclusive Production of the X(3872)",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0408230v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1109.5843v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1109.5843v2",
+      "title": "Amplitude analyses of the decays chi_c1 -> eta pi+ pi- and chi_c1 -> eta' pi+ pi-",
+      "pdf_url": "https://arxiv.org/pdf/1109.5843v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1404.7035v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1404.7035v2",
+      "title": "Measurement of chi_c1 and chi_c2 production with sqrt(s) = 7 TeV pp collisions at ATLAS",
+      "pdf_url": "https://arxiv.org/pdf/1404.7035v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1811.08876v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1811.08876v2",
+      "title": "Estimates of the $X(3872)$ Cross Section at a Hadron Collider",
+      "pdf_url": "https://arxiv.org/pdf/1811.08876v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1902.03259v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1902.03259v2",
+      "title": "Production of $X(3872)$ Accompanied by a Pion in $B$ Meson Decay",
+      "pdf_url": "https://arxiv.org/pdf/1902.03259v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1411.4413v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1411.4413v2",
+      "title": "Observation of the rare $B^0_s\\to\u03bc^+\u03bc^-$ decay from the combined analysis of CMS and LHCb data",
+      "pdf_url": "https://arxiv.org/pdf/1411.4413v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2305.01463v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2305.01463v2",
+      "title": "Test of lepton flavour universality using $B^0 \\to D^{*-}\u03c4^+\u03bd_\u03c4$ decays with hadronic $\u03c4$ channels",
+      "pdf_url": "https://arxiv.org/pdf/2305.01463v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2407.18001v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2407.18001v2",
+      "title": "Measurement of $D^0-\\overline{D}^0$ mixing and search for $CP$ violation with $D^0\\rightarrow K^+\u03c0^-$ decays",
+      "pdf_url": "https://arxiv.org/pdf/2407.18001v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2510.04963v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2510.04963v1",
+      "title": "Study of charm mixing and CP violation with $D^0\\to K^\\pm\u03c0^\\mp\u03c0^\\pm\u03c0^\\mp$ decays",
+      "pdf_url": "https://arxiv.org/pdf/2510.04963v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2501.11635v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2501.11635v2",
+      "title": "Search for charge-parity violation in semileptonically tagged $D^{0} \\to K^{+} \u03c0^{-}$ decays",
+      "pdf_url": "https://arxiv.org/pdf/2501.11635v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0901.0512v4",
+      "type": "arxiv_paper",
+      "arxiv_id": "0901.0512v4",
+      "title": "Expected Performance of the ATLAS Experiment - Detector, Trigger and Physics",
+      "pdf_url": "https://arxiv.org/pdf/0901.0512v4.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2412.09414v4",
+      "type": "arxiv_paper",
+      "arxiv_id": "2412.09414v4",
+      "title": "Search for $D^0$ meson decays to $\u03c0^+ \u03c0^- e^+ e^-$ and $K^+ K^- e^+ e^-$ final states",
+      "pdf_url": "https://arxiv.org/pdf/2412.09414v4.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2105.13085v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2105.13085v3",
+      "title": "Constraints on dark photon dark matter using data from LIGO's and Virgo's third observing run",
+      "pdf_url": "https://arxiv.org/pdf/2105.13085v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1911.05957v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1911.05957v2",
+      "title": "Determination of quantum numbers for several excited charmed mesons observed in $B^- \\to D^{*+} \u03c0^- \u03c0^-$ decays",
+      "pdf_url": "https://arxiv.org/pdf/1911.05957v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2111.15116v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2111.15116v2",
+      "title": "Search of the Early O3 LIGO Data for Continuous Gravitational Waves from the Cassiopeia A and Vela Jr. Supernova Remnants",
+      "pdf_url": "https://arxiv.org/pdf/2111.15116v2.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:54:09.426155+00:00",
+  "downloaded_files": [
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/hepdata_60421.json",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/hepdata_ins1219950_Table%201.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/hepdata_ins1219950_Table%202.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/hepdata_ins1219950_Table%203.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/hepdata_ins1219950_Table%204.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/hepdata_ins1219950_Table%205.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/hepdata_ins1219950_Table%206.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/hepdata_ins1219950_Table%207.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2005.13419v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_1904.01892v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2512.15091v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2502.20821v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2408.01597v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2403.16811v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2406.09475v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2309.01502v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2305.11682v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2310.17937v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2312.05324v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2202.00759v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_0905.0402v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_1304.6710v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2404.16575v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_0806.4098v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_1501.03583v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_0408230v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_1109.5843v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_1404.7035v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_1811.08876v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_1902.03259v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_1411.4413v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2305.01463v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2407.18001v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2510.04963v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2501.11635v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_0901.0512v4.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2412.09414v4.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2105.13085v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_1911.05957v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/control_x3872_multichannnel/raw/arxiv_2111.15116v2.pdf"
+  ]
 }

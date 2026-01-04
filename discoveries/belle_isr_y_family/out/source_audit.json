@@ -1,0 +1,154 @@
+{
+  "query": "https://www.hepdata.net/search?q=Belle+Y%284260%29&format=json; https://www.hepdata.net/search?q=Belle+ISR+charmonium&format=json; https://www.hepdata.net/search?q=Y%284360%29+Belle&format=json",
+  "top_k_hits": [
+    {
+      "record_id": 18803,
+      "title": "Study of the Exclusive Initial-State-Radiation Production of the DDbar System",
+      "collaboration": "",
+      "score": 170.0,
+      "breakdown": {
+        "state_matches": 50,
+        "channel_matches": 120
+      },
+      "reasons": [
+        "State matches: 1",
+        "Channel matches: 4"
+      ]
+    },
+    {
+      "record_id": 73745,
+      "title": "Measurement of $e^+e^- \\to \\gamma\\chi_{cJ}$ via initial state radiation at Belle",
+      "collaboration": "",
+      "score": 150.0,
+      "breakdown": {
+        "state_matches": 150
+      },
+      "reasons": [
+        "State matches: 3"
+      ]
+    },
+    {
+      "record_id": 71501,
+      "title": "Measurement of $e^+e^- \\to \\pi^+\\pi^-\\psi(2S)$ via Initial State Radiation at Belle",
+      "collaboration": "",
+      "score": 100.0,
+      "breakdown": {
+        "state_matches": 100
+      },
+      "reasons": [
+        "State matches: 2"
+      ]
+    },
+    {
+      "record_id": 50926,
+      "title": "Measurement of $e^+e^- \\to \\pi^+\\pi^-J/\\psi$ Cross Section via Initial State Radiation at Belle",
+      "collaboration": "",
+      "score": 50.0,
+      "breakdown": {
+        "state_matches": 50
+      },
+      "reasons": [
+        "State matches: 1"
+      ]
+    },
+    {
+      "record_id": 61431,
+      "title": "Study of $e^+ e^- \\to \\pi^+ \\pi^- J/\\psi$ and Observation of a Charged Charmonium-like State at Belle",
+      "collaboration": "",
+      "score": 50.0,
+      "breakdown": {
+        "state_matches": 50
+      },
+      "reasons": [
+        "State matches: 1"
+      ]
+    },
+    {
+      "record_id": 73692,
+      "title": "Search for the isospin violating decay $Y(4260)\\rightarrow J/\\psi \\eta \\pi^{0}$",
+      "collaboration": "",
+      "score": 50.0,
+      "breakdown": {
+        "state_matches": 50
+      },
+      "reasons": [
+        "State matches: 1"
+      ]
+    },
+    {
+      "record_id": 77222,
+      "title": "Measurement and QCD analysis of double-differential inclusive jet cross-sections in pp collisions at sqrt(s) = 8 TeV and ratios to 2.76 and 7 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 93921,
+      "title": "Measurement of the $\\Upsilon$(1S) pair production cross section and search for resonances decaying to $\\Upsilon$(1S)$\\mu^+\\mu^-$ in proton-proton collisions at $\\sqrt{s}=$ 13 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 72558,
+      "title": "Angular analysis of $B^0 \\to K^\\ast(892)^0 \\ell^+ \\ell^-$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 76987,
+      "title": "Precise determination of the CKM matrix element $\\left| V_{cb}\\right|$ with $\\bar B^0 \\to D^{*\\,+} \\, \\ell^- \\, \\bar \\nu_\\ell$ decays with hadronic tagging at Belle",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 38419,
+      "title": "A study of gamma gamma -> Ks Ks production at energies of 2.4-4.0GeV at Belle",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 145799,
+      "title": "Search for low-mass resonances decaying into two jets and produced in association with a photon or a jet at $\\sqrt{s}=13$ TeV with the ATLAS detector",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 82574,
+      "title": "Study of $\\chi_{bJ}(1P)$ Properties in the Radiative $\\Upsilon(2S)$ Decays",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 141377,
+      "title": "Ground and excited charmonium state production in p+p collisions at sqrt(s)=200 GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 41734,
+      "title": "A search for charmonium states produced in central pp interactions at 450 GeV/c",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    }
+  ],
+  "selected_record": 18803,
+  "selection_reason": "Score 170.0 >= threshold 50",
+  "table_validations": []
+}

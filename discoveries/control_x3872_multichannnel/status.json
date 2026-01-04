@@ -1,11 +1,13 @@
 {
   "slug": "control_x3872_multichannnel",
-  "current_step": "acquire",
+  "current_step": "run_rank1",
   "completed_steps": [
     "scaffold",
-    "locate_data"
+    "locate_data",
+    "acquire",
+    "extract_numeric"
   ],
-  "last_update_utc": "2026-01-02T23:42:59.554668+00:00",
+  "last_update_utc": "2026-01-03T03:59:23.429570+00:00",
   "blocked_reason": null,
   "error_message": null,
   "discovered_urls": []

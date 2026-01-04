@@ -56,7 +56,7 @@
     },
     {
       "source": "hepdata",
-      "query": "https://www.hepdata.net/api/record/ins2668013"
+      "query": "https://www.hepdata.net/record/ins2668013?format=json"
     },
     {
       "source": "hepdata",
@@ -111,6 +111,860 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:cms+X%287100%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.575358+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://www.hepdata.net/record/129530?format=json",
+      "type": "hepdata_record",
+      "record_id": 129530,
+      "title": "Constraints on anomalous Higgs boson couplings to vector bosons and fermions from the production of Higgs bosons using the $ \\tau\\tau$ final state",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/31679?format=json",
+      "type": "hepdata_record",
+      "record_id": 31679,
+      "title": "Precision measurement of the neutron spin asymmetry A(1)(n) and spin-flavor decomposition in the valence quark region.",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/31726?format=json",
+      "type": "hepdata_record",
+      "record_id": 31726,
+      "title": "Precision measurement of the neutron spin asymmetries and spin-dependent structure functions in the valence quark region.",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/56870?format=json",
+      "type": "hepdata_record",
+      "record_id": 56870,
+      "title": "Near-threshold Photoproduction of Phi Mesons from Deuterium",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/88920?format=json",
+      "type": "hepdata_record",
+      "record_id": 88920,
+      "title": "Search for the X(5568) state decaying into $\\mathrm{B}^{0}_{\\mathrm{s}}\\pi^{\\pm}$ in proton-proton collisions at $\\sqrt{s} = $ 8 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/141076?format=json",
+      "type": "hepdata_record",
+      "record_id": 141076,
+      "title": "Search for a new heavy scalar particle decaying into a Higgs boson and a new scalar singlet in final states with one or two light leptons and a pair of $\\tau$-leptons with the ATLAS detector",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/94444?format=json",
+      "type": "hepdata_record",
+      "record_id": 94444,
+      "title": "Observation of the B$^0_\\mathrm{s}$ $\\to$ X(3872)$\\phi$ decay",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/101343?format=json",
+      "type": "hepdata_record",
+      "record_id": 101343,
+      "title": "Transverse Single-Spin Asymmetry and Cross-Section for pi0 and eta Mesons at Large Feynman-x in Polarized p+p Collisions at sqrt(s)=200 GeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/77606?format=json",
+      "type": "hepdata_record",
+      "record_id": 77606,
+      "title": "A search for new phenomena in pp collisions at sqrt(s) = 13 TeV in final states with missing transverse momentum and at least one jet using the alphaT variable",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/89270?format=json",
+      "type": "hepdata_record",
+      "record_id": 89270,
+      "title": "Study of the $\\mathrm{B}^{+}\\rightarrow \\mathrm{J}/\\psi \\bar{\\Lambda} \\mathrm{p}$ decay in proton-proton collisions at $\\sqrt{s}= 8~\\mathrm{TeV}$",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/146017?format=json",
+      "type": "hepdata_record",
+      "record_id": 146017,
+      "title": "Elliptic anisotropy measurement of the f$_0$(980) hadron in proton-lead collisions and evidence for its quark-antiquark composition",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/114869?format=json",
+      "type": "hepdata_record",
+      "record_id": 114869,
+      "title": "Observation of an exotic narrow doubly charmed tetraquark",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/113470?format=json",
+      "type": "hepdata_record",
+      "record_id": 113470,
+      "title": "Study of the doubly charmed tetraquark $T_{cc}^+$",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/93921?format=json",
+      "type": "hepdata_record",
+      "record_id": 93921,
+      "title": "Measurement of the $\\Upsilon$(1S) pair production cross section and search for resonances decaying to $\\Upsilon$(1S)$\\mu^+\\mu^-$ in proton-proton collisions at $\\sqrt{s}=$ 13 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/102493?format=json",
+      "type": "hepdata_record",
+      "record_id": 102493,
+      "title": "Observation of a new excited beauty strange baryon decaying to $\\Xi^-_\\mathrm{b} \\pi^+ \\pi^-$",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/114984?format=json",
+      "type": "hepdata_record",
+      "record_id": 114984,
+      "title": "Observation of triple J/$\\psi$ meson production in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/95469?format=json",
+      "type": "hepdata_record",
+      "record_id": 95469,
+      "title": "Measurement of the top quark forward-backward production asymmetry and the anomalous chromoelectric and chromomagnetic moments in pp collisions at $\\sqrt{s} =$ 13 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/102957?format=json",
+      "type": "hepdata_record",
+      "record_id": 102957,
+      "title": "Observation of tW production in the single-lepton channel in pp collisions at $\\sqrt{s}$ = 13 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/93362?format=json",
+      "type": "hepdata_record",
+      "record_id": 93362,
+      "title": "A measurement of the Higgs boson mass in the diphoton decay channel",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/80189?format=json",
+      "type": "hepdata_record",
+      "record_id": 80189,
+      "title": "Measurements of properties of the Higgs boson decaying into the four-lepton final state in pp collisions at sqrt(s) = 13 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://www.hepdata.net/record/102525?format=json",
+      "type": "hepdata_record",
+      "record_id": 102525,
+      "title": "Measurements of production cross sections of the Higgs boson in the four-lepton final state in proton-proton collisions at $\\sqrt{s} = $ 13 TeV",
+      "collaboration": ""
+    },
+    {
+      "url": "https://opendata.cern.ch/record/545",
+      "type": "cern_opendata_record",
+      "record_id": "545",
+      "title": "Datasets derived from the Run2011A SingleElectron, SingleMu, DoubleElectron, and DoubleMu primary datasets",
+      "experiment": [
+        "CMS"
+      ],
+      "files": [
+        {
+          "key": "Wmunu.csv",
+          "size": 7969331,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/Run2011A/SingleMu/CSV/12Oct2013-v1/Wmunu.csv"
+        },
+        {
+          "key": "Wenu.csv",
+          "size": 9992209,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/Run2011A/SingleElectron/CSV/12Oct2013-v1/Wenu.csv"
+        },
+        {
+          "key": "Zmumu.csv",
+          "size": 970550,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/Run2011A/DoubleMu/CSV/12Oct2013-v1/Zmumu.csv"
+        },
+        {
+          "key": "Zee.csv",
+          "size": 1445651,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/Run2011A/DoubleElectron/CSV/12Oct2013-v1/Zee.csv"
+        },
+        {
+          "key": "Dimuon_SingleMu.csv",
+          "size": 11806904,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/Run2011A/SingleMu/CSV/12Oct2013-v1/Dimuon_SingleMu.csv"
+        },
+        {
+          "key": "Dimuon_DoubleMu.csv",
+          "size": 13935840,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/Run2011A/DoubleMu/CSV/12Oct2013-v1/Dimuon_DoubleMu.csv"
+        },
+        {
+          "key": "Jpsimumu.csv",
+          "size": 2639302,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/Run2011A/DoubleMu/CSV/12Oct2013-v1/Jpsimumu.csv"
+        },
+        {
+          "key": "Ymumu.csv",
+          "size": 2599212,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/Run2011A/DoubleMu/CSV/12Oct2013-v1/Ymumu.csv"
+        }
+      ]
+    },
+    {
+      "url": "https://opendata.cern.ch/record/310",
+      "type": "cern_opendata_record",
+      "record_id": "310",
+      "title": "Event files for CMS masterclass exercise 2014",
+      "experiment": [
+        "CMS"
+      ],
+      "files": [
+        {
+          "key": "masterclass_1-leptons.csv",
+          "size": 8747,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_1-leptons.csv"
+        },
+        {
+          "key": "masterclass_11-lnu.csv",
+          "size": 10588,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_11-lnu.csv"
+        },
+        {
+          "key": "masterclass_11-photon.csv",
+          "size": 123,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_11-photon.csv"
+        },
+        {
+          "key": "masterclass_11.ig",
+          "size": 63150455,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_11.ig"
+        },
+        {
+          "key": "masterclass_12-leptons.csv",
+          "size": 11650,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_12-leptons.csv"
+        },
+        {
+          "key": "masterclass_12-lnu.csv",
+          "size": 10716,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_12-lnu.csv"
+        },
+        {
+          "key": "masterclass_12-photon.csv",
+          "size": 127,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_12-photon.csv"
+        },
+        {
+          "key": "masterclass_12.ig",
+          "size": 59339377,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_12.ig"
+        },
+        {
+          "key": "masterclass_13-leptons.csv",
+          "size": 13903,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_13-leptons.csv"
+        },
+        {
+          "key": "masterclass_13-lnu.csv",
+          "size": 10996,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_13-lnu.csv"
+        },
+        {
+          "key": "masterclass_13-photon.csv",
+          "size": 127,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_13-photon.csv"
+        },
+        {
+          "key": "masterclass_1-lnu.csv",
+          "size": 10846,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_1-lnu.csv"
+        },
+        {
+          "key": "masterclass_13.ig",
+          "size": 59788242,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_13.ig"
+        },
+        {
+          "key": "masterclass_14-leptons.csv",
+          "size": 8379,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_14-leptons.csv"
+        },
+        {
+          "key": "masterclass_14-lnu.csv",
+          "size": 11611,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_14-lnu.csv"
+        },
+        {
+          "key": "masterclass_14-photon.csv",
+          "size": 126,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_14-photon.csv"
+        },
+        {
+          "key": "masterclass_14.ig",
+          "size": 64351304,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_14.ig"
+        },
+        {
+          "key": "masterclass_15-leptons.csv",
+          "size": 11599,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_15-leptons.csv"
+        },
+        {
+          "key": "masterclass_15-lnu.csv",
+          "size": 11490,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_15-lnu.csv"
+        },
+        {
+          "key": "masterclass_15-photon.csv",
+          "size": 126,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_15-photon.csv"
+        },
+        {
+          "key": "masterclass_15.ig",
+          "size": 60762184,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_15.ig"
+        },
+        {
+          "key": "masterclass_16-leptons.csv",
+          "size": 15899,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_16-leptons.csv"
+        },
+        {
+          "key": "masterclass_1-photon.csv",
+          "size": 123,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_1-photon.csv"
+        },
+        {
+          "key": "masterclass_16-lnu.csv",
+          "size": 9926,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_16-lnu.csv"
+        },
+        {
+          "key": "masterclass_16-photon.csv",
+          "size": 123,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_16-photon.csv"
+        },
+        {
+          "key": "masterclass_16.ig",
+          "size": 59539570,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_16.ig"
+        },
+        {
+          "key": "masterclass_17-leptons.csv",
+          "size": 9093,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_17-leptons.csv"
+        },
+        {
+          "key": "masterclass_17-lnu.csv",
+          "size": 10982,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_17-lnu.csv"
+        },
+        {
+          "key": "masterclass_17-photon.csv",
+          "size": 123,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_17-photon.csv"
+        },
+        {
+          "key": "masterclass_17.ig",
+          "size": 62130580,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_17.ig"
+        },
+        {
+          "key": "masterclass_18-leptons.csv",
+          "size": 13632,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_18-leptons.csv"
+        },
+        {
+          "key": "masterclass_18-lnu.csv",
+          "size": 10858,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_18-lnu.csv"
+        },
+        {
+          "key": "masterclass_18-photon.csv",
+          "size": 125,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_18-photon.csv"
+        },
+        {
+          "key": "masterclass_1.ig",
+          "size": 63466325,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_1.ig"
+        },
+        {
+          "key": "masterclass_18.ig",
+          "size": 60314289,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_18.ig"
+        },
+        {
+          "key": "masterclass_19-leptons.csv",
+          "size": 5403,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_19-leptons.csv"
+        },
+        {
+          "key": "masterclass_19-lnu.csv",
+          "size": 12141,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_19-lnu.csv"
+        },
+        {
+          "key": "masterclass_19-photon.csv",
+          "size": 127,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_19-photon.csv"
+        },
+        {
+          "key": "masterclass_19.ig",
+          "size": 63208795,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_19.ig"
+        },
+        {
+          "key": "masterclass_2-leptons.csv",
+          "size": 10950,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_2-leptons.csv"
+        },
+        {
+          "key": "masterclass_2-lnu.csv",
+          "size": 11224,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_2-lnu.csv"
+        },
+        {
+          "key": "masterclass_2-photon.csv",
+          "size": 127,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_2-photon.csv"
+        },
+        {
+          "key": "masterclass_2.ig",
+          "size": 62500899,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_2.ig"
+        },
+        {
+          "key": "masterclass_3-leptons.csv",
+          "size": 12781,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_3-leptons.csv"
+        },
+        {
+          "key": "masterclass_10-leptons.csv",
+          "size": 6832,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_10-leptons.csv"
+        },
+        {
+          "key": "masterclass_3-lnu.csv",
+          "size": 11123,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_3-lnu.csv"
+        },
+        {
+          "key": "masterclass_3-photon.csv",
+          "size": 127,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_3-photon.csv"
+        },
+        {
+          "key": "masterclass_3.ig",
+          "size": 61956913,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_3.ig"
+        },
+        {
+          "key": "masterclass_4-leptons.csv",
+          "size": 14707,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_4-leptons.csv"
+        },
+        {
+          "key": "masterclass_4-lnu.csv",
+          "size": 10576,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_4-lnu.csv"
+        },
+        {
+          "key": "masterclass_4-photon.csv",
+          "size": 126,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_4-photon.csv"
+        },
+        {
+          "key": "masterclass_4.ig",
+          "size": 62720130,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_4.ig"
+        },
+        {
+          "key": "masterclass_5-leptons.csv",
+          "size": 9780,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_5-leptons.csv"
+        },
+        {
+          "key": "masterclass_5-lnu.csv",
+          "size": 11648,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_5-lnu.csv"
+        },
+        {
+          "key": "masterclass_5-photon.csv",
+          "size": 126,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_5-photon.csv"
+        },
+        {
+          "key": "masterclass_10-lnu.csv",
+          "size": 11914,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_10-lnu.csv"
+        },
+        {
+          "key": "masterclass_5.ig",
+          "size": 62710389,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_5.ig"
+        },
+        {
+          "key": "masterclass_6-leptons.csv",
+          "size": 13387,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_6-leptons.csv"
+        },
+        {
+          "key": "masterclass_6-lnu.csv",
+          "size": 10751,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_6-lnu.csv"
+        },
+        {
+          "key": "masterclass_6-photon.csv",
+          "size": 123,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_6-photon.csv"
+        },
+        {
+          "key": "masterclass_6.ig",
+          "size": 61086654,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_6.ig"
+        },
+        {
+          "key": "masterclass_7-leptons.csv",
+          "size": 15972,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_7-leptons.csv"
+        },
+        {
+          "key": "masterclass_7-lnu.csv",
+          "size": 10427,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_7-lnu.csv"
+        },
+        {
+          "key": "masterclass_7-photon.csv",
+          "size": 123,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_7-photon.csv"
+        },
+        {
+          "key": "masterclass_7.ig",
+          "size": 65644163,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_7.ig"
+        },
+        {
+          "key": "masterclass_8-leptons.csv",
+          "size": 9705,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_8-leptons.csv"
+        },
+        {
+          "key": "masterclass_10-photon.csv",
+          "size": 122,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_10-photon.csv"
+        },
+        {
+          "key": "masterclass_8-lnu.csv",
+          "size": 11796,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_8-lnu.csv"
+        },
+        {
+          "key": "masterclass_8-photon.csv",
+          "size": 125,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_8-photon.csv"
+        },
+        {
+          "key": "masterclass_8.ig",
+          "size": 65166464,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_8.ig"
+        },
+        {
+          "key": "masterclass_9-leptons.csv",
+          "size": 6558,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_9-leptons.csv"
+        },
+        {
+          "key": "masterclass_9-lnu.csv",
+          "size": 12025,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_9-lnu.csv"
+        },
+        {
+          "key": "masterclass_9-photon.csv",
+          "size": 127,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_9-photon.csv"
+        },
+        {
+          "key": "masterclass_9.ig",
+          "size": 57749966,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_9.ig"
+        },
+        {
+          "key": "masterclass_10.ig",
+          "size": 59177597,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_10.ig"
+        },
+        {
+          "key": "masterclass_11-leptons.csv",
+          "size": 13871,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass_11-leptons.csv"
+        },
+        {
+          "key": "masterclass-2014.xls",
+          "size": 728576,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/masterclass-2014/masterclass-2014.xls"
+        }
+      ]
+    },
+    {
+      "url": "https://opendata.cern.ch/record/560",
+      "type": "cern_opendata_record",
+      "record_id": "560",
+      "title": "Example code to produce the di-muon spectrum from a CMS 2010 primary dataset",
+      "experiment": [
+        "CMS"
+      ],
+      "files": [
+        {
+          "key": "BuildFile.xml",
+          "size": 342,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/software/dimuon-spectrum-2010/BuildFile.xml"
+        },
+        {
+          "key": "DemoAnalyzer.cc",
+          "size": 14689,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/software/dimuon-spectrum-2010/DemoAnalyzer.cc"
+        },
+        {
+          "key": "demoanalyzer_cfg.py",
+          "size": 3525,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/software/dimuon-spectrum-2010/demoanalyzer_cfg.py"
+        },
+        {
+          "key": "Mudemo.root",
+          "size": 14935,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/software/dimuon-spectrum-2010/Mudemo.root"
+        }
+      ]
+    },
+    {
+      "url": "https://opendata.cern.ch/record/5001",
+      "type": "cern_opendata_record",
+      "record_id": "5001",
+      "title": "Example code to produce the di-muon spectrum from a CMS 2011 or 2012 primary dataset",
+      "experiment": [
+        "CMS"
+      ],
+      "files": [
+        {
+          "key": "BuildFile.xml",
+          "size": 331,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/software/dimuon-spectrum-2011/BuildFile.xml"
+        },
+        {
+          "key": "DemoAnalyzer.cc",
+          "size": 14689,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/software/dimuon-spectrum-2011/DemoAnalyzer.cc"
+        },
+        {
+          "key": "Mudemo.root",
+          "size": 16435,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/software/dimuon-spectrum-2011/Mudemo.root"
+        },
+        {
+          "key": "demoanalyzer_cfg.py",
+          "size": 3826,
+          "url": "root://eospublic.cern.ch//eos/opendata/cms/software/dimuon-spectrum-2011/demoanalyzer_cfg.py"
+        }
+      ]
+    },
+    {
+      "url": "https://opendata.cern.ch/record/46262",
+      "type": "cern_opendata_record",
+      "record_id": "46262",
+      "title": "/NMSSM_XToYHTo2B2Tau_MX-1800_MY-80_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/46263",
+      "type": "cern_opendata_record",
+      "record_id": "46263",
+      "title": "/NMSSM_XToYHTo2B2Tau_MX-1800_MY-80_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/59134",
+      "type": "cern_opendata_record",
+      "record_id": "59134",
+      "title": "/NMSSM_XToYHTo2W2BTo4Q2B_MX-1600_MY-1100_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/59135",
+      "type": "cern_opendata_record",
+      "record_id": "59135",
+      "title": "/NMSSM_XToYHTo2W2BTo4Q2B_MX-1600_MY-1100_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/69370",
+      "type": "cern_opendata_record",
+      "record_id": "69370",
+      "title": "/VHToGG_M130_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "http://arxiv.org/abs/2306.07164v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2306.07164v2",
+      "title": "New structures in the J/$\u03c8$J/$\u03c8$ mass spectrum in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+      "pdf_url": "https://arxiv.org/pdf/2306.07164v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2210.05854v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2210.05854v2",
+      "title": "Proton reconstruction with the CMS-TOTEM Precision Proton Spectrometer",
+      "pdf_url": "https://arxiv.org/pdf/2210.05854v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2404.06614v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2404.06614v2",
+      "title": "The CMS statistical analysis and combination tool: COMBINE",
+      "pdf_url": "https://arxiv.org/pdf/2404.06614v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2011.01185v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2011.01185v2",
+      "title": "The very forward CASTOR calorimeter of the CMS experiment",
+      "pdf_url": "https://arxiv.org/pdf/2011.01185v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1706.04965v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1706.04965v2",
+      "title": "Particle-flow reconstruction and global event description with the CMS detector",
+      "pdf_url": "https://arxiv.org/pdf/1706.04965v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2403.16134v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2403.16134v2",
+      "title": "Enriching the physics program of the CMS experiment via data scouting and data parking",
+      "pdf_url": "https://arxiv.org/pdf/2403.16134v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.05466v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.05466v2",
+      "title": "Development of the CMS detector for the CERN LHC Run 3",
+      "pdf_url": "https://arxiv.org/pdf/2309.05466v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2410.17038v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2410.17038v2",
+      "title": "Performance of the CMS high-level trigger during LHC Run 2",
+      "pdf_url": "https://arxiv.org/pdf/2410.17038v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2003.00503v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2003.00503v2",
+      "title": "Pileup mitigation at CMS in 13 TeV data",
+      "pdf_url": "https://arxiv.org/pdf/2003.00503v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2102.04790v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2102.04790v2",
+      "title": "Performance of the CMS muon trigger system in proton-proton collisions at $\\sqrt{s} =$ 13 TeV",
+      "pdf_url": "https://arxiv.org/pdf/2102.04790v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1609.02366v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1609.02366v2",
+      "title": "The CMS trigger system",
+      "pdf_url": "https://arxiv.org/pdf/1609.02366v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2512.15091v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2512.15091v1",
+      "title": "Search for the decays $X(3872)\\to K_{S}^{0}K^{\\pm}\u03c0^{\\mp}$ and $K^*(892)\\bar{K}$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2512.15091v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2502.20821v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2502.20821v2",
+      "title": "Improved measurement of absolute branching fraction of the inclusive decay $\u039b_{c}^{+} \\to K_{S}^{0} X$",
+      "pdf_url": "https://arxiv.org/pdf/2502.20821v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2406.09475v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2406.09475v1",
+      "title": "Search for $X(1870)$ via the decay $J/\u03c8\\to \u03c9K^+ K^-\u03b7$",
+      "pdf_url": "https://arxiv.org/pdf/2406.09475v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2403.16811v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2403.16811v2",
+      "title": "Cross section measurement of $e^+e^-\\to \u03b7\u03c8(2S)$ and search for $e^+e^-\\to\u03b7\\tilde{X}(3872)$",
+      "pdf_url": "https://arxiv.org/pdf/2403.16811v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2408.01597v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2408.01597v2",
+      "title": "Search for $X(3872)\\to\u03c0^0\u03c0^0\u03c7_{c1,2}$",
+      "pdf_url": "https://arxiv.org/pdf/2408.01597v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2305.11682v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2305.11682v2",
+      "title": "Search for a scalar partner of the $X(3872)$ via $\u03c8(3770)$ decays into $\u03b3\u03b7\u03b7'$ and $\u03b3\u03c0^{+}\u03c0^{-}J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2305.11682v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2310.17937v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2310.17937v3",
+      "title": "Observation of the Anomalous Shape of $X(1840)$ in $J/\u03c8\\rightarrow \u03b33(\u03c0^+ \u03c0^-)$ Indicating a Second Resonance Near $p\\bar{p}$ Threshold",
+      "pdf_url": "https://arxiv.org/pdf/2310.17937v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.01502v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.01502v1",
+      "title": "A coupled-channel analysis of the $X(3872)$ lineshape with BESIII data",
+      "pdf_url": "https://arxiv.org/pdf/2309.01502v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2312.05324v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2312.05324v2",
+      "title": "Determination of spin-parity quantum numbers of X(2370) as $0^{-+}$ from $J/\u03c8\\rightarrow\u03b3K^{0}_{S}K^{0}_{S}\u03b7^{\\prime}$",
+      "pdf_url": "https://arxiv.org/pdf/2312.05324v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2301.03214v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2301.03214v2",
+      "title": "Measurements of the branching fractions of the inclusive decays $D^{0}(D^{+})\\to \u03c0^+\u03c0^+\u03c0^-X$",
+      "pdf_url": "https://arxiv.org/pdf/2301.03214v2.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T01:43:27.304894+00:00"
 }

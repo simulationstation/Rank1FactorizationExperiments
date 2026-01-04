@@ -89,6 +89,261 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:besiii+Zc%284020%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.526733+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://www.hepdata.net/record/160247?format=json",
+      "type": "hepdata_record",
+      "record_id": 160247,
+      "title": "Observation of a Three-Resonance Structure in the Cross Section of $e^+e^-\\to\\pi^+\\pi^- h_c$",
+      "collaboration": "",
+      "score": 120.0
+    },
+    {
+      "url": "http://arxiv.org/abs/1303.5949v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1303.5949v2",
+      "title": "Observation of a charged charmoniumlike structure in e+e- to pi+pi-J/psi at \\sqrt{s}=4.26 GeV",
+      "pdf_url": "https://arxiv.org/pdf/1303.5949v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1310.1163v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1310.1163v2",
+      "title": "Observation of a charged (DD*bar)- mass peak in e+e- --> pi+ (DD*bar)- at Ecm=4.26 GeV",
+      "pdf_url": "https://arxiv.org/pdf/1310.1163v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2111.07571v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2111.07571v1",
+      "title": "Number of $\\rm J/\u03c8$ events at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2111.07571v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0911.4960v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0911.4960v1",
+      "title": "Design and Construction of the BESIII Detector",
+      "pdf_url": "https://arxiv.org/pdf/0911.4960v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1311.1274v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1311.1274v1",
+      "title": "Study of charmonium decays at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1311.1274v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1307.2022v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1307.2022v1",
+      "title": "Measurement of the integrated luminosities of the data taken by BESIII at $\\sqrt s=$ 3.650 and 3.773 GeV",
+      "pdf_url": "https://arxiv.org/pdf/1307.2022v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1310.4409v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1310.4409v1",
+      "title": "Recent results from BESIII experiment",
+      "pdf_url": "https://arxiv.org/pdf/1310.4409v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1802.04057v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1802.04057v2",
+      "title": "Search for the rare decay of $\u03c8(3686) \\rightarrow \u039b_c^+ \\overline{p} e^+ e^- + c.c.$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1802.04057v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1506.06018v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1506.06018v2",
+      "title": "Observation of $Z_c(3900)^{0}$ in $e^+e^-\\to\u03c0^0\u03c0^0 J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/1506.06018v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1311.0762v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1311.0762v1",
+      "title": "Observation of $Z_c(3900)$ both by BESIII and Belle",
+      "pdf_url": "https://arxiv.org/pdf/1311.0762v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2004.13788v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2004.13788v2",
+      "title": "Study of the process $e^+e^-\\to\u03c0^0\u03c0^0 J/\u03c8$ and neutral charmonium-like state $Z_c(3900)^0$",
+      "pdf_url": "https://arxiv.org/pdf/2004.13788v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1410.0259v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1410.0259v3",
+      "title": "Radiative and dilepton decays of the hadronic molecule Zc(3900)+",
+      "pdf_url": "https://arxiv.org/pdf/1410.0259v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/9801226v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/9801226v2",
+      "title": "An Explanation for the rho-pi Puzzle of J/psi and psi' Decays",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/9801226v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0804.4446v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "0804.4446v3",
+      "title": "J/psi production at RHIC-PHENIX",
+      "pdf_url": "https://arxiv.org/pdf/0804.4446v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0709.4491v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "0709.4491v2",
+      "title": "Evidence for a J/psi-ppbar Pauli Strong Coupling ?",
+      "pdf_url": "https://arxiv.org/pdf/0709.4491v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/9906387v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/9906387v2",
+      "title": "J/Psi theory review, or from J to Psi",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/9906387v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0411042v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0411042v1",
+      "title": "The phase of the sigma -> pi-pi amplitude in J/Psi -> omega-pi-pi",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0411042v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1411.7483v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1411.7483v1",
+      "title": "X(3872) --> J/psi pi pi pi as a Three-Step Decay",
+      "pdf_url": "https://arxiv.org/pdf/1411.7483v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0304201v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0304201v1",
+      "title": "The perspectives of decoding the nature of the a0(980) and f0(980) mesons and of defining the relative phase between the three-gluon and one-photon amplitudes in the J/psi decays",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0304201v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/9904326v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/9904326v1",
+      "title": "Exclusive hadron production in e^+e^- collisions up to the J/psi energy",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/9904326v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0507290v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0507290v3",
+      "title": "The Effect of Penguins in the B_d to J/psi K^0 CP asymmetry",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0507290v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1612.06490v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1612.06490v2",
+      "title": "Amplitude analysis and the nature of the Zc(3900)",
+      "pdf_url": "https://arxiv.org/pdf/1612.06490v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2102.13058v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2102.13058v2",
+      "title": "Axial meson exchange and the $Z_c(3900)$ and $Z_{cs}(3985)$ resonances as heavy hadron molecules",
+      "pdf_url": "https://arxiv.org/pdf/2102.13058v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1306.0824v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1306.0824v2",
+      "title": "Strong decays of molecular states Zc(+) and Zc'(+)",
+      "pdf_url": "https://arxiv.org/pdf/1306.0824v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1505.05619v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1505.05619v2",
+      "title": "Mass spectra of Zc and Zb exotic states as hadron molecules",
+      "pdf_url": "https://arxiv.org/pdf/1505.05619v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1707.09612v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1707.09612v2",
+      "title": "Magnetic and quadrupole moments of the $Z_c(3900)$",
+      "pdf_url": "https://arxiv.org/pdf/1707.09612v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1307.2414v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1307.2414v1",
+      "title": "Is $Z_c(3900)$ a molecular state",
+      "pdf_url": "https://arxiv.org/pdf/1307.2414v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1501.03863v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1501.03863v2",
+      "title": "Zc(4200)+ decay width as a charmonium-like tetraquark state",
+      "pdf_url": "https://arxiv.org/pdf/1501.03863v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1602.03465v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1602.03465v2",
+      "title": "Fate of the Tetraquark Candidate Zc(3900) from Lattice QCD",
+      "pdf_url": "https://arxiv.org/pdf/1602.03465v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1406.6967v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1406.6967v3",
+      "title": "$Z_c(3900)$ as a Four-Quark State",
+      "pdf_url": "https://arxiv.org/pdf/1406.6967v3.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:52:00.925760+00:00",
+  "downloaded_files": [
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/hepdata_160247.json",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/hepdata_ins2908630_Table%20III%20part%201.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/hepdata_ins2908630_Table%20III%20part%202.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/hepdata_ins2908630_Table%20IV.csv",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1303.5949v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1310.1163v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_2111.07571v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_0911.4960v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1311.1274v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1307.2022v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1310.4409v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1802.04057v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1506.06018v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1311.0762v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_2004.13788v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1410.0259v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_9801226v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_0804.4446v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_0709.4491v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_9906387v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_0411042v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1411.7483v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_0304201v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_9904326v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_0507290v3.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1612.06490v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_2102.13058v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1306.0824v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1505.05619v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1707.09612v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1307.2414v1.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1501.03863v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1602.03465v2.pdf",
+    "/home/primary/DarkBItParticleColiderPredictions/discoveries/besiii_zc3900_pijpsi_ddstar/raw/arxiv_1406.6967v3.pdf"
+  ]
 }

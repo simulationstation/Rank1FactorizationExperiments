@@ -1,0 +1,128 @@
+{
+  "query": "https://www.hepdata.net/search?q=BESIII+omega+chi_c&format=json; https://www.hepdata.net/search?q=Y%284230%29+omega&format=json; https://www.hepdata.net/search?q=e%2Be-+omega+charmonium&format=json",
+  "top_k_hits": [
+    {
+      "record_id": 64242,
+      "title": "Measurement of chi_c1 and chi_c2 production with sqrt(s) = 7 TeV pp collisions at ATLAS",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 59360,
+      "title": "Measurement of the ratio of prompt $\\chi_{c}$ to $J/\\psi$ production in $pp$ collisions at $\\sqrt{s}=7$ TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 160247,
+      "title": "Observation of a Three-Resonance Structure in the Cross Section of $e^+e^-\\to\\pi^+\\pi^- h_c$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 59352,
+      "title": "Measurement of the cross-section ratio $\\sigma(\\chi_{c2})/\\sigma(\\chi_{c1})$ for prompt $\\chi_c$ production at $\\sqrt{s}=7$ TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 76981,
+      "title": "Observation of $e^+e^- \\rightarrow \\omega \\chi_{c1,2}$ near $\\sqrt{s}$ = 4.42 and 4.6 GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 57487,
+      "title": "J / psi production via chi(c) decays in 920-GeV pA interactions",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 98861,
+      "title": "The Proton-$\\Omega$ correlation function in Au+Au collisions at $\\sqrt{s_{NN}}$=200 GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 89872,
+      "title": "Precision Study of $\\eta^\\prime\\rightarrow\\gamma\\pi^+\\pi^-$ Decay Dynamics",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 64597,
+      "title": "Study of $e^+e^- \\rightarrow p\\bar{p}$ in the vicinity of $\\psi(3770)$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 73336,
+      "title": "Measurement of the $e^{+}e^{-} \\to \\eta J/\\psi$ cross section and search for $e^{+}e^{-} \\to \\pi^{0} J/\\psi$ at center-of-mass energies between 3.810 and 4.600~GeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 32346,
+      "title": "ANTI-PROTON - PROTON ANNIHILATION INTO FIVE AND MORE PIONS AT 2.32-GeV/c",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 77222,
+      "title": "Measurement and QCD analysis of double-differential inclusive jet cross-sections in pp collisions at sqrt(s) = 8 TeV and ratios to 2.76 and 7 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 93921,
+      "title": "Measurement of the $\\Upsilon$(1S) pair production cross section and search for resonances decaying to $\\Upsilon$(1S)$\\mu^+\\mu^-$ in proton-proton collisions at $\\sqrt{s}=$ 13 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 35148,
+      "title": "Production of Slow Protons in the Inclusive Reactions $p (\\pi^+) n \\to p_{Slow}$ + x at 195 GeV/c",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 153205,
+      "title": "Measurement of $\\Omega^0_{\\rm c}$ baryon production and branching-fraction ratio ${\\rm BR(\\Omega^0_c \\rightarrow \\Omega^- e^+\\nu_e)} / {\\rm BR(\\Omega^0_c \\rightarrow \\Omega^- \\pi^+)}$ in pp collisions at $\\sqrt{s}$ = 13 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    }
+  ],
+  "selected_record": null,
+  "selection_reason": "Best score 0.0 < threshold 50",
+  "table_validations": []
+}

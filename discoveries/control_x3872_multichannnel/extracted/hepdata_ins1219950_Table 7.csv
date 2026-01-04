@@ -1,0 +1,25 @@
+#: table_doi: 10.17182/hepdata.60421.v1/t7
+#: name: Table 7
+#: description: Dipion invariant-mass spectrum for X(3872) ->J/PSI pi+pi- decays corrected for acceptance and efficiency, dividing by the total cross section for 0.5 < M(PI+PI-) < 0.78 GEV.
+
+#: data_file: Table7.yaml
+#: keyword reactions: P P --> X(3872) X
+#: keyword observables: DSIG/DM
+#: keyword phrases: Inclusive | J/Psi | Single Differential Cross Section | Proton-Proton Scattering
+#: ETARAP,,,-1.25-1.25
+#: PT [GeV],,,10.0-50.0
+#: RE,,,P P --> X(3862) < J/PSI PI+ PI- > X
+M(PI+PI-) [GEV],M(PI+PI-) [GEV] LOW,M(PI+PI-) [GEV] HIGH,1/SIG x D(SIG)/DM(PI+PI-) [GEV-1],stat +,stat -,sys +,sys -
+0.525,0.5,0.55,-0.05,0.45,-0.45,0.03,-0.03
+0.5625,0.55,0.575,1.53,0.75,-0.75,0.33,-0.33
+0.5874999999999999,0.575,0.6,1.13,0.69,-0.69,0.21,-0.21
+0.6125,0.6,0.625,0.94,0.65,-0.65,0.18,-0.18
+0.6375,0.625,0.65,1.69,0.62,-0.62,0.31,-0.31
+0.66,0.65,0.67,3.39,0.69,-0.69,0.98,-0.98
+0.6799999999999999,0.67,0.69,4.48,0.73,-0.73,0.72,-0.72
+0.7,0.69,0.71,6.49,0.67,-0.67,0.52,-0.52
+0.72,0.71,0.73,8.47,0.71,-0.71,0.49,-0.49
+0.74,0.73,0.75,9.45,0.73,-0.73,0.95,-0.95
+0.7575000000000001,0.75,0.765,10.66,0.76,-0.76,1.3,-1.3
+0.7725,0.765,0.78,4.3,0.74,-0.74,0.9,-0.9
+

@@ -1,0 +1,18 @@
+#: table_doi: 10.17182/hepdata.60421.v1/t5
+#: name: Table 5
+#: description: Differential cross section for prompt P P --> X + anything times branching fraction X-> J/PSI pi+ pi-.
+
+#: data_file: Table5.yaml
+#: keyword reactions: P P --> X(3872) X
+#: keyword observables: DSIG/DPT
+#: keyword phrases: Inclusive | J/Psi | Single Differential Cross Section | Transverse Momentum Dependence | Proton-Proton Scattering
+#: keyword cmenergies: 7000.0
+#: ETARAP,,,-1.2-1.2
+#: RE,,,P P --> X(3862) < J/PSI PI+ PI- > X
+#: SQRT(S) [GeV],,,7000.0
+PT [GEV],PT [GEV] LOW,PT [GEV] HIGH,BRxD(SIG)/DPT [NB/GEV],stat +,stat -,sys +,sys -
+11.55,10.0,13.5,0.211,0.034,-0.034,0.035,-0.035
+14.3,13.5,15.0,0.081,0.013,-0.013,0.01,-0.01
+16.32,15.0,18.0,0.039,0.0054,-0.0054,0.0042,-0.0042
+22.64,18.0,30.0,0.0068,0.0009,-0.0009,0.0009,-0.0009
+

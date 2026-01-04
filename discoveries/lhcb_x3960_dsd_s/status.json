@@ -1,12 +1,11 @@
 {
   "slug": "lhcb_x3960_dsd_s",
-  "current_step": "acquire",
+  "current_step": "locate_data",
   "completed_steps": [
-    "scaffold",
-    "locate_data"
+    "scaffold"
   ],
-  "last_update_utc": "2026-01-02T23:42:59.566540+00:00",
-  "blocked_reason": null,
+  "last_update_utc": "2026-01-03T03:59:41.644565+00:00",
+  "blocked_reason": "WRONG_HEPDATA_MATCH",
   "error_message": null,
   "discovered_urls": []
 }

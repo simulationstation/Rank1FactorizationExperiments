@@ -1,0 +1,15 @@
+{
+  "status": "NO_VALID_PAIRS",
+  "slug": "control_x3872_multichannnel",
+  "states": [
+    "X(3872)",
+    "chi_c1(2P)"
+  ],
+  "fit_window": [
+    3865,
+    3880
+  ],
+  "n_boot": 100,
+  "pairs": [],
+  "overall_verdict": "INCONCLUSIVE"
+}

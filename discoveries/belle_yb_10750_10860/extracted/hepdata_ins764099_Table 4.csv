@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.50307.v1/t4
+#: name: Table 4
+#: description: Cross section for the final state UPSI(1S) K+ K-.
+
+#: data_file: Table4.yaml
+#: keyword reactions: E+ E- --> UPSI(9460) K+ K-
+#: keyword observables: SIG
+#: keyword phrases: Exclusive | Upsilon | Integrated Cross Section | Cross Section | E+ E- Scattering | Strange production
+#: keyword cmenergies: 10.87
+#: RE,E+ E- --> UPSI(9460) K+ K-
+#: SQRT(S) [GeV],10.87
+SQRT(S) [GEV],SIG [PB],stat +,stat -,sys +,sys -
+10.87,0.185,0.048,-0.041,0.028,-0.028
+

@@ -1,14 +1,15 @@
 {
   "slug": "lhcb_pc_4312_extensions",
-  "current_step": "run_rank1",
+  "current_step": "summarize",
   "completed_steps": [
     "scaffold",
     "locate_data",
     "acquire",
-    "extract_numeric"
+    "extract_numeric",
+    "run_rank1"
   ],
-  "last_update_utc": "2026-01-03T00:31:40.463548+00:00",
-  "blocked_reason": "HARNESS_NOT_CONFIGURED",
+  "last_update_utc": "2026-01-03T01:38:28.786136+00:00",
+  "blocked_reason": null,
   "error_message": null,
   "discovered_urls": []
 }

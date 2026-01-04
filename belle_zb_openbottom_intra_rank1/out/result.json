@@ -1,0 +1,26 @@
+{
+  "kinematics": {
+    "Zb10610_in_BBstar": true,
+    "Zb10650_in_BBstar": true,
+    "Zb10610_in_BsBs": false,
+    "Zb10650_in_BsBs": true
+  },
+  "rank1_possible": false,
+  "reason": "Zb(10610) kinematically forbidden in B*B*\u03c0 channel",
+  "zb10610_in_bsbs": {
+    "a_zb10610": 0.0,
+    "a_zb10650": 0.1,
+    "lambda": 1.4307361157843843,
+    "p_value": 0.23164434157521152,
+    "status": "NOT DETECTED (as expected from kinematics)"
+  },
+  "zb10650_yields": {
+    "BB_star_total": 357,
+    "B_star_B_star_total": 161,
+    "Zb10650_in_BBstar_Sol1": 17.85,
+    "Zb10650_in_BBstar_Sol2": 85.67999999999999,
+    "Zb10650_in_BsBs": 161.0
+  },
+  "primary_verdict": "NO_TEST_POSSIBLE",
+  "verdict_reason": "Intra-open-bottom rank-1 test NOT POSSIBLE: Zb(10610) is kinematically forbidden in B*B*\u03c0 channel. Cannot compare R = g(Zb10650)/g(Zb10610) between channels."
+}

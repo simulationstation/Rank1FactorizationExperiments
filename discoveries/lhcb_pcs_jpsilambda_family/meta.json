@@ -107,6 +107,288 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:lhcb+Pcs%284459%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.539433+00:00"
+  "discovered_urls": [
+    {
+      "url": "http://arxiv.org/abs/2012.10380v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2012.10380v2",
+      "title": "Evidence of a $J/\u03c8\\varLambda$ structure and observation of excited $\\varXi^-$ states in the $\\varXi_b^-\\to J/\u03c8\\varLambda K^-$ decay",
+      "pdf_url": "https://arxiv.org/pdf/2012.10380v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2210.10346v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2210.10346v2",
+      "title": "Observation of a $J/\u03c8\u039b$ resonance consistent with a strange pentaquark candidate in $B^-\\to J/\u03c8\u039b\\bar{p}$ decays",
+      "pdf_url": "https://arxiv.org/pdf/2210.10346v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2212.07120v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2212.07120v2",
+      "title": "Search for the rare decays $W^+ \\to D^+_s\u03b3$ and $Z \\to D^0\u03b3$ at LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2212.07120v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2212.04977v5",
+      "type": "arxiv_paper",
+      "arxiv_id": "2212.04977v5",
+      "title": "Search for $K^0_{\\mathrm{S(L)}}\\to\u03bc^+\u03bc^-\u03bc^+\u03bc^-$ decays at LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2212.04977v5.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2112.08435v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2112.08435v2",
+      "title": "Identification of charm jets at LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2112.08435v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2310.05864v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2310.05864v2",
+      "title": "Helium identification with LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2310.05864v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2504.03088v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2504.03088v1",
+      "title": "Technology developments for LHCb Upgrade II",
+      "pdf_url": "https://arxiv.org/pdf/2504.03088v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1909.02957v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1909.02957v2",
+      "title": "Measurement of the electron reconstruction efficiency at LHCb",
+      "pdf_url": "https://arxiv.org/pdf/1909.02957v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2503.23087v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2503.23087v1",
+      "title": "Discovery potential of LHCb Upgrade II",
+      "pdf_url": "https://arxiv.org/pdf/2503.23087v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2503.24106v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2503.24106v1",
+      "title": "Computing and software for LHCb Upgrade II",
+      "pdf_url": "https://arxiv.org/pdf/2503.24106v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2403.09483v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2403.09483v2",
+      "title": "Tracking of charged particles with nanosecond lifetimes at LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2403.09483v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2503.23093v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2503.23093v1",
+      "title": "Heavy ion physics with LHCb Upgrade II",
+      "pdf_url": "https://arxiv.org/pdf/2503.23093v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2011.01915v5",
+      "type": "arxiv_paper",
+      "arxiv_id": "2011.01915v5",
+      "title": "The $P_{cs}(4459)$ pentaquark from a combined effective field theory and phenomenological perspective",
+      "pdf_url": "https://arxiv.org/pdf/2011.01915v5.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1502.02454v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1502.02454v3",
+      "title": "A fast PC algorithm for high dimensional causal discovery with multi-core PCs",
+      "pdf_url": "https://arxiv.org/pdf/1502.02454v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2502.09951v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2502.09951v3",
+      "title": "Search for Pcs(4459) and Pcs(4338) in Upsilon(1S,2S) inclusive decays at Belle",
+      "pdf_url": "https://arxiv.org/pdf/2502.09951v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2103.05257v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2103.05257v2",
+      "title": "Production of $P_{cs}(4459)$ from $\u039e_b$ decay",
+      "pdf_url": "https://arxiv.org/pdf/2103.05257v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2109.14237v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2109.14237v1",
+      "title": "Insights into the nature of the $P_{cs}(4459)$",
+      "pdf_url": "https://arxiv.org/pdf/2109.14237v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2110.04746v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2110.04746v2",
+      "title": "Searching for strange hidden-charm pentaquark state $P_{cs}(4459)$ in $\u03b3p\\to{}K^{+}P_{cs}(4459)$ reaction",
+      "pdf_url": "https://arxiv.org/pdf/2110.04746v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2508.05265v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2508.05265v1",
+      "title": "An examination of the two-peak hypothesis of $P_{\u03a8s}^\u039b(4459)$ using heavy quark symmetries",
+      "pdf_url": "https://arxiv.org/pdf/2508.05265v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2411.11442v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2411.11442v2",
+      "title": "Shedding light on the nature of the $P_{cs}(4459)$ pentaquark state",
+      "pdf_url": "https://arxiv.org/pdf/2411.11442v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2101.07850v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2101.07850v3",
+      "title": "Investigation of $P_{cs}(4459)^0$ pentaquark via its strong decay to $\u039bJ/\u03a8$",
+      "pdf_url": "https://arxiv.org/pdf/2101.07850v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2208.07684v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2208.07684v3",
+      "title": "Investigation of magnetic moment of $P_{cs}(4338)$ and $P_{cs}(4459)$ pentaquark states",
+      "pdf_url": "https://arxiv.org/pdf/2208.07684v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2402.14467v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2402.14467v2",
+      "title": "Production of $P^\u039b_{\u03c8s}(4338)$ from $\u039e_b$ decay",
+      "pdf_url": "https://arxiv.org/pdf/2402.14467v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2304.00604v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2304.00604v2",
+      "title": "Investigation of the strange pentaquark candidate $P_{\u03c8s}^\u039b(4338){}^0$ recently observed by LHCb",
+      "pdf_url": "https://arxiv.org/pdf/2304.00604v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2208.05106v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2208.05106v1",
+      "title": "The LHCb state $P_{\u03c8s}^\u039b(4338)$ as a triangle singularity",
+      "pdf_url": "https://arxiv.org/pdf/2208.05106v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2207.11144v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2207.11144v2",
+      "title": "The $P_{\u03c8s}^\u039b(4338)$ pentaquark and its partners in the molecular picture",
+      "pdf_url": "https://arxiv.org/pdf/2207.11144v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2404.12146v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2404.12146v2",
+      "title": "Strong decays of the $P_{cs}(4338)$ and its high isospin cousin via the QCD sum rules",
+      "pdf_url": "https://arxiv.org/pdf/2404.12146v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1402.2986v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1402.2986v3",
+      "title": "Finite Sample Breakdown of PCS",
+      "pdf_url": "https://arxiv.org/pdf/1402.2986v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-lat/0110007v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-lat/0110007v1",
+      "title": "Lattice QCD on PCs?",
+      "pdf_url": "https://arxiv.org/pdf/hep-lat/0110007v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2208.11995v4",
+      "type": "arxiv_paper",
+      "arxiv_id": "2208.11995v4",
+      "title": "Pole determination of $P_{\u03c8s}^\u039b(4338)$ and possible $P_{\u03c8s}^\u039b(4255)$ in $B^-\\to J/\u03c8\u039b\\bar{p}$",
+      "pdf_url": "https://arxiv.org/pdf/2208.11995v4.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0712.4383v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0712.4383v1",
+      "title": "Structure of strange baryons",
+      "pdf_url": "https://arxiv.org/pdf/0712.4383v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1604.03769v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1604.03769v2",
+      "title": "Compact pentaquark structures",
+      "pdf_url": "https://arxiv.org/pdf/1604.03769v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0409015v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0409015v2",
+      "title": "Pentaquarks in the Chiral Symmetry Limit",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0409015v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0402260v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0402260v1",
+      "title": "A Diquark-Triquark Model for the KN Pentaquark",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0402260v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/nucl-th/0504079v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "nucl-th/0504079v2",
+      "title": "The structure of the nucleon: baryons and pentaquarks",
+      "pdf_url": "https://arxiv.org/pdf/nucl-th/0504079v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0410066v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0410066v1",
+      "title": "Pentaquarks in a Breathing Mode Approach to Chiral Solitons",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0410066v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/9511369v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/9511369v1",
+      "title": "Heavy-flavored strange pentaquark seems not to exist",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/9511369v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2207.07581v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2207.07581v1",
+      "title": "New strange pentaquarks",
+      "pdf_url": "https://arxiv.org/pdf/2207.07581v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2405.09067v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2405.09067v2",
+      "title": "Mass spectra of strange double charm pentaquarks with strangeness $S=-1$",
+      "pdf_url": "https://arxiv.org/pdf/2405.09067v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/nucl-ex/0608008v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "nucl-ex/0608008v1",
+      "title": "Strange hadrons as dense matter probes",
+      "pdf_url": "https://arxiv.org/pdf/nucl-ex/0608008v1.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:59:08.531345+00:00",
+  "downloaded_files": []
 }

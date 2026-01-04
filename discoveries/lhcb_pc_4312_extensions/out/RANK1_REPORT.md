@@ -5,10 +5,10 @@
 | Metric | Value |
 |--------|-------|
 | Status | COMPLETED |
-| Overall Verdict | **NOT_REJECTED** |
+| Overall Verdict | **DISFAVORED** |
 | States Tested | Pc(4440) vs Pc(4457) |
 | Fit Window | 4400-4500 MeV |
-| Bootstrap Replicates | 50 |
+| Bootstrap Replicates | 20 |
 
 ## State Parameters
 
@@ -21,22 +21,22 @@
 
 ### Pair 1: Table 1 vs Table 2
 
-**Tables**: `hepdata_ins1728691_Table%201.csv` vs `hepdata_ins1728691_Table%202.csv`
+**Tables**: `hepdata_ins1728691_Table 1.csv` vs `hepdata_ins1728691_Table 2.csv`
 
-**Verdict**: **NOT_REJECTED**
+**Verdict**: **DISFAVORED**
 
-**Reason**: p_boot = 0.078 >= 0.05
+**Reason**: p_boot = 0.048 < 0.05
 
 #### Test Statistics
 
 | Metric | Value |
 |--------|-------|
-| Λ (clamped) | 5.6805 |
-| Λ_raw | 5.6805 |
-| p_boot | 0.0784 (3/50 exceedances) |
-| p_wilks (ref) | 0.0584 |
+| Λ (clamped) | 5.5869 |
+| Λ_raw | 5.5869 |
+| p_boot | 0.0476 (0/20 exceedances) |
+| p_wilks (ref) | 0.0612 |
 | NLL constrained | 67.5731 |
-| NLL unconstrained | 64.7329 |
+| NLL unconstrained | 64.7797 |
 
 #### Fit Health
 
@@ -50,34 +50,86 @@
 | Fit Type | Channel | |R| | φ (deg) |
 |----------|---------|-----|---------|
 | Individual | A | 0.252 | -72.4° |
-| Individual | B | 0.281 | -42.9° |
-| Unconstrained | A | 0.439 | 134.1° |
-| Unconstrained | B | 0.454 | 126.1° |
-| **Constrained** | **Shared** | **0.446** | **130.3°** |
+| Individual | B | 0.454 | 126.1° |
+| Unconstrained | A | 0.251 | -71.0° |
+| Unconstrained | B | 0.281 | -42.7° |
+| **Constrained** | **Shared** | **0.263** | **-58.3°** |
 
 #### Sanity Checks
 
 | Check | Status |
 |-------|--------|
 | Nested invariant (nll_unc ≤ nll_con) | ✓ PASS |
-| Invariant violation | -2.840239652007824 |
-| Bootstrap valid/failed | 50/0 |
+| Invariant violation | -2.793460285245885 |
+| Bootstrap valid/failed | 20/0 |
 
 #### Bootstrap Distribution
 
 | Statistic | Value |
 |-----------|-------|
-| Mean Λ_boot | 2.1477 |
-| Std Λ_boot | 2.2263 |
-| Median Λ_boot | 1.6062 |
+| Mean Λ_boot | 1.6365 |
+| Std Λ_boot | 1.1568 |
+| Median Λ_boot | 1.5109 |
 
-### Pair 2: Table 2 vs Table 3
+### Pair 2: Table 1 vs Table 3
 
-**Tables**: `hepdata_ins1728691_Table%202.csv` vs `hepdata_ins1728691_Table%203.csv`
+**Tables**: `hepdata_ins1728691_Table 1.csv` vs `hepdata_ins1728691_Table 3.csv`
 
 **Verdict**: **NOT_REJECTED**
 
-**Reason**: p_boot = 0.529 >= 0.05
+**Reason**: p_boot = 0.762 >= 0.05
+
+#### Test Statistics
+
+| Metric | Value |
+|--------|-------|
+| Λ (clamped) | 1.6585 |
+| Λ_raw | 1.6585 |
+| p_boot | 0.7619 (15/20 exceedances) |
+| p_wilks (ref) | 0.4364 |
+| NLL constrained | 74.9920 |
+| NLL unconstrained | 74.1627 |
+
+#### Fit Health
+
+| Channel | Health | χ²/dof |
+|---------|--------|--------|
+| A | HEALTHY | 64.2/44 |
+| B | HEALTHY | 83.8/44 |
+
+#### Coupling Ratios
+
+| Fit Type | Channel | |R| | φ (deg) |
+|----------|---------|-----|---------|
+| Individual | A | 0.252 | -72.4° |
+| Individual | B | 0.248 | -53.1° |
+| Unconstrained | A | 0.249 | -70.5° |
+| Unconstrained | B | 0.250 | -54.5° |
+| **Constrained** | **Shared** | **0.249** | **-61.5°** |
+
+#### Sanity Checks
+
+| Check | Status |
+|-------|--------|
+| Nested invariant (nll_unc ≤ nll_con) | ✓ PASS |
+| Invariant violation | -0.8292487900563827 |
+| Bootstrap valid/failed | 20/0 |
+
+#### Bootstrap Distribution
+
+| Statistic | Value |
+|-----------|-------|
+| Mean Λ_boot | 5.0285 |
+| Std Λ_boot | 5.5393 |
+| Median Λ_boot | 2.7597 |
+
+### Pair 3: Table 2 vs Table 3
+
+**Tables**: `hepdata_ins1728691_Table 2.csv` vs `hepdata_ins1728691_Table 3.csv`
+
+**Verdict**: **NOT_REJECTED**
+
+**Reason**: p_boot = 0.571 >= 0.05
 
 #### Test Statistics
 
@@ -85,7 +137,7 @@
 |--------|-------|
 | Λ (clamped) | 1.9318 |
 | Λ_raw | 1.9318 |
-| p_boot | 0.5294 (26/50 exceedances) |
+| p_boot | 0.5714 (11/20 exceedances) |
 | p_wilks (ref) | 0.3806 |
 | NLL constrained | 75.5071 |
 | NLL unconstrained | 74.5412 |
@@ -101,27 +153,27 @@
 
 | Fit Type | Channel | |R| | φ (deg) |
 |----------|---------|-----|---------|
-| Individual | A | 0.281 | -42.9° |
-| Individual | B | 0.439 | 128.9° |
-| Unconstrained | A | 0.454 | 126.1° |
-| Unconstrained | B | 0.248 | -53.1° |
-| **Constrained** | **Shared** | **0.445** | **127.7°** |
+| Individual | A | 0.454 | 126.1° |
+| Individual | B | 0.248 | -53.1° |
+| Unconstrained | A | 0.281 | -42.9° |
+| Unconstrained | B | 0.439 | 128.9° |
+| **Constrained** | **Shared** | **0.261** | **-48.9°** |
 
 #### Sanity Checks
 
 | Check | Status |
 |-------|--------|
 | Nested invariant (nll_unc ≤ nll_con) | ✓ PASS |
-| Invariant violation | -0.9659127911230314 |
-| Bootstrap valid/failed | 50/0 |
+| Invariant violation | -0.9659126119055372 |
+| Bootstrap valid/failed | 20/0 |
 
 #### Bootstrap Distribution
 
 | Statistic | Value |
 |-----------|-------|
-| Mean Λ_boot | 4.1000 |
-| Std Λ_boot | 8.0746 |
-| Median Λ_boot | 2.1850 |
+| Mean Λ_boot | 3.9523 |
+| Std Λ_boot | 7.9223 |
+| Median Λ_boot | 2.1177 |
 
 
 ## Interpretation

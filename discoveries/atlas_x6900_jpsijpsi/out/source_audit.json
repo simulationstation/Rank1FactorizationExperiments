@@ -1,0 +1,149 @@
+{
+  "query": "https://www.hepdata.net/search?q=ATLAS+X%286900%29&format=json; https://www.hepdata.net/search?q=ATLAS+di-J%2Fpsi&format=json; https://www.hepdata.net/search?q=ATLAS+tetraquark&format=json",
+  "top_k_hits": [
+    {
+      "record_id": 31679,
+      "title": "Precision measurement of the neutron spin asymmetry A(1)(n) and spin-flavor decomposition in the valence quark region.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 31726,
+      "title": "Precision measurement of the neutron spin asymmetries and spin-dependent structure functions in the valence quark region.",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 56870,
+      "title": "Near-threshold Photoproduction of Phi Mesons from Deuterium",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 141494,
+      "title": "Search for Majorana neutrinos in same-sign $WW$ scattering events from $pp$ collisions at $\\sqrt{s}=13$ TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 141537,
+      "title": "Search for excited $\\tau$-leptons and leptoquarks in the final state with $\\tau$-leptons and jets in pp collisions at $\\sqrt{s} = 13$ TeV with the ATLAS detector",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 157879,
+      "title": "Improved reconstruction of highly boosted $\\tau$-lepton pairs in the $\\tau\\tau\\rightarrow(\\mu\\nu_{\\mu}\\nu_{\\tau})({hadrons}+\\nu_{\\tau})$ decay channels with the ATLAS detector",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 151384,
+      "title": "Search for heavy Majorana neutrinos in $e^{\\pm} e^{\\pm}$ and $e^{\\pm} \\mu^{\\pm}$ final states via WW scattering in $pp$ collisions at $\\sqrt{s}=13$ TeV with the ATLAS detector",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 88920,
+      "title": "Search for the X(5568) state decaying into $\\mathrm{B}^{0}_{\\mathrm{s}}\\pi^{\\pm}$ in proton-proton collisions at $\\sqrt{s} = $ 8 TeV",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 113470,
+      "title": "Study of the doubly charmed tetraquark $T_{cc}^+$",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 114869,
+      "title": "Observation of an exotic narrow doubly charmed tetraquark",
+      "collaboration": "",
+      "score": 0.0,
+      "breakdown": {},
+      "reasons": []
+    },
+    {
+      "record_id": 141076,
+      "title": "Search for a new heavy scalar particle decaying into a Higgs boson and a new scalar singlet in final states with one or two light leptons and a pair of $\\tau$-leptons with the ATLAS detector",
+      "collaboration": "",
+      "score": -100.0,
+      "breakdown": {
+        "unrelated_penalty": -100
+      },
+      "reasons": [
+        "Unrelated keyword: higgs"
+      ]
+    },
+    {
+      "record_id": 84820,
+      "title": "Cross-section measurements of the Higgs boson decaying to a pair of tau leptons in proton--proton collisions at $\\sqrt{s}=13$ TeV with the ATLAS detector",
+      "collaboration": "",
+      "score": -100.0,
+      "breakdown": {
+        "unrelated_penalty": -100
+      },
+      "reasons": [
+        "Unrelated keyword: higgs"
+      ]
+    },
+    {
+      "record_id": 131601,
+      "title": "Measurement of the $CP$ properties of Higgs boson interactions with $\\tau$-leptons with the ATLAS detector",
+      "collaboration": "",
+      "score": -100.0,
+      "breakdown": {
+        "unrelated_penalty": -100
+      },
+      "reasons": [
+        "Unrelated keyword: higgs"
+      ]
+    },
+    {
+      "record_id": 58712,
+      "title": "Constraining R-parity violating Minimal Supergravity with stau_1 LSP in a four lepton final state with missing transverse momentum",
+      "collaboration": "",
+      "score": -100.0,
+      "breakdown": {
+        "unrelated_penalty": -100
+      },
+      "reasons": [
+        "Unrelated keyword: supersymmetry"
+      ]
+    },
+    {
+      "record_id": 61326,
+      "title": "Search for heavy top-like quarks decaying to a Higgs boson and a top quark in the lepton plus jets final state in $pp$ collisions at $\\sqrt{s}=8$ TeV with the ATLAS detector",
+      "collaboration": "",
+      "score": -200.0,
+      "breakdown": {
+        "unrelated_penalty": -200
+      },
+      "reasons": [
+        "Unrelated keyword: higgs",
+        "Unrelated keyword: top quark"
+      ]
+    }
+  ],
+  "selected_record": null,
+  "selection_reason": "Best score 0.0 < threshold 50",
+  "table_validations": []
+}

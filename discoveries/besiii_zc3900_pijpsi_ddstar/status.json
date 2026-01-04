@@ -1,12 +1,14 @@
 {
   "slug": "besiii_zc3900_pijpsi_ddstar",
-  "current_step": "acquire",
+  "current_step": "run_rank1",
   "completed_steps": [
     "scaffold",
-    "locate_data"
+    "locate_data",
+    "acquire",
+    "extract_numeric"
   ],
-  "last_update_utc": "2026-01-02T23:42:59.526864+00:00",
-  "blocked_reason": null,
+  "last_update_utc": "2026-01-03T03:58:57.478350+00:00",
+  "blocked_reason": "NO_SUITABLE_PAIRS",
   "error_message": null,
   "discovered_urls": []
 }

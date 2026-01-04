@@ -1,0 +1,57 @@
+{
+  "test_type": "global_shared_R",
+  "n_channels": 4,
+  "channel_names": [
+    "upsilon2s",
+    "upsilon3s",
+    "hb1p",
+    "hb2p"
+  ],
+  "Lambda_obs": 2.1633265114400047,
+  "Lambda_raw": 2.1633265114400047,
+  "dof_diff": 6,
+  "p_boot": 0.43564356435643564,
+  "p_wilks": 0.9040811593793261,
+  "n_boot": 100,
+  "k_exceed": 43,
+  "nll_con": 474.33106314376346,
+  "nll_unc": 473.24939988804346,
+  "R_shared": {
+    "r": 0.6011512258982864,
+    "phi_deg": -5.456120677306652
+  },
+  "R_per_channel": {
+    "upsilon2s": {
+      "r": 0.6622546629982072,
+      "phi_deg": -10.313731589203298
+    },
+    "upsilon3s": {
+      "r": 0.6011512258982864,
+      "phi_deg": -5.456120677306652
+    },
+    "hb1p": {
+      "r": 0.7321065935331309,
+      "phi_deg": 22.93394643285547
+    },
+    "hb2p": {
+      "r": 0.7228427328317032,
+      "phi_deg": 7.514677310617746
+    }
+  },
+  "chi2_dof_per_channel": {
+    "upsilon2s": 29.239474345428,
+    "upsilon3s": 43.84220889846101,
+    "hb1p": 4.761293295802187,
+    "hb2p": 3.867172895586987
+  },
+  "health_per_channel": {
+    "upsilon2s": "MODEL_MISMATCH",
+    "upsilon3s": "MODEL_MISMATCH",
+    "hb1p": "MODEL_MISMATCH",
+    "hb2p": "MODEL_MISMATCH"
+  },
+  "invariant_holds": true,
+  "overall_health": "MODEL_MISMATCH",
+  "verdict": "INCONCLUSIVE",
+  "reason": "Fit health issues: {'upsilon2s': 'MODEL_MISMATCH', 'upsilon3s': 'MODEL_MISMATCH', 'hb1p': 'MODEL_MISMATCH', 'hb2p': 'MODEL_MISMATCH'}"
+}

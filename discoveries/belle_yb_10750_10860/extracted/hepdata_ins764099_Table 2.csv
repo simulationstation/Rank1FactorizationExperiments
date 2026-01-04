@@ -1,0 +1,14 @@
+#: table_doi: 10.17182/hepdata.50307.v1/t2
+#: name: Table 2
+#: description: Cross section for the final state UPSI(2S) PI+ PI-.
+
+#: data_file: Table2.yaml
+#: keyword reactions: E+ E- --> UPSI(10023) PI+ PI-
+#: keyword observables: SIG
+#: keyword phrases: Exclusive | Upsilon | Integrated Cross Section | Cross Section | E+ E- Scattering
+#: keyword cmenergies: 10.87
+#: RE,E+ E- --> UPSI(10023) PI+ PI-
+#: SQRT(S) [GeV],10.87
+SQRT(S) [GEV],SIG [PB],stat +,stat -,sys +,sys -
+10.87,2.35,0.19,-0.19,0.32,-0.32
+

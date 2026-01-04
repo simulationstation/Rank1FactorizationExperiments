@@ -90,6 +90,218 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:besiii+Y%284390%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.557446+00:00"
+  "discovered_urls": [
+    {
+      "url": "http://arxiv.org/abs/1903.04695v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1903.04695v2",
+      "title": "Study of $e^+e^- \\to \u03b3\u03c9J/\u03c8$ and Observation of $X(3872) \\to \u03c9J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/1903.04695v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1103.0854v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1103.0854v1",
+      "title": "Dust aerosols above the south polar cap of Mars as seen by OMEGA",
+      "pdf_url": "https://arxiv.org/pdf/1103.0854v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2111.07571v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2111.07571v1",
+      "title": "Number of $\\rm J/\u03c8$ events at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2111.07571v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0911.4960v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0911.4960v1",
+      "title": "Design and Construction of the BESIII Detector",
+      "pdf_url": "https://arxiv.org/pdf/0911.4960v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1311.1274v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1311.1274v1",
+      "title": "Study of charmonium decays at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1311.1274v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1307.2022v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1307.2022v1",
+      "title": "Measurement of the integrated luminosities of the data taken by BESIII at $\\sqrt s=$ 3.650 and 3.773 GeV",
+      "pdf_url": "https://arxiv.org/pdf/1307.2022v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1802.04057v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1802.04057v2",
+      "title": "Search for the rare decay of $\u03c8(3686) \\rightarrow \u039b_c^+ \\overline{p} e^+ e^- + c.c.$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/1802.04057v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1310.4409v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1310.4409v1",
+      "title": "Recent results from BESIII experiment",
+      "pdf_url": "https://arxiv.org/pdf/1310.4409v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/astro-ph/0112015v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "astro-ph/0112015v1",
+      "title": "The Multiple Stellar Populations in Omega Centauri",
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0112015v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1005.5633v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1005.5633v1",
+      "title": "On Omega Context Free Languages which are Borel Sets of Infinite Rank",
+      "pdf_url": "https://arxiv.org/pdf/1005.5633v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1805.12069v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1805.12069v1",
+      "title": "Omega: An Architecture for AI Unification",
+      "pdf_url": "https://arxiv.org/pdf/1805.12069v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2211.08561v5",
+      "type": "arxiv_paper",
+      "arxiv_id": "2211.08561v5",
+      "title": "Observation of the $Y(4230)$ and evidence for a new vector charmonium-like state $Y(4710)$ in $e^{+}e^{-}\\to K_{S}^{0} K_{S}^{0} J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2211.08561v5.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2204.07800v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2204.07800v3",
+      "title": "Observation of the $Y(4230)$ and a new structure in $e^+e^- \\rightarrow K^+K^-J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2204.07800v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2410.12620v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2410.12620v1",
+      "title": "Search for $e^{+}e^{-} \\to \u03c6\u03c7_{c0}$ and $\u03c6\u03b7_{c2}(1D)$ at center-of-mass energies from 4.47 to 4.95 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2410.12620v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2407.07651v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2407.07651v1",
+      "title": "Study of the decay and production properties of $D_{s1}(2536)$ and $D_{s2}^*(2573)$",
+      "pdf_url": "https://arxiv.org/pdf/2407.07651v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2505.13222v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2505.13222v2",
+      "title": "Partial Wave Analysis of $e^{+}e^{-} \\rightarrow \u03c0^{+}\u03c0^{-}J/\u03c8$ and Cross Section Measurement of $e^{+}e^{-} \\rightarrow \u03c0^{\\pm}Z_{c}(3900)^{\\mp}$ from 4.1271 to 4.3583 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2505.13222v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2003.03705v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2003.03705v1",
+      "title": "Observation of the $Y(4220)$ and $Y(4360)$ in the process $e^{+}e^{-} \\to \u03b7J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2003.03705v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2401.09468v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2401.09468v2",
+      "title": "Measurement of Born cross section of $e^{+}e^{-}\\rightarrow\u03a3^{+}\\bar\u03a3^{-}$ at center-of-mass energies between 3.510 and 4.951 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2401.09468v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2505.03180v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2505.03180v2",
+      "title": "Observation of resonant contribution to the $e^+e^-\\to \u03a9^{-}\\bar\u03a9^{+}$ around 4.2 GeV and evidence of $\u03c8(3770)\\to \u03a9^{-}\\bar\u03a9^{+}$",
+      "pdf_url": "https://arxiv.org/pdf/2505.03180v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2402.03829v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2402.03829v3",
+      "title": "Precise Measurement of Born Cross Sections for $e^+e^-\\to D\\bar{D}$ at $\\sqrt{s} = 3.80-4.95$ GeV",
+      "pdf_url": "https://arxiv.org/pdf/2402.03829v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.04215v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.04215v3",
+      "title": "Measurement of the cross section of $e^+e^-\\rightarrow\u039e^{-}\\bar\u039e^{+}$ at center-of-mass energies between 3.510 and 4.843 GeV",
+      "pdf_url": "https://arxiv.org/pdf/2309.04215v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/9610260v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/9610260v2",
+      "title": "Probing the QCD pomeron in e+ e- collisions",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/9610260v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0403006v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0403006v1",
+      "title": "Measurement of sigma(e+e- =>pi+pi-) at e+e- colliders",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0403006v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1103.5699v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "1103.5699v3",
+      "title": "First Measurement of the Angular Coefficients of Drell-Yan $e^{+}e^{-}$ pairs in the Z Mass Region from $p\\bar{p}$ Collisions at $\\sqrt{s}$ = 1.96 TeV",
+      "pdf_url": "https://arxiv.org/pdf/1103.5699v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0108106v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0108106v1",
+      "title": "A possible resolution of the e+e- --> Nbar N puzzle",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0108106v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/0805.0994v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "0805.0994v1",
+      "title": "Recent results on rare decay pi0 to e+e-",
+      "pdf_url": "https://arxiv.org/pdf/0805.0994v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1207.2741v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1207.2741v1",
+      "title": "E-banking and E-commerce in India and USA",
+      "pdf_url": "https://arxiv.org/pdf/1207.2741v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0310335v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0310335v1",
+      "title": "e+e- -> pi+pi-e+e-: a potential background for sigma(e+e- -> pi+pi-) measurement via radiative return method",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0310335v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ph/0308079v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ph/0308079v2",
+      "title": "Theoretical tools for a future e+e- linear collider",
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0308079v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/hep-ex/0106011v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "hep-ex/0106011v1",
+      "title": "alpha_s at low Q^2 from e+e- and tau data",
+      "pdf_url": "https://arxiv.org/pdf/hep-ex/0106011v1.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:59:32.124203+00:00",
+  "downloaded_files": []
 }

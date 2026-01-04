@@ -110,6 +110,269 @@
       "query": "http://export.arxiv.org/api/query?search_query=all:cms+X%284274%29+AND+cat:hep-ex&max_results=5"
     }
   ],
-  "discovered_urls": [],
-  "last_update_utc": "2026-01-02T23:42:59.511408+00:00"
+  "discovered_urls": [
+    {
+      "url": "https://opendata.cern.ch/record/40267",
+      "type": "cern_opendata_record",
+      "record_id": "40267",
+      "title": "/HbToPsiX_JMM_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/40266",
+      "type": "cern_opendata_record",
+      "record_id": "40266",
+      "title": "/HbToPsiX_JMM_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17_ext1-v2/MINIAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/40264",
+      "type": "cern_opendata_record",
+      "record_id": "40264",
+      "title": "/HbToJPsiMuMu_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/40262",
+      "type": "cern_opendata_record",
+      "record_id": "40262",
+      "title": "/HbToJPsiMuMu_3MuFilter_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/40263",
+      "type": "cern_opendata_record",
+      "record_id": "40263",
+      "title": "/HbToJPsiMuMu_3MuFilter_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v2/NANOAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/40265",
+      "type": "cern_opendata_record",
+      "record_id": "40265",
+      "title": "/HbToJPsiMuMu_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v2/NANOAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/40269",
+      "type": "cern_opendata_record",
+      "record_id": "40269",
+      "title": "/HbToPsiX_JMM_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v2/NANOAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/40268",
+      "type": "cern_opendata_record",
+      "record_id": "40268",
+      "title": "/HbToPsiX_JMM_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17_ext1-v2/NANOAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/32714",
+      "type": "cern_opendata_record",
+      "record_id": "32714",
+      "title": "/B0ToPsi2sKstar_BMuonFilter_SoftQCDnonD_TuneCP5_13TeV_pythia8_evtgen/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "https://opendata.cern.ch/record/32715",
+      "type": "cern_opendata_record",
+      "record_id": "32715",
+      "title": "/B0ToPsi2sKstar_BMuonFilter_SoftQCDnonD_TuneCP5_13TeV_pythia8_evtgen/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v2/NANOAODSIM",
+      "experiment": [
+        "CMS"
+      ],
+      "files": []
+    },
+    {
+      "url": "http://arxiv.org/abs/1309.6920v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1309.6920v2",
+      "title": "Observation of a peaking structure in the J/psi phi mass spectrum from B(+/-) to J/psi phi K(+/-) decays",
+      "pdf_url": "https://arxiv.org/pdf/1309.6920v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1712.02170v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "1712.02170v1",
+      "title": "Detecting Curve Text in the Wild: New Dataset and New Solution",
+      "pdf_url": "https://arxiv.org/pdf/1712.02170v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2512.15091v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2512.15091v1",
+      "title": "Search for the decays $X(3872)\\to K_{S}^{0}K^{\\pm}\u03c0^{\\mp}$ and $K^*(892)\\bar{K}$ at BESIII",
+      "pdf_url": "https://arxiv.org/pdf/2512.15091v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2502.20821v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2502.20821v2",
+      "title": "Improved measurement of absolute branching fraction of the inclusive decay $\u039b_{c}^{+} \\to K_{S}^{0} X$",
+      "pdf_url": "https://arxiv.org/pdf/2502.20821v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2406.09475v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2406.09475v1",
+      "title": "Search for $X(1870)$ via the decay $J/\u03c8\\to \u03c9K^+ K^-\u03b7$",
+      "pdf_url": "https://arxiv.org/pdf/2406.09475v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2403.16811v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2403.16811v2",
+      "title": "Cross section measurement of $e^+e^-\\to \u03b7\u03c8(2S)$ and search for $e^+e^-\\to\u03b7\\tilde{X}(3872)$",
+      "pdf_url": "https://arxiv.org/pdf/2403.16811v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2408.01597v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2408.01597v2",
+      "title": "Search for $X(3872)\\to\u03c0^0\u03c0^0\u03c7_{c1,2}$",
+      "pdf_url": "https://arxiv.org/pdf/2408.01597v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2305.11682v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2305.11682v2",
+      "title": "Search for a scalar partner of the $X(3872)$ via $\u03c8(3770)$ decays into $\u03b3\u03b7\u03b7'$ and $\u03b3\u03c0^{+}\u03c0^{-}J/\u03c8$",
+      "pdf_url": "https://arxiv.org/pdf/2305.11682v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2310.17937v3",
+      "type": "arxiv_paper",
+      "arxiv_id": "2310.17937v3",
+      "title": "Observation of the Anomalous Shape of $X(1840)$ in $J/\u03c8\\rightarrow \u03b33(\u03c0^+ \u03c0^-)$ Indicating a Second Resonance Near $p\\bar{p}$ Threshold",
+      "pdf_url": "https://arxiv.org/pdf/2310.17937v3.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.01502v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.01502v1",
+      "title": "A coupled-channel analysis of the $X(3872)$ lineshape with BESIII data",
+      "pdf_url": "https://arxiv.org/pdf/2309.01502v1.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2312.05324v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2312.05324v2",
+      "title": "Determination of spin-parity quantum numbers of X(2370) as $0^{-+}$ from $J/\u03c8\\rightarrow\u03b3K^{0}_{S}K^{0}_{S}\u03b7^{\\prime}$",
+      "pdf_url": "https://arxiv.org/pdf/2312.05324v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2301.03214v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2301.03214v2",
+      "title": "Measurements of the branching fractions of the inclusive decays $D^{0}(D^{+})\\to \u03c0^+\u03c0^+\u03c0^-X$",
+      "pdf_url": "https://arxiv.org/pdf/2301.03214v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1605.06966v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1605.06966v2",
+      "title": "Coherent J/psi photoproduction in ultra-peripheral PbPb collisions at sqrt(s[NN]) = 2.76 TeV with the CMS experiment",
+      "pdf_url": "https://arxiv.org/pdf/1605.06966v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2210.05854v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2210.05854v2",
+      "title": "Proton reconstruction with the CMS-TOTEM Precision Proton Spectrometer",
+      "pdf_url": "https://arxiv.org/pdf/2210.05854v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2404.06614v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2404.06614v2",
+      "title": "The CMS statistical analysis and combination tool: COMBINE",
+      "pdf_url": "https://arxiv.org/pdf/2404.06614v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2011.01185v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2011.01185v2",
+      "title": "The very forward CASTOR calorimeter of the CMS experiment",
+      "pdf_url": "https://arxiv.org/pdf/2011.01185v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1702.01462v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1702.01462v2",
+      "title": "Measurement of prompt and nonprompt J/psi production in pp and pPb collisions at sqrt(s[NN]) = 5.02 TeV",
+      "pdf_url": "https://arxiv.org/pdf/1702.01462v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/1706.04965v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "1706.04965v2",
+      "title": "Particle-flow reconstruction and global event description with the CMS detector",
+      "pdf_url": "https://arxiv.org/pdf/1706.04965v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2403.16134v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2403.16134v2",
+      "title": "Enriching the physics program of the CMS experiment via data scouting and data parking",
+      "pdf_url": "https://arxiv.org/pdf/2403.16134v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2309.05466v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2309.05466v2",
+      "title": "Development of the CMS detector for the CERN LHC Run 3",
+      "pdf_url": "https://arxiv.org/pdf/2309.05466v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2410.17038v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2410.17038v2",
+      "title": "Performance of the CMS high-level trigger during LHC Run 2",
+      "pdf_url": "https://arxiv.org/pdf/2410.17038v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2003.00503v2",
+      "type": "arxiv_paper",
+      "arxiv_id": "2003.00503v2",
+      "title": "Pileup mitigation at CMS in 13 TeV data",
+      "pdf_url": "https://arxiv.org/pdf/2003.00503v2.pdf"
+    },
+    {
+      "url": "http://arxiv.org/abs/2508.06363v1",
+      "type": "arxiv_paper",
+      "arxiv_id": "2508.06363v1",
+      "title": "Search for b hadron decays to long-lived particles in the CMS endcap muon detectors",
+      "pdf_url": "https://arxiv.org/pdf/2508.06363v1.pdf"
+    }
+  ],
+  "last_update_utc": "2026-01-03T03:58:20.286477+00:00",
+  "downloaded_files": []
 }

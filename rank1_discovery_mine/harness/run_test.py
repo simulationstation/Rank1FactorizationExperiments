@@ -92,12 +92,61 @@ def analyze_table(filepath: Path) -> Optional[TableInfo]:
         return None
 
 
+def get_mass_range(filepath: Path) -> Optional[Tuple[float, float]]:
+    """Extract the mass range from first column of CSV data."""
+    try:
+        with open(filepath, 'r') as f:
+            data_started = False
+            first_val = None
+            last_val = None
+            for line in f:
+                if line.startswith('#') or not line.strip():
+                    continue
+                if line.startswith('$'):
+                    data_started = True
+                    continue
+                if data_started:
+                    parts = line.strip().split(',')
+                    if parts:
+                        try:
+                            val = float(parts[0])
+                            if first_val is None:
+                                first_val = val
+                            last_val = val
+                        except ValueError:
+                            continue
+            if first_val is not None and last_val is not None:
+                return (min(first_val, last_val), max(first_val, last_val))
+    except Exception:
+        pass
+    return None
+
+
+def ranges_overlap(r1: Tuple[float, float], r2: Tuple[float, float],
+                   fit_window: Tuple[float, float]) -> bool:
+    """Check if two mass ranges both overlap with fit window."""
+    # Convert to MeV if needed (detect GeV by checking if range is < 100)
+    def to_mev(r):
+        if r[1] < 100:  # Likely in GeV
+            return (r[0] * 1000, r[1] * 1000)
+        return r
+
+    r1_mev = to_mev(r1)
+    r2_mev = to_mev(r2)
+
+    # Check if both ranges overlap with fit window
+    def overlaps_window(r):
+        return r[0] <= fit_window[1] and r[1] >= fit_window[0]
+
+    return overlaps_window(r1_mev) and overlaps_window(r2_mev)
+
+
 def find_suitable_pairs(raw_dir: Path, config: StateConfig) -> List[Tuple[TableInfo, TableInfo]]:
     """
     Find suitable table pairs for rank-1 test.
 
     Prioritizes tables from records that match the state configuration
-    (by checking for state names in description).
+    (by checking for state names in description) AND have compatible mass ranges.
 
     Returns list of (table_A, table_B) pairs.
     """
@@ -121,11 +170,17 @@ def find_suitable_pairs(raw_dir: Path, config: StateConfig) -> List[Tuple[TableI
     # Analyze each table
     tables = []
     relevant_tables = []
+    mass_ranges = {}  # path -> (min, max) in original units
 
     for f in csv_files:
         info = analyze_table(f)
         if info and info.n_rows >= 5:
             tables.append(info)
+
+            # Get mass range for this table
+            mass_range = get_mass_range(f)
+            if mass_range:
+                mass_ranges[f] = mass_range
 
             # Check if this table is relevant to our exotic states
             desc_lower = info.description.lower()
@@ -149,26 +204,53 @@ def find_suitable_pairs(raw_dir: Path, config: StateConfig) -> List[Tuple[TableI
         logger.warning(f"Need at least 2 suitable tables, found {len(target_tables)}")
         return []
 
+    # Filter to tables that overlap with fit window
+    fit_window = config.fit_window
+    compatible_tables = []
+    for t in target_tables:
+        if t.path in mass_ranges:
+            r = mass_ranges[t.path]
+            # Convert to MeV if in GeV
+            r_mev = (r[0] * 1000, r[1] * 1000) if r[1] < 100 else r
+            # Check if range overlaps with fit window
+            if r_mev[0] <= fit_window[1] and r_mev[1] >= fit_window[0]:
+                compatible_tables.append(t)
+                logger.info(f"  Compatible: {t.name} (range {r_mev[0]:.0f}-{r_mev[1]:.0f} MeV)")
+
+    if len(compatible_tables) < 2:
+        logger.warning(f"Need at least 2 tables overlapping fit window {fit_window}, found {len(compatible_tables)}")
+        # Fall back to original target_tables if filtering was too aggressive
+        compatible_tables = target_tables
+
     # Group by INSPIRE ID
     by_inspire = {}
-    for t in target_tables:
+    for t in compatible_tables:
         if t.inspire_id:
             if t.inspire_id not in by_inspire:
                 by_inspire[t.inspire_id] = []
             by_inspire[t.inspire_id].append(t)
 
-    # Generate pairs - prioritize within same record
+    # Generate pairs - prioritize tables with compatible mass ranges
     pairs = []
 
-    # Within same record: pair different tables (e.g., different cuts)
+    # Within same record: pair tables with overlapping mass ranges
     for inspire_id, record_tables in by_inspire.items():
         if len(record_tables) >= 2:
             # Sort by name/number
             record_tables.sort(key=lambda t: t.name)
-            # Pair consecutive tables
-            for i in range(len(record_tables) - 1):
-                pairs.append((record_tables[i], record_tables[i+1]))
-                logger.info(f"  Paired: {record_tables[i].name} + {record_tables[i+1].name} (ins{inspire_id})")
+            # Pair tables that have compatible mass ranges
+            for i in range(len(record_tables)):
+                for j in range(i + 1, len(record_tables)):
+                    t1, t2 = record_tables[i], record_tables[j]
+                    r1 = mass_ranges.get(t1.path)
+                    r2 = mass_ranges.get(t2.path)
+                    if r1 and r2 and ranges_overlap(r1, r2, fit_window):
+                        pairs.append((t1, t2))
+                        logger.info(f"  Paired: {t1.name} + {t2.name} (ins{inspire_id})")
+                        if len(pairs) >= 5:  # Limit pairs per record
+                            break
+                if len(pairs) >= 5:
+                    break
 
     # Only do cross-record if we have no within-record pairs
     if not pairs and len(by_inspire) >= 2:
@@ -194,7 +276,25 @@ def run_rank1_test(candidate_dir: Path, slug: str, n_boot: int = 100) -> Dict[st
     Returns:
         Dict with test results
     """
+    # Prefer extracted/ directory (processed CSVs), fallback to raw/
+    extracted_dir = candidate_dir / "extracted"
     raw_dir = candidate_dir / "raw"
+
+    # Check both directories for CSV files
+    extracted_csvs = list(extracted_dir.glob("*.csv")) if extracted_dir.exists() else []
+    raw_csvs = list(raw_dir.glob("hepdata_*.csv")) if raw_dir.exists() else []
+
+    # Use extracted if it has files, otherwise raw
+    if extracted_csvs:
+        data_dir = extracted_dir
+        logger.info(f"Using extracted/ directory ({len(extracted_csvs)} CSVs)")
+    elif raw_csvs:
+        data_dir = raw_dir
+        logger.info(f"Using raw/ directory ({len(raw_csvs)} CSVs)")
+    else:
+        data_dir = raw_dir
+        logger.warning(f"No CSV files found in extracted/ or raw/")
+
     out_dir = candidate_dir / "out"
     out_dir.mkdir(exist_ok=True)
 
@@ -213,7 +313,7 @@ def run_rank1_test(candidate_dir: Path, slug: str, n_boot: int = 100) -> Dict[st
     logger.info(f"Fit window: {config.fit_window[0]}-{config.fit_window[1]} MeV")
 
     # Find suitable table pairs
-    pairs = find_suitable_pairs(raw_dir, config)
+    pairs = find_suitable_pairs(data_dir, config)
 
     if not pairs:
         return {
